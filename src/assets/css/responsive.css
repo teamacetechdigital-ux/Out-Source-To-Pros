@@ -20,6 +20,17 @@
 }
 
 @media (max-width: 1279px) {
+  .industry-section {
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(10, 22, 83, 0.78) 0%,
+        rgba(10, 22, 83, 0.62) 45%,
+        rgba(10, 22, 83, 0.38) 100%
+      ),
+      url(../imgs/industry-bg.jpg);
+    background-position: center;
+  }
   .banner { padding: 12rem 0 14rem; }
   .banner-count { margin-top: 8rem; }
   .white-textarea { margin-top: -10rem; }
