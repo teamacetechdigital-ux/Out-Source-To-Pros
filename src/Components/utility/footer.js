@@ -9,7 +9,13 @@ const footerStyle = {
 const iconBoxClass =
   "flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-[#1B50E8] text-white";
 
-const quickLinks = ["About Us", "Services", "Contact", "Testimonials", "FAQs", "Contact"];
+const quickLinks = [
+  ["About Us", "#about"],
+  ["Services", "#services"],
+  ["Contact", "#contact"],
+  ["Testimonials", "#testimonials"],
+  ["FAQs", "#faqs"],
+];
 
 const columns = [
   {
@@ -171,8 +177,8 @@ function Footer() {
             <ul className="satoshi-md mt-5 space-y-1 text-base">
               {quickLinks.map((link, index) => (
                 <li key={`${link}-${index}`}>
-                  <a href="#" className="hover:text-[#A1D1FF]">
-                    {link}
+                  <a href={link[1]} className="hover:text-[#A1D1FF]">
+                    {link[0]}
                   </a>
                 </li>
               ))}
@@ -214,14 +220,14 @@ function Footer() {
             </ul>
             <div className="mt-6 flex gap-3">
               {socials.map((social) => (
-                <a
+                <span
                   key={social.label}
-                  href="#"
                   aria-label={social.label}
-                  className="flex h-9 w-9 items-center justify-center rounded-full bg-[#1B50E8]"
+                  role="img"
+                  className="flex h-9 w-9 items-center justify-center rounded-[9999px] bg-[#1B50E8]"
                 >
                   {social.icon}
-                </a>
+                </span>
               ))}
             </div>
           </div>
@@ -234,9 +240,9 @@ function Footer() {
               <ul className="satoshi-md mt-4 space-y-1 text-base">
                 {column.links.map((link) => (
                   <li key={link}>
-                    <a href="#" className="hover:text-[#A1D1FF]">
+                    <span className="hover:text-[#A1D1FF]">
                       {link}
-                    </a>
+                    </span>
                   </li>
                 ))}
               </ul>
@@ -267,9 +273,9 @@ function Footer() {
           <ul className="flex flex-wrap gap-x-5 gap-y-3">
             {legalLinks.map((link) => (
               <li key={link}>
-                <a href="#" className="hover:text-[#A1D1FF]">
+                <span className="hover:text-[#A1D1FF]">
                   • {link}
-                </a>
+                </span>
               </li>
             ))}
           </ul>

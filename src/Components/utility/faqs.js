@@ -83,7 +83,7 @@ function Faqs() {
   const [active, setActive] = useState(0);
 
   return (
-    <section className="faqs-section py-16 sm:py-20 lg:pb-32 lg:pt-28">
+    <section id="faqs" className="faqs-section py-16 sm:py-20 lg:pb-32 lg:pt-28">
       <div className="custom-container px-5 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 items-start gap-8 xl:grid-cols-2 xl:items-end xl:gap-12 [&>*]:min-w-0">
           <div>

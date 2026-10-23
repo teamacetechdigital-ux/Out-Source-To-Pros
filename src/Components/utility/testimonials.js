@@ -88,7 +88,7 @@ function Stars() {
 
 function Testimonials() {
   return (
-    <section className="testimonials-section pb-40 pt-16 sm:pb-52 sm:pt-20 lg:pb-[280px] lg:pt-32">
+    <section id="testimonials" className="testimonials-section pb-40 pt-16 sm:pb-52 sm:pt-20 lg:pb-[280px] lg:pt-32">
       <div className="custom-container px-5 sm:px-8 lg:px-12">
         <h2 className="montserrat-rg text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">
           <span style={headingHighlightStyle}>Testimonials</span>
@@ -102,7 +102,7 @@ function Testimonials() {
               style={cardStyle}
             >
               <div className="flex items-start justify-between">
-                <span className="montserrat-rg flex h-11 w-11 items-center justify-center rounded-full bg-white/20 text-sm font-bold">
+                <span className="montserrat-rg flex h-11 w-11 items-center justify-center rounded-[9999px] bg-white/20 text-sm font-bold">
                   {review.name
                     .split(" ")
                     .map((part) => part[0])
@@ -118,10 +118,9 @@ function Testimonials() {
               </p>
               <div className="mt-5 flex items-center justify-between">
                 <Stars />
-                <a href="#" className="satoshi-md flex items-center gap-2 text-sm">
-                  Read More
-                  <span aria-hidden="true">↗</span>
-                </a>
+                <span className="satoshi-md text-sm">
+                  Customer review
+                </span>
               </div>
             </article>
           ))}

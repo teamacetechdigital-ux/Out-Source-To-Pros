@@ -156,11 +156,11 @@ function WhiteLabelCircle() {
     <>
     <div className="relative hidden h-[330px] w-[720px] 2xl:block">
       <div
-        className="absolute left-0 top-0 flex items-center justify-center rounded-full bg-[#1B50E8]"
+        className="absolute left-0 top-0 flex items-center justify-center rounded-[9999px] bg-[#1B50E8]"
         style={{ width: size, height: size }}
       >
-        <div className="flex h-[250px] w-[250px] items-center justify-center rounded-full bg-[#0A1D5C] p-2">
-          <div className="flex h-full w-full items-center justify-center rounded-full border border-white/40">
+        <div className="flex h-[250px] w-[250px] items-center justify-center rounded-[9999px] bg-[#0A1D5C] p-2">
+          <div className="flex h-full w-full items-center justify-center rounded-[9999px] border border-white/40">
             <h4 className="montserrat-rg text-center text-[26px] font-bold leading-tight text-white">
               White-Label
               <br />
@@ -180,7 +180,7 @@ function WhiteLabelCircle() {
             className="absolute flex items-center gap-4"
             style={{ left: x - 22, top: y - 22 }}
           >
-            <span className="montserrat-rg flex h-11 w-11 shrink-0 items-center justify-center rounded-full border-4 border-[#1B50E8] bg-white text-sm font-bold text-[#1B50E8]">
+            <span             className="montserrat-rg flex h-11 w-11 shrink-0 items-center justify-center rounded-[9999px] border-4 border-[#1B50E8] bg-white text-sm font-bold text-[#1B50E8]">
               {String(index + 1).padStart(2, "0")}
             </span>
             <div className="text-white">
@@ -198,7 +198,7 @@ function WhiteLabelCircle() {
     <div className="grid w-full grid-cols-1 gap-3 sm:grid-cols-2 2xl:hidden">
       {points.map((point, index) => (
         <div key={point.title} className="flex min-w-0 items-start gap-3 rounded-xl px-4 py-4 text-white" style={glassStyle}>
-          <span className="montserrat-rg flex h-10 w-10 shrink-0 items-center justify-center rounded-full border-2 border-[#1B50E8] bg-white text-sm font-bold text-[#1B50E8]">
+          <span className="montserrat-rg flex h-10 w-10 shrink-0 items-center justify-center rounded-[9999px] border-2 border-[#1B50E8] bg-white text-sm font-bold text-[#1B50E8]">
             {String(index + 1).padStart(2, "0")}
           </span>
           <div className="min-w-0">
@@ -252,9 +252,9 @@ function DigitalTeam() {
     <div className="grid w-full min-w-0 grid-cols-1 items-center gap-4 sm:grid-cols-2 sm:gap-5 xl:grid-cols-[minmax(0,1fr)_120px_minmax(0,1fr)]">
       <div className="flex flex-col gap-4">{roles.slice(0, 2).map(renderRole)}</div>
       <div className="relative hidden h-[120px] w-[120px] items-center justify-center xl:flex">
-        <span className="absolute -inset-6 rounded-full border border-white/10" />
-        <span className="absolute -inset-12 rounded-full border border-white/5" />
-        <div className="flex h-full w-full items-center justify-center rounded-full bg-[#1B50E8]">
+        <span className="absolute -inset-6 rounded-[9999px] border border-white/10" />
+        <span className="absolute -inset-12 rounded-[9999px] border border-white/5" />
+        <div className="flex h-full w-full items-center justify-center rounded-[9999px] bg-[#1B50E8]">
           <h4 className="montserrat-rg text-center text-2xl font-bold leading-tight text-white">
             Digital
             <br />
@@ -293,7 +293,7 @@ function ScaleCircles() {
       {circles.map((circle) => (
         <div
           key={circle.title}
-          className="flex aspect-square w-full max-w-[285px] flex-col items-center justify-center rounded-full px-5 text-center text-white sm:px-8"
+          className="flex aspect-square w-full max-w-[285px] flex-col items-center justify-center rounded-[9999px] px-5 text-center text-white sm:px-8"
           style={
             circle.blue
               ? { background: "linear-gradient(135deg, #0075FF, #1B50E8)" }
