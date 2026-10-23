@@ -77,21 +77,19 @@ const cardStyle = {
 
 function WorkingProcess() {
   const [stacked, setStacked] = useState(false);
-  const boxRef = useRef(null);
+  const cardStackRef = useRef(null);
   const cardRefs = useRef([]);
 
-  // Keep every step in normal document flow on small or very short screens.
+  // Keep reduced-motion users on the accessible, non-pinned card layout.
   useLayoutEffect(() => {
-    const query = window.matchMedia(
-      "(min-width: 768px) and (min-height: 700px) and (prefers-reduced-motion: no-preference)",
-    );
+    const query = window.matchMedia("(prefers-reduced-motion: no-preference)");
     const update = () => setStacked(query.matches);
     update();
     query.addEventListener("change", update);
     return () => query.removeEventListener("change", update);
   }, []);
 
-  // Pin the box on desktop and laptop viewports with room for the card stack.
+  // Pin only the card stack so the heading and CTA remain in normal flow.
   useLayoutEffect(() => {
     if (!stacked) return undefined;
     const ctx = gsap.context(() => {
@@ -108,11 +106,12 @@ function WorkingProcess() {
       const timeline = gsap.timeline({
         defaults: { ease: "power2.out" },
         scrollTrigger: {
-          trigger: boxRef.current,
+          trigger: cardStackRef.current,
           start: "top 24px",
           end: `+=${(steps.length - 1) * SCROLL_PER_STEP}`,
-          pin: true,
+          pin: cardStackRef.current,
           scrub: 1,
+          invalidateOnRefresh: true,
         },
       });
 
@@ -134,62 +133,61 @@ function WorkingProcess() {
             "<",
           );
       });
-    }, boxRef);
+    }, cardStackRef);
 
     return () => ctx.revert();
   }, [stacked]);
 
   return (
     <section className="working-process-section relative z-10 -mt-16 sm:-mt-20 lg:-mt-[120px]">
-      <div ref={boxRef}>
-        <div className="custom-container w-full px-5 sm:px-8 lg:px-12">
-          <div
-            className="rounded-[20px] bg-white px-5 py-8 sm:px-10 sm:pb-14 sm:pt-12"
-            style={boxStyle}
-          >
-            <div className="start-txt-2 text-center">
-              <h2 className="montserrat-rg text-[30px] sm:text-[36px] lg:text-[40px] xl:text-5xl font-extrabold leading-tight text-black">
-                Our Working <span>Process</span>
-              </h2>
-            </div>
+      <div className="custom-container w-full px-5 sm:px-8 lg:px-12">
+        <div
+          className="rounded-[20px] bg-white px-5 py-8 sm:px-10 sm:pb-14 sm:pt-12"
+          style={boxStyle}
+        >
+          <div className="start-txt-2 text-center">
+            <h2 className="montserrat-rg text-[30px] sm:text-[36px] lg:text-[40px] xl:text-5xl font-extrabold leading-tight text-black">
+              Our Working <span>Process</span>
+            </h2>
+          </div>
 
-            {/* Cards stack on top of each other as the page scrolls */}
-            <div
-              className="relative mx-auto mt-8 grid max-w-[1140px] gap-4 sm:mt-10"
-              style={stacked ? { height: 330 + (steps.length - 1) * STACK_OFFSET } : undefined}
-            >
-              {steps.map((step, index) => (
-                <div
-                  key={step.title}
-                  ref={(el) => (cardRefs.current[index] = el)}
-                  className={`${stacked ? "absolute inset-x-0 top-0 min-h-[330px]" : "relative"} min-w-0 rounded-2xl p-5 sm:p-8 lg:p-10`}
-                  style={{ ...cardStyle, zIndex: index }}
-                >
-                  <div className="process-card-content">
-                    <div className="flex items-center gap-5 sm:gap-10">
-                      <span className="montserrat-rg text-base sm:text-lg lg:text-xl font-semibold text-[#0A1F44]">
-                        {String(index + 1).padStart(2, "0")}
-                      </span>
-                      <span className="h-[2px] flex-1 bg-[#1B50E8]/70" />
-                    </div>
-                    <div className="pt-6 sm:pl-[72px] sm:pt-8">
-                      <h3 className="montserrat-rg text-2xl sm:text-[36px] lg:text-[44px] font-semibold leading-tight text-[#0A1F44]">
-                        {step.title}
-                      </h3>
-                      <p className="satoshi-md pt-3 text-lg sm:text-xl lg:text-2xl leading-[1.4] text-[#0A1F44]">
-                        {step.text}
-                      </p>
-                    </div>
+          {/* Cards stack on top of each other as the page scrolls */}
+          <div
+            ref={cardStackRef}
+            className="relative mx-auto mt-8 grid max-w-[1140px] gap-4 sm:mt-10"
+            style={stacked ? { height: 330 + (steps.length - 1) * STACK_OFFSET } : undefined}
+          >
+            {steps.map((step, index) => (
+              <div
+                key={step.title}
+                ref={(el) => (cardRefs.current[index] = el)}
+                className={`${stacked ? "absolute inset-x-0 top-0 min-h-[330px]" : "relative"} min-w-0 rounded-2xl p-5 sm:p-8 lg:p-10`}
+                style={{ ...cardStyle, zIndex: index }}
+              >
+                <div className="process-card-content">
+                  <div className="flex items-center gap-5 sm:gap-10">
+                    <span className="montserrat-rg text-base sm:text-lg lg:text-xl font-semibold text-[#0A1F44]">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <span className="h-[2px] flex-1 bg-[#1B50E8]/70" />
+                  </div>
+                  <div className="pt-6 sm:pl-[72px] sm:pt-8">
+                    <h3 className="montserrat-rg text-2xl sm:text-[36px] lg:text-[44px] font-semibold leading-tight text-[#0A1F44]">
+                      {step.title}
+                    </h3>
+                    <p className="satoshi-md pt-3 text-lg sm:text-xl lg:text-2xl leading-[1.4] text-[#0A1F44]">
+                      {step.text}
+                    </p>
                   </div>
                 </div>
-              ))}
-            </div>
+              </div>
+            ))}
+          </div>
 
-            <div className="mt-10 text-center">
-              <button className="montserrat-bd rounded-md bg-[#1B50E8] px-8 py-4 text-base sm:text-lg lg:text-xl font-bold uppercase text-white">
-                Outsource With Us
-              </button>
-            </div>
+          <div className="mt-10 text-center">
+            <button className="montserrat-bd rounded-md bg-[#1B50E8] px-8 py-4 text-base sm:text-lg lg:text-xl font-bold uppercase text-white">
+              Outsource With Us
+            </button>
           </div>
         </div>
       </div>
