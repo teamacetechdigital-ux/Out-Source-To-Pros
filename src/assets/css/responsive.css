@@ -1,0 +1,62 @@
+/* Responsive overrides for the existing custom CSS; component layouts use Tailwind. */
+.prnt-text-box h2,
+.start-txt-2 h2 {
+  line-height: 1.2;
+}
+
+.label-box {
+  height: auto;
+  min-height: 190px;
+}
+
+.gridiant-text-cust {
+  font-size: clamp(2.25rem, 8vw, 9.375rem);
+  line-height: 1.1;
+}
+
+.industry-slider-card h3 {
+  font-size: clamp(1.5rem, 2.6vw, 2.375rem);
+  line-height: 1.15;
+}
+
+@media (max-width: 1279px) {
+  .banner { padding: 12rem 0 14rem; }
+  .banner-count { margin-top: 8rem; }
+  .white-textarea { margin-top: -10rem; }
+  .prnt-text-box { padding: 3rem 0; }
+  .tab-prnt-cont { width: 100%; margin-top: 1rem; }
+  .tabs-col-1 { padding: 1.5rem; }
+  .tabs-col-2 { padding: 2rem; }
+  .tabs-col-2::before { top: auto; bottom: 0; pointer-events: none; }
+  .white-label-flex { padding: 0 2rem; }
+  .label-box { padding: 1.5rem; margin-top: 1.5rem; }
+  .industry-slider-card { flex-basis: clamp(15rem, 38vw, 24rem); height: 360px; }
+  .industry-slider-card h3 { font-size: 28px; line-height: 1.15; }
+  .business-outsource-section { padding: 5rem 0; }
+}
+
+@media (max-width: 639px) {
+  .banner { padding: 10rem 0 8rem; }
+  .banner-count { margin-top: 4rem; padding-top: 2rem; }
+  .white-textarea { margin-top: -4rem; }
+  .prnt-text-box { padding: 2rem 0; border-radius: 1.25rem; }
+  .prnt-text-box h2 span,
+  .start-txt h2 span,
+  .start-txt-2 h2 span { padding-right: 0.25rem; }
+  .marquee-section { padding: 3rem 0 1.5rem; }
+  .marquee-row + .marquee-row { margin-top: 1rem; }
+  .marquee-icon-button { padding: 0.65rem 1rem; gap: 0.5rem; font-size: 0.875rem; }
+  .marquee-icon-button img { width: 28px; height: 28px; object-fit: contain; }
+  .outsource-tabs { padding: 3rem 0; }
+  .tabs-col-1, .tabs-col-2 { padding: 1.25rem; }
+  .tabs-col-2 h3 { font-size: 24px; }
+  .grid-gaping, .tab-button-inner { margin-top: 1.5rem; }
+  .industry-section { padding: 3rem 0 7rem; }
+  .industry-slider-card { flex-basis: min(78vw, 22rem); height: 300px; }
+  .industry-slider-card h3 { font-size: 24px; }
+  .white-label-service-section { margin-top: -3rem; }
+  .white-label-flex { padding: 0 1.25rem; }
+  .label-box { min-height: 0; padding: 1.25rem; }
+  .business-outsource-section { padding: 3rem 0; }
+  .start-txt-2 h4 { padding-top: 2rem; }
+}
