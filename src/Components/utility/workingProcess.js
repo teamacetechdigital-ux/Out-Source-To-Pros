@@ -80,14 +80,48 @@ function WorkingProcess() {
   const cardStackRef = useRef(null);
   const cardRefs = useRef([]);
 
-  // Keep reduced-motion users on the accessible, non-pinned card layout.
+  // Use a pinned stack on larger screens and normal-flow cards on phones.
   useLayoutEffect(() => {
-    const query = window.matchMedia("(prefers-reduced-motion: no-preference)");
+    const query = window.matchMedia(
+      "(min-width: 768px) and (prefers-reduced-motion: no-preference)",
+    );
     const update = () => setStacked(query.matches);
     update();
     query.addEventListener("change", update);
     return () => query.removeEventListener("change", update);
   }, []);
+
+  // Reveal mobile cards as they enter view without pinning the page.
+  useLayoutEffect(() => {
+    if (stacked) return undefined;
+
+    const query = window.matchMedia(
+      "(max-width: 767px) and (prefers-reduced-motion: no-preference)",
+    );
+    if (!query.matches) return undefined;
+
+    const ctx = gsap.context(() => {
+      cardRefs.current.forEach((card) => {
+        gsap.fromTo(
+          card,
+          { autoAlpha: 0, y: 24 },
+          {
+            autoAlpha: 1,
+            y: 0,
+            duration: 0.6,
+            ease: "power2.out",
+            scrollTrigger: {
+              trigger: card,
+              start: "top 88%",
+              once: true,
+            },
+          },
+        );
+      });
+    }, cardStackRef);
+
+    return () => ctx.revert();
+  }, [stacked]);
 
   // Pin only the card stack so the heading and CTA remain in normal flow.
   useLayoutEffect(() => {
