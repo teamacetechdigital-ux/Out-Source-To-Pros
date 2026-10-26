@@ -110,7 +110,7 @@ function HeroSplit({ content }) {
                 <span
                   key={label}
                   ref={(el) => (labelRefs.current[index] = el)}
-                  className="montserrat-bd absolute whitespace-nowrap rounded-full bg-white px-2.5 py-1.5 text-[8px] font-bold uppercase text-black sm:px-4 sm:py-2 sm:text-[10px] xl:text-[11px]"
+                  className="montserrat-bd absolute whitespace-nowrap rounded-[9999px] bg-white px-2.5 py-1.5 text-[8px] font-bold uppercase text-black sm:px-4 sm:py-2 sm:text-[10px] xl:text-[11px]"
                   style={{ ...labelStyle, ...labelPositions[index % labelPositions.length] }}
                 >
                   {label}

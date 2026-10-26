@@ -161,7 +161,7 @@ function ServiceTabs({ content }) {
                   <ul className="satoshi-md mt-4 space-y-1.5 text-sm text-black">
                     {tab.includes.map((item) => (
                       <li key={item} className="flex items-start gap-2.5">
-                        <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#1B50E8]" />
+                        <span className="mt-[7px] h-1.5 w-1.5 shrink-0 rounded-[9999px] bg-[#1B50E8]" />
                         {item}
                       </li>
                     ))}

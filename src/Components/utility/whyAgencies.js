@@ -95,11 +95,11 @@ function WhyAgencies({ content }) {
         {/* Shown above the table so it's visible before the long rows */}
         {scrollbar.size < 1 && (
           <div
-            className="relative mx-auto mt-6 h-2 w-full max-w-[320px] overflow-hidden rounded-full bg-[#E5E9F2]"
+            className="relative mx-auto mt-6 h-2 w-full max-w-[320px] overflow-hidden rounded-[9999px] bg-[#E5E9F2]"
             aria-hidden="true"
           >
             <div
-              className="absolute inset-y-0 rounded-full bg-[#1B50E8]"
+              className="absolute inset-y-0 rounded-[9999px] bg-[#1B50E8]"
               style={{
                 width: `${scrollbar.size * 100}%`,
                 left: `${scrollbar.offset * 100}%`,
