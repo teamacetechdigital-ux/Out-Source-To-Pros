@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { withBreaks } from "../../utils/text";
 
 // Time (ms) for one progress bar to fill before the next slide shows.
 const SLIDE_DURATION = 5000;
@@ -73,35 +74,23 @@ const icons = {
 
 /* ---------- Right side visuals for each slide ---------- */
 
-function ServiceCards() {
-  const cards = [
-    {
-      title: "Web & Development",
-      text: "Websites, ecommerce, apps, and custom builds.",
-      icon: icons.code,
-      blue: true,
-      className: "w-full max-w-[320px] py-6 sm:py-9 -mt-0 sm:-mt-8 justify-self-end",
-    },
-    {
-      title: "SEO & Marketing",
-      text: "Search, content, paid media, and lead generation.",
-      icon: icons.seo,
-      className: "w-full max-w-[270px] py-5 sm:py-7 self-end",
-    },
-    {
-      title: "Creative & Design",
-      text: "UI/UX, branding, graphics, and digital assets.",
-      icon: icons.design,
-      className: "w-full max-w-[270px] py-5 sm:py-7 justify-self-end",
-    },
-    {
-      title: "Automation & Support",
-      text: "CRM workflows, integrations, maintenance, and technical support.",
-      icon: icons.automation,
-      blue: true,
-      className: "w-full max-w-[290px] py-5 sm:py-7",
-    },
-  ];
+// Layout of each service card, by position (text comes from props).
+const serviceCardLayouts = [
+  { blue: true, className: "w-full max-w-[320px] py-6 sm:py-9 -mt-0 sm:-mt-8 justify-self-end" },
+  { className: "w-full max-w-[270px] py-5 sm:py-7 self-end" },
+  { className: "w-full max-w-[270px] py-5 sm:py-7 justify-self-end" },
+  { blue: true, className: "w-full max-w-[290px] py-5 sm:py-7" },
+];
+
+// Angle (deg) of each numbered point around the white-label circle.
+const whiteLabelAngles = [-55, -19, 19, 55];
+
+function ServiceCards({ items }) {
+  const cards = items.map((item, index) => ({
+    ...item,
+    ...serviceCardLayouts[index],
+    icon: icons[item.icon],
+  }));
 
   return (
     <div className="grid w-full min-w-0 grid-cols-2 gap-2 sm:gap-3">
@@ -126,29 +115,11 @@ function ServiceCards() {
   );
 }
 
-function WhiteLabelCircle() {
-  const points = [
-    {
-      title: "Invisible Delivery",
-      text: "Work completed behind your agency brand.",
-      angle: -55,
-    },
-    {
-      title: "Quality Control",
-      text: "Structured reviews before work reaches your client.",
-      angle: -19,
-    },
-    {
-      title: "Flexible Capacity",
-      text: "Add production support when demand increases.",
-      angle: 19,
-    },
-    {
-      title: "Agency-Friendly Process",
-      text: "Built around your workflow and communication preferences.",
-      angle: 55,
-    },
-  ];
+function WhiteLabelCircle({ title, items }) {
+  const points = items.map((item, index) => ({
+    ...item,
+    angle: whiteLabelAngles[index],
+  }));
   const size = 330;
   const radius = size / 2;
 
@@ -162,9 +133,7 @@ function WhiteLabelCircle() {
         <div className="flex h-[250px] w-[250px] items-center justify-center rounded-[9999px] bg-[#0A1D5C] p-2">
           <div className="flex h-full w-full items-center justify-center rounded-[9999px] border border-white/40">
             <h4 className="montserrat-rg text-center text-[26px] font-bold leading-tight text-white">
-              White-Label
-              <br />
-              Fulfillment
+              {withBreaks(title, "always")}
             </h4>
           </div>
         </div>
@@ -212,29 +181,8 @@ function WhiteLabelCircle() {
   );
 }
 
-function DigitalTeam() {
-  const roles = [
-    {
-      title: "Developers",
-      text: "WordPress, Shopify, frontend, backend, and custom development.",
-      icon: icons.code,
-    },
-    {
-      title: "Designers",
-      text: "Web design, UI/UX, branding, and creative production.",
-      icon: icons.design,
-    },
-    {
-      title: "Marketing Specialists",
-      text: "SEO, content, advertising, and campaign support.",
-      icon: icons.team,
-    },
-    {
-      title: "Project Support",
-      text: "Project coordination, QA, reporting, and ongoing delivery.",
-      icon: icons.support,
-    },
-  ];
+function DigitalTeam({ title, items }) {
+  const roles = items.map((item) => ({ ...item, icon: icons[item.icon] }));
 
   const renderRole = (role) => (
     <div
@@ -256,9 +204,7 @@ function DigitalTeam() {
         <span className="absolute -inset-12 rounded-[9999px] border border-white/5" />
         <div className="flex h-full w-full items-center justify-center rounded-[9999px] bg-[#1B50E8]">
           <h4 className="montserrat-rg text-center text-2xl font-bold leading-tight text-white">
-            Digital
-            <br />
-            Team
+            {withBreaks(title, "always")}
           </h4>
         </div>
       </div>
@@ -267,26 +213,8 @@ function DigitalTeam() {
   );
 }
 
-function ScaleCircles() {
-  const circles = [
-    {
-      title: "On-Demand Capacity",
-      text: "Increase support around active workload.",
-      blue: true,
-    },
-    {
-      title: "Multi-Service Expansion",
-      text: "Add new digital services without new departments.",
-    },
-    {
-      title: "Ongoing Fulfillment",
-      text: "Reliable monthly production and technical support.",
-    },
-    {
-      title: "Flexible Resourcing",
-      text: "Adjust team size and expertise as priorities change.",
-    },
-  ];
+function ScaleCircles({ items }) {
+  const circles = items.map((item, index) => ({ ...item, blue: index === 0 }));
 
   return (
     <div className="grid w-full max-w-[600px] grid-cols-1 justify-items-center gap-3 sm:grid-cols-2 sm:gap-4">
@@ -310,58 +238,22 @@ function ScaleCircles() {
   );
 }
 
-/* ---------- Slides ---------- */
+// Picks the right side visual for a slide by its JSON "type".
+const visuals = {
+  serviceCards: ServiceCards,
+  whiteLabelCircle: WhiteLabelCircle,
+  digitalTeam: DigitalTeam,
+  scaleCircles: ScaleCircles,
+};
 
-const slides = [
-  {
-    label: "End-to-End",
-    tagline: "Everything under one roof",
-    title: (
-      <>
-        Complete Digital
-        <br />
-        Fulfillment
-      </>
-    ),
-    text: "Handle more client work without managing multiple vendors. Our team supports strategy, design, development, SEO, marketing, automation, and ongoing digital production through one coordinated delivery system.",
-    visual: <ServiceCards />,
-  },
-  {
-    label: "White-Label",
-    tagline: "Deliver more under your brand",
-    title: (
-      <>
-        White-Label
-        <br />
-        Fulfillment
-      </>
-    ),
-    text: "Expand your agency's service capacity while keeping the client relationship entirely yours. We work behind the scenes using your brand, processes, standards, and preferred communication model.",
-    visual: <WhiteLabelCircle />,
-  },
-  {
-    label: "Dedicated Teams",
-    tagline: "Extend your internal capabilities",
-    title: (
-      <>
-        Your Extended Digital
-        <br />
-        Team
-      </>
-    ),
-    text: "Add experienced specialists without adding full-time internal roles. Build a dedicated remote team around the exact skills your business or agency needs.",
-    visual: <DigitalTeam />,
-  },
-  {
-    label: "Scale & Support",
-    tagline: "Grow without delivery bottlenecks",
-    title: <>Scale With Confidence</>,
-    text: "Increase delivery capacity as your client base and workload grow. Our flexible support model lets you expand resources, add new capabilities, and maintain consistent execution without rebuilding your internal team.",
-    visual: <ScaleCircles />,
-  },
-];
+function SlideVisual({ visual }) {
+  const Visual = visuals[visual.type];
+  return Visual ? <Visual title={visual.title} items={visual.items} /> : null;
+}
 
-function ScaleDelivery() {
+function ScaleDelivery({ content }) {
+  const { slides } = content;
+  const slideCount = slides.length;
   const [active, setActive] = useState(0);
   const fillRefs = useRef([]);
 
@@ -376,32 +268,29 @@ function ScaleDelivery() {
       fill: "forwards",
     });
     animation.onfinish = () =>
-      setActive((current) => (current + 1) % slides.length);
+      setActive((current) => (current + 1) % slideCount);
 
     return () => animation.cancel();
-  }, [active]);
+  }, [active, slideCount]);
 
   return (
     <section
-      className="scale-delivery-section relative -mt-24 pb-20 pt-32 sm:-mt-32 sm:pb-28 sm:pt-48 lg:-mt-[220px] lg:pb-40 lg:pt-[320px]" style={sectionStyle}
+      className="scale-delivery-section relative overflow-x-clip -mt-24 pb-20 pt-32 sm:-mt-32 sm:pb-28 sm:pt-48 lg:-mt-[220px] lg:pb-40 lg:pt-[320px]" style={sectionStyle}
     >
       <div className="custom-container px-5 sm:px-8 lg:px-12">
         <div className="start-txt">
-          <h2 className="montserrat-rg text-[32px] font-extrabold leading-tight text-white sm:text-4xl lg:text-[60px]">
-            Scale Delivery Without
+          <h2 className="montserrat-rg text-[32px] font-bold leading-tight text-white sm:text-4xl lg:text-[40px] xl:text-[44px]">
+            {content.title}
             {" "}<br className="hidden sm:block" />
-            <span>Scaling Overhead</span>
+            <span>{content.highlight}</span>
           </h2>
-          <p className="satoshi-md pt-4 text-base font-medium text-white sm:text-lg lg:text-xl">
-            One outsourcing hub for white-label fulfillment, dedicated talent,
-            {" "}<br className="hidden sm:block" /> specialist support, and ongoing delivery across web,
-            marketing,
-            {" "}<br className="hidden sm:block" /> software, and digital operations.
+          <p className="satoshi-md pt-4 text-base font-medium text-white lg:text-[15px]">
+            {withBreaks(content.text)}
           </p>
         </div>
 
-        {/* Progress bar tabs */}
-        <div className="mt-8 grid grid-cols-2 items-start gap-x-4 gap-y-5 sm:mt-10 sm:gap-x-5 lg:mt-12 lg:grid-cols-4" role="tablist">
+        {/* Progress bar tabs; on desktop the active bar is 1.67x wider, as in Figma */}
+        <div className="mt-8 grid grid-cols-4 items-start gap-x-2 sm:mt-10 sm:gap-x-4 lg:mt-12 lg:flex lg:gap-x-5" role="tablist">
           {slides.map((slide, index) => (
             <button
               key={slide.label}
@@ -409,7 +298,9 @@ function ScaleDelivery() {
               role="tab"
               aria-selected={active === index}
               onClick={() => setActive(index)}
-              className="w-full min-w-0 cursor-pointer text-left"
+              className={`w-full min-w-0 cursor-pointer text-left lg:basis-0 lg:transition-[flex-grow] lg:duration-700 ${
+                active === index ? "lg:grow-[1.67]" : "lg:grow"
+              }`}
             >
               <span className="relative block h-1 w-full overflow-hidden bg-white">
                 <span
@@ -418,14 +309,14 @@ function ScaleDelivery() {
                 />
               </span>
               <span
-                className={`block pt-2 transition-opacity duration-500 sm:pt-4 ${
+                className={`hidden pt-4 transition-opacity duration-500 lg:block lg:whitespace-nowrap ${
                   active === index ? "opacity-100" : "opacity-0"
                 }`}
               >
                 <span className="satoshi-reg block text-sm text-white sm:text-xl">
                   {slide.label}
                 </span>
-                <span className="montserrat-rg block pt-1 text-sm font-bold leading-tight text-[#3086FF] sm:text-lg lg:text-[26px]">
+                <span className="montserrat-rg block pt-1 text-sm font-bold leading-tight text-[#3086FF] sm:text-lg lg:text-[24px]">
                   {slide.tagline}
                 </span>
               </span>
@@ -433,12 +324,22 @@ function ScaleDelivery() {
           ))}
         </div>
 
+        {/* Phones and tablets: the bars sit in one row, so the active label goes below them */}
+        <div className="pt-4 lg:hidden" aria-live="polite">
+          <span className="satoshi-reg block text-sm text-white sm:text-xl">
+            {slides[active].label}
+          </span>
+          <span className="montserrat-rg block pt-1 text-base font-bold leading-tight text-[#3086FF] sm:text-lg">
+            {slides[active].tagline}
+          </span>
+        </div>
+
         {/* Slides fade into each other */}
         <div className="mt-10 grid min-w-0 sm:mt-12 lg:mt-16">
           {slides.map((slide, index) => (
             <div
               key={slide.label}
-              className={`col-start-1 row-start-1 grid min-w-0 grid-cols-1 items-center gap-8 transition-opacity duration-700 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:gap-10 ${
+              className={`col-start-1 row-start-1 grid min-w-0 grid-cols-1 content-start items-center gap-8 lg:content-center transition-opacity duration-700 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)] lg:gap-10 ${
                 active === index
                   ? "opacity-100"
                   : "pointer-events-none opacity-0"
@@ -446,17 +347,17 @@ function ScaleDelivery() {
               aria-hidden={active !== index}
             >
               <div className="min-w-0 max-w-[560px]">
-                <h3 className="montserrat-rg text-2xl font-bold leading-tight text-white sm:text-3xl lg:text-[34px]">
-                  {slide.title}
+                <h3 className="montserrat-rg text-2xl font-bold leading-tight text-white sm:text-3xl lg:text-[30px]">
+                  {withBreaks(slide.title, "always")}
                 </h3>
-                <p className="satoshi-md pt-4 text-base font-medium leading-[1.5] text-white sm:pt-5 sm:text-lg">
+                <p className="satoshi-md pt-4 text-base font-medium leading-[1.5] text-white sm:pt-5 sm:text-lg lg:text-[15px]">
                   {slide.text}
                 </p>
-                <button className="montserrat-bd mt-6 rounded-md bg-[#1B50E8] px-6 py-4 text-base font-bold uppercase text-white sm:mt-8 sm:px-8 sm:text-lg lg:mt-10 lg:text-xl">
-                  Outsource With Us
+                <button className="montserrat-bd mt-6 rounded-md bg-[#1B50E8] px-6 py-4 text-base font-bold uppercase text-white sm:mt-8 sm:px-8 sm:text-lg lg:mt-10">
+                  {content.buttonLabel}
                 </button>
               </div>
-              <div className="flex min-w-0 max-w-full justify-center overflow-hidden lg:overflow-visible">{slide.visual}</div>
+              <div className="flex min-w-0 max-w-full justify-center overflow-hidden lg:overflow-visible"><SlideVisual visual={slide.visual} /></div>
             </div>
           ))}
         </div>

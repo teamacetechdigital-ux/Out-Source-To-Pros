@@ -6,16 +6,16 @@
 
 .label-box {
   height: auto;
-  min-height: 190px;
+  min-height: 137px;
 }
 
 .gridiant-text-cust {
-  font-size: clamp(2.25rem, 8vw, 9.375rem);
+  font-size: clamp(2.25rem, 10vw, 9.125rem);
   line-height: 1.1;
 }
 
 .industry-slider-card h3 {
-  font-size: clamp(1.5rem, 2.6vw, 2.375rem);
+  font-size: clamp(1.5rem, 2vw, 1.75rem);
   line-height: 1.15;
 }
 
@@ -31,7 +31,13 @@
       url(../imgs/industry-bg.jpg);
     background-position: center;
   }
-  .banner { padding: 12rem 0 14rem; }
+  .banner {
+    padding: 12rem 0 14rem;
+    /* Darken the light lower part so the white stats stay readable. */
+    background-image:
+      linear-gradient(180deg, rgba(10, 22, 83, 0) 35%, rgba(10, 22, 83, 0.55) 100%),
+      url(../imgs/banner-bg.jpg);
+  }
   .banner-count { margin-top: 8rem; }
   .white-textarea { margin-top: -10rem; }
   .prnt-text-box { padding: 3rem 0; }

@@ -1,99 +1,8 @@
-import React from "react";
+import React, { useCallback, useEffect, useRef, useState } from "react";
+import { withBreaks } from "../../utils/text";
 
-const columns = [
-  "Features",
-  "Freelancers",
-  <>
-    Traditional
-    {" "}<br className="hidden sm:block" />
-    Agencies
-  </>,
-  <>
-    Full-Time
-    {" "}<br className="hidden sm:block" />
-    Team
-  </>,
-  <>
-    Outsource to
-    {" "}<br className="hidden sm:block" />
-    Pros
-  </>,
-];
-
-const rows = [
-  {
-    feature: "Range of Services",
-    freelancers: "Usually limited to one or two specialties",
-    agencies: "Broader services, but often split across departments",
-    fullTime: "Depends on who you hire",
-    outsource:
-      "Web, development, SEO, paid media, design, automation, software, and support in one team",
-  },
-  {
-    feature: "Turnaround Speed",
-    freelancers: "Depends on schedule and workload",
-    agencies: "Can slow down through multiple approval layers",
-    fullTime: "Limited to internal capacity",
-    outsource: "Dedicated delivery teams built around project needs",
-  },
-  {
-    feature: "Technical Expertise",
-    freelancers: "Based on one person's skill set",
-    agencies: "Varies by agency team",
-    fullTime: "Requires multiple specialist hires",
-    outsource:
-      "Access developers, SEO specialists, designers, marketers, and automation experts as needed",
-  },
-  {
-    feature: "White-Label Support",
-    freelancers: "Rarely structured for agencies",
-    agencies: "Often limited or unavailable",
-    fullTime: "Not applicable",
-    outsource:
-      "Built for confidential white-label fulfillment and agency delivery",
-  },
-  {
-    feature: "Cost Structure",
-    freelancers: "Lower upfront, but inconsistent availability",
-    agencies: "Higher agency overhead",
-    fullTime: "Salaries, benefits, recruitment, and software costs",
-    outsource:
-      "Flexible project, monthly, dedicated team, and staff augmentation models",
-  },
-  {
-    feature: "Project Management",
-    freelancers: "Often managed by the client",
-    agencies: "Usually included",
-    fullTime: "Managed internally",
-    outsource:
-      "Structured communication, workflows, QA, and delivery ownership",
-  },
-  {
-    feature: "Consistency & Quality",
-    freelancers: "Can vary from project to project",
-    agencies: "Depends on internal processes",
-    fullTime: "Depends on individual employees",
-    outsource:
-      "Defined workflows, specialist review, and quality control across services",
-  },
-  {
-    feature: "Ongoing Support",
-    freelancers: "Often ends after project completion",
-    agencies: "Depends on retainer structure",
-    fullTime: "Limited by team bandwidth",
-    outsource:
-      "Ongoing maintenance, marketing, development, and digital operations support",
-  },
-  {
-    feature: "Service Expansion",
-    freelancers: "Requires finding additional freelancers",
-    agencies: "May require another vendor",
-    fullTime: "Requires additional hiring",
-    outsource: "Add new capabilities without rebuilding your team",
-  },
-];
-
-const gridColumns = "grid-cols-[19fr_18fr_18fr_18fr_20fr]";
+// Column widths from the homepage Figma table; pages can pass their own.
+const defaultColumnWidths = [19, 18, 18, 18, 20];
 
 const tableCardStyle = {
   boxShadow: "0px 10px 40px rgba(27, 80, 232, 0.12)",
@@ -103,10 +12,7 @@ const headerCellStyle = {
   background: "linear-gradient(180deg, #A1D1FF 0%, #FFFFFF 100%)",
 };
 
-const highlightColumnStyle = {
-  width: "calc(100% * 20 / 93)",
-  background: "linear-gradient(180deg, #1B50E8 0%, #0075FF 100%)",
-};
+const highlightBackground = "linear-gradient(180deg, #1B50E8 0%, #0075FF 100%)";
 
 function CrossIcon() {
   return (
@@ -147,81 +53,128 @@ function CheckIcon() {
   );
 }
 
-function WhyAgencies() {
+function WhyAgencies({ content }) {
+  const { columns, rows } = content.table;
+  const columnWidths = content.table.columnWidths || defaultColumnWidths;
+  const totalWidth = columnWidths.reduce((sum, width) => sum + width, 0);
+  const lastColumn = columns.length - 1;
+  const tableRef = useRef(null);
+  const [scrollbar, setScrollbar] = useState({ size: 1, offset: 0 });
+
+  // Custom scrollbar under the table: phones hide the native one, so this
+  // shows how much of the table is visible and where it is scrolled to.
+  const updateScrollbar = useCallback(() => {
+    const table = tableRef.current;
+    if (!table) return;
+    const size = table.clientWidth / table.scrollWidth;
+    const maxScroll = table.scrollWidth - table.clientWidth;
+    const offset = maxScroll > 0 ? (table.scrollLeft / maxScroll) * (1 - size) : 0;
+    setScrollbar({ size, offset });
+  }, []);
+
+  useEffect(() => {
+    updateScrollbar();
+    window.addEventListener("resize", updateScrollbar);
+    return () => window.removeEventListener("resize", updateScrollbar);
+  }, [updateScrollbar]);
+
   return (
     <section className="why-agencies-section relative z-10 pb-16 lg:pb-24">
       <div className="custom-container px-5 sm:px-8 lg:px-12">
         <div className="start-txt-2 text-center">
-          <h2 className="montserrat-rg font-extrabold text-[30px] sm:text-[40px] lg:text-[48px] xl:text-[60px] text-black">
-            Why Agencies Choose
+          <h2 className="montserrat-rg font-bold text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[44px] text-black">
+            {content.title}
             {" "}<br className="hidden sm:block" />
-            <span>Outsource to Pros</span>
+            <span>{content.highlight}</span>
           </h2>
-          <p className="satoshi-md text-base sm:text-lg lg:text-xl font-medium text-black">
-            Compare the most common ways to handle digital delivery, from
-            one-off
-            {" "}<br className="hidden sm:block" /> freelancers to building a full internal team.
+          <p className="satoshi-md text-[15px] font-medium text-black">
+            {withBreaks(content.description)}
           </p>
         </div>
 
-        <p className="mt-6 text-center text-sm text-[#1B50E8] xl:hidden">
-          Swipe left or right to compare all options.
-        </p>
+        {/* Shown above the table so it's visible before the long rows */}
+        {scrollbar.size < 1 && (
+          <div
+            className="relative mx-auto mt-6 h-2 w-full max-w-[320px] overflow-hidden rounded-full bg-[#E5E9F2]"
+            aria-hidden="true"
+          >
+            <div
+              className="absolute inset-y-0 rounded-full bg-[#1B50E8]"
+              style={{
+                width: `${scrollbar.size * 100}%`,
+                left: `${scrollbar.offset * 100}%`,
+              }}
+            />
+          </div>
+        )}
+
         <div
-          role="region" aria-label="Compare delivery options. Scroll horizontally to see all columns." tabIndex={0}
-          className="mt-8 max-w-full overflow-x-auto overscroll-x-contain rounded-[20px] bg-white p-3 lg:mt-12"
+          ref={tableRef}
+          onScroll={updateScrollbar}
+          role="region" aria-label={content.tableAriaLabel} tabIndex={0}
+          className="mt-4 max-w-full overflow-x-auto overscroll-x-contain rounded-[20px] bg-white p-3 [scrollbar-width:none] lg:mt-12 xl:-mx-7 xl:max-w-none [&::-webkit-scrollbar]:hidden"
           style={tableCardStyle}
         >
-          <div className={`relative grid min-w-[1100px] ${gridColumns}`}>
+          <div
+            className="relative grid"
+            style={{
+              gridTemplateColumns: columnWidths.map((width) => `${width}fr`).join(" "),
+              minWidth: columns.length >= 5 ? 880 : 640,
+            }}
+          >
             <div
               className="pointer-events-none absolute inset-y-0 right-0 rounded-xl"
-              style={highlightColumnStyle}
+              style={{
+                width: `calc(100% * ${columnWidths[lastColumn]} / ${totalWidth})`,
+                background: highlightBackground,
+              }}
               aria-hidden="true"
             />
 
             {columns.map((column, index) => {
-              const isHighlight = index === columns.length - 1;
+              const isHighlight = index === lastColumn;
               return (
                 <div
                   key={index}
-                  className={`relative px-6 pb-10 pt-8 montserrat-rg text-[22px] lg:text-[28px] font-bold leading-tight ${
+                  className={`relative px-6 pb-10 pt-8 montserrat-rg text-[22px] xl:text-[26px] font-bold leading-tight ${
                     isHighlight ? "text-white" : "text-black"
                   } ${index === 0 ? "rounded-tl-xl" : ""} ${
-                    index > 0 && index < 4 ? "border-l border-[#E5E9F2]" : ""
+                    index > 0 && index < lastColumn ? "border-l border-[#E5E9F2]" : ""
                   }`}
                   style={isHighlight ? undefined : headerCellStyle}
                 >
-                  {column}
+                  {withBreaks(column)}
                 </div>
               );
             })}
 
             {rows.map((row) => (
               <React.Fragment key={row.feature}>
-                <div className="relative border-t border-[#E5E9F2] px-6 py-8 montserrat-rg text-base lg:text-lg font-bold text-[#1B50E8]">
+                <div className="relative border-t border-[#E5E9F2] px-6 py-6 montserrat-rg text-base lg:text-[15px] font-bold text-[#1B50E8]">
                   {row.feature}
                 </div>
-                {[row.freelancers, row.agencies, row.fullTime].map((text) => (
+                {(row.cells || [row.freelancers, row.agencies, row.fullTime]).map((text) => (
                   <div
                     key={text}
-                    className="relative flex items-start gap-2 border-l border-t border-[#E5E9F2] px-6 py-8"
+                    className="relative flex items-start gap-2 border-l border-t border-[#E5E9F2] px-4 py-6"
                   >
                     <CrossIcon />
-                    <p className="satoshi-md text-base lg:text-lg font-medium leading-[1.4] text-[#1E1E1E]">
+                    <p className="satoshi-md text-base font-medium leading-[1.4] text-[#1E1E1E]">
                       {text}
                     </p>
                   </div>
                 ))}
-                <div className="relative flex items-start gap-2 px-6 py-8">
+                <div className="relative flex items-start gap-2 px-4 py-6">
                   <CheckIcon />
-                  <p className="satoshi-bd text-base lg:text-lg leading-[1.4] text-white">
-                    {row.outsource}
+                  <p className="satoshi-bd text-base leading-[1.4] text-white">
+                    {row.highlight || row.outsource}
                   </p>
                 </div>
               </React.Fragment>
             ))}
           </div>
         </div>
+
       </div>
     </section>
   );

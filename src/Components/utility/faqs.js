@@ -1,56 +1,5 @@
 import { useState } from "react";
-
-// Only the first answer comes from the Figma design; the rest are drafts to replace.
-const faqs = [
-  {
-    question: "How much should a professional website cost?",
-    answer: [
-      "Website cost depends on the number of pages, design depth, content needs, functionality, integrations, platform, technical complexity, ecommerce requirements, and ongoing support.",
-      "A small informational website and a custom customer platform should not be priced the same way.",
-      "A useful proposal should explain what is included, what is not included, how revisions work, who provides content, which integrations are required, and what happens after launch.",
-    ],
-  },
-  {
-    question: "How long does a website project take?",
-    answer: [
-      "Timelines depend on the size of the site, how quickly content and feedback are provided, and how many integrations or custom features are involved.",
-      "A focused marketing website usually takes a few weeks, while larger platforms with custom functionality take longer.",
-      "A clear plan should show each stage, from discovery and design to development, testing, and launch.",
-    ],
-  },
-  {
-    question: "Should we redesign our website or improve the current one?",
-    answer: [
-      "If the current site is built on a solid platform and mainly needs better content, speed, or conversion paths, improving it is often the faster option.",
-      "A redesign makes more sense when the structure, technology, or brand no longer supports your goals.",
-      "An audit of performance, usability, and SEO helps decide which path gives the better return.",
-    ],
-  },
-  {
-    question: "How soon can SEO produce results?",
-    answer: [
-      "Technical fixes and on-page improvements can show early movement within a few weeks.",
-      "Stronger rankings and steady organic traffic usually build over several months, depending on competition and the current state of the site.",
-      "SEO works best as an ongoing effort with clear reporting on rankings, traffic, and leads.",
-    ],
-  },
-  {
-    question: "Can automation replace employees?",
-    answer: [
-      "Automation is best at removing repetitive tasks such as data entry, follow-ups, reporting, and routing information between tools.",
-      "It usually frees your team to focus on work that needs judgment, relationships, and creativity rather than replacing them.",
-      "The right starting point is the processes that take the most time and follow clear rules.",
-    ],
-  },
-  {
-    question: "Should we hire in-house or outsource digital work?",
-    answer: [
-      "In-house hires make sense for ongoing work that needs daily attention and deep company knowledge.",
-      "Outsourcing gives you access to a wider range of specialists without the cost of recruiting, salaries, and training for every skill.",
-      "Many businesses combine both, keeping core roles internal and outsourcing specialist or overflow work.",
-    ],
-  },
-];
+import { withBreaks } from "../../utils/text";
 
 const headingHighlightStyle = {
   background: "linear-gradient(to right, #1b50e80f, #a1d1ffba)",
@@ -79,21 +28,49 @@ function ChevronIcon({ open }) {
   );
 }
 
-function Faqs() {
-  const [active, setActive] = useState(0);
+// A white card around the section, as used on the SEO page.
+const boxStyle = {
+  boxShadow: "0px 10px 40px rgba(27, 80, 232, 0.12)",
+};
+
+function Faqs({ content }) {
+  const { faqs } = content;
+  const [active, setActive] = useState(content.defaultActive || 0);
 
   return (
-    <section id="faqs" className="faqs-section py-16 sm:py-20 lg:pb-32 lg:pt-28">
+    <section
+      id="faqs"
+      className={`faqs-section ${
+        content.boxed
+          ? "relative z-10 -mt-12 pb-16 sm:-mt-16 sm:pb-20 lg:-mt-28 lg:pb-24"
+          : "py-16 sm:py-20 lg:pb-32 lg:pt-28"
+      }`}
+    >
       <div className="custom-container px-5 sm:px-8 lg:px-12">
-        <div className="grid grid-cols-1 items-start gap-8 xl:grid-cols-2 xl:items-end xl:gap-12 [&>*]:min-w-0">
+        <div
+          className={`grid grid-cols-1 items-start gap-8 xl:grid-cols-[576fr_482fr] xl:items-end xl:gap-[82px] [&>*]:min-w-0 ${
+            content.boxed
+              ? "rounded-[20px] bg-white px-5 py-10 sm:px-10 xl:items-center xl:px-[78px] xl:py-16"
+              : ""
+          }`}
+          style={content.boxed ? boxStyle : undefined}
+        >
           <div>
-            <h2 className="montserrat-rg text-[30px] sm:text-[36px] lg:text-[40px] xl:text-5xl font-extrabold leading-[1.2] text-black">
-              Start With the Questions
-              {" "}<br className="hidden sm:block" />
-              That <span style={headingHighlightStyle}>Matter Most</span>
+            <h2 className="montserrat-rg text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[44px] font-bold leading-[1.2] text-black">
+              {withBreaks(content.title)}{" "}
+              <span style={headingHighlightStyle}>{content.highlight}</span>
             </h2>
+            {content.description &&
+              content.description.map((paragraph, index) => (
+                <p
+                  key={paragraph}
+                  className={`satoshi-md text-[15px] text-black ${index === 0 ? "pt-5" : "pt-2"}`}
+                >
+                  {withBreaks(paragraph)}
+                </p>
+              ))}
 
-            <ul className="mt-8 lg:mt-14">
+            <ul className={content.description ? "mt-6 lg:mt-8" : "mt-8 lg:mt-14"}>
               {faqs.map((faq, index) => (
                 <li key={faq.question}>
                   <button
@@ -130,14 +107,27 @@ function Faqs() {
                 }`}
                 aria-hidden={active !== index}
               >
-                {faq.answer.map((paragraph) => (
-                  <p
-                    key={paragraph}
-                    className="satoshi-md pb-4 text-base lg:text-lg leading-[1.5] text-white"
-                  >
-                    {paragraph}
-                  </p>
-                ))}
+                {faq.answerList ? (
+                  <>
+                    <h3 className="montserrat-rg pb-3 text-xl font-bold text-white">
+                      {faq.answerTitle}
+                    </h3>
+                    <ul className="satoshi-md list-disc space-y-1 pl-5 text-base leading-[1.5] text-white lg:text-[15px]">
+                      {faq.answerList.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  </>
+                ) : (
+                  faq.answer.map((paragraph) => (
+                    <p
+                      key={paragraph}
+                      className="satoshi-md pb-4 text-base lg:text-[15px] leading-[1.5] text-white"
+                    >
+                      {paragraph}
+                    </p>
+                  ))
+                )}
               </div>
             ))}
           </div>

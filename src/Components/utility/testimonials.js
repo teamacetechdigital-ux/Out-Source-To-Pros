@@ -1,34 +1,3 @@
-const reviews = {
-  maria: {
-    name: "Maria Talamantes",
-    text: "Insulation added to attic & crawl space encapsulated; great job with the work & communication; had 1 concern - it got ...",
-  },
-  nicholas: {
-    name: "Nicholas Rich",
-    text: "Very timely and professional company. They do a great job. I would highly recommend.",
-  },
-  ross: {
-    name: "Ross Kelman",
-    text: "Insulation Nation was fantastic to work with! They showed up on time, were super polite, got the work done in about half the time ...",
-  },
-  patty: {
-    name: "Patty Dolan",
-    text: "Dustin came out and verified the amount of insulation I currently had: R13 and current regulation state. It should be R60. He was ...",
-  },
-};
-
-// Same order as the Figma grid (two rows of four).
-const cards = [
-  reviews.maria,
-  reviews.nicholas,
-  reviews.ross,
-  reviews.patty,
-  reviews.nicholas,
-  reviews.patty,
-  reviews.ross,
-  reviews.maria,
-];
-
 const headingHighlightStyle = {
   background: "linear-gradient(to right, #ffffff00, #ffffffbf)",
   padding: "0rem 1.5rem 0rem 0rem",
@@ -86,19 +55,22 @@ function Stars() {
   );
 }
 
-function Testimonials() {
+function Testimonials({ content }) {
+  // Cards list review keys in grid order, so a review can appear more than once.
+  const cards = content.cards.map((key) => content.reviews[key]);
+
   return (
     <section id="testimonials" className="testimonials-section pb-40 pt-16 sm:pb-52 sm:pt-20 lg:pb-[280px] lg:pt-32">
       <div className="custom-container px-5 sm:px-8 lg:px-12">
-        <h2 className="montserrat-rg text-3xl font-extrabold text-white sm:text-4xl lg:text-5xl">
-          <span style={headingHighlightStyle}>Testimonials</span>
+        <h2 className="montserrat-rg text-3xl font-bold text-white sm:text-4xl lg:text-[40px] xl:text-[44px]">
+          <span style={headingHighlightStyle}>{content.highlight}</span>
         </h2>
 
-        <div className="mt-8 grid grid-cols-1 gap-4 sm:mt-10 sm:grid-cols-2 lg:mt-12 xl:grid-cols-4 xl:gap-5">
+        <div className="-mx-5 mt-8 flex snap-x snap-mandatory gap-4 overflow-x-auto px-5 pb-4 sm:mx-0 sm:mt-10 sm:grid sm:grid-cols-2 sm:overflow-visible sm:px-0 sm:pb-0 lg:mt-12 xl:grid-cols-4 xl:gap-5">
           {cards.map((review, index) => (
             <article
               key={`${review.name}-${index}`}
-              className="flex flex-col rounded-xl p-5 text-white"
+              className="flex w-[85%] shrink-0 snap-start flex-col rounded-xl p-5 text-white sm:w-auto"
               style={cardStyle}
             >
               <div className="flex items-start justify-between">
@@ -110,16 +82,16 @@ function Testimonials() {
                 </span>
                 <GoogleIcon />
               </div>
-              <h3 className="montserrat-rg pt-4 text-xl font-semibold">
+              <h3 className="montserrat-rg pt-4 text-[17px] font-semibold">
                 {review.name}
               </h3>
-              <p className="satoshi-md flex-1 pt-3 text-sm leading-[1.5] text-white/90">
+              <p className="satoshi-md flex-1 pt-3 text-xs leading-[1.5] text-white/90">
                 {review.text}
               </p>
               <div className="mt-5 flex items-center justify-between">
                 <Stars />
                 <span className="satoshi-md text-sm">
-                  Customer review
+                  {content.reviewLabel}
                 </span>
               </div>
             </article>

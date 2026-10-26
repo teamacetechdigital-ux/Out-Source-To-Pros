@@ -1,54 +1,7 @@
 import { useEffect, useRef } from "react";
+import { withBreaks } from "../../utils/text";
 
-const industries = [
-  { id: "healthcare", title: <>Healthcare</>, imageClass: "industry-slide-1" },
-  {
-    id: "legal-services",
-    title: (
-      <>
-        Legal
-        {" "}<br className="hidden sm:block" />
-        Services
-      </>
-    ),
-    imageClass: "industry-slide-2",
-  },
-  {
-    id: "financial-services",
-    title: (
-      <>
-        Financial
-        {" "}<br className="hidden sm:block" />
-        Services
-      </>
-    ),
-    imageClass: "industry-slide-3",
-  },
-  {
-    id: "real-estate",
-    title: (
-      <>
-        Real
-        {" "}<br className="hidden sm:block" />
-        Estate
-      </>
-    ),
-    imageClass: "industry-slide-4",
-  },
-  {
-    id: "construction-home",
-    title: (
-      <>
-        Construction
-        {" "}<br className="hidden sm:block" />
-        &amp; Home
-      </>
-    ),
-    imageClass: "industry-slide-5",
-  },
-];
-
-function Industries() {
+function Industries({ content }) {
   const trackRef = useRef(null);
   const firstGroupRef = useRef(null);
   const dragState = useRef({ active: false, lastX: 0 });
@@ -124,13 +77,13 @@ function Industries() {
       ref={duplicate ? undefined : firstGroupRef}
       aria-hidden={duplicate}
     >
-      {industries.map((industry) => (
+      {content.items.map((industry) => (
         <article
           className={`industry-slider-card ${industry.imageClass}`}
           key={`${industry.id}-${duplicate ? "duplicate" : "original"}`}
         >
           <h3 className="montserrat-rg font-bold text-white">
-            {industry.title}
+            {withBreaks(industry.title)}
           </h3>
         </article>
       ))}
@@ -141,17 +94,14 @@ function Industries() {
     <section className="industry-section">
       <div className="custom-container px-5 sm:px-8 lg:px-12">
         <div className="start-txt text-center">
-          <h2 className="montserrat-rg font-extrabold text-[30px] sm:text-[40px] lg:text-[48px] xl:text-[60px] capitalize text-white">
-            Industries <span>We Serve</span>
+          <h2 className="montserrat-rg font-bold text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[44px] capitalize text-white">
+            {content.title}{" "}<span>{content.highlight}</span>
           </h2>
-          <p className="satoshi-reg py-4 text-base sm:text-lg lg:text-xl font-medium text-white">
-            Every industry has different buying cycles, compliance
-            considerations,
-            {" "}<br className="hidden sm:block" /> customer questions, competitive pressures, and conversion
-            paths.
+          <p className="satoshi-reg py-4 text-[15px] font-medium text-white">
+            {withBreaks(content.paragraphs[0])}
           </p>
-          <p className="satoshi-reg text-base sm:text-lg lg:text-xl font-medium text-white">
-            We study those differences before recommending a strategy.
+          <p className="satoshi-reg text-[15px] font-medium text-white">
+            {withBreaks(content.paragraphs[1])}
           </p>
         </div>
       </div>
@@ -159,7 +109,7 @@ function Industries() {
       <div
         className="industry-slider-viewport mt-8 px-4"
         role="region"
-        aria-label="Industries we serve. Drag to browse."
+        aria-label={content.sliderLabel}
         onPointerDown={handlePointerDown}
         onPointerMove={handlePointerMove}
         onPointerUp={handlePointerUp}
@@ -182,8 +132,8 @@ function Industries() {
           {renderIndustryCards(true)}
         </div>
         <div className="text-center cust-gap">
-          <button className="bg-[#1B50E8] text-base sm:text-lg lg:text-xl text-white px-8 py-4 rounded-md uppercase montserrat-bd font-bold">
-            View Industry Solutions
+          <button className="bg-[#1B50E8] text-base lg:text-lg text-white px-8 py-4 rounded-md uppercase montserrat-bd font-bold">
+            {content.buttonLabel}
           </button>
         </div>
       </div>

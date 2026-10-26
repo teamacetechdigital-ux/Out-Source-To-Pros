@@ -1,71 +1,18 @@
-import { useLayoutEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { withBreaks } from "../../utils/text";
 
 gsap.registerPlugin(ScrollTrigger);
-
-const steps = [
-  {
-    title: "Discovery",
-    text: (
-      <>
-        We understand your business, target audience, goals,
-        {" "}<br className="hidden sm:block" /> competitors, and current digital presence.
-      </>
-    ),
-  },
-  {
-    title: "Research",
-    text: (
-      <>
-        We analyze market trends, audience behavior, keywords,
-        {" "}<br className="hidden sm:block" /> competitors, and growth opportunities.
-      </>
-    ),
-  },
-  {
-    title: "Strategy",
-    text: (
-      <>
-        We create a customized roadmap aligned with your
-        {" "}<br className="hidden sm:block" /> business goals and measurable results.
-      </>
-    ),
-  },
-  {
-    title: "Design & Development",
-    text: (
-      <>
-        We design engaging experiences and build high-
-        {" "}<br className="hidden sm:block" />
-        performing, scalable digital solutions.
-      </>
-    ),
-  },
-  {
-    title: "Testing & Launch",
-    text: (
-      <>
-        We thoroughly test every detail, optimize performance,
-        {" "}<br className="hidden sm:block" /> and launch with confidence.
-      </>
-    ),
-  },
-  {
-    title: "Support & Growth",
-    text: (
-      <>
-        We monitor, maintain, and continuously optimize to help
-        {" "}<br className="hidden sm:block" /> your business achieve long-term success.
-      </>
-    ),
-  },
-];
+// Phones resize the viewport when the address bar hides; don't re-pin on that.
+ScrollTrigger.config({ ignoreMobileResize: true });
 
 // Scroll distance (px) that brings in one new card.
 const SCROLL_PER_STEP = 350;
 // How far each stacked card sits below the one behind it.
 const STACK_OFFSET = 14;
+// Height of one card (matches min-h-[380px] below).
+const CARD_HEIGHT = 380;
 
 const boxStyle = {
   boxShadow: "0px 10px 40px rgba(27, 80, 232, 0.12)",
@@ -75,59 +22,22 @@ const cardStyle = {
   background: "linear-gradient(180deg, #A1D1FF 0%, #FFFFFF 100%)",
 };
 
-function WorkingProcess() {
-  const [stacked, setStacked] = useState(false);
+function WorkingProcess({ content }) {
+  const { steps } = content;
+  const stepCount = steps.length;
+  const boxRef = useRef(null);
   const cardStackRef = useRef(null);
   const cardRefs = useRef([]);
 
-  // Use a pinned stack on larger screens and normal-flow cards on phones.
+  // Cards stack on scroll on every screen size. Pin the whole box (heading,
+  // cards, CTA) like the prototype when it fits on screen; on shorter screens
+  // pin only the card stack.
   useLayoutEffect(() => {
-    const query = window.matchMedia(
-      "(min-width: 768px) and (prefers-reduced-motion: no-preference)",
-    );
-    const update = () => setStacked(query.matches);
-    update();
-    query.addEventListener("change", update);
-    return () => query.removeEventListener("change", update);
-  }, []);
-
-  // Reveal mobile cards as they enter view without pinning the page.
-  useLayoutEffect(() => {
-    if (stacked) return undefined;
-
-    const query = window.matchMedia(
-      "(max-width: 767px) and (prefers-reduced-motion: no-preference)",
-    );
-    if (!query.matches) return undefined;
-
-    const ctx = gsap.context(() => {
-      cardRefs.current.forEach((card) => {
-        gsap.fromTo(
-          card,
-          { autoAlpha: 0, y: 24 },
-          {
-            autoAlpha: 1,
-            y: 0,
-            duration: 0.6,
-            ease: "power2.out",
-            scrollTrigger: {
-              trigger: card,
-              start: "top 88%",
-              once: true,
-            },
-          },
-        );
-      });
-    }, cardStackRef);
-
-    return () => ctx.revert();
-  }, [stacked]);
-
-  // Pin only the card stack so the heading and CTA remain in normal flow.
-  useLayoutEffect(() => {
-    if (!stacked) return undefined;
     const ctx = gsap.context(() => {
       const cards = cardRefs.current;
+      const box = boxRef.current;
+      const pinTarget =
+        box.offsetHeight <= window.innerHeight - 16 ? box : cardStackRef.current;
 
       cards.forEach((card, index) => {
         gsap.set(card, {
@@ -140,10 +50,12 @@ function WorkingProcess() {
       const timeline = gsap.timeline({
         defaults: { ease: "power2.out" },
         scrollTrigger: {
-          trigger: cardStackRef.current,
-          start: "top 24px",
-          end: `+=${(steps.length - 1) * SCROLL_PER_STEP}`,
-          pin: cardStackRef.current,
+          trigger: pinTarget,
+          // Pin once the box reaches the middle of the screen so it stays centred.
+          start: "center center",
+          end: `+=${(stepCount - 1) * SCROLL_PER_STEP}`,
+          pin: pinTarget,
+          anticipatePin: 1,
           scrub: 1,
           invalidateOnRefresh: true,
         },
@@ -167,35 +79,36 @@ function WorkingProcess() {
             "<",
           );
       });
-    }, cardStackRef);
+    }, boxRef);
 
     return () => ctx.revert();
-  }, [stacked]);
+  }, [stepCount]);
 
   return (
     <section className="working-process-section relative z-10 -mt-16 sm:-mt-20 lg:-mt-[120px]">
       <div className="custom-container w-full px-5 sm:px-8 lg:px-12">
         <div
+          ref={boxRef}
           className="rounded-[20px] bg-white px-5 py-8 sm:px-10 sm:pb-14 sm:pt-12"
           style={boxStyle}
         >
           <div className="start-txt-2 text-center">
-            <h2 className="montserrat-rg text-[30px] sm:text-[36px] lg:text-[40px] xl:text-5xl font-extrabold leading-tight text-black">
-              Our Working <span>Process</span>
+            <h2 className="montserrat-rg text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[44px] font-bold leading-tight text-black">
+              {content.title} <span>{content.highlight}</span>
             </h2>
           </div>
 
           {/* Cards stack on top of each other as the page scrolls */}
           <div
             ref={cardStackRef}
-            className="relative mx-auto mt-8 grid max-w-[1140px] gap-4 sm:mt-10"
-            style={stacked ? { height: 330 + (steps.length - 1) * STACK_OFFSET } : undefined}
+            className="relative mx-auto mt-8 max-w-[1140px] sm:mt-10"
+            style={{ height: CARD_HEIGHT + (steps.length - 1) * STACK_OFFSET }}
           >
             {steps.map((step, index) => (
               <div
                 key={step.title}
                 ref={(el) => (cardRefs.current[index] = el)}
-                className={`${stacked ? "absolute inset-x-0 top-0 min-h-[330px]" : "relative"} min-w-0 rounded-2xl p-5 sm:p-8 lg:p-10`}
+                className="absolute inset-x-0 top-0 min-h-[380px] min-w-0 rounded-2xl p-5 sm:p-8 lg:p-10"
                 style={{ ...cardStyle, zIndex: index }}
               >
                 <div className="process-card-content">
@@ -206,11 +119,11 @@ function WorkingProcess() {
                     <span className="h-[2px] flex-1 bg-[#1B50E8]/70" />
                   </div>
                   <div className="pt-6 sm:pl-[72px] sm:pt-8">
-                    <h3 className="montserrat-rg text-2xl sm:text-[36px] lg:text-[44px] font-semibold leading-tight text-[#0A1F44]">
+                    <h3 className="montserrat-rg text-2xl sm:text-[36px] lg:text-[50px] font-semibold leading-tight text-[#0A1F44]">
                       {step.title}
                     </h3>
-                    <p className="satoshi-md pt-3 text-lg sm:text-xl lg:text-2xl leading-[1.4] text-[#0A1F44]">
-                      {step.text}
+                    <p className="satoshi-md pt-3 text-lg sm:text-xl lg:text-[28px] leading-[1.4] text-[#0A1F44]">
+                      {withBreaks(step.text, "lg")}
                     </p>
                   </div>
                 </div>
@@ -219,8 +132,8 @@ function WorkingProcess() {
           </div>
 
           <div className="mt-10 text-center">
-            <button className="montserrat-bd rounded-md bg-[#1B50E8] px-8 py-4 text-base sm:text-lg lg:text-xl font-bold uppercase text-white">
-              Outsource With Us
+            <button className="montserrat-bd rounded-md bg-[#1B50E8] px-8 py-4 text-base lg:text-lg font-bold uppercase text-white">
+              {content.buttonLabel}
             </button>
           </div>
         </div>

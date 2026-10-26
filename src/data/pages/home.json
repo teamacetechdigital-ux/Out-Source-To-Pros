@@ -1,0 +1,766 @@
+{
+  "hero": {
+    "title": "One Team. Every Digital Solution.",
+    "description": "Build, market, and grow your business with one team for web design, development, SEO, paid advertising, custom software, AI automation, and ongoing digital support.",
+    "primaryButtonLabel": "Book a Free Strategy Call",
+    "secondaryButtonLabel": "EXPLORE OUR SERVICES",
+    "counters": [
+      {
+        "value": 5,
+        "suffix": "K+",
+        "label": "Projects\nCompleted"
+      },
+      {
+        "value": 3,
+        "suffix": "K+",
+        "label": "Businesses\nSupported"
+      },
+      {
+        "value": 200,
+        "suffix": "+",
+        "label": "Industries\nServed"
+      },
+      {
+        "value": 10,
+        "suffix": "+",
+        "label": "Countries\nReached"
+      },
+      {
+        "value": 20,
+        "suffix": "+",
+        "label": "Years of Combined\nExperience"
+      }
+    ]
+  },
+  "whiteTextarea": {
+    "title": "Digital Work Should Create Measurable",
+    "highlight": "Business Value",
+    "paragraphs": [
+      "A website is not only a visual asset. SEO is not only a rankings report. Automation is not only a collection of workflows.",
+      "Every digital investment should support a practical business objective, such as attracting better leads, reducing manual work, improving customer experience, increasing sales, supporting a sales team, entering new markets, or building a stronger brand.",
+      "We connect strategy and execution so every project contributes to a larger business goal."
+    ],
+    "subheading": "Supporting Statement",
+    "subParagraphs": [
+      "Our team works across design, engineering, search, content, paid acquisition, analytics, branding, automation, and ongoing digital operations.",
+      "That means you do not need to coordinate multiple freelancers, vendors, and disconnected agencies to move one project forward."
+    ],
+    "buttonLabel": "Discuss Your Business Goals"
+  },
+  "marquee": {
+    "items": [
+      {
+        "icon": "wordpress",
+        "label": "WordPress"
+      },
+      {
+        "icon": "shopify",
+        "label": "Shopify"
+      },
+      {
+        "icon": "webflow",
+        "label": "Webflow"
+      },
+      {
+        "icon": "duda",
+        "label": "Duda"
+      },
+      {
+        "icon": "goHighLevel",
+        "label": "GoHighLevel"
+      },
+      {
+        "icon": "react",
+        "label": "React"
+      },
+      {
+        "icon": "nextjs",
+        "label": "Next.js"
+      },
+      {
+        "icon": "python",
+        "label": "Python"
+      },
+      {
+        "icon": "flutter",
+        "label": "Flutter"
+      },
+      {
+        "icon": "aws",
+        "label": "AWS"
+      },
+      {
+        "icon": "googleCloud",
+        "label": "Google Cloud"
+      },
+      {
+        "icon": "hubspot",
+        "label": "HubSpot"
+      },
+      {
+        "icon": "stripe",
+        "label": "Stripe"
+      }
+    ]
+  },
+  "services": {
+    "title": "Our Services",
+    "tabListLabel": "Our services",
+    "includesHeading": "Services Include",
+    "problemsHeading": "Problems We Help Solve",
+    "buttonLabel": "Outsource with US",
+    "items": [
+      {
+        "title": "Web Design Services",
+        "description": "Your website should build trust, communicate your services clearly, and encourage visitors to take the next step. We create responsive, user-focused websites for businesses across a wide range of industries.",
+        "includes": [
+          "Custom Website Design",
+          "UI Design",
+          "Website Redesign",
+          "Landing Page Design",
+          "SaaS Website Design"
+        ],
+        "problems": [
+          "Outdated Website Design",
+          "Poor Mobile Experience",
+          "Confusing Navigation",
+          "High Bounce Rates"
+        ]
+      },
+      {
+        "title": "Web Development Services",
+        "description": "We build fast, responsive, and reliable websites that turn your design and business goals into a smooth experience across devices.",
+        "includes": [
+          "Responsive Web Development",
+          "Front-End Development",
+          "CMS Development",
+          "E-commerce Development",
+          "Website Integrations"
+        ],
+        "problems": [
+          "Slow Page Loads",
+          "Broken Website Features",
+          "Difficult Content Updates",
+          "Inconsistent Mobile Layouts"
+        ]
+      },
+      {
+        "title": "Search Engine Optimization",
+        "description": "Improve your visibility in search and attract more qualified visitors through practical, data-informed SEO strategies.",
+        "includes": [
+          "Technical SEO",
+          "On-Page Optimization",
+          "Keyword Research",
+          "Local SEO",
+          "SEO Reporting"
+        ],
+        "problems": [
+          "Low Search Visibility",
+          "Declining Organic Traffic",
+          "Technical Search Issues",
+          "Unqualified Website Traffic"
+        ]
+      },
+      {
+        "title": "Content, Authority, and Digital PR",
+        "description": "Build a stronger online presence with useful content and digital PR that earns trust, supports your audience, and strengthens your brand.",
+        "includes": [
+          "Content Strategy",
+          "Blog and Website Content",
+          "Thought Leadership",
+          "Digital PR Campaigns",
+          "Authority Building"
+        ],
+        "problems": [
+          "Inconsistent Publishing",
+          "Low Brand Awareness",
+          "Unclear Brand Messaging",
+          "Limited Online Authority"
+        ]
+      },
+      {
+        "title": "Paid Media and Demand Generation",
+        "description": "Reach the right audience with well-managed paid campaigns designed to create demand and bring measurable opportunities to your business.",
+        "includes": [
+          "Paid Search Campaigns",
+          "Paid Social Advertising",
+          "Campaign Strategy",
+          "Landing Page Optimization",
+          "Performance Reporting"
+        ],
+        "problems": [
+          "Wasted Ad Spend",
+          "Low-Quality Leads",
+          "Weak Campaign Performance",
+          "Unclear Return on Ad Spend"
+        ]
+      },
+      {
+        "title": "AI, Automation, and CRM Systems",
+        "description": "Connect your tools and simplify repetitive work with thoughtful automation, useful AI workflows, and CRM systems tailored to your process.",
+        "includes": [
+          "CRM Setup and Optimization",
+          "Workflow Automation",
+          "AI Process Integration",
+          "Lead Management Systems",
+          "Business Tool Integrations"
+        ],
+        "problems": [
+          "Repetitive Manual Tasks",
+          "Missed Follow-Ups",
+          "Disconnected Business Tools",
+          "Inconsistent Lead Handling"
+        ]
+      },
+      {
+        "title": "Software, SaaS, and App Development",
+        "description": "Turn your product idea or business requirements into dependable digital tools built around real users and practical needs.",
+        "includes": [
+          "Custom Software",
+          "SaaS Product Development",
+          "Web Application Development",
+          "Product Prototyping",
+          "Ongoing Product Improvements"
+        ],
+        "problems": [
+          "Manual or Disconnected Processes",
+          "Off-the-Shelf Tool Limitations",
+          "Unclear Product Requirements",
+          "Difficulty Scaling a Product"
+        ]
+      },
+      {
+        "title": "Branding Services",
+        "description": "Create a consistent identity that helps your business stand out, communicate clearly, and build recognition with the right audience.",
+        "includes": [
+          "Brand Strategy",
+          "Visual Identity",
+          "Logo Design",
+          "Brand Guidelines",
+          "Marketing Assets"
+        ],
+        "problems": [
+          "Inconsistent Brand Materials",
+          "Unclear Market Positioning",
+          "Low Brand Recognition",
+          "Outdated Visual Identity"
+        ]
+      },
+      {
+        "title": "Support, Maintenance, Hosting, and Security",
+        "description": "Keep your website and digital tools healthy with reliable hosting, routine maintenance, proactive security, and ongoing technical support.",
+        "includes": [
+          "Managed Website Hosting",
+          "Website Maintenance",
+          "Security Monitoring",
+          "Backups and Updates",
+          "Ongoing Technical Support"
+        ],
+        "problems": [
+          "Unplanned Website Downtime",
+          "Outdated Software",
+          "Security Vulnerabilities",
+          "No Reliable Technical Support"
+        ]
+      }
+    ]
+  },
+  "industries": {
+    "title": "Industries",
+    "highlight": "We Serve",
+    "paragraphs": [
+      "Every industry has different buying cycles, compliance considerations,\ncustomer questions, competitive pressures, and conversion paths.",
+      "We study those differences before recommending a strategy."
+    ],
+    "sliderLabel": "Industries we serve. Drag to browse.",
+    "buttonLabel": "View Industry Solutions",
+    "items": [
+      {
+        "id": "healthcare",
+        "title": "Healthcare",
+        "imageClass": "industry-slide-1"
+      },
+      {
+        "id": "legal-services",
+        "title": "Legal\nServices",
+        "imageClass": "industry-slide-2"
+      },
+      {
+        "id": "financial-services",
+        "title": "Financial\nServices",
+        "imageClass": "industry-slide-3"
+      },
+      {
+        "id": "real-estate",
+        "title": "Real\nEstate",
+        "imageClass": "industry-slide-4"
+      },
+      {
+        "id": "construction-home",
+        "title": "Construction\n& Home",
+        "imageClass": "industry-slide-5"
+      }
+    ]
+  },
+  "whiteLabel": {
+    "title": "White-label Service",
+    "highlight": "for agency's",
+    "paragraphs": [
+      "Growing an agency often creates a difficult choice.",
+      "You can turn down work, hire before revenue is secure, depend on multiple freelancers, or find a delivery team that can work behind your brand.",
+      "Our white-label services help agencies expand capacity across design, development, SEO, content, paid media, automation, creative production, and technical support.",
+      "We follow your processes, use your preferred communication structure, and complete work under agreed confidentiality requirements."
+    ],
+    "listTitle": "Why Agencies Use Our White-Label Model",
+    "list": [
+      "Accept more projects",
+      "Reduce hiring pressure",
+      "Access specialists when required",
+      "Improve delivery consistency",
+      "Expand service offerings",
+      "Protect internal team capacity",
+      "Reduce dependence on individual freelancers",
+      "Maintain ownership of the client relationship"
+    ],
+    "buttonLabel": "Explore White-Label Services",
+    "optionsTitle": "Engagement Options",
+    "options": [
+      {
+        "title": "Per-Project Delivery",
+        "text": "Use our team for a defined client project with an agreed scope, timeline, and delivery process."
+      },
+      {
+        "title": "Monthly Production Support",
+        "text": "Reserve ongoing capacity for recurring design, development, SEO, content, or maintenance work."
+      },
+      {
+        "title": "Dedicated Team Members",
+        "text": "Add professionals who work as an extension of your existing operation."
+      },
+      {
+        "title": "Full White-Label Department",
+        "text": "Use a multi-disciplinary delivery team to support several client accounts and service categories."
+      }
+    ]
+  },
+  "businessOutsource": {
+    "title": "Why Business",
+    "highlight": "Outsource",
+    "titleEnd": "Digital Works",
+    "paragraphs": [
+      "Digital growth requires a wide range of capabilities.",
+      "A single employee is unlikely to be equally strong in strategy, design, development, SEO,\ncopywriting, advertising, analytics, automation, security, and project management.",
+      "Outsourcing gives businesses access to the right skill at the right stage without creating a\nfull-time internal position for every requirement."
+    ],
+    "benefitsTitle": "Key Benefits",
+    "benefits": [
+      {
+        "icon": "sourceImg1",
+        "title": "Broader Skill Access",
+        "text": "Bring in specialists based on the work that needs to be completed rather than forcing one person to cover every discipline."
+      },
+      {
+        "icon": "sourceImg2",
+        "title": "Lower Fixed Costs",
+        "text": "Reduce the expenses connected with recruitment, full-time salaries, benefits, software, equipment, management, and unused capacity."
+      },
+      {
+        "icon": "sourceImg3",
+        "title": "Faster Team Formation",
+        "text": "Begin work without waiting through lengthy recruiting, onboarding, and training cycles."
+      },
+      {
+        "icon": "sourceImg4",
+        "title": "Easier Capacity Changes",
+        "text": "Increase or reduce support as priorities, workload, and budgets change."
+      },
+      {
+        "icon": "sourceImg5",
+        "title": "Clear Deliverables",
+        "text": "Use defined scopes, timelines, roles, and measurements for each engagement."
+      },
+      {
+        "icon": "sourceImg6",
+        "title": "Vendor Streamlining",
+        "text": "Keep connected digital services within one coordinated delivery structure."
+      }
+    ]
+  },
+  "whyAgencies": {
+    "title": "Why Agencies Choose",
+    "highlight": "Outsource to Pros",
+    "description": "Compare the most common ways to handle digital delivery, from one-off\nfreelancers to building a full internal team.",
+    "tableAriaLabel": "Compare delivery options. Scroll horizontally to see all columns.",
+    "table": {
+      "columns": [
+        "Features",
+        "Freelancers",
+        "Traditional\nAgencies",
+        "Full-Time\nTeam",
+        "Outsource to\nPros"
+      ],
+      "rows": [
+        {
+          "feature": "Range of Services",
+          "freelancers": "Usually limited to one or two specialties",
+          "agencies": "Broader services, but often split across departments",
+          "fullTime": "Depends on who you hire",
+          "outsource": "Web, development, SEO, paid media, design, automation, software, and support in one team"
+        },
+        {
+          "feature": "Turnaround Speed",
+          "freelancers": "Depends on schedule and workload",
+          "agencies": "Can slow down through multiple approval layers",
+          "fullTime": "Limited to internal capacity",
+          "outsource": "Dedicated delivery teams built around project needs"
+        },
+        {
+          "feature": "Technical Expertise",
+          "freelancers": "Based on one person's skill set",
+          "agencies": "Varies by agency team",
+          "fullTime": "Requires multiple specialist hires",
+          "outsource": "Access developers, SEO specialists, designers, marketers, and automation experts as needed"
+        },
+        {
+          "feature": "White-Label Support",
+          "freelancers": "Rarely structured for agencies",
+          "agencies": "Often limited or unavailable",
+          "fullTime": "Not applicable",
+          "outsource": "Built for confidential white-label fulfillment and agency delivery"
+        },
+        {
+          "feature": "Cost Structure",
+          "freelancers": "Lower upfront, but inconsistent availability",
+          "agencies": "Higher agency overhead",
+          "fullTime": "Salaries, benefits, recruitment, and software costs",
+          "outsource": "Flexible project, monthly, dedicated team, and staff augmentation models"
+        },
+        {
+          "feature": "Project Management",
+          "freelancers": "Often managed by the client",
+          "agencies": "Usually included",
+          "fullTime": "Managed internally",
+          "outsource": "Structured communication, workflows, QA, and delivery ownership"
+        },
+        {
+          "feature": "Consistency & Quality",
+          "freelancers": "Can vary from project to project",
+          "agencies": "Depends on internal processes",
+          "fullTime": "Depends on individual employees",
+          "outsource": "Defined workflows, specialist review, and quality control across services"
+        },
+        {
+          "feature": "Ongoing Support",
+          "freelancers": "Often ends after project completion",
+          "agencies": "Depends on retainer structure",
+          "fullTime": "Limited by team bandwidth",
+          "outsource": "Ongoing maintenance, marketing, development, and digital operations support"
+        },
+        {
+          "feature": "Service Expansion",
+          "freelancers": "Requires finding additional freelancers",
+          "agencies": "May require another vendor",
+          "fullTime": "Requires additional hiring",
+          "outsource": "Add new capabilities without rebuilding your team"
+        }
+      ]
+    }
+  },
+  "scaleDelivery": {
+    "title": "Scale Delivery Without",
+    "highlight": "Scaling Overhead",
+    "text": "One outsourcing hub for white-label fulfillment, dedicated talent,\nspecialist support, and ongoing delivery across web, marketing,\nsoftware, and digital operations.",
+    "buttonLabel": "Outsource With Us",
+    "slides": [
+      {
+        "label": "End-to-End",
+        "tagline": "Everything under one roof",
+        "title": "Complete Digital\nFulfillment",
+        "text": "Handle more client work without managing multiple vendors. Our team supports strategy, design, development, SEO, marketing, automation, and ongoing digital production through one coordinated delivery system.",
+        "visual": {
+          "type": "serviceCards",
+          "items": [
+            {
+              "title": "Web & Development",
+              "text": "Websites, ecommerce, apps, and custom builds.",
+              "icon": "code"
+            },
+            {
+              "title": "SEO & Marketing",
+              "text": "Search, content, paid media, and lead generation.",
+              "icon": "seo"
+            },
+            {
+              "title": "Creative & Design",
+              "text": "UI/UX, branding, graphics, and digital assets.",
+              "icon": "design"
+            },
+            {
+              "title": "Automation & Support",
+              "text": "CRM workflows, integrations, maintenance, and technical support.",
+              "icon": "automation"
+            }
+          ]
+        }
+      },
+      {
+        "label": "White-Label",
+        "tagline": "Deliver more under your brand",
+        "title": "White-Label\nFulfillment",
+        "text": "Expand your agency's service capacity while keeping the client relationship entirely yours. We work behind the scenes using your brand, processes, standards, and preferred communication model.",
+        "visual": {
+          "type": "whiteLabelCircle",
+          "title": "White-Label\nFulfillment",
+          "items": [
+            {
+              "title": "Invisible Delivery",
+              "text": "Work completed behind your agency brand."
+            },
+            {
+              "title": "Quality Control",
+              "text": "Structured reviews before work reaches your client."
+            },
+            {
+              "title": "Flexible Capacity",
+              "text": "Add production support when demand increases."
+            },
+            {
+              "title": "Agency-Friendly Process",
+              "text": "Built around your workflow and communication preferences."
+            }
+          ]
+        }
+      },
+      {
+        "label": "Dedicated Teams",
+        "tagline": "Extend your internal capabilities",
+        "title": "Your Extended Digital\nTeam",
+        "text": "Add experienced specialists without adding full-time internal roles. Build a dedicated remote team around the exact skills your business or agency needs.",
+        "visual": {
+          "type": "digitalTeam",
+          "title": "Digital\nTeam",
+          "items": [
+            {
+              "title": "Developers",
+              "text": "WordPress, Shopify, frontend, backend, and custom development.",
+              "icon": "code"
+            },
+            {
+              "title": "Designers",
+              "text": "Web design, UI/UX, branding, and creative production.",
+              "icon": "design"
+            },
+            {
+              "title": "Marketing Specialists",
+              "text": "SEO, content, advertising, and campaign support.",
+              "icon": "team"
+            },
+            {
+              "title": "Project Support",
+              "text": "Project coordination, QA, reporting, and ongoing delivery.",
+              "icon": "support"
+            }
+          ]
+        }
+      },
+      {
+        "label": "Scale & Support",
+        "tagline": "Grow without delivery bottlenecks",
+        "title": "Scale With Confidence",
+        "text": "Increase delivery capacity as your client base and workload grow. Our flexible support model lets you expand resources, add new capabilities, and maintain consistent execution without rebuilding your internal team.",
+        "visual": {
+          "type": "scaleCircles",
+          "items": [
+            {
+              "title": "On-Demand Capacity",
+              "text": "Increase support around active workload."
+            },
+            {
+              "title": "Multi-Service Expansion",
+              "text": "Add new digital services without new departments."
+            },
+            {
+              "title": "Ongoing Fulfillment",
+              "text": "Reliable monthly production and technical support."
+            },
+            {
+              "title": "Flexible Resourcing",
+              "text": "Adjust team size and expertise as priorities change."
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "workingProcess": {
+    "title": "Our Working",
+    "highlight": "Process",
+    "buttonLabel": "Outsource With Us",
+    "steps": [
+      {
+        "title": "Discovery",
+        "text": "We understand your business, target audience, goals,\ncompetitors, and current digital presence."
+      },
+      {
+        "title": "Research",
+        "text": "We analyze market trends, audience behavior, keywords,\ncompetitors, and growth opportunities."
+      },
+      {
+        "title": "Strategy",
+        "text": "We create a customized roadmap aligned with your\nbusiness objectives and measurable results."
+      },
+      {
+        "title": "Design & Development",
+        "text": "We design engaging experiences and build high-\nperforming, scalable digital solutions."
+      },
+      {
+        "title": "Testing & Launch",
+        "text": "We thoroughly test every detail, optimize performance,\nand launch with confidence."
+      },
+      {
+        "title": "Support & Growth",
+        "text": "We monitor, maintain, and continuously optimize to help\nyour business achieve long-term success."
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Start With the Questions\nThat",
+    "highlight": "Matter Most",
+    "faqs": [
+      {
+        "question": "How much should a professional website cost?",
+        "answer": [
+          "Website cost depends on the number of pages, design depth, content needs, functionality, integrations, platform, technical complexity, ecommerce requirements, and ongoing support.",
+          "A small informational website and a custom customer platform should not be priced the same way.",
+          "A useful proposal should explain what is included, what is not included, how revisions work, who provides content, which integrations are required, and what happens after launch."
+        ]
+      },
+      {
+        "question": "How long does a website project take?",
+        "answer": [
+          "Timelines depend on the size of the site, how quickly content and feedback are provided, and how many integrations or custom features are involved.",
+          "A focused marketing website usually takes a few weeks, while larger platforms with custom functionality take longer.",
+          "A clear plan should show each stage, from discovery and design to development, testing, and launch."
+        ]
+      },
+      {
+        "question": "Should we redesign our website or improve the current one?",
+        "answer": [
+          "If the current site is built on a solid platform and mainly needs better content, speed, or conversion paths, improving it is often the faster option.",
+          "A redesign makes more sense when the structure, technology, or brand no longer supports your goals.",
+          "An audit of performance, usability, and SEO helps decide which path gives the better return."
+        ]
+      },
+      {
+        "question": "How soon can SEO produce results?",
+        "answer": [
+          "Technical fixes and on-page improvements can show early movement within a few weeks.",
+          "Stronger rankings and steady organic traffic usually build over several months, depending on competition and the current state of the site.",
+          "SEO works best as an ongoing effort with clear reporting on rankings, traffic, and leads."
+        ]
+      },
+      {
+        "question": "Can automation replace employees?",
+        "answer": [
+          "Automation is best at removing repetitive tasks such as data entry, follow-ups, reporting, and routing information between tools.",
+          "It usually frees your team to focus on work that needs judgment, relationships, and creativity rather than replacing them.",
+          "The right starting point is the processes that take the most time and follow clear rules."
+        ]
+      },
+      {
+        "question": "Should we hire in-house or outsource digital work?",
+        "answer": [
+          "In-house hires make sense for ongoing work that needs daily attention and deep company knowledge.",
+          "Outsourcing gives you access to a wider range of specialists without the cost of recruiting, salaries, and training for every skill.",
+          "Many businesses combine both, keeping core roles internal and outsourcing specialist or overflow work."
+        ]
+      }
+    ]
+  },
+  "testimonials": {
+    "highlight": "Testimonials",
+    "reviewLabel": "Customer review",
+    "reviews": {
+      "maria": {
+        "name": "Maria Talamantes",
+        "text": "Insulation added to attic & crawl space encapsulated; great job with the work & communication; had 1 concern - it got ..."
+      },
+      "nicholas": {
+        "name": "Nicholas Rich",
+        "text": "Very timely and professional company. They do a great job. I would highly recommend."
+      },
+      "ross": {
+        "name": "Ross Kelman",
+        "text": "Insulation Nation was fantastic to work with! They showed up on time, were super polite, got the work done in about half the time ..."
+      },
+      "patty": {
+        "name": "Patty Dolan",
+        "text": "Dustin came out and verified the amount of insulation I currently had: R13 and current regulation state. It should be R60. He was ..."
+      }
+    },
+    "cards": [
+      "maria",
+      "nicholas",
+      "ross",
+      "patty",
+      "nicholas",
+      "patty",
+      "ross",
+      "maria"
+    ]
+  },
+  "contactForm": {
+    "title": "Start the",
+    "highlight": "Conversation",
+    "description": "Tell us a little about your business and what you need help with. A member of\nour team will review your information and contact you to discuss the next step.",
+    "fields": {
+      "name": "Full Name",
+      "email": "Business Email",
+      "phone": "Phone Number",
+      "service": "Services Needed",
+      "website": "Website URL",
+      "source": "How Did You Hear About Us?",
+      "message": "Message"
+    },
+    "services": [
+      "Web Design & Development",
+      "SEO & Marketing",
+      "Paid Media",
+      "Creative & Design",
+      "AI Automation",
+      "Software & App Development",
+      "White-Label Services",
+      "Support & Maintenance"
+    ],
+    "sources": [
+      "Google Search",
+      "Social Media",
+      "Referral",
+      "Other"
+    ],
+    "buttonLabel": "Request My Strategy Call"
+  },
+  "buildingCta": {
+    "title": "Tell Us What You Are Building,\nImproving, or",
+    "highlight": "Trying to Solve",
+    "paragraphs": [
+      "You may need a new website, better search visibility, a custom platform, stronger campaign\nperformance, automated workflows, or additional capacity for your agency.",
+      "You do not need to determine every service before contacting us.",
+      "Share your current situation, goals, timeline, and challenges. We will help you organize the\npriorities and identify a practical path forward."
+    ],
+    "primaryButton": "Request a Proposal",
+    "secondaryButton": "Book a Free Strategy Call"
+  },
+  "newsletter": {
+    "title": "Get Practical Digital Growth\nInsights",
+    "paragraphs": [
+      "Receive useful guidance about websites, SEO, marketing, automation, software, conversion, and digital operations.",
+      "No generic motivational emails. Only practical information designed to help you make better business decisions."
+    ],
+    "emailAriaLabel": "Your email address",
+    "emailPlaceholder": "Your Email Address",
+    "buttonLabel": "Join",
+    "image": "mobileCont",
+    "imageAlt": "Outsource to Pros mobile preview"
+  }
+}

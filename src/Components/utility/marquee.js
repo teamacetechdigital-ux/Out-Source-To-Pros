@@ -13,33 +13,33 @@ import marqueeIcon11 from "../../assets/imgs/marquee-icon11.svg";
 import marqueeIcon12 from "../../assets/imgs/marquee-icon12.svg";
 import marqueeIcon13 from "../../assets/imgs/marquee-icon13.svg";
 
-const marqueeItems = [
-  { icon: marqueeIcon1, label: "WordPress" },
-  { icon: marqueeIcon2, label: "Shopify" },
-  { icon: marqueeIcon3, label: "Webflow" },
-  { icon: marqueeIcon4, label: "Duda" },
-  { icon: marqueeIcon5, label: "GoHighLevel" },
-  { icon: marqueeIcon6, label: "React" },
-  { icon: marqueeIcon7, label: "Next.js" },
-  { icon: marqueeIcon8, label: "Python" },
-  { icon: marqueeIcon9, label: "Flutter" },
-  { icon: marqueeIcon10, label: "AWS" },
-  { icon: marqueeIcon11, label: "Google Cloud" },
-  { icon: marqueeIcon12, label: "HubSpot" },
-  { icon: marqueeIcon13, label: "Stripe" },
-];
+const icons = {
+  wordpress: marqueeIcon1,
+  shopify: marqueeIcon2,
+  webflow: marqueeIcon3,
+  duda: marqueeIcon4,
+  goHighLevel: marqueeIcon5,
+  react: marqueeIcon6,
+  nextjs: marqueeIcon7,
+  python: marqueeIcon8,
+  flutter: marqueeIcon9,
+  aws: marqueeIcon10,
+  googleCloud: marqueeIcon11,
+  hubspot: marqueeIcon12,
+  stripe: marqueeIcon13,
+};
 
-function Marquee() {
+function Marquee({ content }) {
   const renderButtons = (duplicate = false) => (
     <div className="marquee-track-group" aria-hidden={duplicate}>
-      {marqueeItems.map(({ icon, label }, index) => (
+      {content.items.map(({ icon, label }, index) => (
         <button
           className="marquee-icon-button flex items-center justify-center uppercase montserrat-bd font-bold text-1xl text-black"
           aria-label={label}
           key={`${label}-${duplicate ? "duplicate" : "original"}`}
           tabIndex={duplicate ? -1 : 0}
         >
-          <img src={icon} alt="" />
+          <img src={icons[icon]} alt="" />
           <span>{label}</span>
         </button>
       ))}

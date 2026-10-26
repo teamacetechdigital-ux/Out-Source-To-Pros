@@ -1,0 +1,12 @@
+{
+  "rewrites": [
+    {
+      "source": "/seo-services",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/seo-services/",
+      "destination": "/index.html"
+    }
+  ]
+}

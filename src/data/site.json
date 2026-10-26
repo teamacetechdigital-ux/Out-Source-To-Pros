@@ -1,0 +1,119 @@
+{
+  "header": {
+    "logo": {
+      "homeLabel": "Outsource to Pros home",
+      "alt": "",
+      "text": "outsource\nto pros"
+    },
+    "menuOpenLabel": "Open navigation",
+    "menuCloseLabel": "Close navigation",
+    "navLabel": "Main navigation",
+    "links": [
+      { "label": "Home", "href": "/#home" },
+      { "label": "About Us", "href": "/#about" },
+      { "label": "Services", "href": "/#services" },
+      { "label": "Testimonial", "href": "/#testimonials" },
+      { "label": "Contact Us", "href": "/#contact" }
+    ]
+  },
+  "footer": {
+    "logo": {
+      "alt": "Outsource to Pros",
+      "text": "outsource\nto pros"
+    },
+    "description": "Outsource to Pros helps US businesses and agencies plan, build, market, improve, and support their digital operations through connected strategy, design, development, SEO, content, paid media, automation, software, and technical services.",
+    "quickLinks": {
+      "title": "Quick Links",
+      "links": [
+        { "label": "About Us", "href": "/#about" },
+        { "label": "Services", "href": "/#services" },
+        { "label": "Contact", "href": "/#contact" },
+        { "label": "Testimonials", "href": "/#testimonials" },
+        { "label": "FAQs", "href": "/#faqs" }
+      ]
+    },
+    "contact": {
+      "title": "Contact",
+      "items": [
+        { "icon": "phone", "text": "(720) 338-4491", "href": "tel:+17203384491" },
+        { "icon": "location", "text": "6501 E. Belleview Ave, Suite 110\nGreenwood Village, CO 80111" },
+        { "icon": "email", "text": "info@outsourcetopros.com", "href": "mailto:info@outsourcetopros.com" }
+      ]
+    },
+    "socials": [
+      { "label": "Facebook", "icon": "facebook" },
+      { "label": "Instagram", "icon": "instagram" },
+      { "label": "X", "icon": "x" },
+      { "label": "YouTube", "icon": "youtube" }
+    ],
+    "columns": [
+      {
+        "title": "Services",
+        "links": [
+          { "label": "Web Design" },
+          { "label": "Web Development" },
+          { "label": "WordPress" },
+          { "label": "Shopify" },
+          { "label": "Search Engine Optimization", "to": "/seo-services" },
+          { "label": "Technical SEO" },
+          { "label": "Local SEO" },
+          { "label": "Content Marketing" },
+          { "label": "Paid Media" },
+          { "label": "AI Automation" },
+          { "label": "Software Development" },
+          { "label": "Mobile Apps" },
+          { "label": "Branding" },
+          { "label": "Website Maintenance" },
+          { "label": "White-Label Services" }
+        ]
+      },
+      {
+        "title": "Solutions",
+        "links": [
+          { "label": "Startups" },
+          { "label": "Small Businesses" },
+          { "label": "Growing Companies" },
+          { "label": "Enterprise" },
+          { "label": "Ecommerce" },
+          { "label": "SaaS" },
+          { "label": "Professional Services" },
+          { "label": "Agencies" },
+          { "label": "Dedicated Teams" }
+        ]
+      },
+      {
+        "title": "Resources",
+        "links": [
+          { "label": "Blog" },
+          { "label": "Guides" },
+          { "label": "Case Studies" },
+          { "label": "Free Tools" },
+          { "label": "Website Cost Calculator" },
+          { "label": "SEO Audit Tool" },
+          { "label": "Resource Center" },
+          { "label": "Knowledge Center" },
+          { "label": "FAQs" }
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          { "label": "About" },
+          { "label": "Our Process" },
+          { "label": "Work" },
+          { "label": "Careers" },
+          { "label": "Contact" },
+          { "label": "Agency Partnerships" }
+        ]
+      }
+    ],
+    "watermark": "OUTSOURCE",
+    "copyright": "© Copyright, 2026. All Rights Reserved.",
+    "legalLinks": [
+      "Privacy Policy",
+      "Terms and Conditions",
+      "Accessibility",
+      "Cookie Policy"
+    ]
+  }
+}
