@@ -7,6 +7,14 @@
     {
       "source": "/seo-services/",
       "destination": "/index.html"
+    },
+    {
+      "source": "/web-design-services",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/web-design-services/",
+      "destination": "/index.html"
     }
   ]
 }

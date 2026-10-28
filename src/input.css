@@ -1,1 +1,11 @@
 @import "tailwindcss";
+
+@theme {
+  --animate-design-scroll-up: design-scroll 22s linear infinite;
+  --animate-design-scroll-down: design-scroll 22s linear infinite reverse;
+
+  @keyframes design-scroll {
+    from { transform: translateY(0); }
+    to { transform: translateY(-50%); }
+  }
+}

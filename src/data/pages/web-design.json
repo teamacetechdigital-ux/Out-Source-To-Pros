@@ -1,0 +1,268 @@
+{
+  "whyOutSource": {
+    "title": "Why Outsource Web",
+    "highlight": "Design?",
+    "paragraphs": [
+      "Building a complete in-house design function can involve recruitment, salaries, software, management, training, and the challenge of keeping capacity balanced throughout the year. Web design outsourcing gives you another option.",
+      "You can access designers based on the actual workload, bring in specialist support when needed, and expand production without rebuilding your internal organization every time project volume changes.",
+      "For agencies, this can make it easier to accept more client work. For businesses, it can provide access to broader design expertise while internal teams stay focused on marketing, operations, sales, and business priorities."
+    ],
+    "buttonLabel": "Put More Design Within Reach",
+    "buttonLink": "/#contact",
+    "capabilities": {
+      "title": "What Can You",
+      "highlight": "Outsource?",
+      "cards": [
+        {
+          "title": "Website Planning",
+          "tone": "light",
+          "tagRows": [["Sitemap planning"], ["User flows", "Page hierarchy"], ["Content structure"]],
+          "emphasizedTags": ["Sitemap planning", "Content structure"]
+        },
+        {
+          "title": "UX Design",
+          "tone": "blue",
+          "tagRows": [["Wireframes"], ["Prototypes", "Navigation"], ["Conversion journeys"]]
+        },
+        {
+          "title": "Campaign Design",
+          "tone": "blue",
+          "tagRows": [["Landing pages", "PPC pages"], ["Lead generation pages"], ["Promotional pages"]]
+        },
+        {
+          "title": "Website UI",
+          "tone": "light",
+          "tagRows": [["Homepage design"], ["Inner pages"], ["Location pages", "Service pages"]],
+          "emphasizedTags": ["Homepage design", "Service pages"]
+        },
+        {
+          "title": "Ecommerce",
+          "tone": "blue",
+          "tagRows": [["Collection pages"], ["Shopify design", "Product pages"], ["Cart experiences"]]
+        },
+        {
+          "title": "Digital Products",
+          "tone": "light",
+          "tagRows": [["Dashboards", "SaaS websites"], ["Customer portals"], ["Web app interfaces"]],
+          "emphasizedTags": ["SaaS websites", "Web app interfaces"]
+        },
+        {
+          "title": "Responsive Design",
+          "tone": "light",
+          "tagRows": [["Tablet states"], ["Mobile layouts", "Desktop layouts"], ["Responsive components"]],
+          "emphasizedTags": ["Mobile layouts", "Responsive components"]
+        },
+        {
+          "title": "Production Support",
+          "tone": "blue",
+          "tagRows": [["Design QA", "Figma organization"], ["Asset preparation", "Revisions"]]
+        }
+      ]
+    }
+  },
+  "whiteLabelDelivery": {
+    "title": "Built for",
+    "highlight": "White-Label",
+    "subtitle": "Delivery",
+    "cards": [
+      {
+        "title": "Confidential Work",
+        "text": "Projects can remain behind your agency brand with clear communication boundaries."
+      },
+      {
+        "title": "Flexible Capacity",
+        "text": "Add designers when workloads increase without maintaining unused internal capacity."
+      },
+      {
+        "title": "Client-Ready Output",
+        "text": "Receive polished mockups and presentations prepared for review and approval."
+      },
+      {
+        "title": "Organized Files",
+        "text": "Design files are structured so revisions, internal collaboration, and future work remain easier."
+      },
+      {
+        "title": "Consistent Quality",
+        "text": "Design standards, responsive states, components, and page patterns are reviewed throughout the project."
+      },
+      {
+        "title": "Ongoing Support",
+        "text": "Continue using the team for new client work, additional pages, campaigns, and recurring production."
+      }
+    ],
+    "buttonLabel": "Build Your White-Label Design Team",
+    "buttonLink": "/#contact"
+  },
+  "designTeam": {
+    "title": "One Design Team.",
+    "highlight": "Multiple Capabilities.",
+    "capabilities": [
+      {
+        "title": "Strategy",
+        "text": "Sitemaps, content hierarchy, user journeys, page objectives, competitor references, and design direction."
+      },
+      {
+        "title": "Experience",
+        "text": "Wireframes, responsive behavior, navigation, interaction patterns, forms, and usability."
+      },
+      {
+        "title": "Interface",
+        "text": "Typography, color systems, imagery, cards, buttons, sections, components, and visual hierarchy."
+      },
+      {
+        "title": "Production",
+        "text": "Figma organization, responsive states, asset preparation, design revisions, QA, and final handoff."
+      }
+    ],
+    "agency": {
+      "title": "White-Label Web",
+      "highlight": "Design for Agencies",
+      "intro": "Your agency should not have to turn away good work simply because the internal design calendar is full.",
+      "servicePrefix": "Our",
+      "serviceHighlight": "white-label web design services",
+      "serviceText": "allow agencies to add production capacity behind the scenes while maintaining ownership of the strategy, brand, and client relationship. We can work from your briefs, design standards, workflows, and communication requirements without creating another visible layer between you and your client.",
+      "usage": "Use the model for occasional overflow, recurring website projects, landing page production, ecommerce work, UI/UX assignments, or a more consistent outsourced design function.",
+      "closing": "Your agency stays front and center. We help keep delivery moving.",
+      "buttonLabel": "Expand Your Agency Capacity",
+      "buttonLink": "/#contact",
+      "labels": {
+        "creative": "Creative UI",
+        "responsive": "Responsive",
+        "userFocused": "User Focused",
+        "mobile": "Mobile Ready"
+      }
+    }
+  },
+  "designShowcase": {
+    "ariaLabel": "Web design project showcase",
+    "title": "Web Design Built",
+    "highlight": "Around the Business",
+    "paragraphs": [
+      "Good web design begins before colors, images, and typography are selected. The first questions should be about the business, the audience, the content, and the action visitors should take.",
+      "We consider how customers discover the website, which information they need first, what builds confidence, where friction may occur, and how each page supports the wider customer journey.",
+      "That thinking helps us create websites that feel visually polished while remaining useful, understandable, and aligned with the reason the website exists."
+    ],
+    "buttonLabel": "Design Around Your Goals",
+    "buttonLink": "/#contact",
+    "columns": [
+      [{ "id": "project-1", "image": "web1", "alt": "Green wellness website design", "width": 369, "height": 379 }, { "id": "project-2", "image": "web2", "alt": "Floral ecommerce website design", "width": 371, "height": 517 }],
+      [{ "id": "project-3", "image": "web3", "alt": "Dark outdoor services website design", "width": 371, "height": 517 }, { "id": "project-4", "image": "web4", "alt": "Landscape services website design", "width": 371, "height": 381 }],
+      [{ "id": "project-5", "image": "web5", "alt": "Hair restoration website design", "width": 371, "height": 381 }, { "id": "project-6", "image": "web6", "alt": "Film and lighting rentals website design", "width": 371, "height": 517 }],
+      [{ "id": "project-7", "image": "web7", "alt": "Coral service business website design", "width": 371, "height": 517 }, { "id": "project-8", "image": "web8", "alt": "Food truck website design", "width": 371, "height": 381 }],
+      [{ "id": "project-9", "image": "web9", "alt": "Home energy services website design", "width": 371, "height": 381 }, { "id": "project-10", "image": "web10", "alt": "Food event catering website design", "width": 371, "height": 517 }]
+    ]
+  },
+  "hero": {
+    "title": "Outsource Web Design",
+    "description": "Expand your design capacity without adding another full-time department. Our outsource web design services give businesses and agencies access to experienced website, UI/UX, ecommerce, SaaS, landing page, and responsive designers through a flexible delivery model built around your workflow.",
+    "buttonLabel": "Start Your Design Project",
+    "buttonLink": "/",
+    "image": "webdesignHeroDashboard",
+    "imageAlt": "Web Design",
+    "floatingLabels": [
+      "Topical Authority Building",
+      "SERP Position Growth",
+      "Organic Traffic Growth",
+      "Semantic Search Strategy",
+      "Strategic Internal Linking"
+    ]
+  },
+  "designCapacity": {
+    "title": "More Design Capacity\nWithout",
+    "highlight": "More Hiring",
+    "paragraphs": [
+      "Design demand rarely stays predictable. One month may require a single landing page, while the next brings a complete website redesign, several client projects, ecommerce pages, or a larger UI system.",
+      "Outsourcing gives you access to additional creative capacity without recruiting every time workloads change. You can use our team for a defined project, recurring production, white-label fulfillment, or dedicated design support depending on how your business operates.",
+      "Our goal is simple: give your internal team more room to focus while the design work continues moving with a clear scope, consistent quality, and dependable communication."
+    ],
+    "buttonLabel": "Add Design Capacity"
+  },
+  "designServiceTabs": {
+    "title": "Web Design Services We",
+    "highlight": "Provide for Agencies",
+    "defaultTab": 1,
+    "buttonLink": "/#contact",
+    "tabs": [
+      {
+        "label": "WordPress Web Design",
+        "paragraphs": [
+          "Help your clients build flexible, easy-to-manage WordPress websites with designs tailored to their brand, audience, and business goals.",
+          "We support agencies with custom page layouts, landing pages, blog templates, and responsive designs that are ready for WordPress development.",
+          "From a single website to ongoing client projects, our team delivers consistent WordPress design support under your agency workflow."
+        ],
+        "closingLink": "Expand Your WordPress Design Services",
+        "id": "wordpress"
+      },
+      {
+        "label": "Shopify Web Design",
+        "paragraphs": [
+          "Help your ecommerce clients create better online shopping experiences with Shopify designs focused on product discovery, customer journeys, and conversion opportunities.",
+          "We support agencies with storefront designs, product pages, collection layouts, promotional sections, and responsive ecommerce experiences that are prepared for development.",
+          "Whether you need support for one store or ongoing ecommerce projects, our team helps you deliver professional Shopify designs under your agency workflow."
+        ],
+        "closingLink": "Expand Your Shopify Design Services",
+        "id": "shopify"
+      },
+      {
+        "label": "WooCommerce Web Design",
+        "paragraphs": [
+          "Help your clients turn their WordPress websites into engaging online stores with WooCommerce designs built around a smooth shopping experience.",
+          "We design storefronts, product pages, category layouts, cart pages, and checkout experiences that balance brand identity with usability.",
+          "Our team works within your agency process to deliver responsive ecommerce designs ready for WooCommerce development."
+        ],
+        "closingLink": "Expand Your WooCommerce Design Services",
+        "id": "woocommerce"
+      },
+      {
+        "label": "Webflow Web Design",
+        "paragraphs": [
+          "Deliver distinctive, responsive websites with Webflow designs that combine strong visual direction with practical, reusable layouts.",
+          "We support agencies with marketing websites, landing pages, CMS templates, and component systems prepared for Webflow development.",
+          "Whether you need a complete website or extra capacity for ongoing projects, our designers work as an extension of your team."
+        ],
+        "closingLink": "Expand Your Webflow Design Services",
+        "id": "webflow"
+      },
+      {
+        "label": "Squarespace Web Design",
+        "paragraphs": [
+          "Help your clients establish a polished online presence with Squarespace website designs tailored to their content and brand.",
+          "We design service pages, portfolios, online stores, and landing pages with clear navigation and responsive layouts.",
+          "Our team supports your agency from initial design direction through development-ready page designs."
+        ],
+        "closingLink": "Expand Your Squarespace Design Services",
+        "id": "squarespace"
+      },
+      {
+        "label": "Wix Web Design",
+        "paragraphs": [
+          "Give your clients professional Wix website designs that make their services easy to explore on every screen.",
+          "We support agencies with business websites, landing pages, booking experiences, and ecommerce layouts designed around client goals.",
+          "From new websites to redesigns, our team provides dependable Wix design support within your existing workflow."
+        ],
+        "closingLink": "Expand Your Wix Design Services",
+        "id": "wix"
+      },
+      {
+        "label": "SaaS Website Design",
+        "paragraphs": [
+          "Make complex products easier to understand with SaaS website designs that communicate value and guide visitors toward the next step.",
+          "We design product pages, feature sections, pricing pages, and conversion-focused landing pages for software businesses.",
+          "Our team helps your agency deliver clear, consistent, responsive SaaS websites ready for development."
+        ],
+        "closingLink": "Expand Your SaaS Website Design Services",
+        "id": "saas"
+      },
+      {
+        "label": "UI/UX Design Support",
+        "paragraphs": [
+          "Help your clients create intuitive digital experiences with UI/UX design support focused on their users and business goals.",
+          "We support agencies with user flows, wireframes, interactive prototypes, interface designs, and reusable design systems.",
+          "Whether you need support for a single feature or an entire product, our designers collaborate within your agency workflow."
+        ],
+        "closingLink": "Expand Your UI/UX Design Services",
+        "id": "uiux"
+      }
+    ]
+  }
+}

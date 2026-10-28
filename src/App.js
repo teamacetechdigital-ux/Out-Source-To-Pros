@@ -19,6 +19,7 @@ import BuildingCta from "./Components/utility/buildingCta";
 import Newsletter from "./Components/utility/newsletter";
 import Footer from "./Components/utility/footer";
 import SeoServices from "./SeoServices";
+import WebDesignServices from "./WebDesignServices";
 import home from "./data/pages/home.json";
 
 function RouteScroll() {
@@ -71,6 +72,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/seo-services" element={<SeoServices />} />
+        <Route path="/web-design-services" element={<WebDesignServices />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>

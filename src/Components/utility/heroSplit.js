@@ -2,9 +2,9 @@ import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { withBreaks } from "../../utils/text";
 import seoHeroDashboard from "../../assets/imgs/seo/seo-hero.png";
+import webdesignHeroDashboard from "../../assets/imgs/webdesign/bannerimg.png";
 
-// Images by JSON key. The Figma export already has the floating labels in it.
-const images = { seoHeroDashboard };
+const images = { seoHeroDashboard, webdesignHeroDashboard};
 
 const sectionStyle = {
   background:
@@ -41,7 +41,6 @@ function HeroSplit({ content }) {
   const labelRefs = useRef([]);
   const image = images[content.image];
 
-  // Labels gently float up and down, as in the prototype.
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       return undefined;
@@ -79,7 +78,7 @@ function HeroSplit({ content }) {
               <h1 className="montserrat-rg text-[40px] font-extrabold leading-[1.1] text-black sm:text-[56px] lg:text-[64px] xl:text-[75px]">
                 {withBreaks(content.title)}
               </h1>
-              <p className="satoshi-reg max-w-[560px] pt-5 text-sm capitalize leading-[1.6] text-black">
+              <p className="satoshi-reg max-w-[560px] pt-5 text-lg capitalize text-black">
                 {content.description}
               </p>
               <Link
@@ -90,7 +89,7 @@ function HeroSplit({ content }) {
               </Link>
             </div>
 
-            <div className={`relative mx-auto w-full py-6 sm:py-8 ${image ? "max-w-[760px]" : "max-w-[620px]"}`}>
+            <div className={`relative mx-auto w-full py-6 sm:py-8 ${image ? "max-w-[760px]" : "max-w-[780px]"}`}>
               {image ? (
                 <img
                   src={image}
