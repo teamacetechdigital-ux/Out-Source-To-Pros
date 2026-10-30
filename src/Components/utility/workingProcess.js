@@ -93,7 +93,7 @@ function WorkingProcess({ content }) {
           style={boxStyle}
         >
           <div className="start-txt-2 text-center">
-            <h2 className="montserrat-rg text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[44px] font-bold leading-tight text-black">
+            <h2 className="montserrat-rg text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[44px] 2xl:text-[56px] font-bold leading-tight text-black">
               {content.title} <span>{content.highlight}</span>
             </h2>
           </div>
@@ -132,7 +132,7 @@ function WorkingProcess({ content }) {
           </div>
 
           <div className="mt-10 text-center">
-            <button className="montserrat-bd rounded-md bg-[#1B50E8] px-8 py-4 text-base lg:text-lg font-bold uppercase text-white">
+            <button className="montserrat-bd rounded-md bg-[#1B50E8] px-8 py-4 text-base lg:text-lg 2xl:text-xl font-bold uppercase text-white">
               {content.buttonLabel}
             </button>
           </div>

@@ -1,0 +1,888 @@
+{
+  "hero": {
+    "title": "Branding & \nIdentity Design",
+    "description": "Our branding services combine strategy, positioning, messaging, visual identity, logo design, and brand guidelines into one clear system. Whether you are launching, growing, or rebranding, we create a strong foundation that keeps your business recognizable and consistent across every customer touchpoint.",
+    "buttonLabel": "Build Your Brand",
+    "buttonLink": "/#contact",
+    "image": "brandingHeroDashboard",
+    "imageAlt": "Brand identity boards with social posts, mobile screens, and design tools",
+    "floatingLabels": [
+      "Visual Identity",
+      "Logo Design",
+      "Rebranding",
+      "Brand Guidelines",
+      "Brand Strategy"
+    ]
+  },
+  "brandSupport": {
+    "title": "Your Brand Is Bigger",
+    "subtitle": "Than Your",
+    "highlight": "Logo",
+    "paragraphs": [
+      "A logo may be the most recognizable part of your identity, but it is only one element of the brand experience.",
+      "Your positioning influences what people expect. Your messaging explains why you matter. Your visual identity creates recognition. Your website, advertising, packaging, social content, and sales materials reinforce those signals.",
+      "We bring these pieces together so your brand feels like one clear business wherever customers encounter it."
+    ],
+    "buttonLabel": "Define Your Brand",
+    "buttonLink": "/#contact",
+    "supportTitle": "Your Branding Process",
+    "supportItems": [
+      {
+        "title": "Strategy",
+        "text": "Define what your brand stands for, who it serves, and where it belongs in the market."
+      },
+      {
+        "title": "Identity",
+        "text": "Create a recognizable visual language through logos, typography, colors, imagery, and supporting elements."
+      },
+      {
+        "title": "Messaging",
+        "text": "Develop clear language that communicates your value, personality, and positioning."
+      },
+      {
+        "title": "Consistency",
+        "text": "Give your team practical rules for maintaining the same brand experience across channels."
+      }
+    ]
+  },
+  "serviceTabs": {
+    "title": "What Our Branding",
+    "highlight": "Services Cover",
+    "paragraphs": [
+      "Branding can mean different things depending on where your business is today. Some companies need a complete identity from the ground up. Others have a strong foundation but need better positioning, messaging, or consistency.",
+      "Our services can be combined into a complete branding engagement or used individually according to your requirements."
+    ],
+    "defaultTab": 1,
+    "tabs": [
+      {
+        "title": "Brand Strategy",
+        "intro": "Set the direction your brand will follow before any creative work begins.",
+        "text": "Brand strategy connects your business goals, audience, market, and offer into one clear plan. It defines what the brand stands for, who it needs to reach, and how it should behave, so every identity, messaging, and marketing decision has a reason behind it.",
+        "points": [
+          "Clarifies Purpose and Direction",
+          "Aligns Teams Around One Plan",
+          "Guides Every Creative Decision"
+        ]
+      },
+      {
+        "title": "Brand Positioning",
+        "intro": "Define how your business should be understood within its category and what meaningful distinction you can own.",
+        "text": "Brand Positioning is the strategic process of creating a distinct image and identity for your business in the minds of your target audience. It defines how your business should be understood within its product or service category and identifies the unique, meaningful advantage you own compared to competitors. Rather than just being a slogan, logo, or advertising campaign, brand positioning is the core value proposition that drives why a customer should choose you over anyone else.",
+        "points": [
+          "Differentiates in a Crowded Market",
+          "Attracts the Right Audience",
+          "Guides Marketing and Strategy"
+        ]
+      },
+      {
+        "title": "Brand Naming",
+        "intro": "Find a name that fits your business, your audience, and the way you plan to grow.",
+        "text": "Brand naming explores options that are memorable, easy to say, and suitable for your market. We develop naming directions around your positioning, review shortlisted names for fit and practicality, and help you choose a name that can support the brand for years to come.",
+        "points": [
+          "Memorable and Easy to Say",
+          "Aligned With Your Positioning",
+          "Built for Long-Term Growth"
+        ]
+      },
+      {
+        "title": "Logo Design",
+        "intro": "Create a distinctive mark that represents your business clearly at every size.",
+        "text": "Logo design turns your brand strategy into a recognizable symbol. We explore concepts, refine the strongest direction, and prepare a logo system with primary, secondary, and icon versions so your mark works across websites, social profiles, print, packaging, and signage.",
+        "points": [
+          "Distinctive and Recognizable",
+          "Flexible Logo Variations",
+          "Ready for Digital and Print"
+        ]
+      },
+      {
+        "title": "Visual Identity",
+        "intro": "Build the visual language that makes your brand recognizable beyond the logo.",
+        "text": "Visual identity brings together color, typography, imagery, graphic elements, and layout principles into one consistent system. It gives every website page, social post, presentation, and campaign the same recognizable look, even when different people create the materials.",
+        "points": [
+          "Consistent Look Across Channels",
+          "Clear Color and Type System",
+          "Supporting Graphic Elements"
+        ]
+      },
+      {
+        "title": "Brand Messaging",
+        "intro": "Give your brand clear words that explain what you do and why it matters.",
+        "text": "Brand messaging defines how your business communicates its value, personality, and positioning. We develop core messages, value propositions, taglines, and tone of voice guidance so your website, sales team, and marketing speak with one consistent voice.",
+        "points": [
+          "Clear Value Proposition",
+          "Consistent Tone of Voice",
+          "Messages Your Team Can Reuse"
+        ]
+      },
+      {
+        "title": "Rebranding",
+        "intro": "Update your brand without losing the recognition you have already earned.",
+        "text": "Rebranding reviews your existing brand to decide what should be retained, refined, repositioned, or rebuilt. Whether your business has changed direction, entered new markets, or outgrown its current identity, we create a stronger system while protecting valuable brand equity.",
+        "points": [
+          "Protects Existing Recognition",
+          "Reflects Your Current Direction",
+          "Planned, Practical Rollout"
+        ]
+      },
+      {
+        "title": "Brand Guidelines",
+        "intro": "Give your team and partners practical rules for using the brand correctly.",
+        "text": "Brand guidelines document how your logo, colors, typography, imagery, and voice should be applied. They help internal teams, designers, developers, and agencies produce consistent materials without guessing or recreating decisions from scratch.",
+        "points": [
+          "Clear Usage Rules",
+          "Easier Onboarding for Partners",
+          "Consistency as You Scale"
+        ]
+      },
+      {
+        "title": "Brand Applications",
+        "intro": "Carry your identity into the materials customers actually see and use.",
+        "text": "Brand applications extend the identity across websites, social media templates, presentations, business cards, packaging, signage, and marketing collateral. Each application is designed to follow the system so the brand feels connected at every touchpoint.",
+        "points": [
+          "Ready-to-Use Templates",
+          "Digital and Print Materials",
+          "Connected Customer Touchpoints"
+        ]
+      }
+    ]
+  },
+  "comparison": {
+    "title": "Branding Support",
+    "highlight": "Compared",
+    "tableAriaLabel": "Branding support comparison. Scroll horizontally to see all columns.",
+    "table": {
+      "columns": [
+        "Feature",
+        "Freelancers",
+        "In-House",
+        "Outsource to Pros"
+      ],
+      "columnWidths": [
+        19,
+        25,
+        27,
+        30
+      ],
+      "rows": [
+        {
+          "feature": "Brand Strategy",
+          "cells": [
+            "Varies by expertise",
+            "Complete strategic direction"
+          ],
+          "highlight": "Complete strategic direction"
+        },
+        {
+          "feature": "Creative Team",
+          "cells": [
+            "Usually one specialist",
+            "Access to multiple design disciplines"
+          ],
+          "highlight": "Strategy, identity, design & messaging specialists"
+        },
+        {
+          "feature": "Creative Direction",
+          "cells": [
+            "Often self-managed",
+            "No"
+          ],
+          "highlight": "Experienced oversight"
+        },
+        {
+          "feature": "Brand Services",
+          "cells": [
+            "Usually selected services",
+            "Built for agency fulfillment"
+          ],
+          "highlight": "Identity, logo, messaging, guidelines & rebranding"
+        },
+        {
+          "feature": "Scalability",
+          "cells": [
+            "Limited by availability",
+            "Add capacity as needed"
+          ],
+          "highlight": "Scale support around your needs"
+        },
+        {
+          "feature": "White-Label Support",
+          "cells": [
+            "Varies",
+            "Planned throughout the project"
+          ],
+          "highlight": "Available for agencies"
+        },
+        {
+          "feature": "Ongoing Support",
+          "cells": [
+            "Depends on availability",
+            "Structured review and QA"
+          ],
+          "highlight": "Available after launch"
+        },
+        {
+          "feature": "Client Ownership",
+          "cells": [
+            "Often direct-to-client",
+            "Flexible engagement options"
+          ],
+          "highlight": "You keep the client relationship"
+        }
+      ]
+    }
+  },
+  "strategy": {
+    "title": "Start With the",
+    "highlight": "Brand Strategy",
+    "paragraphs": [
+      "Great branding begins before the first logo concept is created.",
+      "We start by understanding the business behind the brand: its audience, market, competitors, offer, personality, goals, and existing perception. This gives the creative work a strategic foundation and helps ensure the final identity represents something meaningful."
+    ],
+    "buttonLabel": "Build Your Brand Strategy",
+    "buttonLink": "/#contact",
+    "cards": [
+      {
+        "title": "Audience",
+        "text": "Who needs to recognize, understand, and trust the brand?"
+      },
+      {
+        "title": "Market",
+        "text": "What category does the business compete within?"
+      },
+      {
+        "title": "Positioning",
+        "text": "What space should the brand occupy?"
+      },
+      {
+        "title": "Difference",
+        "text": "What makes the business meaningfully distinct?"
+      },
+      {
+        "title": "Personality",
+        "text": "How should the brand feel and communicate?"
+      },
+      {
+        "title": "Proof",
+        "text": "What evidence supports the brand promise?"
+      }
+    ]
+  },
+  "identitySystem": {
+    "title": "A Complete Brand",
+    "highlight": "Identity System",
+    "paragraphs": [
+      "A professional brand should not depend on one logo file or a single color.",
+      "We create interconnected identity elements that work together across different environments and formats. This gives your team a repeatable system instead of making every future design decision from scratch."
+    ],
+    "artworkLabel": "Interactive brand identity elements. Drag the tiles to throw them, or press Enter to shuffle.",
+    "chips": {
+      "applications": "Brand Applications",
+      "color": "Color System",
+      "graphic": "Graphic Language",
+      "typography": "Typography System",
+      "imagery": "Imagery Direction",
+      "logo": "Logo System"
+    },
+    "buttonLabel": "Create Your Visual Identity",
+    "buttonLink": "/#contact"
+  },
+  "channels": {
+    "title": "Branding That Works",
+    "subtitle": "Across Every",
+    "highlight": "Channel",
+    "paragraphs": [
+      "Your audience does not experience your brand in one place.",
+      "They may discover you through search, visit your website, see a social advertisement, receive an email, download a presentation, speak with your sales team, and eventually become a customer.",
+      "Each interaction should feel connected.",
+      "Our brand identity design considers how the system will work across the channels your business actually uses."
+    ],
+    "tableCaption": "Brand applications for each channel",
+    "columns": {
+      "channel": "Channel",
+      "application": "Brand Application"
+    },
+    "rows": [
+      {
+        "channel": "Website",
+        "application": "Visual identity, messaging, UI direction"
+      },
+      {
+        "channel": "Social Media",
+        "application": "Templates, graphics, profile assets"
+      },
+      {
+        "channel": "Advertising",
+        "application": "Campaign direction and creative consistency"
+      },
+      {
+        "channel": "Sales",
+        "application": "Proposals, presentations, documents"
+      },
+      {
+        "channel": "Email",
+        "application": "Templates, visual language, messaging"
+      },
+      {
+        "channel": "Print",
+        "application": "Brochures, business cards, signage"
+      },
+      {
+        "channel": "Packaging",
+        "application": "Product presentation and visual identity"
+      },
+      {
+        "channel": "Events",
+        "application": "Displays, materials, environmental branding"
+      }
+    ],
+    "buttonLabel": "Extend Your Brand Across Channels",
+    "buttonLink": "/#contact"
+  },
+  "messaging": {
+    "title": "Brand Messaging",
+    "highlight": "That Makes Sense",
+    "paragraphs": [
+      "A visually strong identity needs clear words behind it.",
+      "We develop messaging frameworks that help your audience quickly understand what your business does, who it serves, why it matters, and what makes it different.",
+      "Instead of creating isolated marketing phrases, we establish a communication system your website, sales team, campaigns, social media, and future content can build upon."
+    ],
+    "buttonLabel": "Strengthen Your Brand Message",
+    "buttonLink": "/#contact",
+    "listTitle": "Messaging Can Include",
+    "items": [
+      "Brand positioning statement",
+      "Value proposition",
+      "Brand promise",
+      "Tagline",
+      "Key messages",
+      "Brand story",
+      "Tone of voice",
+      "Audience messaging",
+      "Service messaging",
+      "Communication principles"
+    ]
+  },
+  "positioning": {
+    "title": "Positioning Before",
+    "highlight": "Presentation",
+    "paragraphs": [
+      "Many businesses look similar because they communicate similar things.",
+      "Positioning gives your brand a clearer place within its market by connecting your business strengths with what your audience actually values.",
+      "We examine the category, competitors, audience expectations, business offering, and existing communication before defining the direction."
+    ],
+    "steps": [
+      {
+        "title": "Category",
+        "text": "Understand how customers currently view the market."
+      },
+      {
+        "title": "Competition",
+        "text": "Identify common messages, visual patterns, and opportunities for distinction."
+      },
+      {
+        "title": "Audience",
+        "text": "Understand what customers need, value, question, and expect."
+      },
+      {
+        "title": "Differentiation",
+        "text": "Define the characteristics that can make the brand easier to distinguish."
+      },
+      {
+        "title": "Position",
+        "text": "Turn those insights into a clear strategic direction."
+      }
+    ],
+    "buttonLabel": "Clarify Your Market Position",
+    "buttonLink": "/#contact"
+  },
+  "rebrand": {
+    "title": "Rebranding Without",
+    "subtitle": "Losing",
+    "highlight": "Recognition",
+    "paragraphs": [
+      "Rebranding does not always mean replacing everything.",
+      "Established businesses may already have valuable recognition, customer associations, visual assets, and messaging that should not be discarded without consideration.",
+      "We evaluate the existing brand first, then determine what should be retained, refined, repositioned, or rebuilt.",
+      "The goal is to create a stronger brand system while making thoughtful decisions about existing brand equity."
+    ],
+    "buttonLabel": "Plan Your Rebrand",
+    "buttonLink": "/#contact",
+    "listTitle": "A Rebrand May Address",
+    "items": [
+      "Outdated visual identity",
+      "New business direction",
+      "New target audience",
+      "Changed products or services",
+      "Market repositioning",
+      "Business expansion",
+      "Mergers or acquisitions",
+      "Inconsistent brand presentation",
+      "Weak differentiation",
+      "New leadership or ownership"
+    ]
+  },
+  "guidelines": {
+    "title": "Brand Guidelines",
+    "highlight": "Built for Real Use",
+    "text": "Brand guidelines should help people use the brand correctly. We organize guidelines around practical decisions your team and creative partners will encounter when producing new materials.",
+    "cards": [
+      {
+        "title": "Typography",
+        "text": "Font families, hierarchy, weights, sizing, spacing, and digital usage.",
+        "art": "typography",
+        "artText": [
+          "Aa",
+          "T"
+        ]
+      },
+      {
+        "title": "Colors",
+        "text": "Color specifications, combinations, contrast, backgrounds, and recommended applications.",
+        "art": "colors",
+        "artText": [
+          "#ffffff"
+        ]
+      },
+      {
+        "title": "Logo",
+        "text": "Approved versions, sizing, spacing, placement, and incorrect usage.",
+        "art": "logo",
+        "artText": [
+          "X",
+          "0.5 Px"
+        ]
+      },
+      {
+        "title": "Imagery",
+        "text": "Photography direction, illustration style, composition, and visual treatment.",
+        "art": "imagery"
+      },
+      {
+        "title": "Voice",
+        "text": "Tone, language principles, messaging structure, and communication examples.",
+        "art": "voice"
+      },
+      {
+        "title": "Applications",
+        "text": "Examples of how the identity should appear across important customer touchpoints.",
+        "art": "applications"
+      }
+    ],
+    "buttonLabel": "Create Your Brand Guidelines",
+    "buttonLink": "/#contact"
+  },
+  "process": {
+    "title": "Our Branding",
+    "highlight": "Process",
+    "steps": [
+      {
+        "title": "Discovery",
+        "text": "We learn about your business, audience, market, competitors, existing \nidentity, and goals."
+      },
+      {
+        "title": "Research",
+        "text": "We examine relevant market patterns, competitor positioning, audience \nexpectations, and current brand perception."
+      },
+      {
+        "title": "Strategy",
+        "text": "We establish positioning, personality, differentiation, messaging \ndirection, and core brand principles."
+      },
+      {
+        "title": "Creative Direction",
+        "text": "We define the visual territory, typography, color direction, imagery, \ncomposition, and overall creative approach."
+      },
+      {
+        "title": "Identity",
+        "text": "We develop the logo system, visual identity, supporting graphics, and \ncore brand assets."
+      },
+      {
+        "title": "Refinement",
+        "text": "We review the identity across relevant applications and refine the system \nthrough the agreed feedback process."
+      },
+      {
+        "title": "Guidelines",
+        "text": "We organize the identity into practical brand standards for your team and \nfuture partners."
+      },
+      {
+        "title": "Delivery",
+        "text": "You receive the approved brand assets and required files for implementation \nacross your business."
+      }
+    ],
+    "buttonLabel": "Start Your Branding Process"
+  },
+  "stages": {
+    "title": "Branding for",
+    "highlight": "Different",
+    "subtitle": "Business Stages",
+    "text": "The right branding scope depends on where your business is today.",
+    "cards": [
+      {
+        "title": "New Businesses",
+        "text": "Establish positioning, messaging, identity, and brand direction before investing heavily in marketing."
+      },
+      {
+        "title": "Growing Businesses",
+        "text": "Create consistency as your website, marketing channels, team, products, and customer base expand."
+      },
+      {
+        "title": "Established Businesses",
+        "text": "Refresh the identity while considering existing recognition, customer expectations, and valuable brand equity."
+      },
+      {
+        "title": "Repositioning Businesses",
+        "text": "Align the brand with a new market, audience, product offering, or business direction."
+      },
+      {
+        "title": "Product Companies",
+        "text": "Build an identity that can extend across products, digital experiences, marketing, packaging, and future offerings."
+      },
+      {
+        "title": "Agencies",
+        "text": "Add professional branding and identity fulfillment to your service offering through outsourced or white-label production."
+      }
+    ],
+    "buttonLabel": "Find Your Branding Approach",
+    "buttonLink": "/#contact"
+  },
+  "whiteLabel": {
+    "title": "White-Label",
+    "subtitle": "Branding for",
+    "highlight": "Agencies",
+    "intro": "Your agency may already own the client relationship, strategy, marketing, and account management. You do not necessarily need to build an internal branding department to offer complete brand services.",
+    "servicePrefix": "Our",
+    "serviceHighlight": "white-label branding services",
+    "serviceText": "give agencies access to additional branding capacity for client projects.",
+    "usage": "We can work from your brief, presentation format, approval process, and brand standards while your agency remains the client-facing provider.",
+    "buttonLabel": "Add Branding Capacity",
+    "buttonLink": "/#contact",
+    "listTitle": "White-Label Services",
+    "items": [
+      "Brand strategy",
+      "Positioning",
+      "Logo design",
+      "Visual identity",
+      "Brand messaging",
+      "Rebranding",
+      "Brand guidelines",
+      "Social media branding",
+      "Marketing collateral",
+      "Presentation design",
+      "Ongoing creative support"
+    ]
+  },
+  "memorable": {
+    "title": "What Makes a Brand",
+    "highlight": "Memorable?",
+    "paragraphs": [
+      "Memorability comes from recognizable signals repeated consistently over time.",
+      "A strong brand gives customers visual and verbal cues they can associate with your business. The logo, colors, typography, language, imagery, and customer experience should reinforce the same underlying identity."
+    ],
+    "cards": [
+      {
+        "title": "Recognition",
+        "text": "Create visual elements customers can identify quickly."
+      },
+      {
+        "title": "Clarity",
+        "text": "Make the business easier to understand."
+      },
+      {
+        "title": "Personality",
+        "text": "Give the brand a distinct character and communication style."
+      },
+      {
+        "title": "Consistency",
+        "text": "Keep important brand signals connected across channels."
+      },
+      {
+        "title": "Relevance",
+        "text": "Make sure the identity remains meaningful to the audience."
+      }
+    ],
+    "buttonLabel": "Build a Recognizable Brand",
+    "buttonLink": "/#contact",
+    "system": {
+      "title": "What Makes a Brand",
+      "highlight": "Memorable?",
+      "paragraphs": [
+        "As businesses grow, more people begin creating brand materials.",
+        "Marketing teams produce campaigns. Sales teams create presentations. Designers build new pages. Developers implement digital experiences. External partners create advertising and content.",
+        "Without a clear system, inconsistency quickly appears.",
+        "A defined brand identity gives everyone the same foundation while still allowing creative work to evolve."
+      ],
+      "buttonLabel": "Build a Scalable Brand System",
+      "buttonLink": "/#contact",
+      "circles": [
+        {
+          "title": "On-Demand Capacity",
+          "text": "Use consistent colors, typography, imagery, and graphic elements."
+        },
+        {
+          "title": "One Voice",
+          "text": "Keep messaging recognizable without making every piece of content sound identical."
+        },
+        {
+          "title": "One Standard",
+          "text": "Give internal and external teams practical rules for applying the brand."
+        },
+        {
+          "title": "One Experience",
+          "text": "Create continuity from first impression through customer interaction."
+        }
+      ]
+    }
+  },
+  "experience": {
+    "title": "From Brand Strategy to",
+    "subtitle": "Brand",
+    "highlight": "Experience",
+    "paragraphs": [
+      "The brand should not stop when the identity files are delivered.",
+      "Your new identity needs to appear where customers actually experience your business.",
+      "We can help extend the brand into digital and marketing environments so the strategy becomes visible in the real customer journey."
+    ],
+    "cards": [
+      {
+        "title": "Website",
+        "text": "Apply the identity across page layouts, messaging, visual elements, and digital experiences."
+      },
+      {
+        "title": "Social Media",
+        "text": "Create repeatable templates and visual systems for ongoing content."
+      },
+      {
+        "title": "Marketing",
+        "text": "Carry the identity into advertising, email campaigns, landing pages, and promotional materials."
+      },
+      {
+        "title": "Sales",
+        "text": "Apply brand standards to proposals, presentations, documents, and customer communications."
+      },
+      {
+        "title": "Content",
+        "text": "Use the established visual and verbal system across ongoing brand communications."
+      }
+    ],
+    "buttonLabel": "Bring Your Brand to Life",
+    "buttonLink": "/#contact"
+  },
+  "measure": {
+    "title": "How We Measure",
+    "highlight": "Brand Progress",
+    "paragraphs": [
+      "Branding should not be judged only by whether a logo looks good.",
+      "Depending on the project, useful indicators can include recognition, consistency, audience understanding, message clarity, engagement, branded search behavior, customer feedback, conversion performance, and adoption of the new identity across business channels."
+    ],
+    "buttonLabel": "Build a Brand With Purpose",
+    "buttonLink": "/#contact",
+    "cards": [
+      {
+        "title": "Brand Recognition",
+        "text": "Are customers increasingly able to identify the business?"
+      },
+      {
+        "title": "Message Clarity",
+        "text": "Can your audience quickly understand what you offer and why it matters?"
+      },
+      {
+        "title": "Audience Response",
+        "text": "How are customers responding to the new positioning and communication?"
+      },
+      {
+        "title": "Business Alignment",
+        "text": "Does the brand accurately represent where the company is going?"
+      }
+    ]
+  },
+  "engagements": {
+    "title": "Common Branding",
+    "highlight": "Engagements",
+    "tabs": [
+      {
+        "title": "Complete \nBrand Identity",
+        "text": "Complete Brand Identity is the cohesive collection of all visual, verbal, and strategic elements that shape how a business is perceived by the world. It goes far beyond just a logo or a color scheme—it encompasses your brand's personality, core values, tone of voice, and the entire sensory experience a customer has with your business. When building a brand from scratch or undertaking a full rebranding, a complete brand identity establishes consistency across every touchpoint—from your website, packaging, and social media to customer service and marketing assets—creating instant recognition, building trust, and driving long-term customer loyalty.",
+        "image": "brandIdentityBoard1",
+        "imageAlt": "Brand identity board with logo, posters, apparel, and app icon in a blue color system"
+      },
+      {
+        "title": "Brand \nStrategy",
+        "text": "A brand strategy engagement defines the foundation before any design work begins. We research your audience, market, and competitors, then clarify your positioning, personality, value proposition, and brand principles. The result is a practical strategic direction your team can use to guide identity, messaging, marketing, and future business decisions.",
+        "image": "brandIdentityBoard2",
+        "imageAlt": "Brand strategy workshop materials and positioning notes"
+      },
+      {
+        "title": "Visual \nIdentity",
+        "text": "A visual identity engagement creates the look of your brand beyond the logo. We develop the color palette, typography, imagery direction, graphic elements, and layout principles, then test them across real applications so your brand stays recognizable on your website, social media, presentations, and print materials.",
+        "image": "brandIdentityBoard3",
+        "imageAlt": "Visual identity system with colors, typography, and graphic elements"
+      },
+      {
+        "title": "Rebranding",
+        "text": "A rebranding engagement updates your brand while protecting the recognition you have already built. We review your current identity, messaging, and customer perception, decide what to keep, refine, or rebuild, and plan a rollout that moves your audience to the new brand without confusion.",
+        "image": "brandIdentityBoard4",
+        "imageAlt": "Before and after comparison of a refreshed brand identity"
+      },
+      {
+        "title": "Brand \nGuidelines",
+        "text": "A brand guidelines engagement turns your identity into clear, usable standards. We document logo usage, colors, typography, imagery, voice, and application examples in a format your internal team, designers, developers, and partners can follow when creating new materials.",
+        "image": "brandIdentityBoard5",
+        "imageAlt": "Brand guidelines document pages showing logo, color, and type rules"
+      },
+      {
+        "title": "Ongoing Brand \nSupport",
+        "text": "Ongoing brand support gives your business continued creative capacity after the identity is delivered. We help produce new templates, campaign assets, presentations, and brand applications, and keep everything consistent with your guidelines as your business and channels grow.",
+        "image": "brandIdentityBoard6",
+        "imageAlt": "Collection of branded templates and campaign assets"
+      }
+    ]
+  },
+  "faqs": {
+    "title": "Frequently Asked",
+    "highlight": "Questions",
+    "items": [
+      {
+        "question": "What are branding services?",
+        "answer": "Branding services help define how a business is positioned, communicated, recognized, and presented. Depending on the project, they can include brand strategy, positioning, messaging, logo design, visual identity, rebranding, brand guidelines, and brand applications."
+      },
+      {
+        "question": "What does a branding agency do?",
+        "answer": "A branding agency helps a business define who it is, who it serves, and how it should look and sound. That usually includes research, strategy, positioning, messaging, logo and visual identity design, guidelines, and support applying the brand across channels."
+      },
+      {
+        "question": "What is the difference between branding and logo design?",
+        "answer": "A logo is one visual element of your brand. Branding is the complete system behind it, including positioning, messaging, personality, colors, typography, imagery, and the experience customers have with your business."
+      },
+      {
+        "question": "Do you offer logo design?",
+        "answer": "Yes. We design logos as part of a complete identity or as a standalone project, and deliver a logo system with primary, secondary, and icon versions prepared for digital and print use."
+      },
+      {
+        "question": "What is included in a brand identity?",
+        "answer": "A brand identity typically includes the logo system, color palette, typography, imagery direction, graphic elements, and guidance on how they work together. It can also include messaging and tone of voice, depending on the scope."
+      },
+      {
+        "question": "Do you offer brand strategy?",
+        "answer": "Yes. Brand strategy can be delivered on its own or as the first stage of a larger engagement. It covers your audience, market, competitors, positioning, personality, and core brand principles."
+      },
+      {
+        "question": "Can you rebrand an existing business?",
+        "answer": "Yes. We start by reviewing your current brand, then decide what should be retained, refined, repositioned, or rebuilt so the new identity strengthens the recognition you already have."
+      },
+      {
+        "question": "Should we refresh our brand or completely rebrand?",
+        "answer": "A refresh suits businesses whose positioning still works but whose visuals or messaging feel dated. A full rebrand makes sense when your direction, audience, offer, or ownership has changed. We can help you assess which approach fits."
+      },
+      {
+        "question": "Do you create brand guidelines?",
+        "answer": "Yes. We create practical guidelines that document logo usage, colors, typography, imagery, voice, and application examples so your team and partners can use the brand consistently."
+      },
+      {
+        "question": "Can you create brand messaging?",
+        "answer": "Yes. We develop positioning statements, value propositions, taglines, key messages, brand stories, and tone of voice guidance that your website, sales team, and marketing can build on."
+      },
+      {
+        "question": "Can you provide white-label branding?",
+        "answer": "Yes. Agencies can use our team for white-label branding work. We follow your brief, presentation format, and approval process while your agency remains the client-facing provider."
+      },
+      {
+        "question": "Can branding support a website redesign?",
+        "answer": "Yes. Defining or updating the brand before a redesign gives the website clearer messaging, a consistent visual direction, and a stronger foundation for design and content decisions."
+      },
+      {
+        "question": "Can you create branding for ecommerce businesses?",
+        "answer": "Yes. We create identities for ecommerce brands that work across online stores, product pages, packaging, social media, email, and advertising."
+      },
+      {
+        "question": "Can you brand a SaaS company?",
+        "answer": "Yes. We help SaaS companies clarify positioning and build identities that extend across the product interface, website, onboarding, sales materials, and marketing."
+      },
+      {
+        "question": "Can you work with an existing logo?",
+        "answer": "Yes. If your logo still has value, we can refine it or keep it and build a stronger identity system, messaging, and guidelines around it."
+      },
+      {
+        "question": "How long does a branding project take?",
+        "answer": "Timelines depend on scope. A focused logo or guidelines project may take a few weeks, while a complete strategy and identity engagement usually takes longer. We confirm the timeline once the scope is defined."
+      },
+      {
+        "question": "How much do branding services cost?",
+        "answer": "Cost depends on the services included, the number of applications, and the level of strategy and research required. Share your requirements and we will recommend a scope and estimate."
+      }
+    ]
+  },
+  "growthCta": {
+    "title": "Build a Brand That Can Grow",
+    "highlight": "With Your Business",
+    "paragraphs": [
+      "Your brand should give your business more than a polished appearance. It should create clarity, recognition, consistency, and a foundation your team can continue building on."
+    ],
+    "buttons": [
+      {
+        "label": "Start Your Branding Project",
+        "link": "/#contact"
+      },
+      {
+        "label": "View Our Branding Work",
+        "link": "/#contact"
+      }
+    ]
+  },
+  "backdrops": {
+    "services": {
+      "height": 2030,
+      "offset": -755,
+      "flipY": true,
+      "top": 563,
+      "bottom": 113
+    },
+    "channels": {
+      "height": 1745,
+      "offset": -1040,
+      "flipX": true,
+      "top": 934,
+      "bottom": 942,
+      "phone": {
+        "top": 176,
+        "bottom": -120
+      },
+      "tablet": {
+        "top": 372,
+        "bottom": 218
+      },
+      "laptop": {
+        "top": 498,
+        "bottom": 212
+      }
+    },
+    "guidelines": {
+      "height": 1556,
+      "offset": -1229,
+      "flipX": true,
+      "flipY": true,
+      "top": 479,
+      "bottom": 17,
+      "phone": {
+        "top": -1110,
+        "bottom": 4
+      },
+      "tablet": {
+        "top": -308,
+        "bottom": 12
+      }
+    },
+    "memorable": {
+      "height": 2342,
+      "offset": -443,
+      "top": 601,
+      "bottom": 479,
+      "tablet": {
+        "top": 240,
+        "bottom": 46
+      },
+      "laptop": {
+        "top": 326,
+        "bottom": 138
+      }
+    }
+  }
+}

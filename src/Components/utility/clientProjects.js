@@ -65,7 +65,7 @@ function ClientProjects({ content, sharedBackground = false }) {
       <div className="mx-auto w-[calc(100%-2.5rem)] max-w-[1320px] text-center text-black md:w-[79.2%]">
         <h2
           id={`${id}-heading`}
-          className="montserrat-rg text-[28px] font-bold leading-[1.15] md:text-[clamp(1.5rem,3.23vw,2.875rem)]"
+          className="montserrat-rg text-[28px] font-bold leading-[1.15] md:text-[clamp(1.875rem,3.23vw,3.75rem)]"
         >
           {content.title}
           <br />
@@ -73,7 +73,7 @@ function ClientProjects({ content, sharedBackground = false }) {
             {content.highlight}
           </span>
         </h2>
-        <div className="satoshi-md mx-auto mt-5 max-w-[70ch] space-y-2 text-sm leading-[1.35] md:mt-[1.8vw] md:w-[60%] md:space-y-[0.5vw] md:text-[clamp(0.5rem,1.04vw,0.9375rem)]">
+        <div className="satoshi-md mx-auto mt-5 max-w-[70ch] space-y-2 text-[15px] leading-[1.35] md:mt-[1.8vw] md:w-[60%] md:space-y-[0.5vw] md:text-[clamp(1rem,1.04vw,1.25rem)]">
           {content.paragraphs.map((paragraph) => (
             <p key={paragraph}>{paragraph}</p>
           ))}
@@ -86,10 +86,10 @@ function ClientProjects({ content, sharedBackground = false }) {
                 key={card.title}
                 className="min-w-0 rounded-[clamp(10px,1.1vw,16px)] bg-[linear-gradient(180deg,#a1d1ff,#fff)] px-5 py-6 md:min-h-[11.4vw] md:px-[1.2vw] md:py-[2vw]"
               >
-                <h3 className="satoshi-bd text-base leading-[1.25] md:text-[clamp(0.625rem,1.25vw,1.3rem)]">
+                <h3 className="satoshi-bd text-base leading-[1.25] md:text-[clamp(1.0625rem,1.25vw,1.5rem)]">
                   {card.title}
                 </h3>
-                <p className="satoshi-md mt-2 text-sm leading-[1.3] md:mt-[0.6vw] md:text-[clamp(0.4375rem,0.94vw,1rem)]">
+                <p className="satoshi-md mt-2 text-[15px] leading-[1.3] md:mt-[0.6vw] md:text-[clamp(0.9375rem,0.94vw,1.125rem)]">
                   {card.text}
                 </p>
               </li>
@@ -98,7 +98,7 @@ function ClientProjects({ content, sharedBackground = false }) {
         </div>
         <Link
           to={content.buttonLink}
-          className="montserrat-bd mt-6 inline-flex max-w-full items-center justify-center rounded-sm bg-[#1B50E8] px-5 py-3 text-center text-xs uppercase leading-[1.3] text-white transition-colors hover:bg-[#1242c8] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white md:mt-[2.5vw] md:px-[1.6vw] md:py-[1.1vw] md:text-[clamp(0.625rem,1.25vw,1.125rem)]"
+          className="montserrat-bd mt-6 inline-flex max-w-full items-center justify-center rounded-sm bg-[#1B50E8] px-5 py-3 text-center text-xs uppercase leading-[1.3] text-white transition-colors hover:bg-[#1242c8] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white md:mt-[2.5vw] md:px-[1.6vw] md:py-[1.1vw] md:text-[clamp(1.0625rem,1.25vw,1.5rem)]"
         >
           {content.buttonLabel}
         </Link>

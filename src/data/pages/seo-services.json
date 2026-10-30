@@ -911,5 +911,47 @@
     "primaryButton": "Start Outsourcing SEO",
     "secondaryButton": "Request Your SEO Plan",
     "beforeFooter": true
+  },
+  "backdrops": {
+    "services": {
+      "height": 1629,
+      "offset": -1156,
+      "flipY": true,
+      "top": 488,
+      "bottom": -116
+    },
+    "whichModel": {
+      "height": 1634,
+      "offset": -1151,
+      "flipX": true,
+      "top": 1,
+      "bottom": 501
+    },
+    "businessTypes": {
+      "height": 1531,
+      "offset": -1254,
+      "flipX": true,
+      "flipY": true,
+      "top": -208,
+      "bottom": 13,
+      "phone": {
+        "top": -1190,
+        "bottom": 4
+      },
+      "tablet": {
+        "top": -720,
+        "bottom": 40
+      },
+      "laptop": {
+        "top": -652,
+        "bottom": 10
+      }
+    },
+    "whyChoose": {
+      "height": 2057,
+      "offset": -728,
+      "top": 58,
+      "bottom": 550
+    }
   }
 }

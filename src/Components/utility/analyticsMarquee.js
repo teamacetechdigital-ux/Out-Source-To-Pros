@@ -47,7 +47,7 @@ function AnalyticsCard({ image, caption }) {
           style={placeholderStyle}
         />
       )}
-      <figcaption className="satoshi-bd absolute -bottom-2.5 left-2 rounded-sm bg-black px-2 py-0.5 text-[9px] text-white sm:text-[10px]">
+      <figcaption className="satoshi-bd absolute -bottom-2.5 left-2 rounded-sm bg-black px-2 py-0.5 text-[11px] text-white sm:text-xs">
         {caption}
       </figcaption>
     </figure>

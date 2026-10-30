@@ -23,7 +23,7 @@ function ModelCard({ model, className = "", style }) {
       <h3 className="montserrat-rg text-base font-bold leading-tight text-[#1B50E8]">
         {model.title}
       </h3>
-      <p className="satoshi-md pt-1.5 text-xs leading-[1.45] text-black">{model.text}</p>
+      <p className="satoshi-md pt-1.5 text-sm leading-[1.45] text-black">{model.text}</p>
     </div>
   );
 }
@@ -99,7 +99,7 @@ function EngagementModels({ content }) {
               {withBreaks(content.title)}{" "}
               <span style={headingHighlightStyle}>{content.highlight}</span>
             </h2>
-            <p className="satoshi-md pt-5 text-[15px] leading-[1.5] text-black lg:max-w-[440px]">
+            <p className="satoshi-md pt-5 text-[15px] 2xl:text-[19px] leading-[1.5] text-black lg:max-w-[440px]">
               {content.text}
             </p>
             <button

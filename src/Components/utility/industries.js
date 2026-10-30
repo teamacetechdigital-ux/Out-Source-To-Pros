@@ -94,13 +94,13 @@ function Industries({ content }) {
     <section className="industry-section">
       <div className="custom-container px-5 sm:px-8 lg:px-12">
         <div className="start-txt text-center">
-          <h2 className="montserrat-rg font-bold text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[44px] capitalize text-white">
+          <h2 className="montserrat-rg font-bold text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[44px] 2xl:text-[56px] capitalize text-white">
             {content.title}{" "}<span>{content.highlight}</span>
           </h2>
-          <p className="satoshi-reg py-4 text-[15px] font-medium text-white">
+          <p className="satoshi-reg py-4 text-[15px] 2xl:text-[19px] font-medium text-white">
             {withBreaks(content.paragraphs[0])}
           </p>
-          <p className="satoshi-reg text-[15px] font-medium text-white">
+          <p className="satoshi-reg text-[15px] 2xl:text-[19px] font-medium text-white">
             {withBreaks(content.paragraphs[1])}
           </p>
         </div>
@@ -132,7 +132,7 @@ function Industries({ content }) {
           {renderIndustryCards(true)}
         </div>
         <div className="text-center cust-gap">
-          <button className="bg-[#1B50E8] text-base lg:text-lg text-white px-8 py-4 rounded-md uppercase montserrat-bd font-bold">
+          <button className="bg-[#1B50E8] text-base lg:text-lg 2xl:text-xl text-white px-8 py-4 rounded-md uppercase montserrat-bd font-bold">
             {content.buttonLabel}
           </button>
         </div>

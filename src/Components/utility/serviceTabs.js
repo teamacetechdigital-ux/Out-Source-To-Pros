@@ -2,11 +2,6 @@ import { useState } from "react";
 import { withBreaks } from "../../utils/text";
 
 // Same dark blue background as the scale delivery section, fading in from white at the top.
-const sectionStyle = {
-  background:
-    "linear-gradient(180deg, #FFFFFF 0px, rgba(255,255,255,0) 140px), radial-gradient(ellipse at 100% 100%, #C9D9FF 0%, rgba(201,217,255,0) 35%), linear-gradient(120deg, #111111 25%, #0B2A8C 60%, #1B50E8 100%)",
-};
-
 const headingHighlightStyle = {
   background: "linear-gradient(to right, #ffffff00, #ffffffbf)",
   padding: "0rem 0.5rem 0rem 0rem",
@@ -73,7 +68,6 @@ function ServiceTabs({ content }) {
   return (
     <section
       className="relative overflow-x-clip pb-20 pt-36 sm:pb-24 lg:pb-32 lg:pt-44"
-      style={sectionStyle}
     >
       <div className="custom-container px-5 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-[760px] text-center text-white">
@@ -82,7 +76,7 @@ function ServiceTabs({ content }) {
             <span style={headingHighlightStyle}>{content.highlight}</span>
           </h2>
           {content.paragraphs.map((paragraph) => (
-            <p key={paragraph} className="satoshi-md pt-4 text-[15px] leading-[1.5]">
+            <p key={paragraph} className="satoshi-md pt-4 text-[15px] 2xl:text-[19px] leading-[1.5]">
               {paragraph}
             </p>
           ))}
@@ -146,8 +140,8 @@ function ServiceTabs({ content }) {
               {tabs.map((tab, index) => (
                 <div key={tab.title} className={fadeClass(index)} aria-hidden={active !== index}>
                   <SeoIcon />
-                  <p className="satoshi-md pt-8 text-[15px] leading-[1.5]">{tab.intro}</p>
-                  <p className="satoshi-md pt-4 text-[15px] leading-[1.5]">{tab.text}</p>
+                  <p className="satoshi-md pt-8 text-[15px] 2xl:text-[19px] leading-[1.5]">{tab.intro}</p>
+                  <p className="satoshi-md pt-4 text-[15px] 2xl:text-[19px] leading-[1.5]">{tab.text}</p>
                 </div>
               ))}
             </div>

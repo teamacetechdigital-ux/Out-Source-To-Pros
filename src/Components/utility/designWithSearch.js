@@ -2,9 +2,9 @@ import { useId } from "react";
 import { Link } from "react-router-dom";
 
 const buttonClass =
-  "montserrat-bd inline-flex max-w-full items-center justify-center rounded-sm bg-[#1B50E8] px-5 py-3 text-center text-xs uppercase leading-[1.3] text-white transition-colors hover:bg-[#1242c8] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#8ec5ff] md:px-[1.6%] md:py-[1.4%] md:text-[clamp(0.625rem,1.25vw,1.125rem)]";
+  "montserrat-bd inline-flex max-w-full items-center justify-center rounded-sm bg-[#1B50E8] px-5 py-3 text-center text-xs uppercase leading-[1.3] text-white transition-colors hover:bg-[#1242c8] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#8ec5ff] md:px-[1.6%] md:py-[1.4%] md:text-[clamp(1.0625rem,1.25vw,1.5rem)]";
 const headingClass =
-  "montserrat-rg text-[28px] font-bold leading-[1.15] md:text-[clamp(1.5rem,3.23vw,2.875rem)]";
+  "montserrat-rg text-[28px] font-bold leading-[1.15] md:text-[clamp(1.875rem,3.23vw,3.75rem)]";
 
 function SystemIllustration({ type, labels }) {
   const id = useId();
@@ -325,10 +325,6 @@ function DesignWithSearch({ content }) {
       aria-labelledby={`${id}-search-heading`}
       className="relative isolate pb-6 pt-12 md:pb-[2.3vw] md:pt-[7.3vw]"
     >
-      <div
-        aria-hidden="true"
-        className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[94%] bg-[#101112] bg-[linear-gradient(180deg,transparent_40%,rgba(45,112,218,0.2)_60%,#fff_96%),radial-gradient(ellipse_at_0%_45%,#1155bd_0%,#164d99_21%,transparent_63%),linear-gradient(120deg,#4f83d2_0%,#0b244d_23%,transparent_43%)]"
-      />
       <div className="mx-auto w-[calc(100%-2.5rem)] max-w-[1320px] md:w-[79.2%]">
         <div className="text-center text-white">
           <h2 id={`${id}-search-heading`} className={headingClass}>
@@ -338,7 +334,7 @@ function DesignWithSearch({ content }) {
               {content.highlight}
             </span>
           </h2>
-          <div className="satoshi-md mx-auto mt-5 max-w-[64ch] space-y-2 text-sm leading-[1.3] md:mt-[2%] md:w-[60%] md:space-y-[1.5%] md:text-[clamp(0.625rem,1.04vw,0.9375rem)]">
+          <div className="satoshi-md mx-auto mt-5 max-w-[64ch] space-y-2 text-[15px] leading-[1.3] md:mt-[2%] md:w-[60%] md:space-y-[1.5%] md:text-[clamp(1rem,1.04vw,1.25rem)]">
             {content.paragraphs.map((paragraph, index) => <CopyParagraph key={index} paragraph={paragraph} />)}
           </div>
           <Link to={content.buttonLink} className={`${buttonClass} mt-5 md:mt-[2%]`}>
@@ -357,7 +353,7 @@ function DesignWithSearch({ content }) {
                 {content.system.highlight}
               </span>
             </h2>
-            <p className="satoshi-md mt-4 max-w-[47ch] text-sm leading-[1.35] md:mt-[4%] md:text-[clamp(0.625rem,1.04vw,0.9375rem)]">
+            <p className="satoshi-md mt-4 max-w-[47ch] text-[15px] leading-[1.35] md:mt-[4%] md:text-[clamp(1rem,1.04vw,1.25rem)]">
               {content.system.text}
             </p>
           </div>
@@ -366,10 +362,10 @@ function DesignWithSearch({ content }) {
               key={card.type}
               className="relative flex min-h-[280px] min-w-0 flex-col overflow-hidden rounded-[clamp(10px,1vw,16px)] border border-transparent bg-white/8 p-5 text-white before:pointer-events-none before:absolute before:inset-0 before:rounded-[inherit] before:bg-[linear-gradient(130deg,rgba(176,221,255,0.7),rgba(176,221,255,0.18))] before:p-px before:[mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] before:[mask-composite:exclude]! before:content-[''] md:min-h-[clamp(148px,19.2vw,276px)] md:p-[9%]"
             >
-              <h3 className="satoshi-bd text-lg leading-[1.2] md:text-[clamp(0.8125rem,1.25vw,1.125rem)]">
+              <h3 className="satoshi-bd text-lg leading-[1.2] md:text-[clamp(1.0625rem,1.25vw,1.5rem)]">
                 {card.title}
               </h3>
-              <p className="satoshi-md mt-1.5 text-sm leading-[1.3] md:mt-[3%] md:text-[clamp(0.5625rem,0.94vw,0.875rem)]">
+              <p className="satoshi-md mt-1.5 text-[15px] leading-[1.3] md:mt-[3%] md:text-[clamp(0.9375rem,0.94vw,1.125rem)]">
                 {card.text}
               </p>
               <div className="-mb-5 -mr-5 ml-auto mt-2 h-[125px] w-[94%] md:-mb-[11%] md:-mr-[11%] md:mt-auto md:h-auto md:aspect-[180/105]">
@@ -394,7 +390,7 @@ function DesignWithSearch({ content }) {
               {content.handoff.highlight}
             </span>
           </h2>
-          <div className="satoshi-md mx-auto mt-5 max-w-[74ch] space-y-2 text-sm leading-[1.3] md:mt-[3%] md:space-y-[2%] md:text-[clamp(0.625rem,1.04vw,0.9375rem)]">
+          <div className="satoshi-md mx-auto mt-5 max-w-[74ch] space-y-2 text-[15px] leading-[1.3] md:mt-[3%] md:space-y-[2%] md:text-[clamp(1rem,1.04vw,1.25rem)]">
             {content.handoff.paragraphs.map((paragraph, index) => <CopyParagraph key={index} paragraph={paragraph} />)}
           </div>
           <Link

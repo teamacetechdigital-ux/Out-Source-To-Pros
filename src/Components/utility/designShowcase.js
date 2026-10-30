@@ -54,7 +54,7 @@ function DesignShowcase({ content }) {
   return (
     <section
       aria-labelledby={`${id}-heading`}
-      className="relative isolate pb-16 mt-[-7rem] sm:pb-20 lg:pb-24"
+      className="relative isolate pb-16 mt-[-20rem] sm:pb-20 lg:pb-24"
     >
       <div className="mx-auto w-[calc(100%-2.5rem)] max-w-[1140px] md:w-[79.2%]">
         <div className="rounded-[clamp(16px,1.7vw,24px)] bg-white p-[clamp(12px,2.5vw,36px)] shadow-[0_8px_20px_rgba(27,80,232,0.07)]">
@@ -99,7 +99,7 @@ function DesignShowcase({ content }) {
         <div className="mx-auto mt-12 max-w-[860px] text-center sm:mt-[7.4vw] lg:mt-[108px]">
           <h2
             id={`${id}-heading`}
-            className="montserrat-rg text-[clamp(1.6rem,3.23vw,2.875rem)] font-bold leading-[1.2] text-black"
+            className="montserrat-rg text-[clamp(1.875rem,3.23vw,3.75rem)] font-bold leading-[1.2] text-black"
           >
             {content.title}
             <br />
@@ -107,7 +107,7 @@ function DesignShowcase({ content }) {
               {content.highlight}
             </span>
           </h2>
-          <div className="satoshi-md mt-5 space-y-3 text-[15px] leading-[1.4] text-black">
+          <div className="satoshi-md mt-5 space-y-3 text-[15px] 2xl:text-[19px] leading-[1.4] text-black">
             {content.paragraphs.map((paragraph) => (
               <p key={paragraph}>{paragraph}</p>
             ))}

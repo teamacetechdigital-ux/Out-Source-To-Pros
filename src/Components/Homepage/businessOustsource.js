@@ -29,7 +29,7 @@ function businessOustsource({ content }) {
       <section className="business-outsource-section">
         <div className="custom-container px-5 sm:px-8 lg:px-12">
           <div className="start-txt-2 text-center">
-            <h2 className="montserrat-rg font-bold text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[44px] text-black">
+            <h2 className="montserrat-rg font-bold text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[44px] 2xl:text-[56px] text-black">
               {withBreaks(content.title)} <span>{content.highlight}</span>
               {" "}<br className="hidden sm:block" />
               {content.titleEnd}
@@ -37,7 +37,7 @@ function businessOustsource({ content }) {
             {content.paragraphs.map((paragraph) => (
               <p
                 key={paragraph}
-                className="satoshi-md text-[15px] font-medium text-black"
+                className="satoshi-md text-[15px] 2xl:text-[19px] font-medium text-black"
               >
                 {withBreaks(paragraph)}
               </p>
@@ -89,7 +89,7 @@ function businessOustsource({ content }) {
           </div>
           {content.buttonLabel && (
             <div className="mt-10 text-center">
-              <button className="montserrat-bd rounded-md bg-[#1B50E8] px-8 py-4 text-base lg:text-lg font-bold uppercase text-white">
+              <button className="montserrat-bd rounded-md bg-[#1B50E8] px-8 py-4 text-base lg:text-lg 2xl:text-xl font-bold uppercase text-white">
                 {content.buttonLabel}
               </button>
             </div>

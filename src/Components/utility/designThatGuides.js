@@ -2,15 +2,15 @@ import { useId } from "react";
 import { Link } from "react-router-dom";
 import brandMark from "../../assets/imgs/webdesign/brand-mark.svg";
 
-const buttonClass = "montserrat-bd inline-flex max-w-full items-center justify-center rounded-sm bg-[#1B50E8] px-5 py-3 text-center text-xs uppercase leading-[1.3] text-white transition-colors hover:bg-[#1242c8] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1B50E8] md:px-[1.6%] md:py-[1.4%] md:text-[clamp(0.625rem,1.25vw,1.125rem)]";
+const buttonClass = "montserrat-bd inline-flex max-w-full items-center justify-center rounded-sm bg-[#1B50E8] px-5 py-3 text-center text-xs uppercase leading-[1.3] text-white transition-colors hover:bg-[#1242c8] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1B50E8] md:px-[1.6%] md:py-[1.4%] md:text-[clamp(1.0625rem,1.25vw,1.5rem)]";
 
 function ConversionCards({ cards, className }) {
   return (
     <ul className={`relative z-10 grid gap-3 md:gap-[1.4vw] ${className}`}>
       {cards.map((card) => (
         <li key={card.title} className="rounded-[clamp(12px,1.7vw,24px)] border border-transparent [background:linear-gradient(180deg,#f5faff,#fff)_padding-box,linear-gradient(180deg,#a8d4ff_0%,#cfe6ff_45%,#fff_100%)_border-box] p-4 md:min-h-[clamp(82px,8.2vw,118px)] md:px-[7%] md:py-[6.5%]">
-          <h4 className="satoshi-bd text-base leading-[1.2] text-black md:text-[clamp(0.8125rem,1.3vw,1.1875rem)]">{card.title}</h4>
-          <p className="satoshi-md mt-1 text-sm leading-[1.3] text-black md:mt-[2%] md:text-[clamp(0.5625rem,0.9vw,0.8125rem)]">{card.text}</p>
+          <h4 className="satoshi-bd text-base leading-[1.2] text-black md:text-[clamp(1.125rem,1.3vw,1.5625rem)]">{card.title}</h4>
+          <p className="satoshi-md mt-1 text-[15px] leading-[1.3] text-black md:mt-[2%] md:text-[clamp(0.875rem,0.9vw,1.0625rem)]">{card.text}</p>
         </li>
       ))}
     </ul>
@@ -24,17 +24,17 @@ function DesignThatGuides({ content }) {
     <section id="design-that-guides" aria-labelledby={`${id}-heading`} className="bg-white pb-14 md:pb-[6.8vw]">
       <div className="mx-auto w-[calc(100%-2.5rem)] max-w-[1320px] md:w-[79.2%]">
         <div className="text-center">
-          <h2 id={`${id}-heading`} className="montserrat-rg text-[28px] font-bold leading-[1.15] text-black md:text-[clamp(1.5rem,3.23vw,2.875rem)]">
+          <h2 id={`${id}-heading`} className="montserrat-rg text-[28px] font-bold leading-[1.15] text-black md:text-[clamp(1.875rem,3.23vw,3.75rem)]">
             {content.title}<br />
             <span className="bg-[linear-gradient(to_right,transparent,#abc5fc)] pr-1">{content.highlight}</span>
           </h2>
-          <div className="satoshi-md mx-auto mt-5 max-w-[58ch] space-y-2 text-sm leading-[1.3] text-black md:mt-[2%] md:w-[59%] md:space-y-[1.5%] md:text-[clamp(0.625rem,1.04vw,0.9375rem)]">
+          <div className="satoshi-md mx-auto mt-5 max-w-[58ch] space-y-2 text-[15px] leading-[1.3] text-black md:mt-[2%] md:w-[59%] md:space-y-[1.5%] md:text-[clamp(1rem,1.04vw,1.25rem)]">
             {content.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
           </div>
           <Link to={content.buttonLink} className={`${buttonClass} mt-5 md:mt-[2%]`}>{content.buttonLabel}</Link>
         </div>
         <div className="mt-12 md:mt-[7vw]" aria-labelledby={`${id}-conversion-heading`}>
-          <h3 id={`${id}-conversion-heading`} className="montserrat-rg text-center text-[28px] font-bold leading-[1.15] text-black md:text-[clamp(1.5rem,3.23vw,2.875rem)]">
+          <h3 id={`${id}-conversion-heading`} className="montserrat-rg text-center text-[28px] font-bold leading-[1.15] text-black md:text-[clamp(1.875rem,3.23vw,3.75rem)]">
             {content.conversion.title}<br />
             <span className="bg-[linear-gradient(to_right,transparent,#abc5fc)] pr-1">{content.conversion.highlight}</span>
           </h3>

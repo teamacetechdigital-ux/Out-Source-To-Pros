@@ -31,7 +31,7 @@ function InHouseDevelopment({ content }) {
     >
       <h2
         id={`${id}-heading`}
-        className="montserrat-rg mx-auto w-[calc(100%-2.5rem)] text-center text-[28px] font-bold leading-[1.15] text-black md:text-[clamp(1.5rem,3.23vw,2.875rem)]"
+        className="montserrat-rg mx-auto w-[calc(100%-2.5rem)] text-center text-[28px] font-bold leading-[1.15] text-black md:text-[clamp(1.875rem,3.23vw,3.75rem)]"
       >
         {content.title}
         <br />
@@ -48,16 +48,14 @@ function InHouseDevelopment({ content }) {
           className="overflow-x-auto rounded-[clamp(10px,1vw,16px)] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1B50E8]"
         >
           <table className="w-full min-w-[640px] table-fixed border-separate border-spacing-0 text-left md:min-w-0">
-            <caption className="sr-only">
-              {content.tableCaption}
-            </caption>
+            <caption className="sr-only">{content.tableCaption}</caption>
             <colgroup>
               <col className="w-[26.5%]" />
               <col className="w-[32.5%]" />
               <col className="w-[41%]" />
             </colgroup>
             <thead className="bg-[linear-gradient(180deg,#9fcfff,#fff)]">
-              <tr className="satoshi-bd h-20 text-base leading-[1.2] text-black md:h-[8.3vw] md:text-[clamp(0.875rem,1.93vw,1.75rem)]">
+              <tr className="satoshi-bd h-20 text-base leading-[1.2] text-black md:text-[clamp(1.6875rem,1.93vw,2rem)]">
                 <th
                   scope="col"
                   className="rounded-tl-[clamp(10px,1vw,16px)] border-b border-r border-[#a7c6e4]/25 px-4 py-5 align-top md:px-[2vw] md:py-[1.9vw]"
@@ -78,7 +76,7 @@ function InHouseDevelopment({ content }) {
                 </th>
               </tr>
             </thead>
-            <tbody className="satoshi-md text-xs leading-[1.25] text-black md:text-[clamp(0.5rem,1.04vw,0.9375rem)]">
+            <tbody className="satoshi-md text-[13px] leading-[1.3] text-black md:text-[clamp(1rem,1.04vw,1.25rem)]">
               {content.rows.map((row, index) => {
                 const isLast = index === content.rows.length - 1;
 
@@ -120,7 +118,7 @@ function InHouseDevelopment({ content }) {
       <div className="mx-auto mt-6 w-[calc(100%-2.5rem)] text-center md:mt-[3.2vw]">
         <Link
           to={content.buttonLink}
-          className="montserrat-bd inline-flex max-w-full items-center justify-center rounded-sm bg-[#1B50E8] px-5 py-3 text-center text-xs uppercase leading-[1.3] text-white transition-colors hover:bg-[#1242c8] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1B50E8] md:px-[1.6vw] md:py-[1.25vw] md:text-[clamp(0.625rem,1.3vw,1.1875rem)]"
+          className="montserrat-bd inline-flex max-w-full items-center justify-center rounded-sm bg-[#1B50E8] px-5 py-3 text-center text-xs uppercase leading-[1.3] text-white transition-colors hover:bg-[#1242c8] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1B50E8] md:px-[1.6vw] md:py-[1.25vw] md:text-[clamp(1.125rem,1.3vw,1.5625rem)]"
         >
           {content.buttonLabel}
         </Link>

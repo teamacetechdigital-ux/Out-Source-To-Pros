@@ -4,11 +4,6 @@ import { withBreaks } from "../../utils/text";
 // Time (ms) for one progress bar to fill before the next slide shows.
 const SLIDE_DURATION = 5000;
 
-const sectionStyle = {
-  background:
-    "radial-gradient(ellipse at 100% 100%, #C9D9FF 0%, rgba(201,217,255,0) 35%), linear-gradient(120deg, #111111 25%, #0B2A8C 60%, #1B50E8 100%)",
-};
-
 const blueCardStyle = {
   background: "linear-gradient(135deg, #0075FF 0%, #1B50E8 100%)",
   boxShadow: "0px 10px 30px rgba(0, 117, 255, 0.35)",
@@ -275,7 +270,7 @@ function ScaleDelivery({ content }) {
 
   return (
     <section
-      className="scale-delivery-section relative overflow-x-clip -mt-24 pb-20 pt-32 sm:-mt-32 sm:pb-28 sm:pt-48 lg:-mt-[220px] lg:pb-40 lg:pt-[320px]" style={sectionStyle}
+      className="scale-delivery-section relative overflow-x-clip -mt-24 pb-20 pt-32 sm:-mt-32 sm:pb-28 sm:pt-48 lg:-mt-[220px] lg:pb-40 lg:pt-[320px]"
     >
       <div className="custom-container px-5 sm:px-8 lg:px-12">
         <div className="start-txt">

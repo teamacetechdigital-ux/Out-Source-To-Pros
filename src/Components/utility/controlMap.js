@@ -70,7 +70,7 @@ function ControlMap({ content }) {
             <span style={headingHighlightStyle}>{content.highlight}</span>
           </h2>
         </div>
-        <p className="satoshi-md mx-auto max-w-[760px] pt-5 text-center text-[15px] leading-[1.5] text-black">
+        <p className="satoshi-md mx-auto max-w-[760px] pt-5 text-center text-[15px] 2xl:text-[19px] leading-[1.5] text-black">
           {withBreaks(content.description)}
         </p>
 

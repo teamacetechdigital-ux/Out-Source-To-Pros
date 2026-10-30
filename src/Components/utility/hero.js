@@ -41,14 +41,14 @@ function Hero({ content }) {
           <h1 className="montserrat-rg font-extrabold text-[42px] sm:text-[60px] lg:text-[72px] xl:text-[75px] leading-[1.1] capitalize text-white">
             {content.title}
           </h1>
-          <p className="satoshi-reg max-w-[600px] text-[15px] lg:text-sm font-medium capitalize py-6 text-white">
+          <p className="satoshi-reg max-w-[600px] text-[15px] 2xl:text-[19px] lg:text-sm font-medium capitalize py-6 text-white">
             {content.description}
           </p>
           <div className="flex flex-col items-stretch gap-4 sm:flex-row sm:flex-wrap sm:items-center">
-            <button className="bg-[#1B50E8] text-base lg:text-lg text-white px-8 py-4 rounded-md uppercase montserrat-bd font-bold">
+            <button className="bg-[#1B50E8] text-base lg:text-lg 2xl:text-xl text-white px-8 py-4 rounded-md uppercase montserrat-bd font-bold">
               {content.primaryButtonLabel}
             </button>
-            <button className="bg-white text-black text-base lg:text-lg px-8 py-4 rounded-md uppercase montserrat-bd font-bold">
+            <button className="bg-white text-black text-base lg:text-lg 2xl:text-xl px-8 py-4 rounded-md uppercase montserrat-bd font-bold">
               {content.secondaryButtonLabel}
             </button>
           </div>
@@ -59,7 +59,7 @@ function Hero({ content }) {
               <h2 className="montserrat-rg font-extrabold text-[42px] sm:text-[60px] lg:text-[64px] xl:text-[72px] capitalize text-white">
                 {`${Math.floor(countProgress * counter.value).toLocaleString()}${counter.suffix}`}
               </h2>
-              <p className="montserrat-md font-medium text-lg sm:text-xl lg:text-[22px] text-white">
+              <p className="montserrat-md font-medium text-lg sm:text-xl lg:text-[22px] 2xl:text-[26px] text-white">
                 {withBreaks(counter.label)}
               </p>
             </div>

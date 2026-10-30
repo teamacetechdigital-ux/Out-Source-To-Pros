@@ -82,12 +82,12 @@ function WhyAgencies({ content }) {
     <section className="why-agencies-section relative z-10 pb-16 lg:pb-24">
       <div className="custom-container px-5 sm:px-8 lg:px-12">
         <div className="start-txt-2 text-center">
-          <h2 className="montserrat-rg font-bold text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[44px] text-black">
+          <h2 className="montserrat-rg font-bold text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[44px] 2xl:text-[56px] text-black">
             {content.title}
             {" "}<br className="hidden sm:block" />
             <span>{content.highlight}</span>
           </h2>
-          <p className="satoshi-md text-[15px] font-medium text-black">
+          <p className="satoshi-md text-[15px] 2xl:text-[19px] font-medium text-black">
             {withBreaks(content.description)}
           </p>
         </div>
@@ -150,7 +150,7 @@ function WhyAgencies({ content }) {
 
             {rows.map((row) => (
               <React.Fragment key={row.feature}>
-                <div className="relative border-t border-[#E5E9F2] px-6 py-6 montserrat-rg text-base lg:text-[15px] font-bold text-[#1B50E8]">
+                <div className="relative border-t border-[#E5E9F2] px-6 py-6 montserrat-rg text-base lg:text-[15px] 2xl:text-[19px] font-bold text-[#1B50E8]">
                   {row.feature}
                 </div>
                 {(row.cells || [row.freelancers, row.agencies, row.fullTime]).map((text) => (

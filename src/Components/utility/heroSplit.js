@@ -1,16 +1,15 @@
 import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { withBreaks } from "../../utils/text";
+import { figmaBackdropStyle } from "./figmaBackdrop";
 import seoHeroDashboard from "../../assets/imgs/seo/seo-hero.png";
 import webdesignHeroDashboard from "../../assets/imgs/webdesign/bannerimg.png";
 import devHeroDashboard from "../../assets/imgs/webdevelopment/developmentImg.png";
 
 const images = { seoHeroDashboard, webdesignHeroDashboard, devHeroDashboard};
 
-const sectionStyle = {
-  background:
-    "linear-gradient(155deg, #FFFFFF 0%, #FFFFFF 22%, #C7DAFF 52%, #7FA8F7 78%, #2F66EC 100%)",
-};
+// Hero "Work" frame from Figma (1884 x 1044, inset 18px; same on every service page).
+const sectionStyle = figmaBackdropStyle({ width: 1884, height: 1044, offset: -1748, shiftX: -18, flipY: true, palette: "hero" });
 
 const placeholderStyle = {
   background: "linear-gradient(135deg, #EEF4FF 0%, #D6E4FF 100%)",
@@ -110,7 +109,7 @@ function HeroSplit({ content }) {
                 <span
                   key={label}
                   ref={(el) => (labelRefs.current[index] = el)}
-                  className="montserrat-bd absolute whitespace-nowrap rounded-[9999px] bg-white px-2.5 py-1.5 text-[8px] font-bold uppercase text-black sm:px-4 sm:py-2 sm:text-[10px] xl:text-[11px]"
+                  className="montserrat-bd absolute whitespace-nowrap rounded-[9999px] bg-white px-2.5 py-1.5 text-[10px] font-bold uppercase text-black sm:px-4 sm:py-2 sm:text-[11px] xl:text-[13px]"
                   style={{ ...labelStyle, ...labelPositions[index % labelPositions.length] }}
                 >
                   {label}

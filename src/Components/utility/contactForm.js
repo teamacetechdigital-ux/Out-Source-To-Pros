@@ -27,11 +27,11 @@ function ContactForm({ content }) {
       <div className="custom-container px-5 sm:px-8 lg:px-12">
         <div className="rounded-[20px] bg-white px-5 py-10 sm:px-10 lg:px-14 lg:py-14" style={boxStyle}>
           <div className="text-center">
-            <h2 className="montserrat-rg text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[44px] font-bold text-black">
+            <h2 className="montserrat-rg text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[44px] 2xl:text-[56px] font-bold text-black">
               {content.title}{" "}
               <span style={headingHighlightStyle}>{content.highlight}</span>
             </h2>
-            <p className="satoshi-md pt-5 text-base lg:text-[15px] text-black">
+            <p className="satoshi-md pt-5 text-base lg:text-[15px] 2xl:text-[19px] text-black">
               {withBreaks(content.description)}
             </p>
           </div>
@@ -69,7 +69,7 @@ function ContactForm({ content }) {
             <div className="sm:col-span-2 pt-4 text-center">
               <button
                 type="submit"
-                className="montserrat-bd rounded-md bg-[#1B50E8] px-8 py-4 text-base lg:text-lg font-bold uppercase text-white"
+                className="montserrat-bd rounded-md bg-[#1B50E8] px-8 py-4 text-base lg:text-lg 2xl:text-xl font-bold uppercase text-white"
               >
                 {content.buttonLabel}
               </button>

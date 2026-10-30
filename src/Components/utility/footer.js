@@ -3,11 +3,10 @@ import { Link } from "react-router-dom";
 import Logo from "../../assets/imgs/logo.svg";
 import site from "../../data/site.json";
 import { withBreaks } from "../../utils/text";
+import { figmaBackdropStyle } from "./figmaBackdrop";
 
-const footerStyle = {
-  background:
-    "radial-gradient(ellipse at 100% 100%, #1B50E8 0%, rgba(27,80,232,0) 45%), linear-gradient(180deg, #FFFFFF 0%, #6F96F5 8%, #1B50E8 18%, #0B2A8C 35%, #111111 70%)",
-};
+// Footer "Work" frame from Figma (same on every page).
+const footerStyle = figmaBackdropStyle({ height: 1581, offset: -1204, flipX: true, flipY: true });
 
 const iconBoxClass =
   "flex h-9 w-9 shrink-0 items-center justify-center rounded-md bg-[#1B50E8] text-white";
@@ -95,9 +94,12 @@ function Footer({ content = site.footer }) {
 
   return (
     <footer
-      className="relative -mt-24 overflow-hidden pt-40 text-white sm:-mt-[120px] lg:pt-[200px] [overflow-wrap:anywhere]"
-      style={footerStyle}
+      className="relative isolate -mt-24 overflow-hidden bg-[linear-gradient(90deg,rgb(16,17,19)_0%,rgb(16,16,17)_40%,rgb(16,18,21)_55%,rgb(14,23,37)_65%,rgb(11,35,74)_75%,rgb(7,52,125)_85%,rgb(6,64,157)_92%,rgb(19,82,184)_100%)] pt-40 text-white sm:-mt-[120px] lg:bg-none lg:pt-[200px] [overflow-wrap:anywhere]"
     >
+      {/* Below lg the footer is much taller than the Figma frame, so the frame is squeezed into the
+          top 520px (white fading to navy before the text starts) and the footer continues in the
+          frame's bottom colours; from lg it covers the whole footer as in the design. */}
+      <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 top-0 -z-10 h-[520px] lg:bottom-0 lg:h-auto" style={footerStyle} />
       <div className="custom-container relative px-5 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-[1.4fr_1fr_1.2fr] xl:gap-16 [&>*]:min-w-0">
           <div className="md:col-span-2 xl:col-span-1">
@@ -107,7 +109,7 @@ function Footer({ content = site.footer }) {
                 {withBreaks(content.logo.text, "always")}
               </span>
             </div>
-            <p className="satoshi-md pt-8 text-base lg:text-[15px] leading-[1.5]">
+            <p className="satoshi-md pt-8 text-base lg:text-[15px] 2xl:text-[19px] leading-[1.5]">
               {content.description}
             </p>
           </div>

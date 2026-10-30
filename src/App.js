@@ -18,9 +18,12 @@ import ContactForm from "./Components/utility/contactForm";
 import BuildingCta from "./Components/utility/buildingCta";
 import Newsletter from "./Components/utility/newsletter";
 import Footer from "./Components/utility/footer";
+import FigmaBackdrop from "./Components/utility/figmaBackdrop";
 import SeoServices from "./SeoServices";
 import WebDesignServices from "./WebDesignServices";
 import WebDevelopmentServices from "./WebDevelopment";
+import BrandingServices from "./BrandingServices";
+import AppDevelopment from "./AppDevelopment";
 import home from "./data/pages/home.json";
 
 function RouteScroll() {
@@ -54,8 +57,10 @@ function HomePage() {
       <WhiteLabel content={home.whiteLabel} />
       <BusinessOutSource content={home.businessOutsource} />
       <WhyAgencies content={home.whyAgencies} />
-      <ScaleDelivery content={home.scaleDelivery} />
-      <WorkingProcess content={home.workingProcess} />
+      <FigmaBackdrop frame={home.backdrops.scaleDelivery} clip={false}>
+        <ScaleDelivery content={home.scaleDelivery} />
+        <WorkingProcess content={home.workingProcess} />
+      </FigmaBackdrop>
       <Faqs content={home.faqs} />
       <Testimonials content={home.testimonials} />
       <ContactForm content={home.contactForm} />
@@ -75,6 +80,8 @@ function App() {
         <Route path="/seo-services" element={<SeoServices />} />
         <Route path="/web-design-services" element={<WebDesignServices />} />
         <Route path="/web-development-services" element={<WebDevelopmentServices />} />
+        <Route path="/branding-identity-design" element={<BrandingServices />} />
+        <Route path="/app-development-services" element={<AppDevelopment />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </>

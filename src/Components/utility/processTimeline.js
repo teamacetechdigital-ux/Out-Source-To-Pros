@@ -26,7 +26,7 @@ function ProcessTimeline({ content }) {
           <span style={headingHighlightStyle}>{content.highlight}</span>
         </h2>
 
-        <ol className="mt-10 flex flex-col gap-5 sm:mt-14 sm:gap-6 w-6xl mx-auto">
+        <ol className="mt-10 flex flex-col gap-5 sm:mt-14 sm:gap-6 mx-auto w-full max-w-6xl">
           {content.steps.map((step, index) => (
             <li
               key={step.title}

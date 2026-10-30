@@ -13,7 +13,7 @@ function BuildingCta({ content }) {
       }`}
     >
       <div className="custom-container px-5 sm:px-8 lg:px-12 text-center">
-        <h2 className="montserrat-rg text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[44px] font-bold leading-[1.25] text-black">
+        <h2 className="montserrat-rg text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[44px] 2xl:text-[56px] font-bold leading-[1.25] text-black">
           {withBreaks(content.title)}{" "}
           <span style={headingHighlightStyle}>{content.highlight}</span>
         </h2>
@@ -22,16 +22,16 @@ function BuildingCta({ content }) {
             key={paragraph}
             className={`satoshi-md ${
               index === 0 ? "pt-6" : "pt-3"
-            } text-base lg:text-[15px] text-black`}
+            } text-base lg:text-[15px] 2xl:text-[19px] text-black`}
           >
             {withBreaks(paragraph)}
           </p>
         ))}
         <div className="mt-8 flex flex-col items-stretch justify-center gap-4 sm:mt-10 sm:flex-row sm:flex-wrap sm:items-center">
-          <button className="montserrat-bd rounded-md bg-[#1B50E8] px-8 py-4 text-base lg:text-lg font-bold uppercase text-white">
+          <button className="montserrat-bd rounded-md bg-[#1B50E8] px-8 py-4 text-base lg:text-lg 2xl:text-xl font-bold uppercase text-white">
             {content.primaryButton}
           </button>
-          <button className="montserrat-bd rounded-md bg-[#C9D9FF] px-8 py-4 text-base lg:text-lg font-bold uppercase text-black">
+          <button className="montserrat-bd rounded-md bg-[#C9D9FF] px-8 py-4 text-base lg:text-lg 2xl:text-xl font-bold uppercase text-black">
             {content.secondaryButton}
           </button>
         </div>

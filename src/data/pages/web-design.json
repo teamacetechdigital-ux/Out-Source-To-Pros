@@ -352,7 +352,8 @@
         "question": "Who owns the final design?",
         "answer": "Design ownership, file access, and final delivery are established in the agreed project terms. For white-label work, ownership and confidentiality requirements can be defined before the project begins."
       }
-    ]
+    ],
+    "noBackdrop": true
   },
   "designGrowthCta": {
     "title": "Give Your Team More",
@@ -411,14 +412,32 @@
       "title": "Conversion-Focused by",
       "highlight": "Design",
       "leftCards": [
-        { "title": "Clear Hierarchy", "text": "Help visitors understand what matters first." },
-        { "title": "Strong CTAs", "text": "Place next steps where they make sense in the journey." },
-        { "title": "Better Forms", "text": "Reduce unnecessary friction around inquiries and conversions." }
+        {
+          "title": "Clear Hierarchy",
+          "text": "Help visitors understand what matters first."
+        },
+        {
+          "title": "Strong CTAs",
+          "text": "Place next steps where they make sense in the journey."
+        },
+        {
+          "title": "Better Forms",
+          "text": "Reduce unnecessary friction around inquiries and conversions."
+        }
       ],
       "rightCards": [
-        { "title": "Trust Signals", "text": "Create space for proof, case studies, reviews, data, and credentials." },
-        { "title": "Intent-Based Pages", "text": "Design pages around what different visitors are trying to accomplish." },
-        { "title": "Reduced Friction", "text": "Remove visual and structural obstacles that make decisions harder." }
+        {
+          "title": "Trust Signals",
+          "text": "Create space for proof, case studies, reviews, data, and credentials."
+        },
+        {
+          "title": "Intent-Based Pages",
+          "text": "Design pages around what different visitors are trying to accomplish."
+        },
+        {
+          "title": "Reduced Friction",
+          "text": "Remove visual and structural obstacles that make decisions harder."
+        }
       ],
       "buttonLabel": "Design With Purpose"
     }
@@ -502,46 +521,144 @@
         {
           "title": "Website Planning",
           "tone": "light",
-          "tagRows": [["Sitemap planning"], ["User flows", "Page hierarchy"], ["Content structure"]],
-          "emphasizedTags": ["Sitemap planning", "Content structure"]
+          "tagRows": [
+            [
+              "Sitemap planning"
+            ],
+            [
+              "User flows",
+              "Page hierarchy"
+            ],
+            [
+              "Content structure"
+            ]
+          ],
+          "emphasizedTags": [
+            "Sitemap planning",
+            "Content structure"
+          ]
         },
         {
           "title": "UX Design",
           "tone": "blue",
-          "tagRows": [["Wireframes"], ["Prototypes", "Navigation"], ["Conversion journeys"]]
+          "tagRows": [
+            [
+              "Wireframes"
+            ],
+            [
+              "Prototypes",
+              "Navigation"
+            ],
+            [
+              "Conversion journeys"
+            ]
+          ]
         },
         {
           "title": "Campaign Design",
           "tone": "blue",
-          "tagRows": [["Landing pages", "PPC pages"], ["Lead generation pages"], ["Promotional pages"]]
+          "tagRows": [
+            [
+              "Landing pages",
+              "PPC pages"
+            ],
+            [
+              "Lead generation pages"
+            ],
+            [
+              "Promotional pages"
+            ]
+          ]
         },
         {
           "title": "Website UI",
           "tone": "light",
-          "tagRows": [["Homepage design"], ["Inner pages"], ["Location pages", "Service pages"]],
-          "emphasizedTags": ["Homepage design", "Service pages"]
+          "tagRows": [
+            [
+              "Homepage design"
+            ],
+            [
+              "Inner pages"
+            ],
+            [
+              "Location pages",
+              "Service pages"
+            ]
+          ],
+          "emphasizedTags": [
+            "Homepage design",
+            "Service pages"
+          ]
         },
         {
           "title": "Ecommerce",
           "tone": "blue",
-          "tagRows": [["Collection pages"], ["Shopify design", "Product pages"], ["Cart experiences"]]
+          "tagRows": [
+            [
+              "Collection pages"
+            ],
+            [
+              "Shopify design",
+              "Product pages"
+            ],
+            [
+              "Cart experiences"
+            ]
+          ]
         },
         {
           "title": "Digital Products",
           "tone": "light",
-          "tagRows": [["Dashboards", "SaaS websites"], ["Customer portals"], ["Web app interfaces"]],
-          "emphasizedTags": ["SaaS websites", "Web app interfaces"]
+          "tagRows": [
+            [
+              "Dashboards",
+              "SaaS websites"
+            ],
+            [
+              "Customer portals"
+            ],
+            [
+              "Web app interfaces"
+            ]
+          ],
+          "emphasizedTags": [
+            "SaaS websites",
+            "Web app interfaces"
+          ]
         },
         {
           "title": "Responsive Design",
           "tone": "light",
-          "tagRows": [["Tablet states"], ["Mobile layouts", "Desktop layouts"], ["Responsive components"]],
-          "emphasizedTags": ["Mobile layouts", "Responsive components"]
+          "tagRows": [
+            [
+              "Tablet states"
+            ],
+            [
+              "Mobile layouts",
+              "Desktop layouts"
+            ],
+            [
+              "Responsive components"
+            ]
+          ],
+          "emphasizedTags": [
+            "Mobile layouts",
+            "Responsive components"
+          ]
         },
         {
           "title": "Production Support",
           "tone": "blue",
-          "tagRows": [["Design QA", "Figma organization"], ["Asset preparation", "Revisions"]]
+          "tagRows": [
+            [
+              "Design QA",
+              "Figma organization"
+            ],
+            [
+              "Asset preparation",
+              "Revisions"
+            ]
+          ]
         }
       ]
     }
@@ -631,11 +748,86 @@
     "buttonLabel": "Design Around Your Goals",
     "buttonLink": "/#contact",
     "columns": [
-      [{ "id": "project-1", "image": "web1", "alt": "Green wellness website design", "width": 369, "height": 379 }, { "id": "project-2", "image": "web2", "alt": "Floral ecommerce website design", "width": 371, "height": 517 }],
-      [{ "id": "project-3", "image": "web3", "alt": "Dark outdoor services website design", "width": 371, "height": 517 }, { "id": "project-4", "image": "web4", "alt": "Landscape services website design", "width": 371, "height": 381 }],
-      [{ "id": "project-5", "image": "web5", "alt": "Hair restoration website design", "width": 371, "height": 381 }, { "id": "project-6", "image": "web6", "alt": "Film and lighting rentals website design", "width": 371, "height": 517 }],
-      [{ "id": "project-7", "image": "web7", "alt": "Coral service business website design", "width": 371, "height": 517 }, { "id": "project-8", "image": "web8", "alt": "Food truck website design", "width": 371, "height": 381 }],
-      [{ "id": "project-9", "image": "web9", "alt": "Home energy services website design", "width": 371, "height": 381 }, { "id": "project-10", "image": "web10", "alt": "Food event catering website design", "width": 371, "height": 517 }]
+      [
+        {
+          "id": "project-1",
+          "image": "web1",
+          "alt": "Green wellness website design",
+          "width": 369,
+          "height": 379
+        },
+        {
+          "id": "project-2",
+          "image": "web2",
+          "alt": "Floral ecommerce website design",
+          "width": 371,
+          "height": 517
+        }
+      ],
+      [
+        {
+          "id": "project-3",
+          "image": "web3",
+          "alt": "Dark outdoor services website design",
+          "width": 371,
+          "height": 517
+        },
+        {
+          "id": "project-4",
+          "image": "web4",
+          "alt": "Landscape services website design",
+          "width": 371,
+          "height": 381
+        }
+      ],
+      [
+        {
+          "id": "project-5",
+          "image": "web5",
+          "alt": "Hair restoration website design",
+          "width": 371,
+          "height": 381
+        },
+        {
+          "id": "project-6",
+          "image": "web6",
+          "alt": "Film and lighting rentals website design",
+          "width": 371,
+          "height": 517
+        }
+      ],
+      [
+        {
+          "id": "project-7",
+          "image": "web7",
+          "alt": "Coral service business website design",
+          "width": 371,
+          "height": 517
+        },
+        {
+          "id": "project-8",
+          "image": "web8",
+          "alt": "Food truck website design",
+          "width": 371,
+          "height": 381
+        }
+      ],
+      [
+        {
+          "id": "project-9",
+          "image": "web9",
+          "alt": "Home energy services website design",
+          "width": 371,
+          "height": 381
+        },
+        {
+          "id": "project-10",
+          "image": "web10",
+          "alt": "Food event catering website design",
+          "width": 371,
+          "height": 517
+        }
+      ]
     ]
   },
   "hero": {
@@ -750,5 +942,58 @@
         "id": "uiux"
       }
     ]
+  },
+  "backdrops": {
+    "services": {
+      "height": 1957,
+      "offset": -828,
+      "flipY": true,
+      "top": 333,
+      "bottom": 196
+    },
+    "whiteLabel": {
+      "height": 1487,
+      "offset": -1298,
+      "flipX": true,
+      "top": -374,
+      "bottom": 1292
+    },
+    "screens": {
+      "height": 1860,
+      "offset": -925,
+      "flipX": true,
+      "flipY": true,
+      "top": -283,
+      "bottom": -145,
+      "phone": {
+        "top": -1000,
+        "bottom": -24
+      },
+      "tablet": {
+        "top": -274,
+        "bottom": -58
+      },
+      "laptop": {
+        "top": -314,
+        "bottom": -74
+      }
+    },
+    "search": {
+      "height": 2342,
+      "offset": -443,
+      "top": 5,
+      "bottom": 271,
+      "phone": {
+        "top": 0,
+        "bottom": -154
+      }
+    },
+    "control": {
+      "height": 2007,
+      "offset": -778,
+      "flipX": true,
+      "top": 513,
+      "bottom": 896
+    }
   }
 }

@@ -11,7 +11,12 @@ import SystemIntegrations from "./Components/utility/systemIntegrations";
 import DevelopmentQuality from "./Components/utility/developmentQuality";
 import ProcessTimeline from "./Components/utility/processTimeline";
 import Marquee from "./Components/utility/marquee";
+import DevelopmentEngagement from "./Components/utility/developmentEngagement";
+import DevelopmentControl from "./Components/utility/developmentControl";
+import DesignFaqs from "./Components/utility/designFaqs";
+import DesignGrowthCta from "./Components/utility/designGrowthCta";
 import Footer from "./Components/utility/footer";
+import FigmaBackdrop from "./Components/utility/figmaBackdrop";
 import dev from "./data/pages/web-development.json";
 import home from "./data/pages/home.json";
 
@@ -21,23 +26,29 @@ function SeoServices() {
       <Header theme="light" />
       <main>
         <HeroSplit content={dev.hero} />
-        <DevelopmentSupport content={dev.developmentSupport} />
-        <ServiceTabs content={dev.seoServices} />
+        <FigmaBackdrop frame={dev.backdrops.services}>
+          <DevelopmentSupport content={dev.developmentSupport} />
+          <ServiceTabs content={dev.seoServices} />
+        </FigmaBackdrop>
         <Marquee content={home.marquee} />
         <InHouseDevelopment content={dev.inHouseDevelopment} />
-        <AroundYourAgency content={dev.aroundYourAgency} />
+        <FigmaBackdrop frame={dev.backdrops.agency}>
+          <AroundYourAgency content={dev.aroundYourAgency} />
+        </FigmaBackdrop>
         <HireDevelopers content={dev.hireDevelopers} />
-        <div className="relative isolate">
-          <div
-            aria-hidden="true"
-            className="pointer-events-none absolute inset-x-0 bottom-[28rem] top-[22rem] -z-10 bg-[#101112] bg-[linear-gradient(180deg,#fff_0%,transparent_28%),radial-gradient(ellipse_at_100%_85%,#1358c7_0%,transparent_55%),linear-gradient(135deg,#a8c4ed_0%,#0c254f_38%,#111_67%)] md:bottom-[44vw] md:top-[22vw]"
-          />
+        <FigmaBackdrop frame={dev.backdrops.projects}>
           <ClientProjects content={dev.clientProjects} sharedBackground />
           <CustomDevelopment content={dev.customDevelopment} />
           <SystemIntegrations content={dev.systemIntegrations} />
-        </div>
+        </FigmaBackdrop>
         <DevelopmentQuality content={dev.developmentQuality} />
         <ProcessTimeline content={dev.process} />
+        <FigmaBackdrop frame={dev.backdrops.engagement}>
+          <DevelopmentEngagement content={dev.engagement} />
+          <DevelopmentControl content={dev.agencyControl} />
+        </FigmaBackdrop>
+        <DesignFaqs content={dev.faqs} />
+        <DesignGrowthCta content={dev.cta} />
       </main>
       <div className="[&>footer]:mt-0">
         <Footer />

@@ -5,11 +5,6 @@ const headingHighlightStyle = {
   padding: "0rem 0.5rem 0rem 0rem",
 };
 
-const sectionStyle = {
-  background:
-    "radial-gradient(ellipse at 100% 100%, #C9D9FF 0%, rgba(201,217,255,0) 35%), linear-gradient(120deg, #111111 30%, #0B2A8C 65%, #1B50E8 100%)",
-};
-
 const glassStyle = {
   background: "rgba(255, 255, 255, 0.06)",
   border: "1px solid rgba(255, 255, 255, 0.18)",
@@ -31,7 +26,7 @@ function Column({ column, boldIndex }) {
         {column.paragraphs.map((paragraph, index) => (
           <p
             key={paragraph}
-            className={`pt-3 text-[15px] leading-[1.5] text-white ${
+            className={`pt-3 text-[15px] 2xl:text-[19px] leading-[1.5] text-white ${
               index === boldIndex ? "satoshi-bd" : "satoshi-md"
             }`}
           >
@@ -53,7 +48,6 @@ function TwoColumnDark({ content }) {
   return (
     <section
       className="relative overflow-x-clip pb-20 pt-16 sm:pb-24 sm:pt-20 lg:pb-32 lg:pt-24"
-      style={sectionStyle}
     >
       <div className="custom-container px-5 sm:px-8 lg:px-12">
         <div className="grid grid-cols-1 items-start gap-10 lg:grid-cols-2 lg:gap-12 xl:gap-20 [&>*]:min-w-0">

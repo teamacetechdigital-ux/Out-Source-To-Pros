@@ -762,5 +762,14 @@
     "buttonLabel": "Join",
     "image": "mobileCont",
     "imageAlt": "Outsource to Pros mobile preview"
+  },
+  "backdrops": {
+    "scaleDelivery": {
+      "height": 1956,
+      "offset": -829,
+      "flipX": true,
+      "top": 34,
+      "bottom": 2034
+    }
   }
 }

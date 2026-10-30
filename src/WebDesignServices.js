@@ -19,6 +19,7 @@ import DesignWithControl from "./Components/utility/designWithControl";
 import DesignFaqs from "./Components/utility/designFaqs";
 import DesignGrowthCta from "./Components/utility/designGrowthCta";
 import Footer from "./Components/utility/footer";
+import FigmaBackdrop from "./Components/utility/figmaBackdrop";
 import webdesign from "./data/pages/web-design.json";
 
 function WebDesignServices() {
@@ -27,25 +28,33 @@ function WebDesignServices() {
       <Header theme="light" />
       <main>
         <HeroSplit content={webdesign.hero} />
-        <DesignCapacity content={webdesign.designCapacity} />
-        <DesignServiceTabs content={webdesign.designServiceTabs} />
+        <FigmaBackdrop frame={webdesign.backdrops.services}>
+          <DesignCapacity content={webdesign.designCapacity} />
+          <DesignServiceTabs content={webdesign.designServiceTabs} />
+        </FigmaBackdrop>
         <DesignShowcase content={webdesign.designShowcase} />
         <DesignTeam content={webdesign.designTeam} />
-        <WhiteLabelDilvery content={webdesign.whiteLabelDelivery} />
-        <WhyOutSource content={webdesign.whyOutSource} />
+        <FigmaBackdrop frame={webdesign.backdrops.whiteLabel}>
+          <WhiteLabelDilvery content={webdesign.whiteLabelDelivery} />
+          <WhyOutSource content={webdesign.whyOutSource} />
+        </FigmaBackdrop>
         <ProcessTimeline content={webdesign.process} />
-        <DesignForEvery content={webdesign.designForEvery} />
+        <FigmaBackdrop frame={webdesign.backdrops.screens}>
+          <DesignForEvery content={webdesign.designForEvery} />
+        </FigmaBackdrop>
         <DesignForPlatform content={webdesign.designForPlatform} />
         <DesignThatGuides content={webdesign.designThatGuides} />
-        <div className="bg-[#d5e9ff]">
+        <FigmaBackdrop frame={webdesign.backdrops.search}>
           <DesignWithSearch content={webdesign.designWithSearch} />
-          <DesignBusinessModels content={webdesign.designBusinessModels} />
-        </div>
+        </FigmaBackdrop>
+        <DesignBusinessModels content={webdesign.designBusinessModels} />
         <DesignComparison content={webdesign.designComparison} />
         <DesignWorkModels content={webdesign.designWorkModels} />
         <DesignCost content={webdesign.designCost} />
-        <DesignWithControl content={webdesign.designWithControl} />
-        <DesignFaqs content={webdesign.designFaqs} />
+        <FigmaBackdrop frame={webdesign.backdrops.control}>
+          <DesignWithControl content={webdesign.designWithControl} />
+          <DesignFaqs content={webdesign.designFaqs} />
+        </FigmaBackdrop>
         <DesignGrowthCta content={webdesign.designGrowthCta} />
       </main>
       <div className="[&>footer]:mt-0">

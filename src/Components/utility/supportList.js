@@ -81,13 +81,13 @@ function SupportList({ content }) {
                   {tab.paragraphs.map((paragraph) => (
                     <p
                       key={paragraph}
-                      className="satoshi-md pt-4 text-[15px] leading-[1.5] text-black"
+                      className="satoshi-md pt-4 text-[15px] 2xl:text-[19px] leading-[1.5] text-black"
                     >
                       {paragraph}
                     </p>
                   ))}
                   {tab.closing && (
-                    <p className="satoshi-md pt-4 text-[15px] leading-[1.5] text-black">
+                    <p className="satoshi-md pt-4 text-[15px] 2xl:text-[19px] leading-[1.5] text-black">
                       {tab.closing}{" "}
                       <span className="satoshi-bd text-[#1B50E8]">{tab.closingLink}</span>
                     </p>
@@ -122,7 +122,7 @@ function SupportList({ content }) {
                   aria-selected={active === index}
                   aria-controls={`support-panel-${index}`}
                   onClick={() => selectTab(index)}
-                  className={`flex w-full cursor-pointer items-center gap-3 py-3.5 text-left text-[15px] transition-colors duration-300 ${
+                  className={`flex w-full cursor-pointer items-center gap-3 py-3.5 text-left text-[15px] 2xl:text-[19px] transition-colors duration-300 ${
                     index < tabs.length - 1 ? "border-b border-white/20" : ""
                   } ${
                     active === index

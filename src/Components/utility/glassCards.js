@@ -5,11 +5,6 @@ const headingHighlightStyle = {
   padding: "0rem 0.5rem 0rem 0rem",
 };
 
-const sectionStyle = {
-  background:
-    "radial-gradient(ellipse at 0% 25%, rgba(27,80,232,0.85) 0%, rgba(27,80,232,0) 45%), radial-gradient(ellipse at 100% 75%, rgba(27,80,232,0.85) 0%, rgba(27,80,232,0) 45%), linear-gradient(180deg, #0B1636 0%, #111111 100%)",
-};
-
 const cardStyle = {
   background: "rgba(255, 255, 255, 0.06)",
   border: "1px solid rgba(255, 255, 255, 0.18)",
@@ -48,7 +43,6 @@ function GlassCards({ content }) {
   return (
     <section
       className="relative overflow-x-clip pb-24 pt-20 text-white sm:pb-32 sm:pt-24 lg:pb-[200px] lg:pt-[120px]"
-      style={sectionStyle}
     >
       <div className="custom-container px-5 sm:px-8 lg:px-12">
         <div className="mx-auto max-w-[1140px]">
@@ -60,7 +54,7 @@ function GlassCards({ content }) {
           {paragraphs.length > 0 && (
             <div className="mx-auto mt-6 max-w-[760px] text-center">
               {paragraphs.map((paragraph) => (
-                <p key={paragraph} className="satoshi-md pt-1 text-[15px] leading-[1.5] text-white">
+                <p key={paragraph} className="satoshi-md pt-1 text-[15px] 2xl:text-[19px] leading-[1.5] text-white">
                   {withBreaks(paragraph, "lg")}
                 </p>
               ))}

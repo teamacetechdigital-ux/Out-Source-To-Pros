@@ -83,7 +83,7 @@ function DesignTeam({ content }) {
       <div className="mx-auto w-[calc(100%-2.5rem)] max-w-[1320px] md:w-[79.2%]">
         <h2
           id={`${id}-heading`}
-          className="montserrat-rg text-center text-[clamp(1.75rem,3.23vw,2.875rem)] font-bold leading-[1.15] text-black"
+          className="montserrat-rg text-center text-[clamp(1.875rem,3.23vw,3.75rem)] font-bold leading-[1.15] text-black"
         >
           {content.title}
           <br />
@@ -97,10 +97,10 @@ function DesignTeam({ content }) {
               key={item.title}
               className="relative px-5 py-4 before:absolute before:inset-y-0 before:left-0 before:w-px before:bg-[linear-gradient(to_bottom,#a1d1ff,transparent)] md:px-[8%] md:py-[9%]"
             >
-              <dt className="montserrat-rg text-base font-bold leading-[1.25] text-black md:text-[clamp(0.75rem,1.25vw,1.125rem)]">
+              <dt className="montserrat-rg text-base font-bold leading-[1.25] text-black md:text-[clamp(1.0625rem,1.25vw,1.5rem)]">
                 {item.title}
               </dt>
-              <dd className="satoshi-md mt-2 text-sm leading-[1.3] text-black md:text-[clamp(0.625rem,1.04vw,0.9375rem)]">
+              <dd className="satoshi-md mt-2 text-[15px] leading-[1.3] text-black md:text-[clamp(1rem,1.04vw,1.25rem)]">
                 {item.text}
               </dd>
             </div>
@@ -108,12 +108,12 @@ function DesignTeam({ content }) {
         </dl>
         <article
           aria-labelledby={`${id}-agency-heading`}
-          className="relative z-10 mt-10 grid items-center gap-9 rounded-[clamp(16px,1.5vw,24px)] bg-white px-6 py-8 shadow-[0_0_30px_rgba(27,80,232,0.07)] sm:px-9 sm:py-10 md:mt-[7%] md:grid-cols-[490fr_440fr] md:gap-[6.7%] md:px-[6.8%] md:py-[5%]"
+          className="relative z-10 mt-10 grid items-center gap-9 rounded-[clamp(16px,1.5vw,24px)] bg-white px-6 py-8 shadow-[0_0_30px_rgba(27,80,232,0.07)] sm:px-9 sm:py-10 md:mt-[7%] md:grid-cols-[490fr_440fr] md:gap-[6.7%] md:px-[4.5%] md:py-[5%]"
         >
           <div className="min-w-0">
             <h2
               id={`${id}-agency-heading`}
-              className="montserrat-rg text-[clamp(1.65rem,3.23vw,2.875rem)] font-bold leading-[1.15] text-black"
+              className="montserrat-rg text-[clamp(1.875rem,3.23vw,3.75rem)] font-bold leading-[1.15] text-black"
             >
               {agency.title}
               <br />
@@ -121,7 +121,7 @@ function DesignTeam({ content }) {
                 {agency.highlight}
               </span>
             </h2>
-            <div className="satoshi-md mt-5 space-y-3 text-[15px] leading-[1.3] text-black md:mt-[5%] md:space-y-[2.5%] md:text-[clamp(0.625rem,1.04vw,0.9375rem)]">
+            <div className="satoshi-md mt-5 space-y-3 text-[15px] leading-[1.3] text-black md:mt-[5%] md:space-y-[2.5%] md:text-[clamp(1rem,1.04vw,1.25rem)]">
               <p>{agency.intro}</p>
               <p>
                 {agency.servicePrefix}{" "}
@@ -132,12 +132,12 @@ function DesignTeam({ content }) {
               </p>
               <p>{agency.usage}</p>
             </div>
-            <p className="satoshi-bd mt-3 text-lg leading-[1.3] text-black md:mt-[2.5%] md:text-[clamp(0.875rem,1.61vw,1.375rem)]">
+            <p className="satoshi-bd mt-3 text-lg leading-[1.3] text-black md:mt-[2.5%] md:text-[clamp(1.375rem,1.61vw,1.9375rem)]">
               {agency.closing}
             </p>
             <Link
               to={agency.buttonLink}
-              className="montserrat-bd mt-4 inline-flex max-w-full items-center justify-center rounded-sm bg-[#1B50E8] px-5 py-3.5 text-center text-xs font-bold uppercase leading-[1.3] text-white transition-colors hover:bg-[#1242c8] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1B50E8] sm:text-sm md:mt-[3%] md:px-[5%] md:py-[3.5%] md:text-[clamp(0.6875rem,1.25vw,1.125rem)]"
+              className="montserrat-bd mt-4 inline-flex max-w-full items-center justify-center rounded-sm bg-[#1B50E8] px-5 py-3.5 text-center text-xs font-bold uppercase leading-[1.3] text-white transition-colors hover:bg-[#1242c8] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1B50E8] sm:text-sm md:mt-[3%] md:px-[5%] md:py-[3.5%] md:text-[clamp(1.0625rem,1.25vw,1.5rem)]"
             >
               {agency.buttonLabel}
             </Link>

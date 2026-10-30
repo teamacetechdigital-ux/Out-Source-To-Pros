@@ -124,13 +124,13 @@ function WhiteLabelStack({ content }) {
               {content.paragraphs.map((paragraph) => (
                 <p
                   key={paragraph}
-                  className="satoshi-md pt-5 text-[15px] leading-[1.5] text-black"
+                  className="satoshi-md pt-5 text-[15px] 2xl:text-[19px] leading-[1.5] text-black"
                 >
                   {withBreaks(paragraph)}
                 </p>
               ))}
               {boldParagraph && (
-                <p className="satoshi-md pt-3 text-[15px] leading-[1.5] text-black">
+                <p className="satoshi-md pt-3 text-[15px] 2xl:text-[19px] leading-[1.5] text-black">
                   {boldParagraph.before}{" "}
                   <strong className="satoshi-bd">{boldParagraph.bold}</strong>{" "}
                   {boldParagraph.after}
@@ -139,7 +139,7 @@ function WhiteLabelStack({ content }) {
               <h3 className="satoshi-bd pt-6 text-[20px] capitalize text-black lg:text-[22px]">
                 {content.listTitle}
               </h3>
-              <ul className="satoshi-md flex list-disc flex-col gap-2 pl-5 pt-4 text-[15px] text-black marker:text-[#1B50E8]">
+              <ul className="satoshi-md flex list-disc flex-col gap-2 pl-5 pt-4 text-[15px] 2xl:text-[19px] text-black marker:text-[#1B50E8]">
                 {content.list.map((item) => (
                   <li key={item}>{item}</li>
                 ))}
@@ -199,7 +199,7 @@ function WhiteLabelStack({ content }) {
                           <h4 className="montserrat-rg text-lg font-semibold leading-tight sm:text-[22px]">
                             {item.title}
                           </h4>
-                          <p className="satoshi-md pt-2 text-[15px] leading-[1.4]">
+                          <p className="satoshi-md pt-2 text-[15px] 2xl:text-[19px] leading-[1.4]">
                             {withBreaks(item.text)}
                           </p>
                         </div>

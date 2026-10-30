@@ -88,7 +88,7 @@ function CaseStudy({ content }) {
             <h3 className="montserrat-rg text-[22px] font-bold leading-tight text-black sm:text-[26px]">
               {before.title}
             </h3>
-            <p className="satoshi-md pt-2 text-[15px] leading-[1.5] text-black">{before.text}</p>
+            <p className="satoshi-md pt-2 text-[15px] 2xl:text-[19px] leading-[1.5] text-black">{before.text}</p>
           </div>
           <div className="mt-5">
             <CaseImage image={before.image} alt={before.imageAlt} />
@@ -100,7 +100,7 @@ function CaseStudy({ content }) {
             <h3 className="montserrat-rg text-[22px] font-bold leading-tight text-black sm:text-[26px]">
               {after.title}
             </h3>
-            <p className="satoshi-md pt-2 text-[15px] leading-[1.5] text-black">
+            <p className="satoshi-md pt-2 text-[15px] 2xl:text-[19px] leading-[1.5] text-black">
               {after.textParts.map((part, index) => (
                 <span key={index} className={part.highlight ? "font-bold text-[#1B50E8]" : undefined}>
                   {withBreaks(part.text)}

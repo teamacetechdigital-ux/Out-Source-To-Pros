@@ -32,7 +32,7 @@
         "text": "The completed work is prepared for staging, client review, deployment, or \nongoing maintenance."
       }
     ],
-    "buttonLabel": "Start Your Design Workflow"
+    "buttonLabel": "Start Your Development Project"
   },
   "seoServices": {
     "title": "What Can You ",
@@ -172,12 +172,30 @@
       "When your agency needs custom business logic, specialized workflows, advanced dashboards, unique calculations, custom user roles, or application-level integrations, our developers can build around the actual requirement."
     ],
     "cards": [
-      { "title": "Custom Dashboards", "text": "Give users or internal teams access to relevant information through role-based interfaces." },
-      { "title": "Customer Portals", "text": "Create secure areas where customers can access information, submit requests, manage accounts, or complete specific workflows." },
-      { "title": "Advanced Forms", "text": "Build forms that connect submissions with business rules, CRMs, databases, payment systems, or other software." },
-      { "title": "Custom Calculators", "text": "Develop pricing, estimation, qualification, financial, measurement, or industry-specific calculation tools." },
-      { "title": "User Systems", "text": "Support registration, authentication, permissions, profiles, memberships, and account-based functionality." },
-      { "title": "Business Workflows", "text": "Connect multiple steps, systems, users, and approvals into one digital process." }
+      {
+        "title": "Custom Dashboards",
+        "text": "Give users or internal teams access to relevant information through role-based interfaces."
+      },
+      {
+        "title": "Customer Portals",
+        "text": "Create secure areas where customers can access information, submit requests, manage accounts, or complete specific workflows."
+      },
+      {
+        "title": "Advanced Forms",
+        "text": "Build forms that connect submissions with business rules, CRMs, databases, payment systems, or other software."
+      },
+      {
+        "title": "Custom Calculators",
+        "text": "Develop pricing, estimation, qualification, financial, measurement, or industry-specific calculation tools."
+      },
+      {
+        "title": "User Systems",
+        "text": "Support registration, authentication, permissions, profiles, memberships, and account-based functionality."
+      },
+      {
+        "title": "Business Workflows",
+        "text": "Connect multiple steps, systems, users, and approvals into one digital process."
+      }
     ],
     "buttonLabel": "Discuss a Custom Development Project",
     "buttonLink": "/#contact"
@@ -193,11 +211,26 @@
       "The goal is to create reliable connections between your client’s systems so information can move where it needs to go without unnecessary manual work."
     ],
     "integrations": [
-      { "title": "CRM Integrations", "text": "Connect websites, forms, and customer data with CRM platforms." },
-      { "title": "Payment Integrations", "text": "Connect websites and applications with payment providers and transaction systems." },
-      { "title": "Marketing Integrations", "text": "Send customer activity and lead information to marketing and automation platforms." },
-      { "title": "Database Connections", "text": "Exchange and synchronize information between websites, applications, and databases." },
-      { "title": "Third-Party APIs", "text": "Connect external software and services with the functionality your client needs." }
+      {
+        "title": "CRM Integrations",
+        "text": "Connect websites, forms, and customer data with CRM platforms."
+      },
+      {
+        "title": "Payment Integrations",
+        "text": "Connect websites and applications with payment providers and transaction systems."
+      },
+      {
+        "title": "Marketing Integrations",
+        "text": "Send customer activity and lead information to marketing and automation platforms."
+      },
+      {
+        "title": "Database Connections",
+        "text": "Exchange and synchronize information between websites, applications, and databases."
+      },
+      {
+        "title": "Third-Party APIs",
+        "text": "Connect external software and services with the functionality your client needs."
+      }
     ],
     "buttonLabel": "Connect Your Client Systems",
     "buttonLink": "/#contact"
@@ -211,11 +244,26 @@
       "We structure development around clear requirements, defined tasks, review stages, testing, and documented delivery. This gives your agency visibility without requiring you to manage every technical detail."
     ],
     "steps": [
-      { "title": "Defined Scope", "text": "Requirements and deliverables are established before development begins." },
-      { "title": "Structured Development", "text": "Tasks are organized around agreed priorities and milestones." },
-      { "title": "Technical Review", "text": "Completed work is reviewed against the agreed requirements." },
-      { "title": "Functional Testing", "text": "Relevant functionality, forms, integrations, responsive behavior, and interactions are checked." },
-      { "title": "Controlled Handoff", "text": "Completed work is prepared for your review, client review, staging environment, or launch process." }
+      {
+        "title": "Defined Scope",
+        "text": "Requirements and deliverables are established before development begins."
+      },
+      {
+        "title": "Structured Development",
+        "text": "Tasks are organized around agreed priorities and milestones."
+      },
+      {
+        "title": "Technical Review",
+        "text": "Completed work is reviewed against the agreed requirements."
+      },
+      {
+        "title": "Functional Testing",
+        "text": "Relevant functionality, forms, integrations, responsive behavior, and interactions are checked."
+      },
+      {
+        "title": "Controlled Handoff",
+        "text": "Completed work is prepared for your review, client review, staging environment, or launch process."
+      }
     ],
     "buttonLabel": "Request Development Support",
     "buttonLink": "/#contact"
@@ -317,14 +365,46 @@
       "outsourced": "Outsourced Development"
     },
     "rows": [
-      { "factor": "Hiring", "inHouse": "Required", "outsourced": "Flexible with workload" },
-      { "factor": "Capacity", "inHouse": "Fixed", "outsourced": "Access to multiple design disciplines" },
-      { "factor": "Specialist Access", "inHouse": "Depends on employees", "outsourced": "No" },
-      { "factor": "Recruitment Time", "inHouse": "Can be lengthy", "outsourced": "Built for agency fulfillment" },
-      { "factor": "Fixed Overhead", "inHouse": "Salaries, benefits, tools", "outsourced": "Add capacity as needed" },
-      { "factor": "Project Overflow", "inHouse": "Limited by team size", "outsourced": "Planned throughout the project" },
-      { "factor": "White-Label Fulfillment", "inHouse": "Internal only", "outsourced": "Structured review and QA" },
-      { "factor": "Scaling", "inHouse": "Requires additional hiring", "outsourced": "Flexible engagement options" }
+      {
+        "factor": "Hiring",
+        "inHouse": "Required",
+        "outsourced": "Flexible with workload"
+      },
+      {
+        "factor": "Capacity",
+        "inHouse": "Fixed",
+        "outsourced": "Access to multiple design disciplines"
+      },
+      {
+        "factor": "Specialist Access",
+        "inHouse": "Depends on employees",
+        "outsourced": "No"
+      },
+      {
+        "factor": "Recruitment Time",
+        "inHouse": "Can be lengthy",
+        "outsourced": "Built for agency fulfillment"
+      },
+      {
+        "factor": "Fixed Overhead",
+        "inHouse": "Salaries, benefits, tools",
+        "outsourced": "Add capacity as needed"
+      },
+      {
+        "factor": "Project Overflow",
+        "inHouse": "Limited by team size",
+        "outsourced": "Planned throughout the project"
+      },
+      {
+        "factor": "White-Label Fulfillment",
+        "inHouse": "Internal only",
+        "outsourced": "Structured review and QA"
+      },
+      {
+        "factor": "Scaling",
+        "inHouse": "Requires additional hiring",
+        "outsourced": "Flexible engagement options"
+      }
     ],
     "buttonLabel": "Add Capacity Without Adding Permanent Headcount",
     "buttonLink": "/#contact"
@@ -343,10 +423,22 @@
     "buttonLink": "/#contact",
     "supportTitle": "Flexible Development Support",
     "supportItems": [
-      { "title": "More Capacity", "text": "Take on additional projects when your internal development team is fully booked." },
-      { "title": "Technical Support", "text": "Bring in developers for platforms, frameworks, integrations, and functionality your current team does not cover." },
-      { "title": "Flexible Delivery", "text": "Use development resources for individual tasks, complete projects, or ongoing client work." },
-      { "title": "Agency Control", "text": "Keep ownership of your clients, communication, strategy, pricing, and project relationships." }
+      {
+        "title": "More Capacity",
+        "text": "Take on additional projects when your internal development team is fully booked."
+      },
+      {
+        "title": "Technical Support",
+        "text": "Bring in developers for platforms, frameworks, integrations, and functionality your current team does not cover."
+      },
+      {
+        "title": "Flexible Delivery",
+        "text": "Use development resources for individual tasks, complete projects, or ongoing client work."
+      },
+      {
+        "title": "Agency Control",
+        "text": "Keep ownership of your clients, communication, strategy, pricing, and project relationships."
+      }
     ]
   },
   "hero": {
@@ -363,5 +455,224 @@
       "Semantic Search Strategy",
       "Strategic Internal Linking"
     ]
+  },
+  "engagement": {
+    "title": "Choose the Right",
+    "highlight": "Engagement",
+    "text": "Different agencies need different levels of support. You do not have to commit to a large development team when your requirement is a single project.",
+    "bestForLabel": "Best for:",
+    "models": [
+      {
+        "title": "Fixed Project",
+        "text": "Website builds, migrations, integrations, custom features, and web applications."
+      },
+      {
+        "title": "Monthly Support",
+        "text": "Maintenance, updates, fixes, ongoing improvements, and recurring development."
+      },
+      {
+        "title": "Dedicated Developer",
+        "text": "Agencies with regular development requirements and multiple active projects."
+      },
+      {
+        "title": "Dedicated Team",
+        "text": "High-volume agencies, application projects, and larger development pipelines."
+      },
+      {
+        "title": "White-Label Fulfill",
+        "text": "Agencies that want to expand their development services without building a larger internal team."
+      }
+    ],
+    "buttonLabel": "Choose Your Development Model",
+    "buttonLink": "/#contact",
+    "whyOutsource": {
+      "title": "Why Outsource",
+      "highlight": "Development",
+      "text": "The value of outsourcing is not simply access to another developer. It is the ability to match technical capacity with actual demand.",
+      "reasons": [
+        {
+          "title": "Increase Capacity",
+          "text": "Take on more development work without immediately increasing permanent headcount."
+        },
+        {
+          "title": "Reduce Hiring Pressure",
+          "text": "Avoid recruiting a permanent employee for a temporary or inconsistent workload."
+        },
+        {
+          "title": "Access Specialists",
+          "text": "Bring in technical skills when specific projects require them."
+        },
+        {
+          "title": "Improve Delivery",
+          "text": "Keep projects moving when internal resources are already committed."
+        }
+      ],
+      "buttonLabel": "Add Technical Capacity Today",
+      "buttonLink": "/#contact"
+    }
+  },
+  "agencyControl": {
+    "title": "Your Agency Stays in",
+    "highlight": "Control",
+    "paragraphs": [
+      "Outsourcing development does not mean giving up control of your projects.",
+      "Your agency decides what gets built, how the work is presented, who communicates with the client, and when the project is delivered.",
+      "We provide the technical capacity behind those decisions."
+    ],
+    "points": [
+      "You manage the client.",
+      "You define the requirements.",
+      "You control the workflow.",
+      "We handle the agreed development work."
+    ],
+    "closing": "This structure is particularly useful for agencies looking for white label development services, outsourced developers, or recurring technical fulfillment.",
+    "buttonLabel": "Build Your Extended Development Team",
+    "buttonLink": "/#contact"
+  },
+  "faqs": {
+    "title": "Frequently Asked",
+    "highlight": "Questions",
+    "items": [
+      {
+        "question": "What is web development outsourcing?",
+        "answer": "Web development outsourcing means using an external developer or development team to complete some or all of your website or application development work. Agencies can outsource individual tasks, complete projects, recurring support, or dedicated developer capacity."
+      },
+      {
+        "question": "Can agencies outsource web development?",
+        "answer": "Yes. Agencies can outsource complete builds, specific development tasks, or ongoing support while keeping the client relationship, strategy, and communication in-house."
+      },
+      {
+        "question": "What can I outsource?",
+        "answer": "You can outsource website builds, redesign development, WordPress and ecommerce work, custom features, integrations, APIs, migrations, maintenance, and dedicated developer capacity."
+      },
+      {
+        "question": "Can I hire a web developer instead of an entire team?",
+        "answer": "Yes. You can start with one developer for a specific requirement and add more capacity when your workload grows."
+      },
+      {
+        "question": "Do you offer white-label web development?",
+        "answer": "Yes. We can work behind your agency under your brand, following your processes and delivery standards, while you remain the client-facing provider."
+      },
+      {
+        "question": "Can you work with our internal developers?",
+        "answer": "Yes. Our developers can work alongside your internal team, follow your coding standards, and use your repositories and review process."
+      },
+      {
+        "question": "Can you work with our project management system?",
+        "answer": "Yes. We can work inside your existing tools, such as your project management platform, communication channels, and repositories."
+      },
+      {
+        "question": "Can I outsource only part of a project?",
+        "answer": "Yes. You can outsource a specific part of a project, such as front-end development, integrations, custom functionality, or testing."
+      },
+      {
+        "question": "Can you handle complete website projects?",
+        "answer": "Yes. We can take a website from requirements and designs through development, testing, and handoff for launch."
+      },
+      {
+        "question": "Do you provide WordPress development?",
+        "answer": "Yes. We build and support WordPress websites, including custom themes, page builders, plugins, and performance improvements."
+      },
+      {
+        "question": "Do you provide ecommerce development?",
+        "answer": "Yes. We develop and support ecommerce websites, including store setup, custom features, payment integrations, and ongoing improvements."
+      },
+      {
+        "question": "Can you build custom web applications?",
+        "answer": "Yes. We build custom web applications, portals, dashboards, and functionality when standard tools are not enough."
+      },
+      {
+        "question": "Can you develop APIs?",
+        "answer": "Yes. We can develop APIs and connect websites and applications with third-party services, databases, and internal systems."
+      },
+      {
+        "question": "Can I outsource an existing website?",
+        "answer": "Yes. We review the existing website first, then take over updates, fixes, improvements, or redevelopment based on the agreed scope."
+      },
+      {
+        "question": "How does white-label development work?",
+        "answer": "You manage the client and the requirements. We complete the agreed development work behind your agency and deliver it for your review and launch process."
+      },
+      {
+        "question": "How much does outsourced web development cost?",
+        "answer": "Cost depends on the scope, complexity, timeline, and engagement model. A clear requirement helps us provide an accurate estimate."
+      },
+      {
+        "question": "Is outsourcing better than hiring internally?",
+        "answer": "Outsourcing is often better when your workload changes, when you need specialist skills, or when you want capacity without permanent hiring costs."
+      },
+      {
+        "question": "Can I hire developers for ongoing work?",
+        "answer": "Yes. You can work with dedicated developers or a monthly support model for recurring development work."
+      },
+      {
+        "question": "Can you support urgent projects?",
+        "answer": "Yes, depending on availability and scope. Share the requirements and timeline, and we will confirm what can be delivered."
+      },
+      {
+        "question": "Do you provide ongoing maintenance?",
+        "answer": "Yes. We provide ongoing maintenance, updates, fixes, and improvements after launch."
+      }
+    ],
+    "noBackdrop": true
+  },
+  "cta": {
+    "title": "Your Development Team,",
+    "highlight": "Without the Hiring Bottleneck",
+    "paragraphs": [
+      "Take on more development work without immediately expanding your permanent team. Whether you need one developer, a complete technical team, white-label fulfillment, or ongoing project support, we can structure development capacity around your agency’s actual workload."
+    ],
+    "buttons": [
+      {
+        "label": "Outsource Web Development",
+        "link": "/#contact"
+      },
+      {
+        "label": "Hire Your Development Team",
+        "link": "/#contact"
+      }
+    ]
+  },
+  "backdrops": {
+    "services": {
+      "height": 1848,
+      "offset": -937,
+      "flipY": true,
+      "top": 417,
+      "bottom": -191
+    },
+    "agency": {
+      "height": 1487,
+      "offset": -1298,
+      "flipX": true,
+      "top": -146,
+      "bottom": 29
+    },
+    "projects": {
+      "height": 1860,
+      "offset": -925,
+      "flipX": true,
+      "flipY": true,
+      "top": 492,
+      "bottom": 946,
+      "phone": {
+        "top": -382,
+        "bottom": 178
+      },
+      "tablet": {
+        "top": 24,
+        "bottom": 378
+      }
+    },
+    "engagement": {
+      "height": 2342,
+      "offset": -443,
+      "top": 34,
+      "bottom": 567,
+      "phone": {
+        "top": 10,
+        "bottom": 40
+      }
+    }
   }
 }

@@ -56,7 +56,7 @@ function Faqs({ content }) {
           style={content.boxed ? boxStyle : undefined}
         >
           <div>
-            <h2 className="montserrat-rg text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[44px] font-bold leading-[1.2] text-black">
+            <h2 className="montserrat-rg text-[30px] sm:text-[36px] lg:text-[40px] xl:text-[44px] 2xl:text-[55px] font-bold leading-[1.2] text-black">
               {withBreaks(content.title)}{" "}
               <span style={headingHighlightStyle}>{content.highlight}</span>
             </h2>
@@ -64,7 +64,7 @@ function Faqs({ content }) {
               content.description.map((paragraph, index) => (
                 <p
                   key={paragraph}
-                  className={`satoshi-md text-[15px] text-black ${index === 0 ? "pt-5" : "pt-2"}`}
+                  className={`satoshi-md text-[15px] 2xl:text-[19px] text-black ${index === 0 ? "pt-5" : "pt-2"}`}
                 >
                   {withBreaks(paragraph)}
                 </p>
@@ -82,7 +82,7 @@ function Faqs({ content }) {
                     }`}
                   >
                     <span
-                      className={`satoshi-md text-base lg:text-lg ${
+                      className={`satoshi-md text-base lg:text-lg 2xl:text-xl ${
                         active === index ? "text-[#1B50E8]" : "text-black"
                       }`}
                     >
@@ -122,7 +122,7 @@ function Faqs({ content }) {
                   faq.answer.map((paragraph) => (
                     <p
                       key={paragraph}
-                      className="satoshi-md pb-4 text-base lg:text-[15px] leading-[1.5] text-white"
+                      className="satoshi-md pb-4 text-base lg:text-[15px] 2xl:text-[19px] leading-[1.5] text-white"
                     >
                       {paragraph}
                     </p>

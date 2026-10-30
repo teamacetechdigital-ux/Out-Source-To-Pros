@@ -78,7 +78,7 @@ function Tabs({ content }) {
 
                 <div className="grid-gaping grid gap-6 sm:grid-cols-2">
                   <div>
-                    <h4 className="montserrat-rg text-base lg:text-[15px] font-bold text-[#0A1653]">
+                    <h4 className="montserrat-rg text-base lg:text-[15px] 2xl:text-[19px] font-bold text-[#0A1653]">
                       {content.includesHeading}
                     </h4>
                     <ul className="satoshi-reg mt-3 list-disc space-y-2 pl-4 text-[15px]">
@@ -88,10 +88,10 @@ function Tabs({ content }) {
                     </ul>
                   </div>
                   <div>
-                    <h4 className="montserrat-rg text-base lg:text-[15px] font-bold text-[#0A1653]">
+                    <h4 className="montserrat-rg text-base lg:text-[15px] 2xl:text-[19px] font-bold text-[#0A1653]">
                       {content.problemsHeading}
                     </h4>
-                    <ul className="satoshi-reg mt-3 list-disc space-y-2 pl-4 text-[15px] text-gray-800">
+                    <ul className="satoshi-reg mt-3 list-disc space-y-2 pl-4 text-[15px] 2xl:text-[19px] text-gray-800">
                       {activeService.problems.map((item) => (
                         <li key={item}>{item}</li>
                       ))}
@@ -99,7 +99,7 @@ function Tabs({ content }) {
                   </div>
                 </div>
 
-                <button className="tab-button-inner bg-[#1B50E8] text-base lg:text-lg text-white px-8 py-4 rounded-md uppercase montserrat-bd font-bold">
+                <button className="tab-button-inner bg-[#1B50E8] text-base lg:text-lg 2xl:text-xl text-white px-8 py-4 rounded-md uppercase montserrat-bd font-bold">
                   {content.buttonLabel}
                 </button>
               </div>

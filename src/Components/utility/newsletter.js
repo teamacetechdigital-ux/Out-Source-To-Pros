@@ -19,10 +19,10 @@ function Newsletter({ content }) {
             <h2 className="montserrat-rg text-[28px] font-bold leading-tight text-black sm:text-[30px]">
               {withBreaks(content.title)}
             </h2>
-            <p className="satoshi-md pt-6 text-base leading-[1.4] lg:text-[15px] text-black">
+            <p className="satoshi-md pt-6 text-base leading-[1.4] lg:text-[15px] 2xl:text-[19px] text-black">
               {content.paragraphs[0]}
             </p>
-            <p className="satoshi-md pt-4 text-base leading-[1.4] lg:text-[15px] text-black">
+            <p className="satoshi-md pt-4 text-base leading-[1.4] lg:text-[15px] 2xl:text-[19px] text-black">
               {content.paragraphs[1]}
             </p>
             <form className="mt-8 flex w-full flex-col gap-3 sm:flex-row sm:gap-0" onSubmit={handleSubmit}>
@@ -31,7 +31,7 @@ function Newsletter({ content }) {
                 name="email"
                 aria-label={content.emailAriaLabel}
                 placeholder={content.emailPlaceholder}
-                className="satoshi-md min-w-0 flex-1 rounded-md sm:rounded-r-none bg-[#F5F5F5] px-5 py-4 text-[15px] text-black outline-none placeholder:text-[#9A9A9A] sm:px-10"
+                className="satoshi-md min-w-0 flex-1 rounded-md sm:rounded-r-none bg-[#F5F5F5] px-5 py-4 text-[15px] 2xl:text-[19px] text-black outline-none placeholder:text-[#9A9A9A] sm:px-10"
               />
               <button
                 type="submit"
