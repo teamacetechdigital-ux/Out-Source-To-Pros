@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import { withBreaks } from "../../utils/text";
 import seoHeroDashboard from "../../assets/imgs/seo/seo-hero.png";
 import webdesignHeroDashboard from "../../assets/imgs/webdesign/bannerimg.png";
+import devHeroDashboard from "../../assets/imgs/webdevelopment/developmentImg.png";
 
-const images = { seoHeroDashboard, webdesignHeroDashboard};
+const images = { seoHeroDashboard, webdesignHeroDashboard, devHeroDashboard};
 
 const sectionStyle = {
   background:

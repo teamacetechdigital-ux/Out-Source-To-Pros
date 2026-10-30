@@ -1,0 +1,54 @@
+import { useId } from "react";
+import { Link } from "react-router-dom";
+import brandMark from "../../assets/imgs/webdevelopment/fav-mark.svg";
+
+function DevelopmentSupport({ content }) {
+  const id = useId();
+
+  return (
+    <section
+      id="development-support"
+      aria-labelledby={`${id}-heading`}
+      className="relative isolate bg-white pb-12 pt-12 md:pb-[4.8vw] md:pt-[8.8vw]"
+    >
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-[75%] bg-[radial-gradient(ellipse_at_50%_115%,#2662bb_0%,rgba(38,98,187,0.5)_25%,transparent_63%),radial-gradient(ellipse_at_100%_100%,#071424_0%,transparent_53%)]"
+      />
+      <div className="mx-auto grid w-[calc(100%-2.5rem)] max-w-[1320px] grid-cols-1 rounded-[clamp(18px,1.7vw,26px)] bg-white shadow-[0_5px_24px_rgba(27,80,232,0.08)] md:w-[79.2%] md:grid-cols-[1.55fr_1fr]">
+        <div className="min-w-0 px-6 py-8 sm:px-8 md:px-[3.8%] md:py-[5.3%]">
+          <h2 id={`${id}-heading`} className="montserrat-rg text-[28px] font-bold leading-[1.2] text-black md:text-[clamp(1.5rem,3.23vw,2.875rem)]">
+            {content.title}
+            <br />
+            {content.subtitle}{" "}<span className="bg-[linear-gradient(to_right,transparent,#8ba6ff)] pr-1">{content.highlight}</span>
+          </h2>
+          <div className="satoshi-md mt-5 space-y-3 text-sm leading-[1.35] text-black md:mt-[3.5%] md:space-y-[1.4%] md:text-[clamp(0.625rem,1.04vw,0.9375rem)]">
+            {content.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+          </div>
+          <Link
+            to={content.buttonLink}
+            className="montserrat-bd mt-6 inline-flex max-w-full items-center justify-center rounded-sm bg-[#1B50E8] px-5 py-3 text-center text-xs uppercase leading-[1.3] text-white transition-colors hover:bg-[#1242c8] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1B50E8] md:mt-[3.5%] md:px-[3.5%] md:py-[2.4%] md:text-[clamp(0.75rem,1.3vw,1.1875rem)]"
+          >
+            {content.buttonLabel}
+          </Link>
+        </div>
+        <div aria-labelledby={`${id}-support-heading`} className="min-w-0 rounded-[clamp(18px,1.7vw,26px)] bg-[linear-gradient(135deg,#0846a0,#0075ff)] px-6 py-7 text-white sm:px-8 md:px-[6.5%] md:py-[6.5%]">
+          <h3 id={`${id}-support-heading`} className="satoshi-md text-[22px] leading-[1.25] text-[#dceaff] md:text-[clamp(0.75rem,1.85vw,1.6875rem)]">{content.supportTitle}</h3>
+          <ul className="mt-5 md:mt-[5%]">
+            {content.supportItems.map((item) => (
+              <li key={item.title} className="animate-gif-img flex items-start gap-2 border-b border-white/20 py-4 first:pt-0 last:border-b-0 last:pb-0 md:gap-[2%] md:py-[3.5%]">
+                <img src={brandMark} alt="" aria-hidden="true" width="76" height="76" className="-ml-1 size-6 shrink-0 opacity-20 brightness-0 invert" />
+                <div className="min-w-0">
+                  <h4 className="satoshi-bd text-base leading-[1.3] md:text-[clamp(0.625rem,1.04vw,0.9375rem)]">{item.title}</h4>
+                  <p className="satoshi-md mt-1 text-sm leading-[1.8] md:text-[clamp(0.5rem,0.94vw,0.875rem)] md:leading-[2]">{item.text}</p>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default DevelopmentSupport;

@@ -26,7 +26,7 @@ function ProcessTimeline({ content }) {
           <span style={headingHighlightStyle}>{content.highlight}</span>
         </h2>
 
-        <ol className="mt-10 flex flex-col gap-5 sm:mt-14 sm:gap-6">
+        <ol className="mt-10 flex flex-col gap-5 sm:mt-14 sm:gap-6 w-6xl mx-auto">
           {content.steps.map((step, index) => (
             <li
               key={step.title}
@@ -49,11 +49,11 @@ function ProcessTimeline({ content }) {
                 className="-mt-3 min-w-0 rounded-2xl px-5 py-6 sm:mt-0 sm:px-8 sm:py-8 lg:px-[60px]"
                 style={cardStyle}
               >
-                <h3 className="montserrat-rg text-[20px] font-bold uppercase leading-tight text-black sm:text-[24px] lg:text-[26px]">
+                <h3 className="montserrat-rg text-[24px] font-bold uppercase leading-tight text-black sm:text-[24px] lg:text-[26px]">
                   <span className="sr-only">{`Step ${index + 1}: `}</span>
                   {step.title}
                 </h3>
-                <p className="satoshi-md pt-2 text-[15px] leading-[1.5] text-black">
+                <p className="satoshi-md pt-2 text-[18px] leading-[1.5] text-black">
                   {withBreaks(step.text, "lg")}
                 </p>
               </div>

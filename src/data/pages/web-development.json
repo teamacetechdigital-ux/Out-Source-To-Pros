@@ -1,0 +1,367 @@
+{
+  "process": {
+    "title": "How Our",
+    "highlight": "Outsourcing Model Works",
+    "steps": [
+      {
+        "title": "Share",
+        "text": "Send the project requirements, designs, specifications, documentation, \nor existing website details."
+      },
+      {
+        "title": "Review",
+        "text": "We review the technical requirements, functionality, platform, \nintegrations, timeline, and resources needed."
+      },
+      {
+        "title": "Scope",
+        "text": "The work is divided into clear tasks, milestones, responsibilities, and \ndeliverables."
+      },
+      {
+        "title": "Assign",
+        "text": "The appropriate developer or development team is assigned according \nto the technical requirements."
+      },
+      {
+        "title": "Develop",
+        "text": "The development team works within the agreed environment, \nworkflow, repository, and technical standards."
+      },
+      {
+        "title": "Test",
+        "text": "Completed functionality is reviewed and tested before it moves toward \nfinal approval."
+      },
+      {
+        "title": "Deliver",
+        "text": "The completed work is prepared for staging, client review, deployment, or \nongoing maintenance."
+      }
+    ],
+    "buttonLabel": "Start Your Design Workflow"
+  },
+  "seoServices": {
+    "title": "What Can You ",
+    "highlight": "Outsource?",
+    "paragraphs": [
+      "Web development outsourcing gives your agency the flexibility to assign specific technical work without handing over control of the entire project. Choose the services you need based on your client requirements, internal capacity, and delivery timeline.",
+      "Each service can support individual tasks, complete projects, or ongoing white-label fulfillment, allowing your agency to increase development capacity while keeping the client relationship in-house."
+    ],
+    "defaultTab": 1,
+    "tabs": [
+      {
+        "title": "WordPress Development",
+        "icon": "seo",
+        "intro": "Ecommerce projects require reliable functionality across products, customers, payments, checkout, shipping, inventory, and third-party systems. Our developers can support your agency with the technical work behind complex online stores.",
+        "text": "Whether the project uses Shopify, WooCommerce, or another ecommerce platform, we can provide additional development capacity based on your requirements.",
+        "includesTitle": "Ecommerce Development Includes",
+        "includes": [
+          "Store development",
+          "Product functionality",
+          "Collection structures",
+          "Cart customization",
+          "Checkout functionality",
+          "Payment integrations",
+          "Shipping integrations",
+          "Inventory connections",
+          "Custom ecommerce features",
+          "Third-party integrations",
+          "Store migrations",
+          "Ongoing support"
+        ]
+      },
+      {
+        "title": "Ecommerce Development",
+        "icon": "seo",
+        "intro": "A page should clearly communicate its topic to both users and search engines.",
+        "text": "Our on-page SEO outsourcing focuses on improving page structure, search intent alignment, internal links, headings, metadata, content depth, entity coverage, and conversion opportunities.",
+        "includesTitle": "On-Page SEO Includes",
+        "includes": [
+          "Page-level keyword mapping",
+          "Search intent analysis",
+          "Title tag optimization",
+          "Meta descriptions",
+          "Heading structure",
+          "Content improvements",
+          "Internal links",
+          "Image optimization",
+          "Content hierarchy",
+          "Semantic keyword coverage",
+          "CTA alignment",
+          "Existing page refreshes"
+        ]
+      },
+      {
+        "title": "Web Application Development",
+        "icon": "seo",
+        "intro": "Content has to answer real questions and match what people are searching for.",
+        "text": "Our SEO content outsourcing plans, writes, and updates content around topics, search intent, and the pages your business needs to rank.",
+        "includesTitle": "SEO Content Includes",
+        "includes": [
+          "Topic research",
+          "Content briefs",
+          "Service and landing pages",
+          "Blog articles",
+          "Content refreshes",
+          "Topical clusters",
+          "Editorial review"
+        ]
+      },
+      {
+        "title": "Frontend Development",
+        "icon": "seo",
+        "intro": "Authority is built through relevant, trustworthy links over time.",
+        "text": "Our link building outsourcing researches and earns links that are relevant to your industry, with every opportunity reviewed for quality before outreach.",
+        "includesTitle": "Link Building Includes",
+        "includes": [
+          "Backlink audits",
+          "Competitor link research",
+          "Digital PR",
+          "Resource and niche outreach",
+          "Unlinked mentions",
+          "Link quality review"
+        ]
+      },
+      {
+        "title": "Backend Development",
+        "icon": "seo",
+        "intro": "Local customers search by location, service area, and maps.",
+        "text": "Our local SEO outsourcing improves visibility across Google Business Profiles, local pages, citations, and reviews for single and multi-location businesses.",
+        "includesTitle": "Local SEO Includes",
+        "includes": [
+          "Google Business Profile optimization",
+          "Location pages",
+          "Citation management",
+          "Local keyword research",
+          "Review strategy",
+          "Local reporting"
+        ]
+      },
+      {
+        "title": "API Development",
+        "icon": "seo",
+        "intro": "Large websites need SEO that works across teams, templates, and thousands of pages.",
+        "text": "Our enterprise SEO outsourcing supports complex architecture, large content libraries, and multiple stakeholders with structured workflows and reporting.",
+        "includesTitle": "Enterprise SEO Includes",
+        "includes": [
+          "Template-level optimization",
+          "Large-scale technical audits",
+          "International SEO",
+          "Content governance",
+          "Stakeholder reporting",
+          "Ongoing technical support"
+        ]
+      },
+      {
+        "title": "Website Maintenance",
+        "icon": "seo",
+        "intro": "Large websites need SEO that works across teams, templates, and thousands of pages.",
+        "text": "Our enterprise SEO outsourcing supports complex architecture, large content libraries, and multiple stakeholders with structured workflows and reporting.",
+        "includesTitle": "Enterprise SEO Includes",
+        "includes": [
+          "Template-level optimization",
+          "Large-scale technical audits",
+          "International SEO",
+          "Content governance",
+          "Stakeholder reporting",
+          "Ongoing technical support"
+        ]
+      }
+    ]
+  },
+  "customDevelopment": {
+    "title": "Custom Development When",
+    "subtitle": "Standard Tools ",
+    "highlight": "Are Not Enough",
+    "paragraphs": [
+      "Standard plugins and applications can solve many common requirements. They are not always suitable for complex client projects.",
+      "When your agency needs custom business logic, specialized workflows, advanced dashboards, unique calculations, custom user roles, or application-level integrations, our developers can build around the actual requirement."
+    ],
+    "cards": [
+      { "title": "Custom Dashboards", "text": "Give users or internal teams access to relevant information through role-based interfaces." },
+      { "title": "Customer Portals", "text": "Create secure areas where customers can access information, submit requests, manage accounts, or complete specific workflows." },
+      { "title": "Advanced Forms", "text": "Build forms that connect submissions with business rules, CRMs, databases, payment systems, or other software." },
+      { "title": "Custom Calculators", "text": "Develop pricing, estimation, qualification, financial, measurement, or industry-specific calculation tools." },
+      { "title": "User Systems", "text": "Support registration, authentication, permissions, profiles, memberships, and account-based functionality." },
+      { "title": "Business Workflows", "text": "Connect multiple steps, systems, users, and approvals into one digital process." }
+    ],
+    "buttonLabel": "Discuss a Custom Development Project",
+    "buttonLink": "/#contact"
+  },
+  "systemIntegrations": {
+    "title": "Connect the",
+    "subtitle": "Systems Behind",
+    "highlight": "the Website",
+    "paragraphs": [
+      "Your clients often depend on multiple platforms to manage leads, payments, customer data, marketing, inventory, and daily operations. When these systems do not communicate properly, your agency may end up managing disconnected tools and manual processes.",
+      "Our developers can connect websites and applications with the systems your clients already use through API development, integrations, webhooks, authentication, and data connections.",
+      "We can help your agency connect lead forms with CRMs, websites with payment platforms, customer information with databases, and marketing systems with automated workflows.",
+      "The goal is to create reliable connections between your client’s systems so information can move where it needs to go without unnecessary manual work."
+    ],
+    "integrations": [
+      { "title": "CRM Integrations", "text": "Connect websites, forms, and customer data with CRM platforms." },
+      { "title": "Payment Integrations", "text": "Connect websites and applications with payment providers and transaction systems." },
+      { "title": "Marketing Integrations", "text": "Send customer activity and lead information to marketing and automation platforms." },
+      { "title": "Database Connections", "text": "Exchange and synchronize information between websites, applications, and databases." },
+      { "title": "Third-Party APIs", "text": "Connect external software and services with the functionality your client needs." }
+    ],
+    "buttonLabel": "Connect Your Client Systems",
+    "buttonLink": "/#contact"
+  },
+  "developmentQuality": {
+    "title": "Development",
+    "subtitle": "Quality Your Agency",
+    "highlight": "Can Rely On",
+    "paragraphs": [
+      "Outsourcing should make your agency’s workload easier to manage, not create more technical problems for your team.",
+      "We structure development around clear requirements, defined tasks, review stages, testing, and documented delivery. This gives your agency visibility without requiring you to manage every technical detail."
+    ],
+    "steps": [
+      { "title": "Defined Scope", "text": "Requirements and deliverables are established before development begins." },
+      { "title": "Structured Development", "text": "Tasks are organized around agreed priorities and milestones." },
+      { "title": "Technical Review", "text": "Completed work is reviewed against the agreed requirements." },
+      { "title": "Functional Testing", "text": "Relevant functionality, forms, integrations, responsive behavior, and interactions are checked." },
+      { "title": "Controlled Handoff", "text": "Completed work is prepared for your review, client review, staging environment, or launch process." }
+    ],
+    "buttonLabel": "Request Development Support",
+    "buttonLink": "/#contact"
+  },
+  "hireDevelopers": {
+    "title": "Hire Developers Without",
+    "subtitle": "Expanding ",
+    "highlight": "Payroll",
+    "paragraphs": [
+      "Development demand can change quickly. Instead of hiring full-time developers for every increase in workload, add technical capacity when your agency actually needs it.",
+      "Hire one developer for ongoing support, bring in multiple developers for larger projects, or add temporary resources when your internal team is fully booked. This gives your agency more flexibility without adding permanent payroll costs.",
+      "You can also build a dedicated development resource around your recurring client workload. As your pipeline grows, additional developers can be added without rebuilding your entire internal team.",
+      "From short-term project support to long-term development capacity, the model can be structured around your agency’s workload, technical requirements, and delivery schedule."
+    ],
+    "buttonLabel": "Hire Remote Outsource Developers",
+    "buttonLink": "/#contact"
+  },
+  "clientProjects": {
+    "title": "Development for Client",
+    "highlight": "Projects",
+    "paragraphs": [
+      "Your development requirements change from client to client.",
+      "One account may need a WordPress website. Another may require ecommerce functionality. A third may need a custom application with APIs, authentication, and database functionality.",
+      "Our outsourcing web development services allow your agency to access technical support based on the project rather than maintaining every specialization internally."
+    ],
+    "cards": [
+      {
+        "title": "Business Websites",
+        "text": "Corporate websites, service websites, informational websites, and content-driven platforms."
+      },
+      {
+        "title": "Ecommerce",
+        "text": "Online stores, product catalogs, shopping experiences, checkout systems, and ecommerce integrations."
+      },
+      {
+        "title": "Web Applications",
+        "text": "Portals, dashboards, directories, booking systems, SaaS products, and internal platforms."
+      },
+      {
+        "title": "Custom Systems",
+        "text": "Business logic, calculators, customer systems, workflows, integrations, and database-driven functionality."
+      },
+      {
+        "title": "Existing Websites",
+        "text": "Bug fixes, improvements, migrations, feature additions, and technical maintenance."
+      }
+    ],
+    "buttonLabel": "Send Us Your Next Project",
+    "buttonLink": "/#contact"
+  },
+  "aroundYourAgency": {
+    "title": "Built Around Your",
+    "highlight": "Agency",
+    "paragraphs": [
+      "Your agency already has a workflow. Our web developer outsourcing services fit into the systems you already use, from project briefs and task boards to staging, approvals, and final handoff.",
+      "Share your designs, requirements, documentation, or development tasks, and our team works within your process. You maintain control of the client relationship while we handle the technical work.",
+      "From the first task to final delivery, communication stays clear, responsibilities stay defined, and completed development is prepared for client review, launch, or your next production stage."
+    ],
+    "buttonLabel": "Build Your Development Workflow",
+    "buttonLink": "/#contact",
+    "whiteLabel": {
+      "title": "White-Label Web",
+      "highlight": "Development",
+      "intro": "Your client does not need to know you outsourced the technical work.",
+      "paragraphs": [
+        "Our white label web development model allows your agency to remain the visible service provider while our team handles the agreed development work behind the scenes.",
+        "You control the client relationship, project communication, pricing, approvals, and final delivery. We follow your requirements and provide the technical fulfillment needed to complete the project."
+      ],
+      "buttonLabel": "Start White-Label Development",
+      "buttonLink": "/#contact",
+      "cards": [
+        {
+          "title": "Your Brand",
+          "text": "Development is delivered as part of your agency’s service rather than presented as a separate client-facing provider."
+        },
+        {
+          "title": "Your Workflow",
+          "text": "We can work within your project management system, communication process, development environment, and approval structure."
+        },
+        {
+          "title": "Your Client",
+          "text": "Your agency remains the primary point of contact throughout the engagement."
+        },
+        {
+          "title": "Your Standards",
+          "text": "Requirements, coding expectations, functionality, testing, and delivery standards are established before development begins."
+        }
+      ]
+    }
+  },
+  "inHouseDevelopment": {
+    "title": "Agency vs In-House",
+    "highlight": "Development",
+    "tableCaption": "Agency vs In-House Development",
+    "tableLabel": "Agency and in-house development comparison, scroll horizontally to view all columns",
+    "columns": {
+      "factor": "Factor",
+      "inHouse": "In-House Team",
+      "outsourced": "Outsourced Development"
+    },
+    "rows": [
+      { "factor": "Hiring", "inHouse": "Required", "outsourced": "Flexible with workload" },
+      { "factor": "Capacity", "inHouse": "Fixed", "outsourced": "Access to multiple design disciplines" },
+      { "factor": "Specialist Access", "inHouse": "Depends on employees", "outsourced": "No" },
+      { "factor": "Recruitment Time", "inHouse": "Can be lengthy", "outsourced": "Built for agency fulfillment" },
+      { "factor": "Fixed Overhead", "inHouse": "Salaries, benefits, tools", "outsourced": "Add capacity as needed" },
+      { "factor": "Project Overflow", "inHouse": "Limited by team size", "outsourced": "Planned throughout the project" },
+      { "factor": "White-Label Fulfillment", "inHouse": "Internal only", "outsourced": "Structured review and QA" },
+      { "factor": "Scaling", "inHouse": "Requires additional hiring", "outsourced": "Flexible engagement options" }
+    ],
+    "buttonLabel": "Add Capacity Without Adding Permanent Headcount",
+    "buttonLink": "/#contact"
+  },
+  "developmentSupport": {
+    "title": "Development Support",
+    "subtitle": "Built for",
+    "highlight": "Agencies",
+    "paragraphs": [
+      "You already understand your clients. You manage strategy, communication, sales, and account relationships.",
+      "What you may not always have is enough technical capacity to deliver every project internally.",
+      "That is where an outsourced web development team can fit into your operation. We work behind your agency, following your specifications and processes so you can expand your development offering without building every technical role internally.",
+      "Whether you need one developer for a defined project or recurring technical support across multiple accounts, the engagement can be structured around your actual workload."
+    ],
+    "buttonLabel": "Add Development Capacity",
+    "buttonLink": "/#contact",
+    "supportTitle": "Flexible Development Support",
+    "supportItems": [
+      { "title": "More Capacity", "text": "Take on additional projects when your internal development team is fully booked." },
+      { "title": "Technical Support", "text": "Bring in developers for platforms, frameworks, integrations, and functionality your current team does not cover." },
+      { "title": "Flexible Delivery", "text": "Use development resources for individual tasks, complete projects, or ongoing client work." },
+      { "title": "Agency Control", "text": "Keep ownership of your clients, communication, strategy, pricing, and project relationships." }
+    ]
+  },
+  "hero": {
+    "title": "Outsource Web \nDevelopment",
+    "description": "Scale your agency’s development capacity without adding another full-time development department. Our outsource web development services give agencies access to experienced developers who can work within your processes, technical requirements, project timelines, and client delivery standards.",
+    "buttonLabel": "Hire Web Developers",
+    "buttonLink": "/",
+    "image": "devHeroDashboard",
+    "imageAlt": "SEO dashboard showing rankings and organic traffic growth",
+    "floatingLabels": [
+      "Topical Authority Building",
+      "SERP Position Growth",
+      "Organic Traffic Growth",
+      "Semantic Search Strategy",
+      "Strategic Internal Linking"
+    ]
+  }
+}

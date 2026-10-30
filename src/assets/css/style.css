@@ -435,3 +435,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.animate-gif-img img {
+  opacity: 0;
+}
+
+.animate-gif-img:hover img {
+  opacity: 2;
+  transition: 1s;
+}

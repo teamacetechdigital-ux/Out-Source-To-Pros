@@ -1,4 +1,490 @@
 {
+  "designWithSearch": {
+    "title": "Designed With Search",
+    "highlight": "Visibility in Mind",
+    "paragraphs": [
+      "SEO and web design should not work against each other. Page hierarchy, content placement, navigation, headings, internal linking opportunities, mobile usability, imagery, and page performance can all be influenced by design decisions.",
+      {
+        "before": "We plan page structures that provide enough room for useful content without sacrificing readability or visual quality. This makes it easier for future ",
+        "link": {
+          "label": "SEO services",
+          "to": "/seo-services"
+        },
+        "after": " to work with the design rather than trying to repair a layout that was built without search considerations."
+      },
+      "The goal is not to turn every page into a wall of text. It is to create a balance between strong presentation, useful information, and clear page structure."
+    ],
+    "buttonLabel": "Design With Search in Mind",
+    "buttonLink": "/#contact",
+    "system": {
+      "title": "Consistency That",
+      "highlight": "Scales",
+      "text": "A growing website needs more than individual page mockups. We create reusable design systems that make future pages easier to build while keeping the entire website consistent.",
+      "cards": [
+        {
+          "title": "Typography",
+          "type": "typography",
+          "text": "Define consistent headings, paragraph, label, and supporting text styles. Keep typography clear and consistent across every page and device."
+        },
+        {
+          "title": "Colors",
+          "type": "colors",
+          "text": "Establish primary, secondary, accent, background, border, and state colors. Ensure every element follows the same visual language across the website."
+        },
+        {
+          "title": "Buttons",
+          "type": "buttons",
+          "text": "Create consistent primary, secondary, text, hover, and disabled button styles. Make important actions recognizable and predictable throughout the experience."
+        },
+        {
+          "title": "Forms",
+          "type": "forms",
+          "text": "Design consistent inputs, dropdowns, checkboxes, validation, and error states. Keep forms easy to understand and consistent across different pages."
+        },
+        {
+          "title": "Cards",
+          "type": "cards",
+          "text": "Build reusable card styles for services, resources, ecommerce, and portfolio content. Maintain consistent spacing, hierarchy, and presentation across different sections."
+        },
+        {
+          "title": "Spacing",
+          "type": "spacing",
+          "text": "Define consistent spacing between sections, grids, cards, and individual elements. Create balanced layouts that remain visually structured as the website grows."
+        }
+      ],
+      "illustrationLabels": {
+        "typographySample": "Aa",
+        "typographyBadge": "T",
+        "buttonLabel": "Button",
+        "formLabel": "Developer",
+        "spacingLabel": "24px"
+      },
+      "buttonLabel": "Create Your Design System",
+      "buttonLink": "/#contact"
+    },
+    "handoff": {
+      "title": "Ready for the Team",
+      "highlight": "Building It",
+      "paragraphs": [
+        "Design handoff should not leave developers guessing about spacing, states, mobile behavior, or which assets belong where.",
+        "Our Figma files can be organized around reusable components, responsive layouts, typography, colors, assets, page states, and clear naming so the people responsible for implementation can understand the intended experience.",
+        {
+          "before": "When required, the finished designs can move into your own developers or connect with our separate ",
+          "strong": "web development services",
+          "after": " team through an internal handoff."
+        }
+      ],
+      "buttonLabel": "Get Developer-Ready Designs",
+      "buttonLink": "/#contact"
+    }
+  },
+  "designBusinessModels": {
+    "title": "Built for Different",
+    "highlight": "Business Models",
+    "models": [
+      {
+        "title": "Agencies",
+        "text": "Add white-label capacity without adding permanent design headcount."
+      },
+      {
+        "title": "SaaS",
+        "text": "Explain products clearly through feature pages, use cases, integrations, demos, and pricing journeys."
+      },
+      {
+        "title": "Ecommerce",
+        "text": "Improve product discovery, merchandising, shopping journeys, and mobile experiences."
+      },
+      {
+        "title": "Professional Services",
+        "text": "Build trust through clear messaging, authority, case studies, and lead pathways."
+      },
+      {
+        "title": "Startups",
+        "text": "Create a focused digital presence that communicates the offer without unnecessary complexity."
+      },
+      {
+        "title": "Enterprise",
+        "text": "Build consistent experiences across larger websites, teams, content libraries, and design systems."
+      }
+    ],
+    "buttonLabel": "Find Your Design Model",
+    "buttonLink": "/#contact"
+  },
+  "designComparison": {
+    "title": "Outsourced Design vs",
+    "highlight": "Other Options",
+    "tableAriaLabel": "Design service comparison table, scroll horizontally to compare all options",
+    "tableCaption": "Comparison of freelance, in-house, traditional agency, and outsourced design services",
+    "columns": [
+      "Feature",
+      "Freelancer",
+      "In-House\nDesigner",
+      "Traditional\nAgency",
+      "Outsourced\nDesign Team"
+    ],
+    "rows": [
+      {
+        "feature": "Capacity",
+        "values": [
+          "Limited by one person",
+          "Fixed",
+          "Depends on agency",
+          "Flexible with workload"
+        ]
+      },
+      {
+        "feature": "Skill Coverage",
+        "values": [
+          "Individual expertise",
+          "Role-specific",
+          "Broader team",
+          "Access to multiple design disciplines"
+        ]
+      },
+      {
+        "feature": "Hiring Required",
+        "values": [
+          "No",
+          "Yes",
+          "No",
+          "No"
+        ]
+      },
+      {
+        "feature": "White-Label Support",
+        "values": [
+          "Limited",
+          "Not applicable",
+          "Often limited",
+          "Built for agency fulfillment"
+        ]
+      },
+      {
+        "feature": "Scalability",
+        "values": [
+          "Limited",
+          "Requires hiring",
+          "Depends on availability",
+          "Add capacity as needed"
+        ]
+      },
+      {
+        "feature": "Responsive Design",
+        "values": [
+          "Varies",
+          "Depends on expertise",
+          "Usually included",
+          "Planned throughout the project"
+        ]
+      },
+      {
+        "feature": "Quality Process",
+        "values": [
+          "Individual",
+          "Internal",
+          "Agency-dependent",
+          "Structured review and QA"
+        ]
+      },
+      {
+        "feature": "Ongoing Support",
+        "values": [
+          "Availability-dependent",
+          "Fixed internal capacity",
+          "Often retainer-based",
+          "Flexible engagement options"
+        ]
+      }
+    ],
+    "text": "Get the flexibility of outsourcing without sacrificing structure, visibility, or design standards.",
+    "buttonLabel": "Choose a Smarter Design Model",
+    "buttonLink": "/#contact"
+  },
+  "designWorkModels": {
+    "title": "Work With Us",
+    "highlight": "Your Way",
+    "text": "Choose a model based on your workload, internal resources, and how much design capacity you need.",
+    "models": [
+      {
+        "title": "Fixed Project",
+        "text": "For complete websites, redesigns, landing pages, ecommerce projects, or defined UI/UX assignments."
+      },
+      {
+        "title": "Monthly Design Support",
+        "text": "For businesses that need continuous design production, new pages, campaign support, and ongoing improvements."
+      },
+      {
+        "title": "White-Label Fulfillment",
+        "text": "For agencies managing recurring client website and design work."
+      },
+      {
+        "title": "Dedicated Design Resources",
+        "text": "For teams that need consistent access to one or more designers across an ongoing workload."
+      }
+    ],
+    "buttonLabel": "Request a Design Scope",
+    "buttonLink": "/#contact"
+  },
+  "designCost": {
+    "title": "What Does It Cost to",
+    "highlight": "Outsource Web Design?",
+    "paragraphs": [
+      "The cost of outsourced web design depends on the amount of work required rather than one universal page rate. A focused landing page, a five-page business website, a large ecommerce experience, and an ongoing white-label design relationship all involve different levels of planning and production.",
+      "Important pricing factors include page count, UX depth, responsive layouts, design system requirements, content readiness, custom graphics, interactions, ecommerce complexity, revision requirements, and the level of recurring support.",
+      "For ongoing work, monthly or dedicated-resource models may make more sense than pricing every single page or task independently."
+    ],
+    "buttonLabel": "Get a Design Estimate",
+    "buttonLink": "/#contact"
+  },
+  "designWithControl": {
+    "title": "Outsource Without",
+    "highlight": "Losing Control",
+    "paragraphs": [
+      "Outsourcing should increase capacity without making your projects harder to manage.",
+      "For white-label and confidential work, responsibilities, communication, file access, client visibility, and approval workflows can be established before the project begins.",
+      "You retain ownership of your client relationships and business processes while our team works within the agreed delivery structure."
+    ],
+    "controlRows": [
+      [
+        "Confidentiality",
+        "Controlled Access",
+        "Defined Ownership"
+      ],
+      [
+        "Transparent Communication",
+        "Organized Files",
+        "Clear Approvals"
+      ]
+    ],
+    "buttonLabel": "Keep Control While You Scale",
+    "buttonLink": "/#contact",
+    "advantages": {
+      "title": "Why Outsource Web",
+      "subtitle": "Design ",
+      "highlight": "With Us?",
+      "cards": [
+        {
+          "title": "Agency Ready",
+          "text": "Built to support confidential and white-label workflows."
+        },
+        {
+          "title": "UX Focused",
+          "text": "Design decisions begin with how people use the website."
+        },
+        {
+          "title": "Figma Based",
+          "text": "Organized files built for collaboration and production."
+        },
+        {
+          "title": "Responsive First",
+          "text": "Desktop and mobile experiences planned together."
+        },
+        {
+          "title": "Flexible Capacity",
+          "text": "Scale support according to project volume."
+        },
+        {
+          "title": "Quality Checked",
+          "text": "Structured reviews before final delivery."
+        },
+        {
+          "title": "Platform Aware",
+          "text": "Designs account for WordPress, Shopify, WooCommerce, Wix, and other environments."
+        },
+        {
+          "title": "Ongoing Support",
+          "text": "Continue adding pages and projects after the initial engagement."
+        }
+      ],
+      "buttonLabel": "Meet Your Extended Design Team",
+      "buttonLink": "/#contact"
+    }
+  },
+  "designFaqs": {
+    "title": "Frequently Asked Questions\nAbout SEO",
+    "highlight": "Outsourcing",
+    "items": [
+      {
+        "question": "What is web design outsourcing?",
+        "answer": "Web design outsourcing means using an external designer or design team to complete some or all website design work. It can cover full websites, landing pages, UI/UX, ecommerce design, responsive layouts, SaaS interfaces, redesigns, and ongoing production."
+      },
+      {
+        "question": "Why outsource web design?",
+        "answer": "Outsourcing gives you access to additional design capacity and specialist skills without recruiting for every project. It can support a defined website project, occasional overflow, or a recurring design workload."
+      },
+      {
+        "question": "Can agencies outsource web design?",
+        "answer": "Yes. Agencies can use white-label design support while keeping ownership of the client relationship, strategy, and approvals. Our designers can work within your briefs, brand standards, and delivery workflow."
+      },
+      {
+        "question": "Can I outsource only part of a website design?",
+        "answer": "Yes. Support can cover selected pages, landing pages, wireframes, interface components, responsive layouts, or other defined parts of a larger website project."
+      },
+      {
+        "question": "Do you provide responsive web design?",
+        "answer": "Yes. Desktop, tablet, and mobile layouts are planned together, including navigation, content hierarchy, forms, buttons, and other interactions that need to work across screen sizes."
+      },
+      {
+        "question": "Can I outsource WordPress web design?",
+        "answer": "Yes. We support WordPress page layouts, landing pages, blog templates, and reusable components, with the platform's content structure and development requirements considered during design."
+      },
+      {
+        "question": "Can I outsource Shopify web design?",
+        "answer": "Yes. Shopify design support can include storefronts, product pages, collection pages, promotional sections, and responsive shopping experiences prepared for development."
+      },
+      {
+        "question": "Do you work in Figma?",
+        "answer": "Yes. Designs can be organized in Figma using reusable components, typography and color styles, responsive states, and clear file structure to support review and implementation."
+      },
+      {
+        "question": "Can you work with our existing developers?",
+        "answer": "Yes. We can prepare designs and assets for your developers, agree on handoff requirements, and clarify layouts, component behavior, and responsive states during the project."
+      },
+      {
+        "question": "How much does it cost to outsource web design?",
+        "answer": "Cost depends on scope, page count, UX depth, responsive requirements, content readiness, ecommerce complexity, and the level of ongoing support. A project brief helps us define the work and prepare an estimate."
+      },
+      {
+        "question": "Can I hire ongoing design support?",
+        "answer": "Yes. Monthly design support and dedicated design resources can help with new pages, campaigns, recurring client projects, and improvements after the initial website design."
+      },
+      {
+        "question": "Who owns the final design?",
+        "answer": "Design ownership, file access, and final delivery are established in the agreed project terms. For white-label work, ownership and confidentiality requirements can be defined before the project begins."
+      }
+    ]
+  },
+  "designGrowthCta": {
+    "title": "Give Your Team More",
+    "highlight": "Room to Grow",
+    "paragraphs": [
+      "Increase design capacity without increasing permanent overhead. Use our outsourced web design team for complete websites, UI/UX, responsive layouts, ecommerce, SaaS, landing pages, white-label fulfillment, or ongoing creative production.",
+      "Whether you have one project waiting to start or an agency pipeline that needs consistent support, we can build the engagement around the way you already work."
+    ],
+    "buttons": [
+      {
+        "label": "Start Outsourcing Web Design",
+        "link": "/#contact"
+      },
+      {
+        "label": "Request a Design Scope",
+        "link": "/#contact"
+      }
+    ]
+  },
+  "designForPlatform": {
+    "title": "Design for the",
+    "highlight": "Platform You Use",
+    "text": "Different platforms create different design considerations. We account for the way content, products, templates, and components will eventually be managed before creating layouts that are unnecessarily difficult to implement.",
+    "buttonLabel": "Design for Your Platform",
+    "buttonLink": "/#contact",
+    "platforms": [
+      {
+        "title": "WordPress Design",
+        "text": "Flexible marketing and content-driven website layouts designed around reusable page structures."
+      },
+      {
+        "title": "Shopify Design",
+        "text": "Product discovery, collections, promotions, product pages, and shopping journeys built around ecommerce behavior."
+      },
+      {
+        "title": "WooCommerce Design",
+        "text": "Flexible ecommerce experiences connected to WordPress content and store functionality."
+      },
+      {
+        "title": "Custom Platforms",
+        "text": "UI systems and website experiences prepared around custom content and platform requirements."
+      }
+    ]
+  },
+  "designThatGuides": {
+    "title": "Design That Guides",
+    "highlight": "People Forward",
+    "paragraphs": [
+      "A website can look attractive and still make visitors work too hard.",
+      "We use visual hierarchy, spacing, content order, navigation, calls to action, forms, trust elements, and page structure to make important information easier to find and understand.",
+      "The objective is not to make every section dramatic. It is to create enough visual interest to hold attention while keeping the experience clear enough that visitors always understand where they are and what they can do next."
+    ],
+    "buttonLabel": "Turn Attention Into Action",
+    "buttonLink": "/#contact",
+    "conversion": {
+      "title": "Conversion-Focused by",
+      "highlight": "Design",
+      "leftCards": [
+        { "title": "Clear Hierarchy", "text": "Help visitors understand what matters first." },
+        { "title": "Strong CTAs", "text": "Place next steps where they make sense in the journey." },
+        { "title": "Better Forms", "text": "Reduce unnecessary friction around inquiries and conversions." }
+      ],
+      "rightCards": [
+        { "title": "Trust Signals", "text": "Create space for proof, case studies, reviews, data, and credentials." },
+        { "title": "Intent-Based Pages", "text": "Design pages around what different visitors are trying to accomplish." },
+        { "title": "Reduced Friction", "text": "Remove visual and structural obstacles that make decisions harder." }
+      ],
+      "buttonLabel": "Design With Purpose"
+    }
+  },
+  "designForEvery": {
+    "title": "Designed for Every",
+    "highlight": "Screen",
+    "paragraphs": [
+      "Responsive design should not mean shrinking the desktop website until it fits on a phone.",
+      "Screen size changes how people navigate, scan content, complete forms, interact with buttons, view images, and compare information. We plan desktop, tablet, and mobile experiences together so each important page remains easy to use regardless of the device.",
+      "This makes responsive web design outsourcing useful for businesses and agencies that need consistent experiences without managing separate design resources for each breakpoint."
+    ],
+    "screens": [
+      {
+        "title": "Desktop",
+        "description": "Structured layouts with room for deeper content and interactions.",
+        "image": "desktop",
+        "imageAlt": "Desktop layout of the regenerative medicine website"
+      },
+      {
+        "title": "Tablet",
+        "description": "Flexible sections and touch-friendly navigation.",
+        "image": "tablet",
+        "imageAlt": "Tablet layout of the regenerative medicine website"
+      },
+      {
+        "title": "Mobile",
+        "description": "Focused content, accessible actions, and simpler browsing.",
+        "image": "mobile",
+        "imageAlt": "Mobile layout of the regenerative medicine website"
+      }
+    ],
+    "buttonLabel": "Design for Every Screen",
+    "buttonLink": "/#contact"
+  },
+  "process": {
+    "title": "How We",
+    "highlight": "Outsource Web Design",
+    "steps": [
+      {
+        "title": "Discover",
+        "text": "Understand your brand, audience, goals, content, timeline, references, \nand required pages."
+      },
+      {
+        "title": "Structure",
+        "text": "Define page hierarchy, content flow, user journeys, and key conversion \npaths."
+      },
+      {
+        "title": "Wireframe",
+        "text": "Plan layouts and functionality before committing to the full visual \ndirection."
+      },
+      {
+        "title": "Design",
+        "text": "Create the interface, typography, imagery, components, responsive \nbehavior, and overall experience."
+      },
+      {
+        "title": "Refine",
+        "text": "Review usability, brand consistency, mobile layouts, details, and \napproved revisions."
+      },
+      {
+        "title": "Deliver",
+        "text": "Provide organized final files, assets, responsive designs, and relevant \nhandoff information."
+      }
+    ],
+    "buttonLabel": "Start Your Design Workflow"
+  },
   "whyOutSource": {
     "title": "Why Outsource Web",
     "highlight": "Design?",
