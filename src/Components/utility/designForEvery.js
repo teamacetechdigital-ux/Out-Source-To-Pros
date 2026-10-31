@@ -21,7 +21,7 @@ function ScreenCard({ screen }) {
 
   return (
     <article
-      className={`relative h-[360px] min-w-0 overflow-clip rounded-[clamp(10px,1vw,16px)] border border-[#a1d1ff]/80 bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.45))] text-white sm:h-[400px] md:h-[clamp(234px,30.2vw,435px)] ${screen.image === "desktop" ? "sm:col-span-2 md:col-span-1" : ""}`}
+      className={`relative h-[360px] min-w-0 overflow-clip rounded-[clamp(10px,1vw,16px)] border border-[#a1d1ff]/80 bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.45))] text-white sm:h-[400px] md:h-[clamp(234px,30.2vw,530px)] ${screen.image === "desktop" ? "sm:col-span-2 md:col-span-1" : ""}`}
     >
       <div className="px-[clamp(16px,2.65vw,40px)] pt-[clamp(20px,2.65vw,40px)]">
         <h3 className="montserrat-rg text-xl font-bold uppercase leading-[1.2] md:text-[clamp(1.875rem,2.2vw,2.625rem)]">
