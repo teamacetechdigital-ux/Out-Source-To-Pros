@@ -44,8 +44,50 @@
     "defaultTab": 1,
     "tabs": [
       {
+        "title": "Website Development",
+        "icon": "webdevtab7",
+        "intro": "A reliable website foundation should support the client’s content, functionality, integrations, and future requirements. Our outsourced developers can handle complete builds, rebuilds, migrations, and technical implementation.",
+        "text": "Our website development outsourcing support helps agencies move projects forward without adding permanent development resources to their internal team.",
+        "includesTitle": "Website Development Includes",
+        "includes": [
+          "Custom website builds",
+          "Website rebuilds",
+          "CMS implementation",
+          "Theme customization",
+          "Custom functionality",
+          "Third-party integrations",
+          "Forms and interactive features",
+          "Website migrations",
+          "Responsive functionality",
+          "Staging and deployment support",
+          "Technical troubleshooting",
+          "Ongoing development"
+        ]
+      },
+      {
         "title": "WordPress Development",
-        "icon": "seo",
+        "icon": "wordpress",
+        "intro": "WordPress projects often require more than installing a theme and adding content. Agencies may need custom templates, plugin functionality, integrations, ecommerce features, or technical changes that require experienced developers.",
+        "text": "Our white-label WordPress development support allows your agency to outsource technical fulfillment while keeping project management and client communication under your control.",
+        "includesTitle": "WordPress Development Includes",
+        "includes": [
+          "Custom WordPress builds",
+          "Theme development",
+          "Custom templates",
+          "Plugin development",
+          "Plugin customization",
+          "WooCommerce functionality",
+          "API integrations",
+          "Custom post types",
+          "Advanced forms",
+          "Website migrations",
+          "Performance improvements",
+          "Ongoing maintenance"
+        ]
+      },
+      {
+        "title": "Ecommerce Development",
+        "icon": "webdevtab1",
         "intro": "Ecommerce projects require reliable functionality across products, customers, payments, checkout, shipping, inventory, and third-party systems. Our developers can support your agency with the technical work behind complex online stores.",
         "text": "Whether the project uses Shopify, WooCommerce, or another ecommerce platform, we can provide additional development capacity based on your requirements.",
         "includesTitle": "Ecommerce Development Includes",
@@ -65,100 +107,108 @@
         ]
       },
       {
-        "title": "Ecommerce Development",
-        "icon": "seo",
-        "intro": "A page should clearly communicate its topic to both users and search engines.",
-        "text": "Our on-page SEO outsourcing focuses on improving page structure, search intent alignment, internal links, headings, metadata, content depth, entity coverage, and conversion opportunities.",
-        "includesTitle": "On-Page SEO Includes",
-        "includes": [
-          "Page-level keyword mapping",
-          "Search intent analysis",
-          "Title tag optimization",
-          "Meta descriptions",
-          "Heading structure",
-          "Content improvements",
-          "Internal links",
-          "Image optimization",
-          "Content hierarchy",
-          "Semantic keyword coverage",
-          "CTA alignment",
-          "Existing page refreshes"
-        ]
-      },
-      {
         "title": "Web Application Development",
-        "icon": "seo",
-        "intro": "Content has to answer real questions and match what people are searching for.",
-        "text": "Our SEO content outsourcing plans, writes, and updates content around topics, search intent, and the pages your business needs to rank.",
-        "includesTitle": "SEO Content Includes",
+        "icon": "webdevtab4",
+        "intro": "Web applications require a different development approach from standard marketing websites. They may involve accounts, permissions, databases, dashboards, workflows, and application-specific functionality.",
+        "text": "Our outsourced development support helps agencies deliver portals, SaaS platforms, internal systems, and customer-facing applications without needing every technical role internally.",
+        "includesTitle": "Web Application Development Includes",
         "includes": [
-          "Topic research",
-          "Content briefs",
-          "Service and landing pages",
-          "Blog articles",
-          "Content refreshes",
-          "Topical clusters",
-          "Editorial review"
+          "Customer portals",
+          "User accounts",
+          "Dashboards",
+          "SaaS applications",
+          "Booking systems",
+          "Membership platforms",
+          "Directories",
+          "Internal business tools",
+          "Authentication systems",
+          "Database functionality",
+          "Custom workflows",
+          "Application integrations"
         ]
       },
       {
         "title": "Frontend Development",
-        "icon": "seo",
-        "intro": "Authority is built through relevant, trustworthy links over time.",
-        "text": "Our link building outsourcing researches and earns links that are relevant to your industry, with every opportunity reviewed for quality before outreach.",
-        "includesTitle": "Link Building Includes",
+        "icon": "webdevtab5",
+        "intro": "Frontend development turns approved designs and technical requirements into functional digital experiences that users can interact with across different devices and browsers.",
+        "text": "Our outsourced frontend developers can work alongside your designers, project managers, or internal developers to provide additional production capacity for client projects.",
+        "includesTitle": "Frontend Development Includes",
         "includes": [
-          "Backlink audits",
-          "Competitor link research",
-          "Digital PR",
-          "Resource and niche outreach",
-          "Unlinked mentions",
-          "Link quality review"
+          "HTML development",
+          "CSS implementation",
+          "JavaScript functionality",
+          "React development",
+          "Next.js development",
+          "Responsive layouts",
+          "Interactive components",
+          "Forms and interfaces",
+          "Browser compatibility",
+          "Frontend integrations",
+          "Component development",
+          "UI implementation"
         ]
       },
       {
         "title": "Backend Development",
-        "icon": "seo",
-        "intro": "Local customers search by location, service area, and maps.",
-        "text": "Our local SEO outsourcing improves visibility across Google Business Profiles, local pages, citations, and reviews for single and multi-location businesses.",
-        "includesTitle": "Local SEO Includes",
+        "icon": "webdevtab6",
+        "intro": "The backend controls much of what happens behind the interface, including application logic, databases, authentication, APIs, and connections between different systems.",
+        "text": "Our outsourced backend developers can support your agency when a project requires technical infrastructure beyond the capabilities or availability of your existing development team.",
+        "includesTitle": "Backend Development Includes",
         "includes": [
-          "Google Business Profile optimization",
-          "Location pages",
-          "Citation management",
-          "Local keyword research",
-          "Review strategy",
-          "Local reporting"
+          "Server-side development",
+          "Database development",
+          "API development",
+          "Authentication",
+          "User permissions",
+          "Business logic",
+          "Data processing",
+          "Backend integrations",
+          "Application architecture",
+          "Custom functionality",
+          "Security implementation",
+          "Ongoing backend support"
         ]
       },
       {
         "title": "API Development",
-        "icon": "seo",
-        "intro": "Large websites need SEO that works across teams, templates, and thousands of pages.",
-        "text": "Our enterprise SEO outsourcing supports complex architecture, large content libraries, and multiple stakeholders with structured workflows and reporting.",
-        "includesTitle": "Enterprise SEO Includes",
+        "icon": "webdevtab3",
+        "intro": "Modern client projects often need websites and applications to communicate with other business systems. APIs make it possible to exchange information between platforms, applications, databases, and third-party services.",
+        "text": "Our developers can build or integrate APIs according to the project's requirements, helping your agency connect the systems your clients depend on.",
+        "includesTitle": "API Development Includes",
         "includes": [
-          "Template-level optimization",
-          "Large-scale technical audits",
-          "International SEO",
-          "Content governance",
-          "Stakeholder reporting",
-          "Ongoing technical support"
+          "REST API integration",
+          "GraphQL integration",
+          "Custom APIs",
+          "CRM connections",
+          "Payment integrations",
+          "Database connections",
+          "Marketing integrations",
+          "Webhooks",
+          "Authentication",
+          "Data synchronization",
+          "Third-party software",
+          "Custom system connections"
         ]
       },
       {
         "title": "Website Maintenance",
-        "icon": "seo",
-        "intro": "Large websites need SEO that works across teams, templates, and thousands of pages.",
-        "text": "Our enterprise SEO outsourcing supports complex architecture, large content libraries, and multiple stakeholders with structured workflows and reporting.",
-        "includesTitle": "Enterprise SEO Includes",
+        "icon": "webdevtab2",
+        "intro": "Client websites require ongoing technical attention after launch. Updates, fixes, compatibility issues, new functionality, integrations, and content-related development requests can continue throughout the life of a project.",
+        "text": "Our outsourced website maintenance support gives agencies access to technical resources for recurring work without requiring a dedicated internal maintenance department.",
+        "includesTitle": "Website Maintenance Includes",
         "includes": [
-          "Template-level optimization",
-          "Large-scale technical audits",
-          "International SEO",
-          "Content governance",
-          "Stakeholder reporting",
-          "Ongoing technical support"
+          "Website updates",
+          "Bug fixes",
+          "Technical troubleshooting",
+          "Plugin updates",
+          "Theme updates",
+          "Compatibility fixes",
+          "Security improvements",
+          "Feature updates",
+          "Integration maintenance",
+          "Performance improvements",
+          "Website backups",
+          "Ongoing development support"
         ]
       }
     ]
@@ -539,79 +589,79 @@
       },
       {
         "question": "Can agencies outsource web development?",
-        "answer": "Yes. Agencies can outsource complete builds, specific development tasks, or ongoing support while keeping the client relationship, strategy, and communication in-house."
+        "answer": "Yes. Agencies can outsource technical fulfillment while maintaining control of the client relationship, strategy, communication, pricing, and project management."
       },
       {
         "question": "What can I outsource?",
-        "answer": "You can outsource website builds, redesign development, WordPress and ecommerce work, custom features, integrations, APIs, migrations, maintenance, and dedicated developer capacity."
+        "answer": "You can outsource website development, WordPress development, ecommerce development, web applications, frontend development, backend development, APIs, integrations, custom functionality, migrations, maintenance, and technical support."
       },
       {
         "question": "Can I hire a web developer instead of an entire team?",
-        "answer": "Yes. You can start with one developer for a specific requirement and add more capacity when your workload grows."
+        "answer": "Yes. A dedicated developer can provide consistent technical capacity for your agency's recurring workload without requiring a permanent internal hire."
       },
       {
         "question": "Do you offer white-label web development?",
-        "answer": "Yes. We can work behind your agency under your brand, following your processes and delivery standards, while you remain the client-facing provider."
+        "answer": "Yes. White-label development allows your agency to remain client-facing while the agreed technical work is completed behind the scenes."
       },
       {
         "question": "Can you work with our internal developers?",
-        "answer": "Yes. Our developers can work alongside your internal team, follow your coding standards, and use your repositories and review process."
+        "answer": "Yes. Outsourced developers can work alongside your existing team when responsibilities, environments, repositories, and communication processes are clearly established."
       },
       {
         "question": "Can you work with our project management system?",
-        "answer": "Yes. We can work inside your existing tools, such as your project management platform, communication channels, and repositories."
+        "answer": "Yes. Development work can be organized around your existing project management, ticketing, communication, and approval processes."
       },
       {
         "question": "Can I outsource only part of a project?",
-        "answer": "Yes. You can outsource a specific part of a project, such as front-end development, integrations, custom functionality, or testing."
+        "answer": "Yes. You can outsource specific functionality, integrations, frontend work, backend work, bug fixes, or other defined technical tasks."
       },
       {
         "question": "Can you handle complete website projects?",
-        "answer": "Yes. We can take a website from requirements and designs through development, testing, and handoff for launch."
+        "answer": "Yes. Complete website development projects can be scoped from requirements through development, testing, staging, deployment, and ongoing support."
       },
       {
         "question": "Do you provide WordPress development?",
-        "answer": "Yes. We build and support WordPress websites, including custom themes, page builders, plugins, and performance improvements."
+        "answer": "Yes. WordPress development can include custom themes, templates, plugins, integrations, WooCommerce functionality, migrations, and ongoing technical support."
       },
       {
         "question": "Do you provide ecommerce development?",
-        "answer": "Yes. We develop and support ecommerce websites, including store setup, custom features, payment integrations, and ongoing improvements."
+        "answer": "Yes. Ecommerce development can support product systems, storefront functionality, checkout requirements, integrations, payment systems, and custom ecommerce features."
       },
       {
         "question": "Can you build custom web applications?",
-        "answer": "Yes. We build custom web applications, portals, dashboards, and functionality when standard tools are not enough."
+        "answer": "Yes. Custom web applications can include portals, dashboards, booking platforms, directories, membership systems, SaaS products, and internal business systems."
       },
       {
         "question": "Can you develop APIs?",
-        "answer": "Yes. We can develop APIs and connect websites and applications with third-party services, databases, and internal systems."
+        "answer": "Yes. API development and integration can connect websites and applications with CRMs, payment systems, databases, marketing platforms, and other software."
       },
       {
         "question": "Can I outsource an existing website?",
-        "answer": "Yes. We review the existing website first, then take over updates, fixes, improvements, or redevelopment based on the agreed scope."
+        "answer": "Yes. Existing websites can be reviewed for maintenance, bug fixes, improvements, migrations, new features, integrations, and ongoing development."
       },
       {
         "question": "How does white-label development work?",
-        "answer": "You manage the client and the requirements. We complete the agreed development work behind your agency and deliver it for your review and launch process."
+        "answer": "Your agency provides the requirements and maintains the client relationship. The outsourced development team handles the agreed technical work according to your workflow and delivery standards."
       },
       {
         "question": "How much does outsourced web development cost?",
-        "answer": "Cost depends on the scope, complexity, timeline, and engagement model. A clear requirement helps us provide an accurate estimate."
+        "answer": "Pricing depends on project scope, technical complexity, development requirements, number of resources, integrations, timeline, and engagement model."
       },
       {
         "question": "Is outsourcing better than hiring internally?",
-        "answer": "Outsourcing is often better when your workload changes, when you need specialist skills, or when you want capacity without permanent hiring costs."
+        "answer": "The right choice depends on your workload. Outsourcing can be useful when demand changes, specialist skills are required, or your agency needs additional capacity without adding permanent headcount."
       },
       {
         "question": "Can I hire developers for ongoing work?",
-        "answer": "Yes. You can work with dedicated developers or a monthly support model for recurring development work."
+        "answer": "Yes. Dedicated developers and monthly support models can provide recurring development capacity across multiple client projects."
       },
       {
         "question": "Can you support urgent projects?",
-        "answer": "Yes, depending on availability and scope. Share the requirements and timeline, and we will confirm what can be delivered."
+        "answer": "Urgent development requirements can be reviewed based on the scope, technical complexity, available resources, and required timeline."
       },
       {
-        "question": "Do you provide ongoing maintenance?",
-        "answer": "Yes. We provide ongoing maintenance, updates, fixes, and improvements after launch."
+        "question": "Do you provide ongoing maintenance??",
+        "answer": "Yes. Ongoing development support can include updates, bug fixes, integrations, improvements, troubleshooting, and new functionality."
       }
     ],
     "noBackdrop": true

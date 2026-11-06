@@ -1,6 +1,7 @@
 import { useId } from "react";
 import { Link } from "react-router-dom";
 import brandMark from "../../assets/imgs/webdesign/brand-mark.svg";
+import "./designThatGuides.css";
 
 const buttonClass = "montserrat-bd inline-flex max-w-full items-center justify-center rounded-sm bg-[#1B50E8] px-5 py-3 text-center text-xs uppercase leading-[1.3] text-white transition-colors hover:bg-[#1242c8] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#1B50E8] md:px-[1.6%] md:py-[1.4%] md:text-[clamp(1.0625rem,1.25vw,1.5rem)]";
 
@@ -41,6 +42,13 @@ function DesignThatGuides({ content }) {
           <div className="relative mt-7 grid items-center gap-4 sm:grid-cols-2 md:mt-[3%] md:grid-cols-[1fr_1.5fr_1fr] md:gap-0">
             <svg aria-hidden="true" viewBox="0 0 1000 340" preserveAspectRatio="none" className="pointer-events-none absolute inset-0 hidden h-full w-full fill-none stroke-[#d5dce7] [stroke-dasharray:3_5] md:block">
               <path d="M280 48H335V292H280 M720 48H665V292H720 M280 170H720" />
+              {/* Follow each branch back to its junction before crossing the circle. */}
+              <path
+                className="design-that-guides-signal"
+                d="M280 48 H335 V170 H280 H335 V292 H280 H335 V170 H665
+                   V48 H720 H665 V170 H720 H665 V292 H720"
+                pathLength="100"
+              />
             </svg>
             <ConversionCards cards={content.conversion.leftCards} className="order-2 md:order-1" />
             <div aria-hidden="true" className="relative z-10 order-1 mx-auto h-[120px] w-[120px] rounded-[50%] bg-[linear-gradient(180deg,#9eceff,#fff)] sm:col-span-2 md:order-2 md:col-span-1 md:h-[clamp(88px,14.6vw,210px)] md:w-[clamp(88px,14.6vw,210px)]">

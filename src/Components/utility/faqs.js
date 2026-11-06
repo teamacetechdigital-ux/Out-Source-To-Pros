@@ -31,11 +31,20 @@ function ChevronIcon({ open }) {
 // A white card around the section, as used on the SEO page.
 const boxStyle = {
   boxShadow: "0px 10px 40px rgba(27, 80, 232, 0.12)",
+  alignItems: "stretch",
 };
 
 function Faqs({ content }) {
   const { faqs } = content;
   const [active, setActive] = useState(content.defaultActive || 0);
+  const description = content.description?.map((paragraph, index) => (
+    <p
+      key={paragraph}
+      className={`satoshi-md text-[15px] 2xl:text-[19px] text-black ${index === 0 ? "pt-5" : "pt-2"}`}
+    >
+      {withBreaks(paragraph)}
+    </p>
+  ));
 
   return (
     <section
@@ -48,10 +57,10 @@ function Faqs({ content }) {
     >
       <div className="custom-container px-5 sm:px-8 lg:px-12">
         <div
-          className={`grid grid-cols-1 items-start gap-8 xl:grid-cols-[576fr_482fr] xl:items-end xl:gap-[82px] [&>*]:min-w-0 ${
+          className={`grid grid-cols-1 items-start gap-8 xl:grid-cols-[576fr_482fr] xl:gap-[82px] [&>*]:min-w-0 ${
             content.boxed
-              ? "rounded-[20px] bg-white px-5 py-10 sm:px-10 xl:items-center xl:px-[78px] xl:py-16"
-              : ""
+              ? "rounded-[20px] bg-white px-5 py-10 sm:px-10 xl:px-[78px] xl:py-16"
+              : "xl:items-end"
           }`}
           style={content.boxed ? boxStyle : undefined}
         >
@@ -60,17 +69,9 @@ function Faqs({ content }) {
               {withBreaks(content.title)}{" "}
               <span style={headingHighlightStyle}>{content.highlight}</span>
             </h2>
-            {content.description &&
-              content.description.map((paragraph, index) => (
-                <p
-                  key={paragraph}
-                  className={`satoshi-md text-[15px] 2xl:text-[19px] text-black ${index === 0 ? "pt-5" : "pt-2"}`}
-                >
-                  {withBreaks(paragraph)}
-                </p>
-              ))}
+            {!content.boxed && description}
 
-            <ul className={content.description ? "mt-6 lg:mt-8" : "mt-8 lg:mt-14"}>
+            <ul className={!content.boxed && content.description ? "mt-6 lg:mt-8" : "mt-8 lg:mt-14"}>
               {faqs.map((faq, index) => (
                 <li key={faq.question}>
                   <button
@@ -95,41 +96,46 @@ function Faqs({ content }) {
             </ul>
           </div>
 
-          {/* Answer for the selected question fades in */}
-          <div
-            className="grid min-w-0 overflow-hidden rounded-3xl px-6 py-8 answer-bg sm:px-10 lg:min-h-[430px] lg:py-12"
-          >
-            {faqs.map((faq, index) => (
-              <div
-                key={faq.question}
-                className={`relative col-start-1 row-start-1 transition-opacity duration-500 ${
-                  active === index ? "opacity-100" : "pointer-events-none opacity-0"
-                }`}
-                aria-hidden={active !== index}
-              >
-                {faq.answerList ? (
-                  <>
-                    <h3 className="montserrat-rg pb-3 text-xl font-bold text-white">
-                      {faq.answerTitle}
-                    </h3>
-                    <ul className="satoshi-md list-disc space-y-1 pl-5 text-base leading-[1.5] text-white lg:text-[15px]">
-                      {faq.answerList.map((item) => (
-                        <li key={item}>{item}</li>
-                      ))}
-                    </ul>
-                  </>
-                ) : (
-                  faq.answer.map((paragraph) => (
-                    <p
-                      key={paragraph}
-                      className="satoshi-md pb-4 text-base lg:text-[15px] 2xl:text-[19px] leading-[1.5] text-white"
-                    >
-                      {paragraph}
-                    </p>
-                  ))
-                )}
-              </div>
-            ))}
+          <div className={content.boxed ? "flex flex-col" : undefined}>
+            {content.boxed && description && (
+              <div className="mb-6">{description}</div>
+            )}
+            {/* Answer for the selected question fades in */}
+            <div
+              className={`grid min-w-0 overflow-hidden rounded-3xl px-6 py-8 answer-bg sm:px-10 lg:min-h-[430px] lg:py-12 ${content.boxed ? "mt-auto" : ""}`}
+            >
+              {faqs.map((faq, index) => (
+                <div
+                  key={faq.question}
+                  className={`relative col-start-1 row-start-1 transition-opacity duration-500 ${
+                    active === index ? "opacity-100" : "pointer-events-none opacity-0"
+                  }`}
+                  aria-hidden={active !== index}
+                >
+                  {faq.answerList ? (
+                    <>
+                      <h3 className="montserrat-rg pb-3 text-xl font-bold text-white">
+                        {faq.answerTitle}
+                      </h3>
+                      <ul className="satoshi-md list-disc space-y-1 pl-5 text-base leading-[1.5] text-white lg:text-[15px]">
+                        {faq.answerList.map((item) => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    </>
+                  ) : (
+                    faq.answer.map((paragraph) => (
+                      <p
+                        key={paragraph}
+                        className="satoshi-md pb-4 text-base lg:text-[15px] 2xl:text-[19px] leading-[1.5] text-white"
+                      >
+                        {paragraph}
+                      </p>
+                    ))
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>

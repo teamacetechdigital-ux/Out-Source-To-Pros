@@ -13,7 +13,7 @@ function BrandExperience({ content }) {
         <div className="satoshi-md mx-auto mt-5 max-w-[78ch] space-y-0.5 text-center text-[15px] leading-[1.35] text-black md:mt-[2.6%] md:w-[72%] md:text-[clamp(1rem,1.04vw,1.25rem)]">
           {content.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
         </div>
-        <ul className="mt-7 grid grid-cols-1 gap-3 min-[420px]:grid-cols-2 md:mt-[2.6%] md:grid-cols-5 md:gap-[1.4%]">
+        <ul className="mt-7 grid grid-cols-1 gap-3 min-[420px]:grid-cols-2 md:mt-[2.6%] lg:grid-cols-5 lg:gap-[1.4%]">
           {content.cards.map((card) => (
             <li key={card.title} className="min-w-0 rounded-[clamp(10px,1vw,16px)] bg-[linear-gradient(180deg,#a8d0ff_0%,#e6f2ff_55%,#fff_100%)] px-4 py-5 text-center md:min-h-[clamp(110px,10.4vw,200px)] md:px-[6%] md:py-[9%]">
               <h3 className="montserrat-rg text-base font-bold uppercase leading-[1.2] text-black md:text-[clamp(1.0625rem,1.25vw,1.5rem)]">{card.title}</h3>

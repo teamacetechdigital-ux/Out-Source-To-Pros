@@ -1,0 +1,35 @@
+.seo-support-item {
+  position: relative;
+  padding-left: 12px;
+  color: rgb(255 255 255 / 75%);
+  transition: color 180ms ease, padding-left 180ms ease;
+}
+
+.seo-support-item__mark {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0;
+  transition: opacity 180ms ease;
+}
+
+@media (hover: hover) {
+  .seo-support-item:hover {
+    padding-left: 32px;
+    color: white;
+  }
+
+  .seo-support-item:hover .seo-support-item__mark {
+    opacity: 1;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .seo-support-item,
+  .seo-support-item__mark {
+    transition: none;
+  }
+}

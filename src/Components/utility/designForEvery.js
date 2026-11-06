@@ -11,7 +11,7 @@ const deviceImages = {
 };
 
 const previewLayouts = {
-  desktop: "aspect-[240/150] w-[92%] max-w-[416px] md:max-w-none",
+  desktop: "aspect-[240/150] w-[92%] max-w-[416px] lg:max-w-none",
   tablet: "aspect-square w-[64%] md:w-[80%]",
   mobile: "aspect-[420/756] w-[38%] sm:w-[45%] md:w-[60%]",
 };
@@ -21,9 +21,9 @@ function ScreenCard({ screen }) {
 
   return (
     <article
-      className={`relative h-[360px] min-w-0 overflow-clip rounded-[clamp(10px,1vw,16px)] border border-[#a1d1ff]/80 bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.45))] text-white sm:h-[400px] md:h-[clamp(234px,30.2vw,530px)] ${screen.image === "desktop" ? "sm:col-span-2 md:col-span-1" : ""}`}
+      className={`flex h-[360px] min-w-0 flex-col overflow-clip rounded-[clamp(10px,1vw,16px)] border border-[#a1d1ff]/80 bg-[linear-gradient(180deg,rgba(255,255,255,0.08),rgba(255,255,255,0.45))] text-white sm:h-[400px] lg:h-[clamp(234px,30.2vw,530px)] ${screen.image === "desktop" ? "sm:col-span-2 lg:col-span-1" : ""}`}
     >
-      <div className="px-[clamp(16px,2.65vw,40px)] pt-[clamp(20px,2.65vw,40px)]">
+      <div className="mb-2 shrink-0 px-[clamp(16px,2.65vw,40px)] pt-[clamp(20px,2.65vw,40px)]">
         <h3 className="montserrat-rg text-xl font-bold uppercase leading-[1.2] md:text-[clamp(1.875rem,2.2vw,2.625rem)]">
           {screen.title}
         </h3>
@@ -32,14 +32,14 @@ function ScreenCard({ screen }) {
         </p>
       </div>
       <div
-        className={`absolute bottom-0 right-0 overflow-hidden ${previewLayouts[screen.image]}`}
+        className={`mt-auto min-h-0 self-end overflow-hidden ${previewLayouts[screen.image]}`}
       >
         <img
           src={image}
           alt={screen.imageAlt}
           loading="lazy"
           decoding="async"
-          className="block h-full w-full object-cover object-top"
+          className="block h-full w-full object-contain object-right-bottom"
         />
       </div>
     </article>
@@ -73,7 +73,7 @@ function DesignForEvery({ content }) {
             ))}
           </div>
         </div>
-        <div className="mt-8 grid grid-cols-1 gap-[clamp(8px,1vw,16px)] sm:grid-cols-2 md:mt-[4.6vw] md:grid-cols-[1.82fr_1.36fr_1fr]">
+        <div className="mt-8 grid grid-cols-1 gap-[clamp(8px,1vw,16px)] sm:grid-cols-2 md:mt-[4.6vw] lg:grid-cols-[1.82fr_1.36fr_1fr]">
           {content.screens.map((screen) => (
             <ScreenCard key={screen.image} screen={screen} />
           ))}

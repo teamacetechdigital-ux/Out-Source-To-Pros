@@ -12,7 +12,7 @@ function ProjectConnectors({ count }) {
       aria-hidden="true"
       viewBox="0 0 1000 125"
       preserveAspectRatio="none"
-      className="hidden h-[8vw] w-full overflow-visible md:block"
+      className="hidden h-[8vw] w-full overflow-visible lg:block"
     >
       <g
         fill="none"
@@ -80,7 +80,7 @@ function ClientProjects({ content, sharedBackground = false }) {
         </div>
         <div className="mt-7 md:mt-[1.7vw]">
           <ProjectConnectors count={content.cards.length} />
-          <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:mt-[1.6vw] md:grid-cols-5 md:gap-[1vw]">
+          <ul className="grid grid-cols-1 gap-3 sm:grid-cols-2 md:mt-[1.6vw] lg:grid-cols-5 lg:gap-[1vw]">
             {content.cards.map((card) => (
               <li
                 key={card.title}

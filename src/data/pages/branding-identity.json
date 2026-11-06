@@ -56,92 +56,92 @@
     "tabs": [
       {
         "title": "Brand Strategy",
-        "intro": "Set the direction your brand will follow before any creative work begins.",
-        "text": "Brand strategy connects your business goals, audience, market, and offer into one clear plan. It defines what the brand stands for, who it needs to reach, and how it should behave, so every identity, messaging, and marketing decision has a reason behind it.",
+        "intro": "A strong brand starts with a clear understanding of your business, audience, and market.",
+        "text": "Our brand strategy process establishes the direction behind your identity. We evaluate your business objectives, target customers, competitors, market expectations, and existing brand perception to develop a foundation that guides your positioning, messaging, and visual decisions.",
         "points": [
-          "Clarifies Purpose and Direction",
-          "Aligns Teams Around One Plan",
-          "Guides Every Creative Decision"
+          "Defines Your Brand Direction",
+          "Connects With Your Target Audience",
+          "Establishes Long-Term Brand Goals"
         ]
       },
       {
         "title": "Brand Positioning",
-        "intro": "Define how your business should be understood within its category and what meaningful distinction you can own.",
-        "text": "Brand Positioning is the strategic process of creating a distinct image and identity for your business in the minds of your target audience. It defines how your business should be understood within its product or service category and identifies the unique, meaningful advantage you own compared to competitors. Rather than just being a slogan, logo, or advertising campaign, brand positioning is the core value proposition that drives why a customer should choose you over anyone else.",
+        "intro": "Give your business a clear place in the market and a reason to stand apart.",
+        "text": "Brand positioning defines how customers should perceive your business compared to competitors. We identify your distinctive strengths, customer expectations, value proposition, and market opportunities to establish a position that makes your business easier to understand, recognize, and choose.",
         "points": [
-          "Differentiates in a Crowded Market",
-          "Attracts the Right Audience",
-          "Guides Marketing and Strategy"
+          "Differentiates Your Business",
+          "Communicates Your Unique Value",
+          "Builds Market Recognition"
         ]
       },
       {
         "title": "Brand Naming",
-        "intro": "Find a name that fits your business, your audience, and the way you plan to grow.",
-        "text": "Brand naming explores options that are memorable, easy to say, and suitable for your market. We develop naming directions around your positioning, review shortlisted names for fit and practicality, and help you choose a name that can support the brand for years to come.",
+        "intro": "A meaningful brand name gives your business an identity people can recognize and remember.",
+        "text": "We develop naming concepts based on your business model, audience, positioning, personality, and future direction. Each naming approach is considered for relevance, memorability, pronunciation, and potential brand applications, creating a stronger foundation for your identity.",
         "points": [
-          "Memorable and Easy to Say",
-          "Aligned With Your Positioning",
-          "Built for Long-Term Growth"
+          "Creates a Memorable Identity",
+          "Reflects Your Brand Personality",
+          "Supports Future Brand Growth"
         ]
       },
       {
         "title": "Logo Design",
-        "intro": "Create a distinctive mark that represents your business clearly at every size.",
-        "text": "Logo design turns your brand strategy into a recognizable symbol. We explore concepts, refine the strongest direction, and prepare a logo system with primary, secondary, and icon versions so your mark works across websites, social profiles, print, packaging, and signage.",
+        "intro": "Your logo is often the first visual element customers associate with your business.",
+        "text": "We create distinctive logo concepts that reflect your brand personality, positioning, and visual direction. From initial concepts to final variations, every logo is developed with practical applications in mind, ensuring it works across websites, social media, packaging, marketing materials, and print.",
         "points": [
-          "Distinctive and Recognizable",
-          "Flexible Logo Variations",
-          "Ready for Digital and Print"
+          "Creates Instant Brand Recognition",
+          "Works Across Different Platforms",
+          "Establishes a Consistent Visual Identity"
         ]
       },
       {
         "title": "Visual Identity",
-        "intro": "Build the visual language that makes your brand recognizable beyond the logo.",
-        "text": "Visual identity brings together color, typography, imagery, graphic elements, and layout principles into one consistent system. It gives every website page, social post, presentation, and campaign the same recognizable look, even when different people create the materials.",
+        "intro": "Make every visual interaction feel like it belongs to the same brand.",
+        "text": "Our visual identity services bring together typography, colors, imagery, graphic elements, layouts, and supporting design components. We establish a consistent visual language that helps customers recognize your business across digital platforms, marketing campaigns, presentations, packaging, and everyday brand communication.",
         "points": [
-          "Consistent Look Across Channels",
-          "Clear Color and Type System",
-          "Supporting Graphic Elements"
+          "Establishes Visual Consistency",
+          "Strengthens Brand Recognition",
+          "Creates a Distinctive Brand Experience"
         ]
       },
       {
         "title": "Brand Messaging",
-        "intro": "Give your brand clear words that explain what you do and why it matters.",
-        "text": "Brand messaging defines how your business communicates its value, personality, and positioning. We develop core messages, value propositions, taglines, and tone of voice guidance so your website, sales team, and marketing speak with one consistent voice.",
+        "intro": "Your brand needs a clear message before it can make a lasting impression.",
+        "text": "We develop the messaging framework that explains what your business does, who it serves, what makes it different, and why customers should care. This includes value propositions, taglines, key messages, brand voice, and communication principles that keep your marketing consistent.",
         "points": [
-          "Clear Value Proposition",
-          "Consistent Tone of Voice",
-          "Messages Your Team Can Reuse"
+          "Communicates Your Value Clearly",
+          "Builds Customer Understanding",
+          "Creates Consistent Brand Communication"
         ]
       },
       {
         "title": "Rebranding",
-        "intro": "Update your brand without losing the recognition you have already earned.",
-        "text": "Rebranding reviews your existing brand to decide what should be retained, refined, repositioned, or rebuilt. Whether your business has changed direction, entered new markets, or outgrown its current identity, we create a stronger system while protecting valuable brand equity.",
+        "intro": "When your business evolves, your brand should reflect where you're going.",
+        "text": "Our rebranding services help established businesses refresh their identity, messaging, positioning, and visual direction. We assess existing brand recognition and customer perception to determine what should be retained, improved, or replaced, creating a more relevant identity without unnecessarily losing established brand value.",
         "points": [
-          "Protects Existing Recognition",
-          "Reflects Your Current Direction",
-          "Planned, Practical Rollout"
+          "Refreshes Your Market Presence",
+          "Aligns Identity With Business Growth",
+          "Preserves Valuable Brand Recognition"
         ]
       },
       {
         "title": "Brand Guidelines",
-        "intro": "Give your team and partners practical rules for using the brand correctly.",
-        "text": "Brand guidelines document how your logo, colors, typography, imagery, and voice should be applied. They help internal teams, designers, developers, and agencies produce consistent materials without guessing or recreating decisions from scratch.",
+        "intro": "A strong brand needs clear rules to remain consistent as your business grows.",
+        "text": "We document the essential elements of your brand identity into practical guidelines that your internal teams, designers, developers, and marketing partners can follow. These standards cover logo usage, typography, colors, imagery, layouts, and communication so every application feels connected.",
         "points": [
-          "Clear Usage Rules",
-          "Easier Onboarding for Partners",
-          "Consistency as You Scale"
+          "Standardizes Brand Usage",
+          "Simplifies Team Collaboration",
+          "Maintains Long-Term Consistency"
         ]
       },
       {
         "title": "Brand Applications",
-        "intro": "Carry your identity into the materials customers actually see and use.",
-        "text": "Brand applications extend the identity across websites, social media templates, presentations, business cards, packaging, signage, and marketing collateral. Each application is designed to follow the system so the brand feels connected at every touchpoint.",
+        "intro": "Take your brand beyond the logo and put your identity to work everywhere.",
+        "text": "We apply your branding across the materials and platforms customers interact with every day. From websites and social media to presentations, packaging, advertising, and sales materials, we ensure your visual identity and messaging remain consistent throughout the customer experience.",
         "points": [
-          "Ready-to-Use Templates",
-          "Digital and Print Materials",
-          "Connected Customer Touchpoints"
+          "Extends Your Brand Across Platforms",
+          "Creates Consistent Customer Touchpoints",
+          "Strengthens Everyday Brand Recognition"
         ]
       }
     ]
@@ -700,39 +700,39 @@
     "tabs": [
       {
         "title": "Complete \nBrand Identity",
-        "text": "Complete Brand Identity is the cohesive collection of all visual, verbal, and strategic elements that shape how a business is perceived by the world. It goes far beyond just a logo or a color scheme—it encompasses your brand's personality, core values, tone of voice, and the entire sensory experience a customer has with your business. When building a brand from scratch or undertaking a full rebranding, a complete brand identity establishes consistency across every touchpoint—from your website, packaging, and social media to customer service and marketing assets—creating instant recognition, building trust, and driving long-term customer loyalty.",
+        "text": "A complete brand identity brings every part of your business's visual and verbal presence together. We develop your logo, color palette, typography, brand messaging, imagery, and supporting visual elements to establish a recognizable identity.\nFrom initial brand direction to practical brand applications, every element works as part of one consistent system. Ideal for new businesses building their identity or established companies that need a complete brand foundation.",
         "image": "brandIdentityBoard1",
-        "imageAlt": "Brand identity board with logo, posters, apparel, and app icon in a blue color system"
+        "imageAlt": ""
       },
       {
         "title": "Brand \nStrategy",
-        "text": "A brand strategy engagement defines the foundation before any design work begins. We research your audience, market, and competitors, then clarify your positioning, personality, value proposition, and brand principles. The result is a practical strategic direction your team can use to guide identity, messaging, marketing, and future business decisions.",
+        "text": "Strong branding starts with understanding your market, audience, competitors, and business objectives. We establish your positioning, value proposition, differentiation, audience profiles, and messaging direction.\nThe result is a clear strategic foundation that guides your visual identity, marketing communication, and customer experience. Ideal for businesses that need stronger positioning and a more defined market presence.",
         "image": "brandIdentityBoard2",
-        "imageAlt": "Brand strategy workshop materials and positioning notes"
+        "imageAlt": ""
       },
       {
         "title": "Visual \nIdentity",
-        "text": "A visual identity engagement creates the look of your brand beyond the logo. We develop the color palette, typography, imagery direction, graphic elements, and layout principles, then test them across real applications so your brand stays recognizable on your website, social media, presentations, and print materials.",
+        "text": "Your visual identity determines how customers recognize and experience your business. We develop logos, typography, color systems, imagery, graphic elements, and supporting design assets that reflect your brand personality.\nEvery element is planned for consistent use across websites, social media, presentations, advertising, packaging, and other customer touchpoints. Ideal for businesses that have a clear strategy but need a professional visual system.",
         "image": "brandIdentityBoard3",
-        "imageAlt": "Visual identity system with colors, typography, and graphic elements"
+        "imageAlt": ""
       },
       {
         "title": "Rebranding",
-        "text": "A rebranding engagement updates your brand while protecting the recognition you have already built. We review your current identity, messaging, and customer perception, decide what to keep, refine, or rebuild, and plan a rollout that moves your audience to the new brand without confusion.",
+        "text": "As your business grows, your existing brand may no longer represent your services, positioning, or audience. We review your current identity, messaging, market perception, and existing brand assets to identify what needs to change.\nFrom refreshing visual elements to repositioning the entire brand, we create a more relevant identity while considering the recognition you've already built. Ideal for established businesses preparing for a new stage of growth.",
         "image": "brandIdentityBoard4",
-        "imageAlt": "Before and after comparison of a refreshed brand identity"
+        "imageAlt": ""
       },
       {
         "title": "Brand \nGuidelines",
-        "text": "A brand guidelines engagement turns your identity into clear, usable standards. We document logo usage, colors, typography, imagery, voice, and application examples in a format your internal team, designers, developers, and partners can follow when creating new materials.",
+        "text": "A consistent brand requires clear standards that everyone can follow. We document your logo variations, color specifications, typography, imagery, layouts, spacing, and visual usage requirements.\nThese guidelines give your internal teams, designers, marketers, and external partners a practical reference for maintaining consistency across every platform. Ideal for organizations managing multiple teams, campaigns, and communication channels.",
         "image": "brandIdentityBoard5",
-        "imageAlt": "Brand guidelines document pages showing logo, color, and type rules"
+        "imageAlt": ""
       },
       {
         "title": "Ongoing Brand \nSupport",
-        "text": "Ongoing brand support gives your business continued creative capacity after the identity is delivered. We help produce new templates, campaign assets, presentations, and brand applications, and keep everything consistent with your guidelines as your business and channels grow.",
+        "text": "Your brand needs consistent creative attention as your business and marketing activities evolve. We provide ongoing support for social media graphics, campaign visuals, presentations, advertising materials, digital assets, and other brand applications.\nOur creative support helps maintain your established identity while giving your team additional capacity for regular marketing and communication requirements. Ideal for businesses and agencies managing continuous creative workloads.",
         "image": "brandIdentityBoard6",
-        "imageAlt": "Collection of branded templates and campaign assets"
+        "imageAlt": ""
       }
     ]
   },
@@ -746,67 +746,67 @@
       },
       {
         "question": "What does a branding agency do?",
-        "answer": "A branding agency helps a business define who it is, who it serves, and how it should look and sound. That usually includes research, strategy, positioning, messaging, logo and visual identity design, guidelines, and support applying the brand across channels."
+        "answer": "A branding agency helps businesses develop the strategic and creative systems behind their brand. This can include research, positioning, messaging, visual identity, logo design, guidelines, and implementation."
       },
       {
         "question": "What is the difference between branding and logo design?",
-        "answer": "A logo is one visual element of your brand. Branding is the complete system behind it, including positioning, messaging, personality, colors, typography, imagery, and the experience customers have with your business."
+        "answer": "Logo design creates a visual mark for the business. Branding is much broader and can include strategy, positioning, messaging, visual identity, personality, guidelines, and the way the brand appears across customer experiences."
       },
       {
         "question": "Do you offer logo design?",
-        "answer": "Yes. We design logos as part of a complete identity or as a standalone project, and deliver a logo system with primary, secondary, and icon versions prepared for digital and print use."
+        "answer": "Yes. Logo design can be delivered as part of a complete brand identity project or as a standalone requirement."
       },
       {
         "question": "What is included in a brand identity?",
-        "answer": "A brand identity typically includes the logo system, color palette, typography, imagery direction, graphic elements, and guidance on how they work together. It can also include messaging and tone of voice, depending on the scope."
+        "answer": "A brand identity can include the logo system, color palette, typography, imagery, graphic elements, messaging direction, visual rules, and brand applications. The exact scope depends on how the identity will be used."
       },
       {
         "question": "Do you offer brand strategy?",
-        "answer": "Yes. Brand strategy can be delivered on its own or as the first stage of a larger engagement. It covers your audience, market, competitors, positioning, personality, and core brand principles."
+        "answer": "Yes. Brand strategy can include audience research, positioning, differentiation, personality, value proposition, messaging direction, and strategic brand foundations."
       },
       {
         "question": "Can you rebrand an existing business?",
-        "answer": "Yes. We start by reviewing your current brand, then decide what should be retained, refined, repositioned, or rebuilt so the new identity strengthens the recognition you already have."
+        "answer": "Yes. Existing brands can be evaluated to determine which elements should be retained, refined, repositioned, or replaced."
       },
       {
         "question": "Should we refresh our brand or completely rebrand?",
-        "answer": "A refresh suits businesses whose positioning still works but whose visuals or messaging feel dated. A full rebrand makes sense when your direction, audience, offer, or ownership has changed. We can help you assess which approach fits."
+        "answer": "The answer depends on what is currently working and what has changed. A brand refresh may be appropriate when recognition and positioning remain valuable but the visual system needs improvement. A rebrand may be appropriate when the business direction, audience, positioning, or identity has changed significantly."
       },
       {
         "question": "Do you create brand guidelines?",
-        "answer": "Yes. We create practical guidelines that document logo usage, colors, typography, imagery, voice, and application examples so your team and partners can use the brand consistently."
+        "answer": "Yes. Brand guidelines can cover logos, colors, typography, imagery, graphic elements, messaging, voice, and practical applications."
       },
       {
         "question": "Can you create brand messaging?",
-        "answer": "Yes. We develop positioning statements, value propositions, taglines, key messages, brand stories, and tone of voice guidance that your website, sales team, and marketing can build on."
+        "answer": "Yes. Messaging can include value propositions, taglines, brand stories, key messages, tone of voice, positioning statements, and communication principles."
       },
       {
         "question": "Can you provide white-label branding?",
-        "answer": "Yes. Agencies can use our team for white-label branding work. We follow your brief, presentation format, and approval process while your agency remains the client-facing provider."
+        "answer": "Yes. Agencies can use our branding services as behind-the-scenes fulfillment while maintaining ownership of the client relationship and delivery process."
       },
       {
         "question": "Can branding support a website redesign?",
-        "answer": "Yes. Defining or updating the brand before a redesign gives the website clearer messaging, a consistent visual direction, and a stronger foundation for design and content decisions."
+        "answer": "Yes. A brand identity can establish the visual and messaging foundation used during a website redesign."
       },
       {
         "question": "Can you create branding for ecommerce businesses?",
-        "answer": "Yes. We create identities for ecommerce brands that work across online stores, product pages, packaging, social media, email, and advertising."
+        "answer": "Yes. Ecommerce branding can extend across the storefront, product presentation, packaging, social media, advertising, email, and customer experience."
       },
       {
         "question": "Can you brand a SaaS company?",
-        "answer": "Yes. We help SaaS companies clarify positioning and build identities that extend across the product interface, website, onboarding, sales materials, and marketing."
+        "answer": "Yes. SaaS branding can cover positioning, messaging, visual identity, product marketing, website direction, and digital applications."
       },
       {
         "question": "Can you work with an existing logo?",
-        "answer": "Yes. If your logo still has value, we can refine it or keep it and build a stronger identity system, messaging, and guidelines around it."
+        "answer": "Yes. An existing logo can remain while other parts of the identity are refined, including typography, colors, imagery, messaging, and brand applications."
       },
       {
         "question": "How long does a branding project take?",
-        "answer": "Timelines depend on scope. A focused logo or guidelines project may take a few weeks, while a complete strategy and identity engagement usually takes longer. We confirm the timeline once the scope is defined."
+        "answer": "The timeline depends on the scope, number of deliverables, research requirements, review stages, and whether the project involves strategy, identity, rebranding, or ongoing support."
       },
       {
         "question": "How much do branding services cost?",
-        "answer": "Cost depends on the services included, the number of applications, and the level of strategy and research required. Share your requirements and we will recommend a scope and estimate."
+        "answer": "Branding costs depend on the scope, strategic requirements, number of deliverables, identity complexity, applications, and project timeline. A defined scope allows the appropriate investment to be established before production begins."
       }
     ]
   },

@@ -1,32 +1,10 @@
 import { useId, useRef, useState } from "react";
-import react from "../../assets/imgs/marquee-icon6.svg";
-import nextjs from "../../assets/imgs/marquee-icon7.svg";
-import python from "../../assets/imgs/marquee-icon8.svg";
-import flutter from "../../assets/imgs/marquee-icon9.svg";
-import aws from "../../assets/imgs/marquee-icon10.svg";
-import googleCloud from "../../assets/imgs/marquee-icon11.svg";
-import hubspot from "../../assets/imgs/marquee-icon12.svg";
-import stripe from "../../assets/imgs/marquee-icon13.svg";
 
-const icons = { react, nextjs, python, flutter, aws, googleCloud, hubspot, stripe };
-
-// Badge colours for technologies without an icon file (they show the JSON "badge" text).
-const badgeColors = {
-  javascript: "bg-[#f7df1e] text-black",
-  typescript: "bg-[#3178c6] text-white",
-  swift: "bg-[#f05138] text-white",
-  kotlin: "bg-[#7f52ff] text-white",
-  node: "bg-[#5fa04e] text-white",
-  laravel: "bg-[#ff2d20] text-white",
-  dotnet: "bg-[#512bd4] text-white",
-  postgres: "bg-[#336791] text-white",
-  mysql: "bg-[#00758f] text-white",
-  mongodb: "bg-[#13aa52] text-white",
-  firebase: "bg-[#ffca28] text-black",
-  azure: "bg-[#0078d4] text-white",
-  docker: "bg-[#2496ed] text-white",
-  graphql: "bg-[#e10098] text-white",
-};
+const techCards = require.context(
+  "../../assets/imgs/appdevelopment",
+  false,
+  /^\.\/(mobile|front|back|data|cloud|api)tabservice\d+\.svg$/,
+);
 
 function AppTechStack({ content }) {
   const { tabs } = content;
@@ -81,15 +59,15 @@ function AppTechStack({ content }) {
             {tabs.map((tab, index) => (
               <ul key={tab.label} aria-hidden={active !== index} className={`col-start-1 row-start-1 grid content-start gap-3 transition-opacity duration-500 sm:grid-cols-2 md:w-[80%] md:gap-[0.8vw] ${active === index ? "opacity-100" : "pointer-events-none opacity-0"}`}>
                 {tab.items.map((item) => (
-                  <li key={item.name} className="flex items-center gap-4 rounded-[clamp(8px,0.7vw,12px)] bg-white p-2 shadow-[0_2px_10px_rgba(27,80,232,0.06)] md:gap-[8%] md:p-[2.5%]">
-                    <span aria-hidden="true" className="flex size-11 shrink-0 items-center justify-center rounded-md bg-[#f0f0f0] md:size-[clamp(2.25rem,3.4vw,4rem)]">
-                      {icons[item.icon] ? (
-                        <img src={icons[item.icon]} alt="" className="size-[60%] object-contain" />
-                      ) : (
-                        <span className={`montserrat-bd flex size-[60%] items-center justify-center rounded-[3px] text-[11px] leading-none md:text-[clamp(0.875rem,0.85vw,1rem)] ${badgeColors[item.icon] || "bg-[#1B50E8] text-white"}`}>{item.badge}</span>
-                      )}
-                    </span>
-                    <span className="satoshi-md text-[15px] leading-[1.3] text-black md:text-[clamp(1rem,1.04vw,1.25rem)]">{item.name}</span>
+                  <li key={item.name}>
+                    <img
+                      src={techCards(`./${item.image}`)}
+                      alt={item.name}
+                      width="315"
+                      height="90"
+                      loading="lazy"
+                      className="block h-auto w-full"
+                    />
                   </li>
                 ))}
               </ul>

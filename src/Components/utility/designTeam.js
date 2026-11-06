@@ -117,7 +117,7 @@ function DesignTeam({ content }) {
             >
               {agency.title}
               <br />
-              <span className="bg-[linear-gradient(to_right,transparent,#abc5fc)] pr-1 md:whitespace-nowrap">
+              <span className="bg-[linear-gradient(to_right,transparent,#abc5fc)] pr-1 lg:whitespace-nowrap">
                 {agency.highlight}
               </span>
             </h2>

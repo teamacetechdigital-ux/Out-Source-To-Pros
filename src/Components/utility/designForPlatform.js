@@ -14,7 +14,11 @@ function DesignForPlatform({ content }) {
         <div className="relative flex flex-col items-start sm:pr-[8%] sm:pt-[9%]">
           <div
             aria-hidden="true"
-            className="pointer-events-none absolute right-0 top-0 hidden h-[78%] w-[72%] rounded-tr-[clamp(20px,3vw,44px)] border-r-[clamp(4px,0.8vw,10px)] border-t-[clamp(4px,0.8vw,10px)] border-[#9fc5ff] mask-[linear-gradient(to_bottom,#000,transparent)] sm:block"
+            className="pointer-events-none absolute right-0 top-0 hidden h-[78%] w-[72%] rounded-tr-[clamp(20px,3vw,44px)] border-r-[clamp(4px,0.8vw,10px)] border-t-[clamp(4px,0.8vw,10px)] border-[#9fc5ff] sm:block"
+            style={{
+              maskImage: "linear-gradient(to right, transparent, #000), linear-gradient(to bottom, #000, transparent)",
+              maskComposite: "intersect",
+            }}
           />
           <h2 id={`${id}-heading`} className="montserrat-rg relative text-[28px] font-bold leading-[1.15] text-black md:text-[clamp(1.875rem,3.23vw,3.6rem)]">
             {content.title}

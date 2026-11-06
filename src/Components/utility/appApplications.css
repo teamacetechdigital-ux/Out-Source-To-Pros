@@ -1,0 +1,36 @@
+.app-applications-tabs {
+  position: relative;
+  display: flex;
+}
+
+.app-applications-track {
+  position: absolute;
+  inset-inline: 0;
+  top: calc(50% - 1px);
+  height: 2px;
+  background: #e2e2e2;
+  pointer-events: none;
+}
+
+.app-applications-progress {
+  position: absolute;
+  inset-block: 0;
+  width: var(--progress-from);
+  background: #1b50e8;
+  animation: app-applications-fill 5s linear both;
+  animation-play-state: paused;
+}
+
+.app-applications-tabs[data-playing="true"]:not(:has(:focus-visible)) .app-applications-progress {
+  animation-play-state: running;
+}
+
+@keyframes app-applications-fill {
+  to { width: var(--progress-to); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .app-applications-progress {
+    animation: none;
+  }
+}

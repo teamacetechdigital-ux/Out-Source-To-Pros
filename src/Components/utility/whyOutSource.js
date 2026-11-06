@@ -17,7 +17,7 @@ function CapabilityCard({ card }) {
             {row.map((tag) => (
               <li
                 key={tag}
-                className={`satoshi-md rounded-[999px] border px-[clamp(8px,1vw,14px)] py-[clamp(4px,0.4vw,6px)] text-xs leading-[1.2] md:px-[clamp(4px,0.52vw,8px)] md:text-[clamp(1rem,1.04vw,1.25rem)] ${light ? `${card.emphasizedTags?.includes(tag) ? "bg-[#9fc5ff]" : "bg-white/15"} border-white/65 text-black` : "border-white/65 bg-white/10 text-white"}`}
+                className={`satoshi-md rounded-[999px] border px-[clamp(8px,1vw,14px)] py-[clamp(4px,0.4vw,6px)] text-xs leading-[1.2] md:px-[clamp(4px,0.52vw,8px)] md:text-[clamp(1rem,1vw,1.25rem)] ${light ? `${card.emphasizedTags?.includes(tag) ? "bg-[#9fc5ff]" : "bg-white/15"} border-white/65 text-black` : "border-white/65 bg-white/10 text-white"}`}
               >
                 {tag}
               </li>
@@ -70,7 +70,7 @@ function WhyOutSource({ content }) {
           <div className="grid gap-[clamp(8px,0.8vw,12px)] sm:grid-cols-2 md:grid-cols-[1.2fr_1fr_0.94fr]">
             <h2
               id={`${id}-capabilities-heading`}
-              className="montserrat-rg mb-4 text-[28px] font-bold leading-[1.2] text-black sm:col-span-2 md:col-span-1 md:mb-0 md:text-[clamp(1.875rem,3.23vw,3.75rem)]"
+              className="montserrat-rg mb-4 text-[28px] font-bold leading-[1.2] text-black sm:col-span-2 md:col-span-1 md:mb-0 md:text-[clamp(1.875rem,3.23vw,3.4rem)]"
             >
               {content.capabilities.title}
               <br />

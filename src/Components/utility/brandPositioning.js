@@ -12,7 +12,7 @@ function PositioningTree() {
   const bottom = 178;
 
   return (
-    <svg aria-hidden="true" viewBox="0 0 1230 192" fill="none" className="mx-auto hidden aspect-[1230/192] w-[81%] md:block">
+    <svg aria-hidden="true" viewBox="0 0 1230 192" fill="none" className="mx-auto hidden aspect-[1230/192] w-[81%] lg:block">
       <g stroke="#b9c4d6" strokeWidth="1.5" strokeDasharray="6 6">
         <path d={`M615 ${top}V${rail - radius}`} />
         {branchPoints.map((x) => {
@@ -46,7 +46,7 @@ function BrandPositioning({ content }) {
         </div>
         <div className="mt-8 md:mt-[2.3%]">
           <PositioningTree />
-          <ol className="grid grid-cols-1 gap-3 min-[420px]:grid-cols-2 md:mt-[1.2%] md:grid-cols-5 md:gap-[1.3%]">
+          <ol className="grid grid-cols-1 gap-3 min-[420px]:grid-cols-2 md:mt-[1.2%] lg:grid-cols-5 lg:gap-[1.3%]">
             {content.steps.map((step) => (
               <li key={step.title} className="min-w-0 rounded-[clamp(10px,1vw,16px)] bg-[linear-gradient(180deg,#a8d0ff_0%,#e6f2ff_55%,#fff_100%)] px-4 py-5 text-center md:min-h-[clamp(100px,9.7vw,186px)] md:px-[7%] md:py-[11%]">
                 <h3 className="montserrat-rg text-base font-bold leading-[1.2] text-black md:text-[clamp(1.0625rem,1.25vw,1.5rem)]">{step.title}</h3>

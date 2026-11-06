@@ -309,7 +309,7 @@ function CopyParagraph({ paragraph }) {
     <p>
       {typeof paragraph === "string" ? paragraph : <>
         {paragraph.before}
-        {paragraph.link ? <Link to={paragraph.link.to} className="text-[#70a7ff] underline-offset-2 hover:underline">{paragraph.link.label}</Link> : <strong className="satoshi-bd">{paragraph.strong}</strong>}
+        {paragraph.link ? <Link to={paragraph.link.to} className="text-[#1B50E8] underline-offset-2 hover:underline">{paragraph.link.label}</Link> : <strong className="satoshi-bd">{paragraph.strong}</strong>}
         {paragraph.after}
       </>}
     </p>

@@ -1,19 +1,23 @@
 import { useId, useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import wordpress from "../../assets/imgs/webdesign/wordpress.svg";
-import shopify from "../../assets/imgs/webdesign/shopify.svg";
-import woocommerce from "../../assets/imgs/webdesign/woocommerce.svg";
-import webflow from "../../assets/imgs/webdesign/webflow.svg";
-import squarespace from "../../assets/imgs/webdesign/squarespace.svg";
-import wix from "../../assets/imgs/webdesign/wix.svg";
+import webdesign1 from "../../assets/imgs/webdesign/webdesign1.svg";
+import webdesign2 from "../../assets/imgs/webdesign/webdesign2.svg";
+import webdesign3 from "../../assets/imgs/webdesign/webdesign3.svg";
+import webdesign4 from "../../assets/imgs/webdesign/webdesign4.svg";
+import webdesign5 from "../../assets/imgs/webdesign/webdesign5.svg";
+import webdesign6 from "../../assets/imgs/webdesign/webdesign6.svg";
+import webdesign7 from "../../assets/imgs/webdesign/webdesign7.svg";
+import webdesign8 from "../../assets/imgs/webdesign/webdesign8.svg";
 
 const platformIcons = {
-  wordpress,
-  shopify,
-  woocommerce,
-  webflow,
-  squarespace,
-  wix,
+  wordpress: webdesign1,
+  shopify: webdesign2,
+  woocommerce: webdesign3,
+  webflow: webdesign4,
+  squarespace: webdesign5,
+  wix: webdesign6,
+  saas: webdesign7,
+  uiux: webdesign8,
 };
 
 function DesignServiceTabs({ content }) {
@@ -111,7 +115,7 @@ function DesignServiceTabs({ content }) {
                   <img
                     src={platformIcons[selected.id]}
                     alt=""
-                    className="size-[80%] object-contain"
+                    className=""
                   />
                 ) : (
                   <svg
@@ -140,7 +144,7 @@ function DesignServiceTabs({ content }) {
             <div className="mt-7 text-center md:mt-[5.7%]">
               <Link
                 to={content.buttonLink}
-                className="montserrat-rg inline-flex max-w-full items-center justify-center rounded-sm bg-[#1B50E8] px-6 py-4 text-sm font-bold uppercase leading-[1.4] text-white transition-colors hover:bg-[#1242c8] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white md:px-[3.3%] md:py-[2.3%] md:text-[clamp(1.0625rem,1.25vw,1.5rem)]"
+                className="montserrat-rg inline-flex max-w-full items-center justify-center rounded-sm bg-[#1B50E8] px-6 py-4 text-sm font-bold uppercase leading-[1.4] text-white transition-colors hover:bg-[#1242c8] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white md:px-[3.3%] md:py-[2.3%] md:text-[clamp(1.0625rem,1.25vw,1.4rem)]"
               >
                 {selected.closingLink}
               </Link>

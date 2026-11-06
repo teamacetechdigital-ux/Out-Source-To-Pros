@@ -2,11 +2,8 @@ import { useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { withBreaks } from "../../utils/text";
 import { figmaBackdropStyle } from "./figmaBackdrop";
-import seoHeroDashboard from "../../assets/imgs/seo/seo-hero.png";
-import webdesignHeroDashboard from "../../assets/imgs/webdesign/bannerimg.png";
-import devHeroDashboard from "../../assets/imgs/webdevelopment/developmentImg.png";
-
-const images = { seoHeroDashboard, webdesignHeroDashboard, devHeroDashboard};
+import HeroArtwork from "./heroArtwork";
+import heroArtwork from "./heroArtworkData";
 
 // Hero "Work" frame from Figma (1884 x 1044, inset 18px; same on every service page).
 const sectionStyle = figmaBackdropStyle({ width: 1884, height: 1044, offset: -1748, shiftX: -18, flipY: true, palette: "hero" });
@@ -39,7 +36,7 @@ const floatTimings = [
 
 function HeroSplit({ content }) {
   const labelRefs = useRef([]);
-  const image = images[content.image];
+  const artwork = heroArtwork[content.image];
 
   useEffect(() => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -74,8 +71,8 @@ function HeroSplit({ content }) {
       >
         <div className="custom-container px-5 sm:px-8 lg:px-12">
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.05fr)] lg:gap-10 [&>*]:min-w-0">
-            <div>
-              <h1 className="montserrat-rg text-[40px] font-extrabold leading-[1.1] text-black sm:text-[56px] lg:text-[64px] xl:text-[75px]">
+            <div className="@container">
+              <h1 className="montserrat-rg text-[min(40px,13.8cqw)] font-extrabold leading-[1.1] text-black sm:text-[min(56px,13.8cqw)] lg:text-[min(64px,13.8cqw)] xl:text-[min(75px,13.8cqw)]">
                 {withBreaks(content.title)}
               </h1>
               <p className="satoshi-reg max-w-[560px] pt-5 text-lg capitalize text-black">
@@ -89,13 +86,9 @@ function HeroSplit({ content }) {
               </Link>
             </div>
 
-            <div className={`relative mx-auto w-full py-6 sm:py-8 ${image ? "max-w-[760px]" : "max-w-[780px]"}`}>
-              {image ? (
-                <img
-                  src={image}
-                  alt={content.imageAlt}
-                  className="block h-auto w-full"
-                />
+            <div className={`relative mx-auto w-full py-6 sm:py-8 ${artwork ? "max-w-[760px]" : "max-w-[780px]"}`}>
+              {artwork ? (
+                <HeroArtwork artwork={artwork} alt={content.imageAlt} />
               ) : (
                 <div
                   role="img"
@@ -105,7 +98,7 @@ function HeroSplit({ content }) {
                 />
               )}
 
-              {!image && content.floatingLabels.map((label, index) => (
+              {!artwork && content.floatingLabels.map((label, index) => (
                 <span
                   key={label}
                   ref={(el) => (labelRefs.current[index] = el)}

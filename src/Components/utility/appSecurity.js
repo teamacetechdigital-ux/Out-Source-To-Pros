@@ -1,8 +1,8 @@
 import { useId } from "react";
 import { Link } from "react-router-dom";
+import appSecurityVisual from "../../assets/imgs/appdevelopment/cyber-security.png";
 
-// Security visual per JSON "image" key; until one is added a CSS shield is shown.
-const images = {};
+const images = { appSecurityVisual };
 
 function ShieldPlaceholder({ label }) {
   return (
@@ -25,7 +25,7 @@ function AppSecurity({ content }) {
     <section id="application-security" aria-labelledby={`${id}-heading`} className="relative pb-16 pt-16 text-white md:pb-[10vw] md:pt-[8vw]">
       <div className="mx-auto grid w-[calc(100%-2.5rem)] max-w-[1320px] items-center gap-8 md:w-[79.2%] md:grid-cols-[709fr_795fr] md:gap-[5%] [&>*]:min-w-0">
         <div>
-          <h2 id={`${id}-heading`} className="montserrat-rg text-[28px] font-bold leading-[1.15] md:text-[clamp(1.875rem,3.23vw,3.75rem)]">
+          <h2 id={`${id}-heading`} className="montserrat-rg text-[28px] font-bold leading-[1.15] md:text-[clamp(1.875rem,3.23vw,3.4rem)]">
             {content.title}<br />
             <span className="bg-[linear-gradient(to_right,transparent,rgba(255,255,255,0.5))] pr-1">{content.highlight}</span>
           </h2>
@@ -45,7 +45,7 @@ function AppSecurity({ content }) {
           </Link>
         </div>
         {image ? (
-          <img src={image} alt={content.imageAlt} className="block h-auto w-full" />
+          <img src={image} alt={content.imageAlt} className="block h-auto w-full opacity-50" />
         ) : (
           <ShieldPlaceholder label={content.imageAlt} />
         )}

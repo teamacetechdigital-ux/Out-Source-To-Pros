@@ -107,160 +107,152 @@
     "title": "Our Services",
     "tabListLabel": "Our services",
     "includesHeading": "Services Include",
-    "problemsHeading": "Problems We Help Solve",
     "buttonLabel": "Outsource with US",
     "items": [
       {
         "title": "Web Design Services",
-        "description": "Your website should build trust, communicate your services clearly, and encourage visitors to take the next step. We create responsive, user-focused websites for businesses across a wide range of industries.",
+        "description": "Your website should build trust, communicate your services clearly, and encourage visitors to take the next step. We create responsive, user focused websites for businesses across a wide range of industries.",
         "includes": [
           "Custom Website Design",
-          "UI Design",
+          "UI/UX Design",
           "Website Redesign",
           "Landing Page Design",
-          "SaaS Website Design"
-        ],
-        "problems": [
-          "Outdated Website Design",
-          "Poor Mobile Experience",
-          "Confusing Navigation",
-          "High Bounce Rates"
+          "SaaS Website Design",
+          "Ecommerce Website Design",
+          "Corporate Website Design",
+          "Responsive Website Design",
+          "Website Wireframing & Prototyping",
+          "Conversion-Focused Page Design"
         ]
       },
       {
         "title": "Web Development Services",
-        "description": "We build fast, responsive, and reliable websites that turn your design and business goals into a smooth experience across devices.",
+        "description": "A well developed website should be fast, secure, reliable, and ready to support your business as it grows. We build responsive websites, ecommerce platforms, and custom web solutions designed for performance, scalability, and everyday management.",
         "includes": [
-          "Responsive Web Development",
-          "Front-End Development",
-          "CMS Development",
-          "E-commerce Development",
-          "Website Integrations"
-        ],
-        "problems": [
-          "Slow Page Loads",
-          "Broken Website Features",
-          "Difficult Content Updates",
-          "Inconsistent Mobile Layouts"
+          "Custom Website Development",
+          "WordPress Development",
+          "Shopify Development",
+          "Webflow Development",
+          "Duda Development",
+          "GoHighLevel Websites & Funnels",
+          "Custom Plugin & Theme Development",
+          "Ecommerce Development",
+          "Database Development",
+          "Website Migration"
         ]
       },
       {
         "title": "Search Engine Optimization",
-        "description": "Improve your visibility in search and attract more qualified visitors through practical, data-informed SEO strategies.",
+        "description": "Strong SEO starts with a solid foundation. We improve your website through technical SEO, content optimization, site structure, local search, and ongoing strategy to help search engines understand and rank your pages. ",
         "includes": [
           "Technical SEO",
-          "On-Page Optimization",
-          "Keyword Research",
+          "On-Page SEO",
+          "Off-Page SEO",
           "Local SEO",
-          "SEO Reporting"
-        ],
-        "problems": [
-          "Low Search Visibility",
-          "Declining Organic Traffic",
-          "Technical Search Issues",
-          "Unqualified Website Traffic"
+          "Ecommerce SEO",
+          "Programmatic SEO",
+          "International SEO",
+          "Keyword Research & Strategy",
+          "Link Building & Authority Development",
+          "AI Search Optimization"
         ]
       },
       {
         "title": "Content, Authority, and Digital PR",
-        "description": "Build a stronger online presence with useful content and digital PR that earns trust, supports your audience, and strengthens your brand.",
+        "description": "Good content helps people understand your business, answer important questions, and make confident decisions. We create clear, valuable content that supports search visibility and guides customers through every stage of their journey.",
         "includes": [
-          "Content Strategy",
-          "Blog and Website Content",
-          "Thought Leadership",
-          "Digital PR Campaigns",
-          "Authority Building"
-        ],
-        "problems": [
-          "Inconsistent Publishing",
-          "Low Brand Awareness",
-          "Unclear Brand Messaging",
-          "Limited Online Authority"
+          "Website Copywriting",
+          "Service Page Content",
+          "Location Page Content",
+          "Blog Strategy & Planning",
+          "SEO Content Writing",
+          "Landing Page Copywriting",
+          "Case Study Writing",
+          "Thought Leadership Content",
+          "Digital PR & Media Outreach",
+          "Content Strategy & Optimization"
         ]
       },
       {
         "title": "Paid Media and Demand Generation",
-        "description": "Reach the right audience with well-managed paid campaigns designed to create demand and bring measurable opportunities to your business.",
+        "description": "Paid advertising can create demand quickly, but traffic alone is not the goal. Campaign success depends on audience selection, offer strength, message clarity, landing page experience, tracking accuracy, creative quality, and continuous testing.",
         "includes": [
-          "Paid Search Campaigns",
-          "Paid Social Advertising",
-          "Campaign Strategy",
-          "Landing Page Optimization",
-          "Performance Reporting"
-        ],
-        "problems": [
-          "Wasted Ad Spend",
-          "Low-Quality Leads",
-          "Weak Campaign Performance",
-          "Unclear Return on Ad Spend"
+          "Google Ads Management",
+          "Microsoft Advertising",
+          "Meta Ads Management",
+          "TikTok Advertising",
+          "YouTube Advertising",
+          "Ecommerce Advertising",
+          "Retargeting Campaigns",
+          "Lead Generation Campaigns",
+          "Paid Media Strategy & Setup",
+          "Campaign Tracking & Optimization"
         ]
       },
       {
         "title": "AI, Automation, and CRM Systems",
-        "description": "Connect your tools and simplify repetitive work with thoughtful automation, useful AI workflows, and CRM systems tailored to your process.",
+        "description": "Many business processes depend on repetitive tasks that consume time and create delays. We design automation systems that connect websites, forms, CRMs, calendars, email platforms, payment systems, internal tools, spreadsheets, customer databases, and AI services.",
         "includes": [
-          "CRM Setup and Optimization",
+          "AI Agent Development",
+          "AI Chatbot Development",
+          "CRM Automation",
+          "GoHighLevel Automation",
+          "Sales Pipeline Automation",
           "Workflow Automation",
-          "AI Process Integration",
-          "Lead Management Systems",
-          "Business Tool Integrations"
-        ],
-        "problems": [
-          "Repetitive Manual Tasks",
-          "Missed Follow-Ups",
-          "Disconnected Business Tools",
-          "Inconsistent Lead Handling"
+          "API Integrations",
+          "Lead Capture & Qualification Automation",
+          "Appointment & Booking Automation",
+          "Data Synchronization & Integration"
         ]
       },
       {
         "title": "Software, SaaS, and App Development",
-        "description": "Turn your product idea or business requirements into dependable digital tools built around real users and practical needs.",
+        "description": "Build software that supports your business today and grows with your future needs. We develop secure, scalable solutions with intuitive design, reliable performance, and seamless integrations.",
         "includes": [
-          "Custom Software",
+          "Custom Software Development",
           "SaaS Product Development",
           "Web Application Development",
-          "Product Prototyping",
-          "Ongoing Product Improvements"
-        ],
-        "problems": [
-          "Manual or Disconnected Processes",
-          "Off-the-Shelf Tool Limitations",
-          "Unclear Product Requirements",
-          "Difficulty Scaling a Product"
+          "Mobile Application Development",
+          "iOS App Development",
+          "Android App Development",
+          "Cross-Platform App Development",
+          "MVP Development",
+          "API Development",
+          "Admin Dashboard & Portal Development"
         ]
       },
       {
         "title": "Branding Services",
-        "description": "Create a consistent identity that helps your business stand out, communicate clearly, and build recognition with the right audience.",
+        "description": "Build a brand that people recognize, trust, and remember. We create brand identities, messaging, and visual assets that keep your business consistent across every customer touchpoint.",
         "includes": [
-          "Brand Strategy",
-          "Visual Identity",
-          "Logo Design",
-          "Brand Guidelines",
-          "Marketing Assets"
-        ],
-        "problems": [
-          "Inconsistent Brand Materials",
-          "Unclear Market Positioning",
-          "Low Brand Recognition",
-          "Outdated Visual Identity"
+          "Brand strategy",
+          "Brand positioning",
+          "Logo design",
+          "Visual identity",
+          "Brand guidelines",
+          "Presentation design",
+          "Social media graphics",
+          "Advertising creative",
+          "Website graphics",
+          "Illustration",
+          "Graphic design",
+          "Video editing",
+          "Motion graphics",
+          "Short-form video content",
+          "Product demonstration videos"
         ]
       },
       {
         "title": "Support, Maintenance, Hosting, and Security",
-        "description": "Keep your website and digital tools healthy with reliable hosting, routine maintenance, proactive security, and ongoing technical support.",
+        "description": "Launching a website or application is only the beginning. Ongoing maintenance protects performance, security, usability, and customer trust.",
         "includes": [
-          "Managed Website Hosting",
-          "Website Maintenance",
-          "Security Monitoring",
-          "Backups and Updates",
-          "Ongoing Technical Support"
-        ],
-        "problems": [
-          "Unplanned Website Downtime",
-          "Outdated Software",
-          "Security Vulnerabilities",
-          "No Reliable Technical Support"
+          "Website maintenance",
+          "Plugin updates",
+          "Security monitoring",
+          "Malware removal",
+          "Backup management",
+          "Cloud hosting",
+          "Website migration"
         ]
       }
     ]
@@ -638,41 +630,33 @@
       {
         "question": "How long does a website project take?",
         "answer": [
-          "Timelines depend on the size of the site, how quickly content and feedback are provided, and how many integrations or custom features are involved.",
-          "A focused marketing website usually takes a few weeks, while larger platforms with custom functionality take longer.",
-          "A clear plan should show each stage, from discovery and design to development, testing, and launch."
+          "A focused business website may take several weeks, while a larger website, ecommerce platform, or custom application may require several months.",
+          "Timelines are affected by content readiness, feedback speed, technical integrations, approval stages, migration requirements, and the number of stakeholders.",
+          "A realistic schedule protects quality and reduces rushed decisions."
         ]
       },
       {
         "question": "Should we redesign our website or improve the current one?",
         "answer": [
-          "If the current site is built on a solid platform and mainly needs better content, speed, or conversion paths, improving it is often the faster option.",
-          "A redesign makes more sense when the structure, technology, or brand no longer supports your goals.",
-          "An audit of performance, usability, and SEO helps decide which path gives the better return."
+          "A complete redesign may be appropriate when the platform is outdated, the structure no longer supports the business, the brand has changed, mobile usability is poor, or major technical limitations exist.",
+          "Focused improvement may be better when the core platform is stable and the main issues involve content, page design, speed, conversion paths, SEO, or tracking.",
+          "An audit can help determine which approach makes more financial and operational sense."
         ]
       },
       {
         "question": "How soon can SEO produce results?",
         "answer": [
-          "Technical fixes and on-page improvements can show early movement within a few weeks.",
-          "Stronger rankings and steady organic traffic usually build over several months, depending on competition and the current state of the site.",
-          "SEO works best as an ongoing effort with clear reporting on rankings, traffic, and leads."
+          "SEO timelines depend on the website’s current condition, competition, market size, content quality, authority, technical issues, location, and available resources.",
+          "Some technical improvements may create early movement, but meaningful organic growth usually requires consistent work over time.",
+          "A credible SEO plan should define leading indicators, business measurements, implementation responsibilities, and realistic review periods."
         ]
       },
       {
         "question": "Can automation replace employees?",
         "answer": [
-          "Automation is best at removing repetitive tasks such as data entry, follow-ups, reporting, and routing information between tools.",
-          "It usually frees your team to focus on work that needs judgment, relationships, and creativity rather than replacing them.",
-          "The right starting point is the processes that take the most time and follow clear rules."
-        ]
-      },
-      {
-        "question": "Should we hire in-house or outsource digital work?",
-        "answer": [
-          "In-house hires make sense for ongoing work that needs daily attention and deep company knowledge.",
-          "Outsourcing gives you access to a wider range of specialists without the cost of recruiting, salaries, and training for every skill.",
-          "Many businesses combine both, keeping core roles internal and outsourcing specialist or overflow work."
+          "Automation is most useful when it reduces repetitive work, improves response times, organizes information, and supports consistent processes.",
+          "It does not remove the need for judgment, customer relationships, strategic decisions, quality review, or human accountability.",
+          "The best systems help people complete work more efficiently rather than attempting to remove people from every process."
         ]
       }
     ]

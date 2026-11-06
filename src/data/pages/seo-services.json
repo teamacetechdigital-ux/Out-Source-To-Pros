@@ -60,90 +60,25 @@
     "highlight": "Your Payroll",
     "buttonLabel": "Add SEO Capacity",
     "listTitle": "Flexible SEO Support",
-    "tabs": [
-      {
-        "label": "Full-service SEO outsourcing",
-        "lead": "Growing organic visibility requires more than one SEO skill.",
-        "paragraphs": [
-          "Technical specialists may be needed to solve crawling and indexing problems. Content strategists are required to map topics and search intent. On-page SEO specialists improve pages. Local SEO requires its own processes. Authority building requires another level of research and quality control.",
-          "Hiring every role internally can become expensive and difficult to manage.",
-          "Our SEO outsourcing services give you access to the people and capabilities required for the work without forcing you to create a separate internal position for every SEO discipline."
-        ],
-        "closing": "We can support your existing marketing team, manage complete SEO campaigns, handle specific deliverables, or operate behind the scenes as an",
-        "closingLink": "extension of your agency."
-      },
-      {
-        "label": "Dedicated SEO specialists",
-        "lead": "A specialist who works as part of your team.",
-        "paragraphs": [
-          "Get a dedicated SEO specialist who learns your business, your websites, and your goals, and works on them every day.",
-          "Your specialist follows your processes, joins your communication channels, and reports progress the way your team prefers."
-        ]
-      },
-      {
-        "label": "White-label SEO fulfillment",
-        "lead": "Deliver more SEO to your clients under your own brand.",
-        "paragraphs": [
-          "Our team works behind the scenes while your agency keeps the client relationship.",
-          "Audits, content, on-page work, and reports are delivered in your format and your branding, so clients only ever see your agency."
-        ]
-      },
-      {
-        "label": "Project-based SEO support",
-        "lead": "Extra hands for a specific SEO project.",
-        "paragraphs": [
-          "Need a site migration checked, a technical audit completed, or a content gap analysis delivered? We take on defined SEO projects with a clear scope and timeline.",
-          "You get the expertise for the project without adding a permanent role."
-        ]
-      },
-      {
-        "label": "Technical SEO outsourcing",
-        "lead": "Fix the issues that stop pages from ranking.",
-        "paragraphs": [
-          "Our technical specialists find and resolve crawling, indexing, site speed, structured data, and architecture problems.",
-          "Every recommendation comes with clear priorities so your developers know what to fix first."
-        ]
-      },
-      {
-        "label": "Content and on-page SEO",
-        "lead": "Pages that match what people are searching for.",
-        "paragraphs": [
-          "We map topics to search intent, plan content, and optimize titles, headings, internal links, and page copy.",
-          "The result is content that is easier for search engines to understand and more useful for your visitors."
-        ]
-      },
-      {
-        "label": "Local SEO support",
-        "lead": "Be found by customers in the areas you serve.",
-        "paragraphs": [
-          "We manage Google Business Profiles, local citations, location pages, and review strategies.",
-          "Local SEO follows its own processes, and our team handles them consistently across one location or many."
-        ]
-      },
-      {
-        "label": "Link acquisition support",
-        "lead": "Build authority with quality links.",
-        "paragraphs": [
-          "Our team researches relevant websites, creates outreach campaigns, and secures links that support your rankings.",
-          "Every link opportunity is reviewed for relevance and quality before it is pursued."
-        ]
-      },
-      {
-        "label": "Reporting and analysis",
-        "lead": "Clear reports that show what is working.",
-        "paragraphs": [
-          "We track rankings, traffic, conversions, and technical health, and turn the data into easy-to-read reports.",
-          "Each report explains what changed, why it matters, and what happens next."
-        ]
-      },
-      {
-        "label": "Ongoing SEO execution",
-        "lead": "Steady SEO work, month after month.",
-        "paragraphs": [
-          "SEO results come from consistent work. We handle the ongoing tasks that keep your rankings growing.",
-          "From monthly content to technical checks and link building, your SEO keeps moving without adding to your team’s workload."
-        ]
-      }
+    "lead": "Growing organic visibility requires more than one SEO skill.",
+    "paragraphs": [
+      "Technical specialists may be needed to solve crawling and indexing problems. Content strategists are required to map topics and search intent. On-page SEO specialists improve pages. Local SEO requires its own processes. Authority building requires another level of research and quality control.",
+      "Hiring every role internally can become expensive and difficult to manage.",
+      "Our SEO outsourcing services give you access to the people and capabilities required for the work without forcing you to create a separate internal position for every SEO discipline."
+    ],
+    "closing": "We can support your existing marketing team, manage complete SEO campaigns, handle specific deliverables, or operate behind the scenes as an",
+    "closingLink": "extension of your agency.",
+    "items": [
+      "Full-service SEO outsourcing",
+      "Dedicated SEO specialists",
+      "White-label SEO fulfillment",
+      "Project-based SEO support",
+      "Technical SEO outsourcing",
+      "Content and on-page SEO",
+      "Local SEO support",
+      "Link acquisition support",
+      "Reporting and analysis",
+      "Ongoing SEO execution"
     ]
   },
   "seoServices": {
@@ -157,25 +92,33 @@
     "tabs": [
       {
         "title": "Technical SEO Outsourcing",
-        "icon": "seo",
-        "intro": "Search engines need to crawl, render, and index your website before any page can rank.",
-        "text": "Our technical SEO outsourcing finds and fixes the issues that hold a website back, from crawl errors and indexation gaps to site speed, structured data, and architecture problems.",
-        "includesTitle": "Technical SEO Includes",
+        "icon": "seo-tab1",
+        "intro": "Technical problems can prevent even strong content from performing properly.",
+        "text": "Our technical SEO outsourcing services help identify and address issues affecting crawling, rendering, indexation, website architecture, performance, and search engine accessibility.",
+        "includesTitle": "Technical SEO May Include",
         "includes": [
-          "Technical audits",
-          "Crawl reviews",
-          "Indexation",
-          "Redirects",
-          "Canonicals",
+          "Full technical SEO audits",
+          "Crawl analysis",
+          "Indexation review",
+          "Canonical issues",
+          "Redirect mapping",
+          "XML sitemap review",
+          "Robots.txt configuration",
+          "Internal linking",
+          "Duplicate content",
+          "JavaScript rendering",
+          "Page speed",
+          "Core Web Vitals",
+          "Mobile usability",
           "Structured data",
-          "Site architecture",
-          "Website migrations",
-          "Core Web Vitals"
+          "Broken links",
+          "Server response codes",
+          "Website migration support"
         ]
       },
       {
         "title": "On-Page SEO Outsourcing",
-        "icon": "seo",
+        "icon": "seo-tab2",
         "intro": "A page should clearly communicate its topic to both users and search engines.",
         "text": "Our on-page SEO outsourcing focuses on improving page structure, search intent alignment, internal links, headings, metadata, content depth, entity coverage, and conversion opportunities.",
         "includesTitle": "On-Page SEO Includes",
@@ -196,63 +139,85 @@
       },
       {
         "title": "SEO Content Outsourcing",
-        "icon": "seo",
-        "intro": "Content has to answer real questions and match what people are searching for.",
-        "text": "Our SEO content outsourcing plans, writes, and updates content around topics, search intent, and the pages your business needs to rank.",
-        "includesTitle": "SEO Content Includes",
+        "icon": "seo-tab3",
+        "intro": "Content should earn visibility by being useful, relevant, and connected to your wider website strategy.",
+        "text": "Our SEO content outsourcing services support businesses and agencies that need consistent content production without adding a full internal editorial operation.",
+        "includesTitle": "Content Support Includes",
         "includes": [
-          "Topic research",
-          "Content briefs",
-          "Service and landing pages",
+          "Service pages",
+          "Location pages",
           "Blog articles",
+          "Landing pages",
+          "Ecommerce category content",
+          "Product content",
+          "Comparison pages",
+          "Industry pages",
+          "Resource guides",
+          "Content briefs",
           "Content refreshes",
-          "Topical clusters",
-          "Editorial review"
+          "Topical cluster planning",
+          "Internal linking recommendations"
         ]
       },
       {
         "title": "Link Building Outsourcing",
-        "icon": "seo",
-        "intro": "Authority is built through relevant, trustworthy links over time.",
-        "text": "Our link building outsourcing researches and earns links that are relevant to your industry, with every opportunity reviewed for quality before outreach.",
-        "includesTitle": "Link Building Includes",
+        "icon": "seo-tab4",
+        "intro": "Authority development remains an important part of competitive SEO, but quality matters more than volume.",
+        "text": "Our link building outsourcing approach focuses on relevant opportunities, useful content assets, industry relationships, editorial outreach, and quality review.",
+        "includesTitle": "Link Support May Include",
         "includes": [
-          "Backlink audits",
-          "Competitor link research",
-          "Digital PR",
-          "Resource and niche outreach",
-          "Unlinked mentions",
-          "Link quality review"
+          "Competitor backlink analysis",
+          "Opportunity research",
+          "Resource outreach",
+          "Digital PR support",
+          "Industry placements",
+          "Linkable asset planning",
+          "Broken link opportunities",
+          "Unlinked brand mentions",
+          "Existing backlink audits",
+          "Link quality checks"
         ]
       },
       {
         "title": "Local SEO Outsourcing",
-        "icon": "seo",
-        "intro": "Local customers search by location, service area, and maps.",
-        "text": "Our local SEO outsourcing improves visibility across Google Business Profiles, local pages, citations, and reviews for single and multi-location businesses.",
-        "includesTitle": "Local SEO Includes",
+        "icon": "seo-tab5",
+        "intro": "Local search requires a different strategy from national SEO.",
+        "text": "Our local SEO outsourcing services help businesses improve visibility across specific cities, service areas, and local search results.",
+        "includesTitle": "Local SEO Services Include",
         "includes": [
-          "Google Business Profile optimization",
-          "Location pages",
-          "Citation management",
+          "Google Business Profile support",
           "Local keyword research",
+          "Location page strategy",
+          "Service-area content",
+          "NAP consistency",
+          "Citation review",
           "Review strategy",
-          "Local reporting"
+          "Local competitor analysis",
+          "Local schema",
+          "Local link opportunities",
+          "On-page optimization",
+          "Local rank tracking"
         ]
       },
       {
         "title": "Enterprise SEO Outsourcing",
-        "icon": "seo",
-        "intro": "Large websites need SEO that works across teams, templates, and thousands of pages.",
-        "text": "Our enterprise SEO outsourcing supports complex architecture, large content libraries, and multiple stakeholders with structured workflows and reporting.",
-        "includesTitle": "Enterprise SEO Includes",
+        "icon": "seo-tab6",
+        "intro": "Large websites introduce greater technical and operational complexity.",
+        "text": "Our enterprise SEO outsourcing services support organizations managing large content libraries, multiple stakeholders, complex website architecture, migrations, ecommerce catalogs, or significant technical requirements.",
+        "includesTitle": "Enterprise Support May Include",
         "includes": [
-          "Template-level optimization",
-          "Large-scale technical audits",
-          "International SEO",
-          "Content governance",
-          "Stakeholder reporting",
-          "Ongoing technical support"
+          "Large-scale crawling",
+          "Indexation analysis",
+          "SEO governance",
+          "Template optimization",
+          "Enterprise content strategy",
+          "Internal linking systems",
+          "Migration planning",
+          "Schema implementation",
+          "International considerations",
+          "Reporting dashboards",
+          "Cross-team documentation",
+          "Technical implementation support"
         ]
       }
     ]
@@ -260,7 +225,7 @@
   "whiteLabelSeo": {
     "title": "White Label SEO",
     "highlight": "Outsourcing",
-    "titleEnd": "for\nAgencies",
+    "titleEnd": "for Agencies",
     "paragraphs": [
       "Your agency may have the clients, strategy, and relationships but not always the internal capacity to complete every SEO deliverable."
     ],
@@ -310,8 +275,8 @@
     ]
   },
   "whyOutsource": {
-    "title": "Why Outsource",
-    "highlight": "SEO?",
+    "title": "Why",
+    "highlight": "Outsource SEO?",
     "titleEnd": "",
     "paragraphs": [
       "SEO requires ongoing execution across several disciplines.",
@@ -472,7 +437,7 @@
     "highlight": "Outsource?",
     "description": [
       "You do not need to outsource your entire SEO operation.",
-      "Many businesses and agencies begin with a specific area where internal\ncapacity or specialist expertise is limited."
+      "Many businesses and agencies begin with a specific area where internal capacity or specialist expertise is limited."
     ],
     "boxed": true,
     "defaultActive": 1,
@@ -483,10 +448,10 @@
         "answerList": [
           "Keyword research",
           "Competitor analysis",
-          "Search intent mapping",
+          "Search intent research",
           "Content gap analysis",
           "SEO roadmaps",
-          "Opportunity sizing"
+          "Opportunity prioritization"
         ]
       },
       {
@@ -508,12 +473,13 @@
         "question": "On-Page SEO",
         "answerTitle": "On-Page SEO Includes",
         "answerList": [
-          "Keyword mapping",
-          "Title tags and meta descriptions",
-          "Heading structure",
-          "Internal links",
-          "Content improvements",
-          "Image optimization"
+          "Page optimization",
+          "Metadata",
+          "Headings",
+          "Internal linking",
+          "Content refreshes",
+          "Image SEO",
+          "Page structure"
         ]
       },
       {
@@ -521,20 +487,22 @@
         "answerTitle": "Content Includes",
         "answerList": [
           "Content briefs",
-          "Service and landing pages",
-          "Blog articles",
-          "Content refreshes",
-          "Topical clusters"
+          "Service pages",
+          "Location pages",
+          "Blog content",
+          "Category pages",
+          "Topical clusters",
+          "Content updates"
         ]
       },
       {
         "question": "Authority",
         "answerTitle": "Authority Includes",
         "answerList": [
-          "Backlink audits",
-          "Link acquisition",
+          "Backlink analysis",
+          "Outreach",
+          "Link opportunities",
           "Digital PR",
-          "Unlinked mentions",
           "Link quality review"
         ]
       },
@@ -542,28 +510,29 @@
         "question": "Local SEO",
         "answerTitle": "Local SEO Includes",
         "answerList": [
-          "Google Business Profile optimization",
-          "Location pages",
-          "Citation management",
-          "Review strategy",
-          "Local reporting"
+          "Google Business Profile",
+          "Local pages",
+          "Citations",
+          "Reviews",
+          "Local keyword targeting"
         ]
       },
       {
         "question": "Reporting",
         "answerTitle": "Reporting Includes",
         "answerList": [
-          "Ranking and traffic reports",
-          "Lead and conversion tracking",
-          "Completed work summaries",
-          "Next-step recommendations"
+          "Organic traffic reporting",
+          "Ranking reports",
+          "Conversion analysis",
+          "Technical reporting",
+          "Campaign summaries"
         ]
       }
     ]
   },
   "process": {
-    "title": "Our SEO Outsourcing",
-    "highlight": "Process",
+    "title": "Our SEO",
+    "highlight": "Outsourcing Process",
     "steps": [
       {
         "title": "Discovery",
@@ -857,47 +826,47 @@
       },
       {
         "question": "Why outsource SEO?",
-        "answer": "Outsourcing gives you access to specialists across technical SEO, content, local search, and authority building without hiring and managing each role internally."
+        "answer": "Businesses often outsource SEO to access specialist expertise, increase capacity, reduce internal hiring requirements, and support ongoing search work more efficiently."
       },
       {
         "question": "Can I outsource only part of my SEO?",
-        "answer": "Yes. Many businesses and agencies outsource a specific area, such as technical SEO, content, or link building, while keeping strategy or other work in-house."
+        "answer": "Yes. You can outsource individual services such as technical SEO, content, local SEO, audits, link acquisition, on-page optimization, or reporting without outsourcing the entire campaign."
       },
       {
         "question": "Is SEO outsourcing suitable for agencies?",
-        "answer": "Yes. Agencies can use white-label SEO fulfillment to deliver client work under their own brand while keeping ownership of the client relationship."
+        "answer": "Yes. Agencies commonly use white label SEO outsourcing to increase fulfillment capacity while keeping strategy, branding, and client communication internal."
       },
       {
         "question": "Can I outsource technical SEO?",
-        "answer": "Yes. Technical SEO, including audits, crawl and indexation fixes, structured data, site architecture, and migrations, is one of the most commonly outsourced areas."
+        "answer": "Yes. Technical SEO is one of the most useful areas to outsource when internal teams do not have specialist crawling, indexation, migration, performance, or architecture expertise."
       },
       {
         "question": "Can I outsource local SEO?",
-        "answer": "Yes. Local SEO work such as Google Business Profile optimization, location pages, citations, and local reporting can be handled by an outsourced team."
+        "answer": "Yes. Local SEO outsourcing can cover Google Business Profiles, location pages, citations, local optimization, reviews, reporting, and local visibility work."
       },
       {
         "question": "How much does SEO outsourcing cost?",
-        "answer": "Cost depends on the scope, the number of disciplines involved, the size of the website, and whether the work is a one-time project or ongoing monthly support."
+        "answer": "Cost depends on website size, competition, services required, complexity, campaign frequency, content needs, and whether support is project-based, monthly, white-label, or dedicated."
       },
       {
         "question": "Is outsourced SEO better than in-house SEO?",
-        "answer": "It depends on how much SEO work you have and the specialists you need. Outsourcing usually suits teams that need broader expertise or flexible capacity, while in-house teams suit steady, high-volume work."
+        "answer": "Neither approach is automatically better. Internal teams provide close business knowledge, while outsourced teams can offer broader specialist access and flexible capacity. Many companies combine both models."
       },
       {
         "question": "How do I choose an SEO outsourcing company?",
-        "answer": "Look for clear processes, specialist roles, quality review, transparent reporting, and a team that explains what was done and why."
+        "answer": "Look for clear processes, relevant expertise, transparent reporting, controlled access, quality review, realistic expectations, and a service model that fits your internal workflow."
       },
       {
         "question": "How does SEO outsourcing work?",
-        "answer": "The work usually follows discovery, analysis, strategy, execution, quality review, and reporting, with priorities adjusted as results and goals change."
+        "answer": "The process typically includes discovery, website analysis, strategy, scope definition, execution, quality review, reporting, and ongoing improvement."
       },
       {
         "question": "How long does outsourced SEO take to show progress?",
-        "answer": "Technical fixes can show early movement within weeks, while stronger rankings and steady organic growth usually build over several months."
+        "answer": "SEO timelines depend on competition, website condition, technical issues, content, authority, and implementation speed. Some technical improvements can be completed quickly, while sustained organic growth usually requires ongoing work."
       },
       {
         "question": "Can SEO outsourcing support multiple websites?",
-        "answer": "Yes. An outsourced team can support several websites or client accounts, with work organized by priority and reporting kept separate for each site."
+        "answer": "Yes. Agencies, franchises, multi-location businesses, and companies managing several brands can use outsourced SEO resources across multiple websites when the workflow and reporting structure are clearly defined."
       }
     ]
   },

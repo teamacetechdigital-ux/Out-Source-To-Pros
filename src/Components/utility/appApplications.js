@@ -1,4 +1,5 @@
-import { useId, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
+import "./appApplications.css";
 
 // Image per application type (keyed by the JSON "image" value); missing ones show a placeholder.
 const images = {};
@@ -6,8 +7,27 @@ const images = {};
 function AppApplications({ content }) {
   const { items } = content;
   const [active, setActive] = useState(0);
+  const [inView, setInView] = useState(false);
+  const [pageVisible, setPageVisible] = useState(() => !document.hidden);
   const id = useId();
+  const tabListRef = useRef(null);
   const stepRefs = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(([entry]) => setInView(entry.isIntersecting));
+    const onVisibilityChange = () => setPageVisible(!document.hidden);
+    observer.observe(tabListRef.current);
+    document.addEventListener("visibilitychange", onVisibilityChange);
+
+    return () => {
+      observer.disconnect();
+      document.removeEventListener("visibilitychange", onVisibilityChange);
+    };
+  }, []);
+
+  const playing = inView && pageVisible;
+  const stepWidth = 100 / items.length;
+  const firstMarker = stepWidth / 2;
 
   const handleKeyDown = (event, index) => {
     const keys = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 };
@@ -25,10 +45,20 @@ function AppApplications({ content }) {
           {content.title}{" "}<span className="bg-[linear-gradient(to_right,transparent,#abc5fc)] pr-1">{content.highlight}</span>
         </h2>
 
-        {/* Square markers on a line; the active one is filled blue */}
-        <div className="relative mx-4 mt-8 md:mx-[3.7%] md:mt-[3.7%]">
-          <span aria-hidden="true" className="absolute inset-x-0 top-1/2 h-px bg-[#e2e2e2]" />
-          <div role="tablist" aria-label={content.stepsLabel} className="relative flex items-center justify-between md:px-[3%]">
+        <div className="mx-4 mt-8 md:mx-[3.7%] md:mt-[3.7%]">
+          <div ref={tabListRef} role="tablist" aria-label={content.stepsLabel} className="app-applications-tabs" data-playing={playing}>
+            <span aria-hidden="true" className="app-applications-track">
+              <span
+                key={active}
+                className="app-applications-progress"
+                style={{
+                  left: `${firstMarker}%`,
+                  "--progress-from": `${active * stepWidth}%`,
+                  "--progress-to": `${Math.min((active + 1) * stepWidth, 100 - firstMarker)}%`,
+                }}
+                onAnimationEnd={() => setActive((active + 1) % items.length)}
+              />
+            </span>
             {items.map((item, index) => (
               <button
                 key={item.title}
@@ -44,9 +74,11 @@ function AppApplications({ content }) {
                 tabIndex={active === index ? 0 : -1}
                 onClick={() => setActive(index)}
                 onKeyDown={(event) => handleKeyDown(event, index)}
-                className="flex size-8 cursor-pointer items-center justify-center rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1B50E8] md:size-[clamp(2rem,2.6vw,3rem)]"
+                className="relative flex min-w-0 flex-1 cursor-pointer items-center justify-center rounded-sm focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1B50E8]"
               >
-                <span className={`block rounded-[2px] transition-all duration-300 ${active === index ? "size-6 bg-[#1B50E8] md:size-[clamp(1.25rem,2.4vw,2.875rem)]" : "size-4 bg-[#e5e5e5] hover:bg-[#c9d8f5] md:size-[clamp(0.875rem,1.5vw,2.25rem)]"}`} />
+                <span aria-hidden="true" className="flex size-8 items-center justify-center md:size-[clamp(2rem,2.6vw,3rem)]">
+                  <span className={`block rounded-[2px] transition-all duration-300 ${active === index ? "size-6 bg-[#1B50E8] md:size-[clamp(1.25rem,2.4vw,2.875rem)]" : "size-4 bg-[#e5e5e5] hover:bg-[#c9d8f5] md:size-[clamp(0.875rem,1.5vw,2.25rem)]"}`} />
+                </span>
               </button>
             ))}
           </div>

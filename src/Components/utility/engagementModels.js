@@ -1,3 +1,4 @@
+import { useId } from "react";
 import { withBreaks } from "../../utils/text";
 
 const headingHighlightStyle = {
@@ -8,13 +9,11 @@ const headingHighlightStyle = {
 const cardShadow = { boxShadow: "0px 10px 40px rgba(27, 80, 232, 0.12)" };
 
 const circleStyle = {
-  background: "radial-gradient(circle at 40% 40%, #EAF2FF 0%, #D3E3FF 100%)",
+  background: "linear-gradient(45deg, #fff, #F4F9FF, #A1D1FF)",
 };
 
-// Size (px) of the desktop visual before it is scaled down on lg.
 const VISUAL = { width: 690, height: 500, circle: 360, arc: 190, cardLeft: 450 };
 
-// Angle (deg) of each dot on the arc; sin values -1, -1/3, 1/3, 1 keep the dots evenly spaced.
 const modelAngles = [-90, -19.47, 19.47, 90];
 
 function ModelCard({ model, className = "", style }) {
@@ -29,6 +28,7 @@ function ModelCard({ model, className = "", style }) {
 }
 
 function ModelsCircle({ models }) {
+  const gradientId = useId();
   const { width, height, circle, arc, cardLeft } = VISUAL;
   const cx = circle / 2;
   const cy = height / 2;
@@ -60,14 +60,41 @@ function ModelsCircle({ models }) {
           fill="none"
           aria-hidden="true"
         >
+          <defs>
+            <linearGradient
+              id={`${gradientId}-arc`}
+              x1={cx}
+              y1={cy - arc}
+              x2={cx + arc}
+              y2={cy + arc}
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop stopColor="#006BFF" />
+              <stop offset="1" stopColor="#1B50E8" />
+            </linearGradient>
+            {points.map((point, index) => (
+              <linearGradient
+                key={point.title}
+                id={`${gradientId}-connector-${index}`}
+                x1={point.x}
+                y1={point.y}
+                x2={cardLeft}
+                y2={point.y}
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop stopColor="#006BFF" stopOpacity="0.65" />
+                <stop offset="1" stopColor="#006BFF" stopOpacity="0" />
+              </linearGradient>
+            ))}
+          </defs>
           <path
             d={`M ${cx} ${cy - arc} A ${arc} ${arc} 0 0 1 ${cx} ${cy + arc}`}
-            stroke="#1B50E8"
+            stroke={`url(#${gradientId}-arc)`}
             strokeWidth="1.2"
           />
-          {points.map((point) => (
+          {points.map((point, index) => (
             <g key={point.title}>
-              <line x1={point.x} y1={point.y} x2={cardLeft} y2={point.y} stroke="#1B50E8" strokeOpacity="0.45" />
+              <line x1={point.x} y1={point.y} x2={cardLeft} y2={point.y} stroke={`url(#${gradientId}-connector-${index})`} />
               <circle cx={point.x} cy={point.y} r="4" fill="#1B50E8" />
             </g>
           ))}

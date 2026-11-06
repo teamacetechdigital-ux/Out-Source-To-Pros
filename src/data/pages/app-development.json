@@ -73,29 +73,22 @@
       {
         "id": "ios",
         "label": "iOS App Development",
-        "intro": "Build polished applications for iPhone and iPad users.",
+        "intro": "Build applications designed specifically for the Apple ecosystem.",
         "paragraphs": [
-          "Our iOS app development services cover customer applications, business tools, subscription products, ecommerce apps, and other solutions built for the Apple ecosystem.",
-          "iOS development requires attention to Apple interface guidelines, device capabilities, privacy requirements, performance, and App Store review standards.",
-          "Depending on project requirements, applications may be developed using Swift or a suitable cross-platform framework."
+          "Our iOS app development services cover application planning, UI development, backend connectivity, API integrations, testing, deployment preparation, and ongoing updates.",
+          "Applications can be developed for use across supported Apple devices while following relevant platform conventions and App Store requirements."
         ],
-        "includesTitle": "iOS apps can support:",
+        "includesTitle": "iOS development may be suitable when:",
         "includes": [
-          "Customer accounts",
-          "Apple Pay",
-          "In-app purchases",
-          "Subscriptions",
-          "Push notifications",
-          "Face ID login",
-          "Location services",
-          "Media uploads",
-          "Offline access",
-          "API connections",
-          "Analytics",
-          "Administrative systems"
+          "Apple users represent an important part of your audience",
+          "The application depends heavily on native device functionality",
+          "Performance is a major priority",
+          "You want a platform-specific user experience",
+          "Your business is launching an Apple-first application",
+          "Your existing systems already support an iOS ecosystem"
         ],
         "buttonLabel": "Explore iOS App Development",
-        "buttonLink": "/#contact"
+        "buttonLink": "/"
       },
       {
         "id": "android",
@@ -111,235 +104,225 @@
           "Customer accounts",
           "Ecommerce transactions",
           "Service bookings",
-          "Employee workflows",
           "GPS functionality",
           "Delivery tracking",
-          "Push notifications",
           "Payment processing",
           "Document uploads",
           "Media management",
           "API connections",
-          "Reporting",
           "Administrative systems"
         ],
         "buttonLabel": "Explore Android App Development",
-        "buttonLink": "/#contact"
+        "buttonLink": "/"
       },
       {
         "id": "cross-platform",
         "label": "Cross-Platform App Development",
-        "intro": "Launch on iOS and Android from one shared codebase.",
+        "intro": "Launch across iOS and Android without maintaining two completely separate application projects.",
         "paragraphs": [
-          "Cross-platform development helps businesses reach both major mobile platforms while keeping functionality, design, and releases consistent.",
-          "Shared code can simplify maintenance and new feature development, while platform-specific work is added where the product needs it."
+          "Cross-platform app development can be a practical choice for businesses that want consistent functionality across multiple mobile operating systems while maintaining an efficient development workflow.",
+          "Frameworks such as Flutter and React Native allow development teams to share significant parts of an application's codebase across platforms."
         ],
-        "includesTitle": "Cross-platform apps can support:",
+        "includesTitle": "This approach can work particularly well for:",
         "includes": [
-          "Shared business logic",
-          "Consistent interfaces",
-          "Customer accounts",
-          "Payments",
-          "Bookings",
-          "Push notifications",
-          "Device features",
-          "API connections",
-          "Analytics",
-          "Faster releases"
+          "Startup applications",
+          "MVP development",
+          "SaaS products",
+          "Ecommerce apps",
+          "Membership platforms",
+          "Booking applications",
+          "Customer portals",
+          "Marketplace applications",
+          "Internal business tools",
+          "Content applications"
         ],
-        "buttonLabel": "Explore Cross-Platform Development",
-        "buttonLink": "/#contact"
+        "buttonLabel": "Discuss Cross-Platform Development",
+        "buttonLink": "/"
       },
       {
         "id": "flutter",
         "label": "Flutter App Development",
-        "intro": "Build fast, consistent applications with Flutter.",
+        "intro": "Build iOS and Android applications through a shared Flutter development environment.",
         "paragraphs": [
-          "Flutter allows one team to create iOS and Android applications with a shared codebase and highly customizable interfaces.",
-          "It works well for startups, MVPs, customer apps, and business products that need a consistent experience across devices."
+          "Flutter is commonly used by companies that want to create visually consistent mobile experiences while maintaining an efficient multi-platform development process."
         ],
-        "includesTitle": "Flutter apps can support:",
+        "includesTitle": "Our Flutter app development services can support applications including:",
         "includes": [
-          "Custom UI components",
-          "Animations",
-          "Customer accounts",
-          "Payments",
-          "Maps and location",
-          "Push notifications",
-          "Offline storage",
-          "Firebase services",
-          "API connections",
-          "Admin integrations"
+          "Startup MVPs",
+          "Ecommerce apps",
+          "Booking platforms",
+          "Marketplace applications",
+          "Customer portals",
+          "Service applications",
+          "SaaS mobile products",
+          "Employee applications",
+          "Subscription platforms"
         ],
-        "buttonLabel": "Explore Flutter App Development",
-        "buttonLink": "/#contact"
+        "buttonLabel": "Explore Flutter Development",
+        "buttonLink": "/"
       },
       {
         "id": "react-native",
         "label": "React Native App Development",
-        "intro": "Use React Native to share code across mobile platforms.",
+        "intro": "Create mobile applications using React-based technologies while supporting native mobile functionality.",
         "paragraphs": [
-          "React Native is a practical choice for businesses that already use JavaScript or React across their website or web application.",
-          "Teams can share logic and components between platforms while still using native modules where deeper device access is required."
+          "Our React Native development services help businesses build applications for iOS and Android through a shared development approach.",
+          "React Native is often considered where companies already work with JavaScript, React, or related technologies and want a connected web and mobile development environment."
         ],
-        "includesTitle": "React Native apps can support:",
+        "includesTitle": "Projects may include:",
         "includes": [
-          "Shared components",
-          "Customer accounts",
-          "Ecommerce features",
-          "Subscriptions",
-          "Push notifications",
-          "Camera and media",
-          "Location services",
-          "Real-time updates",
-          "API connections",
-          "Web app alignment"
+          "SaaS mobile applications",
+          "Customer portals",
+          "Social platforms",
+          "Marketplace applications",
+          "Ecommerce experiences",
+          "Business applications",
+          "Service platforms",
+          "Internal operational tools"
         ],
         "buttonLabel": "Explore React Native Development",
-        "buttonLink": "/#contact"
+        "buttonLink": "/"
       },
       {
         "id": "custom",
-        "label": "Custom App Development",
-        "intro": "Create applications built around your exact workflows.",
+        "label": "Native App Development",
+        "intro": "Some applications require deeper control over the operating system.",
         "paragraphs": [
-          "Custom app development is suited to products and processes that off-the-shelf software cannot support well.",
-          "We plan the functionality, architecture, integrations, and user roles around how your business and customers actually work."
+          "Native applications are developed specifically for their intended platform, making them suitable for products where platform performance, hardware access, or device-specific functionality is particularly important."
         ],
-        "includesTitle": "Custom apps can support:",
+        "includesTitle": "Native development may be considered for applications involving:",
         "includes": [
-          "Unique workflows",
-          "Multiple user roles",
-          "Custom dashboards",
-          "Approvals",
-          "Document handling",
-          "Automations",
-          "Reporting",
-          "Third-party integrations",
-          "Secure data access",
-          "Administrative tools"
+          "Bluetooth",
+          "Advanced camera functionality",
+          "Complex background processes",
+          "Device sensors",
+          "Location tracking",
+          "Performance-intensive experiences",
+          "Complex offline functionality",
+          "Platform-specific integrations"
         ],
-        "buttonLabel": "Explore Custom App Development",
-        "buttonLink": "/#contact"
+        "buttonLabel": "Compare Development Approaches",
+        "buttonLink": "/"
       },
       {
         "id": "saas",
-        "label": "SaaS App Development",
-        "intro": "Extend your SaaS product to mobile users.",
+        "label": "Custom App Development",
+        "intro": "Templates and prebuilt tools work well for many simple use cases.",
         "paragraphs": [
-          "SaaS mobile applications give customers convenient access to the accounts, data, and tools they already use in your platform.",
-          "Development can include subscription handling, multi-tenant data, permissions, and close integration with your existing APIs."
+          "They become restrictive when the business needs a specific workflow, unusual feature set, proprietary system, or connected digital product.",
+          "Our custom app development services are designed around the requirements of the application rather than forcing the product into a prebuilt structure."
         ],
-        "includesTitle": "SaaS apps can support:",
+        "includesTitle": "Custom applications may include:",
         "includes": [
-          "User onboarding",
-          "Subscriptions",
-          "Team accounts",
-          "Role permissions",
-          "Dashboards",
-          "Notifications",
-          "Data sync",
-          "Usage analytics",
-          "API connections",
-          "Billing integrations"
+          "Unique business logic",
+          "User roles and permissions",
+          "Custom dashboards",
+          "Proprietary workflows",
+          "Complex databases",
+          "Third-party integrations",
+          "Custom APIs",
+          "Reporting systems",
+          "Automation",
+          "Customer account areas",
+          "Internal management interfaces"
         ],
-        "buttonLabel": "Explore SaaS App Development",
-        "buttonLink": "/#contact"
+        "buttonLabel": "Discuss Custom App Development",
+        "buttonLink": "/"
       },
       {
         "id": "ecommerce",
-        "label": "Ecommerce App Development",
-        "intro": "Give customers a faster way to browse and buy.",
+        "label": "MVP App Development",
+        "intro": "An MVP helps validate a product concept without developing every possible feature before launch.",
         "paragraphs": [
-          "Ecommerce apps can help brands improve repeat purchases, loyalty, and customer engagement through a dedicated mobile shopping experience.",
-          "Applications can connect with existing stores, inventory, payment providers, and fulfilment systems."
+          "Our MVP app development services focus on identifying the smallest useful version of the product that can solve the primary user problem."
         ],
-        "includesTitle": "Ecommerce apps can support:",
+        "includesTitle": "The process may include:",
         "includes": [
-          "Product catalogs",
-          "Search and filters",
-          "Shopping carts",
-          "Secure checkout",
-          "Order tracking",
-          "Wishlists",
-          "Loyalty programs",
-          "Promotions",
-          "Push notifications",
-          "Store integrations"
+          "Identifying the core customer problem",
+          "Defining essential functionality",
+          "Mapping the primary user journey",
+          "Designing key application screens",
+          "Selecting the development architecture",
+          "Building the initial product",
+          "Testing essential workflows",
+          "Preparing for initial release",
+          "Collecting product feedback",
+          "Planning future releases"
         ],
-        "buttonLabel": "Explore Ecommerce App Development",
-        "buttonLink": "/#contact"
+        "buttonLabel": "Plan Your MVP",
+        "buttonLink": "/"
       },
       {
         "id": "marketplace",
-        "label": "Marketplace App Development",
-        "intro": "Connect buyers, sellers, and service providers.",
+        "label": "SaaS App Development",
+        "intro": "Extend a software platform into a mobile experience.",
         "paragraphs": [
-          "Marketplace applications need separate experiences for different user types, along with payments, messaging, and administrative control.",
-          "We plan the listing, transaction, and trust features that help both sides of the marketplace use the platform with confidence."
+          "Our SaaS app development services can support products requiring customer accounts, dashboards, subscriptions, team management, reporting, cloud data, messaging, integrations, or mobile access to an existing web platform."
         ],
-        "includesTitle": "Marketplace apps can support:",
+        "includesTitle": "Common SaaS application functionality includes:",
         "includes": [
-          "Buyer and seller accounts",
-          "Listings",
-          "Search and filters",
-          "Messaging",
-          "Split payments",
-          "Reviews and ratings",
-          "Commission handling",
-          "Disputes",
+          "User onboarding",
+          "Account management",
+          "Subscription billing",
+          "Role-based access",
+          "Analytics dashboards",
           "Notifications",
-          "Admin moderation"
+          "Team collaboration",
+          "Cloud synchronization",
+          "File management",
+          "Third-party integrations",
+          "Customer support functionality"
         ],
-        "buttonLabel": "Explore Marketplace App Development",
-        "buttonLink": "/#contact"
+        "buttonLabel": "Explore SaaS Development",
+        "buttonLink": "/"
       },
       {
         "id": "on-demand",
-        "label": "On-Demand App Development",
-        "intro": "Deliver services to customers when they need them.",
+        "label": "Ecommerce App Development",
+        "intro": "Give customers a mobile buying experience connected to your ecommerce operation.",
         "paragraphs": [
-          "On-demand applications connect customers with drivers, technicians, couriers, or service providers in real time.",
-          "These products often require customer, provider, and administrative apps working together with location and scheduling features."
+          "An ecommerce application can support product discovery, customer accounts, checkout, payments, order tracking, wish lists, loyalty features, personalized content, and push notifications."
         ],
-        "includesTitle": "On-demand apps can support:",
+        "includesTitle": "Projects can include connections with:",
         "includes": [
-          "Service requests",
-          "Real-time tracking",
-          "Provider matching",
-          "Scheduling",
-          "In-app payments",
-          "Live status updates",
-          "Ratings",
-          "Messaging",
-          "Push notifications",
-          "Dispatch dashboards"
+          "Shopify",
+          "WooCommerce",
+          "Custom ecommerce systems",
+          "Product databases",
+          "Inventory platforms",
+          "Payment gateways",
+          "Shipping providers",
+          "CRM systems",
+          "Analytics platforms",
+          "Customer support tools"
         ],
-        "buttonLabel": "Explore On-Demand App Development",
-        "buttonLink": "/#contact"
+        "buttonLabel": "Build an Ecommerce App",
+        "buttonLink": "/"
       },
       {
         "id": "pwa",
-        "label": "Progressive Web App Development",
-        "intro": "Offer an app-like experience directly in the browser.",
+        "label": "Marketplace App Development",
+        "intro": "Marketplace applications connect multiple sides of a transaction.",
         "paragraphs": [
-          "Progressive web apps can be installed from the browser, work across devices, and load quickly without an app store download.",
-          "They can be a practical option for content platforms, customer portals, and businesses validating a product before native development."
+          "Depending on the business model, that may involve customers and vendors, homeowners and service providers, buyers and sellers, drivers and passengers, or companies and freelancers."
         ],
-        "includesTitle": "Progressive web apps can support:",
+        "includesTitle": "Marketplace application functionality can include:",
         "includes": [
-          "Home screen install",
-          "Offline access",
-          "Fast loading",
-          "Push notifications",
-          "Responsive layouts",
-          "Customer portals",
+          "Buyer and seller accounts",
+          "Provider profiles",
+          "Listings",
+          "Search and filters",
+          "Messaging",
+          "Booking",
           "Payments",
-          "Content delivery",
-          "API connections",
-          "SEO visibility"
+          "Commissions",
+          "Notifications",
+          "Verification",
+          "Dispute management",
+          "Administrative controls"
         ],
-        "buttonLabel": "Explore Progressive Web App Development",
-        "buttonLink": "/#contact"
+        "buttonLabel": "Discuss Your Marketplace Concept",
+        "buttonLink": "/"
       }
     ]
   },
@@ -358,50 +341,59 @@
         "imageAlt": "Customer holding a phone with a customer-facing app"
       },
       {
-        "title": "Internal Business Applications",
+        "title": "Booking & Scheduling Applications",
         "paragraphs": [
-          "Give employees the tools they need to manage tasks, approvals, inventory, field work, reporting, and internal communication from their mobile devices.",
-          "These applications are suitable for operations teams, field service companies, logistics businesses, and organizations replacing spreadsheets or manual processes."
+          "Create applications that allow users to search availability, schedule appointments, manage reservations, make payments, receive reminders, update bookings, and communicate important scheduling information from one convenient platform.",
+          "These applications are suitable for healthcare, hospitality, professional services, fitness, education, events, home services, and other industries that depend on appointments, reservations, or scheduled services."
         ],
         "image": "appInternalBusiness",
         "imageAlt": "Employee using an internal business app"
       },
       {
-        "title": "SaaS Applications",
+        "title": "Subscription Applications",
         "paragraphs": [
-          "Extend your software platform to mobile so customers can access dashboards, accounts, data, and key features wherever they work.",
-          "These applications are suitable for SaaS companies, subscription platforms, and software businesses looking to improve retention and product engagement."
+          "Build applications that allow customers to pay recurring fees for access to digital content, services, memberships, software, premium features, or other subscription-based products through a secure platform.",
+          "Functionality may include subscription management, recurring payment integrations, gated areas, customer dashboards, account controls, usage tracking, billing information, and tools for managing active customer subscriptions."
         ],
         "image": "appSaas",
         "imageAlt": "SaaS dashboard on a mobile device"
       },
       {
-        "title": "Ecommerce Applications",
+        "title": "Delivery & Logistics Applications",
         "paragraphs": [
-          "Help customers browse products, save favourites, check out securely, track orders, and receive personalized offers through a dedicated shopping app.",
-          "These applications are suitable for online retailers, direct-to-consumer brands, and businesses that want to increase repeat purchases and loyalty."
+          "Create applications that help businesses manage deliveries, dispatch operations, routes, drivers, orders, customer updates, and important logistics information through one connected system built for daily operations.",
+          "Features may include order management, route planning, customer tracking, driver communication, proof of delivery, location services, dispatch tools, notifications, and improved visibility across delivery operations."
         ],
         "image": "appEcommerce",
         "imageAlt": "Shopping app on a mobile device"
       },
       {
-        "title": "Marketplace Applications",
+        "title": "Healthcare Applications",
         "paragraphs": [
-          "Connect buyers and sellers or customers and providers with listings, search, messaging, payments, reviews, and administrative controls.",
-          "These applications are suitable for product marketplaces, service platforms, rental businesses, and startups building two-sided networks."
+          "Build healthcare applications that support appointment management, patient communication, service information, internal processes, digital forms, staff workflows, and other approved functions required by healthcare organizations.",
+          "When projects involve regulated information, sensitive patient data, integrations, security requirements, or specific compliance standards, those requirements should be identified and addressed during technical planning."
         ],
         "image": "appMarketplace",
         "imageAlt": "Marketplace app listings on a phone"
       },
       {
-        "title": "On-Demand Applications",
+        "title": "Education Applications",
         "paragraphs": [
-          "Let customers request services, track providers in real time, pay in the app, and rate their experience once the job is complete.",
-          "These applications are suitable for delivery, transportation, home services, healthcare visits, and other businesses that operate on demand."
+          "Create education applications that support online learning, student accounts, course access, assessments, educational resources, communication, progress tracking, and administrative processes through one accessible digital platform.",
+          "These applications can support schools, training providers, educational organizations, online learning businesses, and other institutions that need structured tools for students, instructors, administrators, and learning management."
         ],
         "image": "appOnDemand",
         "imageAlt": "On-demand service app with live tracking"
-      }
+      },
+      {
+        "title": "Financial Applications",
+        "paragraphs": [
+          "Build financial applications that support secure user accounts, customer dashboards, financial data displays, transactions, reporting, account information, and integrations with approved third-party financial services or platforms.",
+          "Projects involving financial data may require specific security standards, technical safeguards, regulatory considerations, integrations, and compliance requirements that should be clearly defined before development begins."
+        ],
+        "image": "appOnDemand",
+        "imageAlt": "On-demand service app with live tracking"
+      } 
     ]
   },
   "features": {
@@ -649,21 +641,27 @@
         "items": [
           {
             "name": "Swift",
-            "icon": "swift",
-            "badge": "Sw"
+            "image": "mobiletabservice1.svg"
           },
           {
             "name": "Kotlin",
-            "icon": "kotlin",
-            "badge": "K"
+            "image": "mobiletabservice2.svg"
           },
           {
             "name": "Flutter",
-            "icon": "flutter"
+            "image": "mobiletabservice3.svg"
           },
           {
             "name": "React Native",
-            "icon": "react"
+            "image": "mobiletabservice4.svg"
+          },
+          {
+            "name": "Java",
+            "image": "mobiletabservice5.svg"
+          },
+          {
+            "name": "Objective-C",
+            "image": "mobiletabservice6.svg"
           }
         ]
       },
@@ -672,21 +670,19 @@
         "items": [
           {
             "name": "React",
-            "icon": "react"
+            "image": "fronttabservice1.svg"
           },
           {
             "name": "Next.js",
-            "icon": "nextjs"
+            "image": "fronttabservice2.svg"
           },
           {
             "name": "JavaScript",
-            "icon": "javascript",
-            "badge": "JS"
+            "image": "fronttabservice3.svg"
           },
           {
             "name": "TypeScript",
-            "icon": "typescript",
-            "badge": "TS"
+            "image": "fronttabservice4.svg"
           }
         ]
       },
@@ -695,22 +691,23 @@
         "items": [
           {
             "name": "Node.js",
-            "icon": "node",
-            "badge": "N"
+            "image": "backtabservice1.svg"
           },
           {
             "name": "Python",
-            "icon": "python"
+            "image": "backtabservice2.svg"
+          },
+          {
+            "name": "PHP",
+            "image": "backtabservice3.svg"
+          },
+          {
+            "name": "Django",
+            "image": "backtabservice4.svg"
           },
           {
             "name": "Laravel",
-            "icon": "laravel",
-            "badge": "L"
-          },
-          {
-            "name": ".NET",
-            "icon": "dotnet",
-            "badge": ".N"
+            "image": "backtabservice5.svg"
           }
         ]
       },
@@ -719,23 +716,19 @@
         "items": [
           {
             "name": "PostgreSQL",
-            "icon": "postgres",
-            "badge": "Pg"
+            "image": "datatabservice1.svg"
           },
           {
             "name": "MySQL",
-            "icon": "mysql",
-            "badge": "My"
+            "image": "datatabservice2.svg"
           },
           {
             "name": "MongoDB",
-            "icon": "mongodb",
-            "badge": "M"
+            "image": "datatabservice3.svg"
           },
           {
             "name": "Firebase",
-            "icon": "firebase",
-            "badge": "F"
+            "image": "datatabservice4.svg"
           }
         ]
       },
@@ -744,21 +737,19 @@
         "items": [
           {
             "name": "AWS",
-            "icon": "aws"
-          },
-          {
-            "name": "Google Cloud",
-            "icon": "googleCloud"
+            "image": "cloudtabservice1.svg"
           },
           {
             "name": "Microsoft Azure",
-            "icon": "azure",
-            "badge": "Az"
+            "image": "cloudtabservice2.svg"
           },
           {
-            "name": "Docker",
-            "icon": "docker",
-            "badge": "D"
+            "name": "Google Cloud",
+            "image": "cloudtabservice3.svg"
+          },
+          {
+            "name": "Firebase",
+            "image": "cloudtabservice4.svg"
           }
         ]
       },
@@ -767,21 +758,35 @@
         "items": [
           {
             "name": "REST APIs",
-            "icon": "rest",
-            "badge": "{ }"
+            "image": "apitabservice1.svg"
+          },
+          {
+            "name": "Maps",
+            "image": "apitabservice2.svg"
           },
           {
             "name": "GraphQL",
-            "icon": "graphql",
-            "badge": "GQ"
+            "image": "apitabservice3.svg"
           },
           {
-            "name": "Stripe",
-            "icon": "stripe"
+            "name": "Authentication providers",
+            "image": "apitabservice4.svg"
           },
           {
-            "name": "HubSpot",
-            "icon": "hubspot"
+            "name": "Payment APIs",
+            "image": "apitabservice5.svg"
+          },
+          {
+            "name": "Communication APIs",
+            "image": "apitabservice6.svg"
+          },
+          {
+            "name": "CRM integrations",
+            "image": "apitabservice7.svg"
+          },
+          {
+            "name": "Business software integration",
+            "image": "apitabservice8.svg"
           }
         ]
       }
@@ -1079,99 +1084,99 @@
       },
       {
         "question": "What does an app development company do?",
-        "answer": "An app development company helps turn a product idea or business requirement into a working application. That usually includes planning, UI/UX design, frontend and backend development, integrations, testing, app store submission, and ongoing support."
+        "answer": "An app development company helps businesses convert application requirements into working software. Responsibilities may include product discovery, technical planning, interface design, frontend development, backend development, testing, deployment, and maintenance."
       },
       {
         "question": "How much does mobile app development cost?",
-        "answer": "Cost depends on the number of platforms, screens, features, integrations, user roles, backend requirements, and post-launch support. Defining the required functionality first is the fastest way to get a meaningful estimate."
+        "answer": "Cost depends on the number of features, platforms, user roles, design requirements, backend complexity, integrations, security requirements, and project scope. A small MVP and a complex marketplace application therefore require very different development budgets."
       },
       {
         "question": "How long does mobile app development take?",
-        "answer": "A focused MVP can often be delivered in a few months, while larger products with multiple user types, integrations, and administrative systems take longer. A timeline is confirmed once the scope has been defined."
+        "answer": "The timeline depends on product complexity, functionality, number of platforms, design requirements, integrations, testing, and technical dependencies. Requirements should normally be mapped before creating a realistic schedule."
       },
       {
         "question": "Can you develop apps for both iOS and Android?",
-        "answer": "Yes. We can build separate native applications for each platform or use a cross-platform framework such as Flutter or React Native to share much of the codebase."
+        "answer": "Yes. Applications can be developed for iOS, Android, or both platforms using native development or cross-platform frameworks such as Flutter and React Native."
       },
       {
         "question": "Should I choose Flutter or React Native?",
-        "answer": "Both are strong options. Flutter is well suited to highly customized interfaces, while React Native can be a good fit for teams already using JavaScript or React. We recommend a framework based on your product, team, and existing systems."
+        "answer": "Both frameworks can support strong cross-platform applications. The better option depends on your existing technology environment, development requirements, required integrations, product architecture, and long-term maintenance plans."
       },
       {
         "question": "Is native app development better than cross-platform development?",
-        "answer": "Not always. Native development can suit products that need deep device functionality, while cross-platform development is often more efficient for business apps that need the same features on iOS and Android."
+        "answer": "Not automatically. Native development can provide deeper platform control, while cross-platform development can provide an efficient approach for applications sharing similar functionality across iOS and Android. The product requirements should determine the choice."
       },
       {
         "question": "Can you build an MVP for a startup?",
-        "answer": "Yes. We can help prioritize the core features, design the key user journeys, and launch a focused MVP that can be tested with real users and expanded later."
+        "answer": "Yes. MVP development can include product scoping, feature prioritization, interface design, development, backend systems, testing, analytics, deployment preparation, and planning for later releases."
       },
       {
         "question": "Can you build the backend for my app?",
-        "answer": "Yes. We can develop databases, APIs, authentication, business logic, administrative dashboards, and cloud infrastructure to support your application."
+        "answer": "Yes. Application development can include backend architecture, databases, APIs, authentication, business logic, administrative systems, integrations, and cloud services."
       },
       {
         "question": "Can you integrate an app with my existing website?",
-        "answer": "Yes. Apps can share accounts, content, products, or data with an existing website through APIs, either existing ones or custom APIs built for the project."
+        "answer": "In many cases, yes. Integration will depend on the existing website, available APIs, database architecture, authentication system, and required data exchange."
       },
       {
         "question": "Can you integrate payment gateways?",
-        "answer": "Yes. We can integrate providers such as Stripe and other payment platforms for one-time payments, subscriptions, and in-app purchases, following the relevant provider and app store requirements."
+        "answer": "Applications can be integrated with suitable payment services depending on the business model, location, platform requirements, and payment provider capabilities."
       },
       {
         "question": "Do you build SaaS mobile applications?",
-        "answer": "Yes. We build mobile apps for SaaS products, including account access, dashboards, subscriptions, permissions, and integration with your existing platform."
+        "answer": "Yes. SaaS mobile development can include subscriptions, user accounts, dashboards, cloud synchronization, team functionality, notifications, integrations, and account management."
       },
       {
         "question": "Do you build ecommerce apps?",
-        "answer": "Yes. Ecommerce apps can include product catalogs, search, carts, secure checkout, order tracking, loyalty features, and integrations with your existing store."
+        "answer": "Yes. Ecommerce applications can include products, customer accounts, checkout, payments, order history, notifications, wish lists, loyalty features, inventory connections, and ecommerce platform integrations."
       },
       {
         "question": "Can an agency outsource app development to you?",
-        "answer": "Yes. We provide white-label app development support for agencies, working within your process and delivering under your brand."
+        "answer": "Yes. Development support can be provided to digital agencies that need additional mobile, backend, QA, or technical capacity for their client projects."
       },
       {
         "question": "Can I hire individual app developers?",
-        "answer": "Yes. You can add dedicated developers to your existing team when you need additional engineering capacity without internal hiring."
+        "answer": "Development resources can be provided for defined projects, product teams, maintenance, feature development, or ongoing technical requirements."
       },
       {
         "question": "Do you take over existing mobile applications?",
-        "answer": "Yes. After a technical review of the codebase and infrastructure, we can take over maintenance, fix issues, and continue development."
+        "answer": "Existing applications can be reviewed first to understand their architecture, code quality, dependencies, backend environment, and outstanding technical issues before determining whether ongoing development can be supported."
       },
       {
         "question": "Do you provide mobile app maintenance?",
-        "answer": "Yes. Maintenance can include bug fixes, operating system compatibility updates, dependency updates, performance improvements, and new features."
+        "answer": "Yes. Ongoing work can include bug fixes, compatibility updates, performance improvements, new features, API updates, backend changes, and future releases."
       },
       {
         "question": "Do you publish applications to the App Store and Google Play?",
-        "answer": "Yes. We can prepare builds, store listings, and the required information for Apple App Store and Google Play submission and support you through the review process."
+        "answer": "Deployment support can include preparing builds and required technical materials for submission to Apple App Store and Google Play. Approval remains subject to the applicable platform's policies and review process."
       },
       {
         "question": "Can you create an admin dashboard for my application?",
-        "answer": "Yes. We can build web-based administrative dashboards for managing users, content, orders, bookings, reporting, and other application data."
+        "answer": "Yes. Applications can include web-based administrative systems for managing users, products, bookings, payments, content, reports, providers, transactions, or other application data."
       },
       {
         "question": "Can my app connect to a CRM?",
-        "answer": "Yes. Applications can connect with CRM platforms such as HubSpot or Salesforce to sync contacts, leads, activity, and other customer data."
+        "answer": "Yes, where the CRM provides appropriate API or integration capabilities. Applications can potentially exchange lead, customer, activity, order, appointment, or other business information with connected systems."
       },
       {
         "question": "Can you add AI functionality to a mobile application?",
-        "answer": "Yes. Depending on the use case, apps can include AI features such as chat assistants, recommendations, content generation, search, or automated data processing."
+        "answer": "Yes. Depending on the use case, applications can potentially connect with AI services for features such as conversational interfaces, summarization, classification, recommendations, document processing, workflow assistance, or other approved functionality."
       },
       {
         "question": "Can you build real-time application features?",
-        "answer": "Yes. We can develop real-time features such as messaging, live tracking, notifications, status updates, and collaborative functionality."
+        "answer": "Yes. Depending on the technical architecture, applications can include live messaging, status updates, notifications, tracking, collaborative functionality, or other real-time experiences."
       },
       {
         "question": "Can you build an app from an existing Figma design?",
-        "answer": "Yes. We can develop your application from existing Figma designs and flag any gaps, states, or technical considerations before development begins."
+        "answer": "Yes. If the design is technically complete and suitable for development, it can be reviewed and converted into application interfaces. Any missing states, responsive behaviour, components, or workflow requirements should be resolved before implementation."
       },
       {
         "question": "Will I own my application?",
-        "answer": "Ownership terms are defined in the project agreement. In most engagements, the client owns the application code and assets once the project has been paid for."
+        "answer": "Ownership terms should be clearly defined in the project agreement before development begins, including source code, design assets, credentials, third-party software, and any licensed components."
       },
       {
         "question": "What information do you need to estimate an app?",
-        "answer": "It helps to share your goals, target users, required platforms, key features, any existing designs or systems, integrations, and your preferred timeline."
+        "answer": "Useful information includes the business objective, intended users, platforms, required features, user roles, design status, backend requirements, integrations, examples of similar applications, and any required launch constraints."
       }
     ],
     "noBackdrop": true

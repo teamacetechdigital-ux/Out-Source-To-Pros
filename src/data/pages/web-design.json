@@ -310,47 +310,47 @@
       },
       {
         "question": "Why outsource web design?",
-        "answer": "Outsourcing gives you access to additional design capacity and specialist skills without recruiting for every project. It can support a defined website project, occasional overflow, or a recurring design workload."
+        "answer": "Businesses commonly outsource web design to gain additional capacity, access specialist skills, reduce full-time hiring requirements, and move projects forward when internal teams are busy."
       },
       {
         "question": "Can agencies outsource web design?",
-        "answer": "Yes. Agencies can use white-label design support while keeping ownership of the client relationship, strategy, and approvals. Our designers can work within your briefs, brand standards, and delivery workflow."
+        "answer": "Yes. Agencies can use white-label web design support for client websites, landing pages, ecommerce projects, UI/UX, responsive layouts, and recurring production while retaining the client relationship."
       },
       {
         "question": "Can I outsource only part of a website design?",
-        "answer": "Yes. Support can cover selected pages, landing pages, wireframes, interface components, responsive layouts, or other defined parts of a larger website project."
+        "answer": "Yes. You can outsource a homepage, inner pages, mobile layouts, wireframes, landing pages, ecommerce screens, or another defined part of the project."
       },
       {
         "question": "Do you provide responsive web design?",
-        "answer": "Yes. Desktop, tablet, and mobile layouts are planned together, including navigation, content hierarchy, forms, buttons, and other interactions that need to work across screen sizes."
+        "answer": "Yes. Desktop, tablet, and mobile behavior can be considered as part of the design process so important content and actions remain usable across screen sizes."
       },
       {
         "question": "Can I outsource WordPress web design?",
-        "answer": "Yes. We support WordPress page layouts, landing pages, blog templates, and reusable components, with the platform's content structure and development requirements considered during design."
+        "answer": "Yes. Website layouts can be designed around the structure and content requirements of a WordPress website."
       },
       {
         "question": "Can I outsource Shopify web design?",
-        "answer": "Yes. Shopify design support can include storefronts, product pages, collection pages, promotional sections, and responsive shopping experiences prepared for development."
+        "answer": "Yes. Shopify design can cover homepage layouts, collections, product pages, promotional sections, ecommerce journeys, and mobile experiences."
       },
       {
         "question": "Do you work in Figma?",
-        "answer": "Yes. Designs can be organized in Figma using reusable components, typography and color styles, responsive states, and clear file structure to support review and implementation."
+        "answer": "Figma can be used for website design, components, prototypes, responsive layouts, feedback, and final design handoff."
       },
       {
         "question": "Can you work with our existing developers?",
-        "answer": "Yes. We can prepare designs and assets for your developers, agree on handoff requirements, and clarify layouts, component behavior, and responsive states during the project."
+        "answer": "Yes. Final design files can be prepared for an internal team, external developer, or separate development provider."
       },
       {
         "question": "How much does it cost to outsource web design?",
-        "answer": "Cost depends on scope, page count, UX depth, responsive requirements, content readiness, ecommerce complexity, and the level of ongoing support. A project brief helps us define the work and prepare an estimate."
+        "answer": "Cost depends on page count, complexity, UX requirements, responsive layouts, ecommerce needs, revisions, custom graphics, and the engagement model."
       },
       {
         "question": "Can I hire ongoing design support?",
-        "answer": "Yes. Monthly design support and dedicated design resources can help with new pages, campaigns, recurring client projects, and improvements after the initial website design."
+        "answer": "Yes. Support can be structured as project-based work, monthly production, white-label fulfillment, or dedicated design capacity."
       },
       {
         "question": "Who owns the final design?",
-        "answer": "Design ownership, file access, and final delivery are established in the agreed project terms. For white-label work, ownership and confidentiality requirements can be defined before the project begins."
+        "answer": "Ownership and licensing should be defined in the project agreement, including final design files, third-party assets, fonts, photography, and any licensed creative resources."
       }
     ],
     "noBackdrop": true
@@ -859,14 +859,14 @@
     "title": "Web Design Services We",
     "highlight": "Provide for Agencies",
     "defaultTab": 1,
-    "buttonLink": "/#contact",
+    "buttonLink": "/",
     "tabs": [
       {
         "label": "WordPress Web Design",
         "paragraphs": [
-          "Help your clients build flexible, easy-to-manage WordPress websites with designs tailored to their brand, audience, and business goals.",
-          "We support agencies with custom page layouts, landing pages, blog templates, and responsive designs that are ready for WordPress development.",
-          "From a single website to ongoing client projects, our team delivers consistent WordPress design support under your agency workflow."
+          "Support your agency’s WordPress projects with professionally designed websites built around client goals, content structures, and brand requirements.",
+          "From business websites and service pages to custom layouts and content-driven platforms, we help agencies deliver polished WordPress experiences without increasing internal workload.",
+          "Our team follows your creative direction, brand standards, and project process to ensure every design feels like a natural extension of your agency."
         ],
         "closingLink": "Expand Your WordPress Design Services",
         "id": "wordpress"
@@ -884,9 +884,9 @@
       {
         "label": "WooCommerce Web Design",
         "paragraphs": [
-          "Help your clients turn their WordPress websites into engaging online stores with WooCommerce designs built around a smooth shopping experience.",
-          "We design storefronts, product pages, category layouts, cart pages, and checkout experiences that balance brand identity with usability.",
-          "Our team works within your agency process to deliver responsive ecommerce designs ready for WooCommerce development."
+          "Provide flexible ecommerce design support for clients using WordPress and WooCommerce with layouts created around their products, customers, and business goals.",
+          "Our team helps agencies design organized product experiences, custom store sections, shopping flows, and responsive layouts that improve usability.",
+          "We work behind the scenes to increase your delivery capacity while maintaining consistency with your agency’s design standards and client expectations."
         ],
         "closingLink": "Expand Your WooCommerce Design Services",
         "id": "woocommerce"
@@ -894,9 +894,9 @@
       {
         "label": "Webflow Web Design",
         "paragraphs": [
-          "Deliver distinctive, responsive websites with Webflow designs that combine strong visual direction with practical, reusable layouts.",
-          "We support agencies with marketing websites, landing pages, CMS templates, and component systems prepared for Webflow development.",
-          "Whether you need a complete website or extra capacity for ongoing projects, our designers work as an extension of your team."
+          "Deliver modern Webflow projects with a design partner experienced in responsive layouts, visual systems, CMS structures, and modern website experiences.",
+          "We help agencies manage additional Webflow design requirements without adding pressure to internal teams or delaying client timelines.",
+          "From landing pages to complete website experiences, our team provides flexible support that fits your process and helps you take on more projects."
         ],
         "closingLink": "Expand Your Webflow Design Services",
         "id": "webflow"
@@ -904,9 +904,9 @@
       {
         "label": "Squarespace Web Design",
         "paragraphs": [
-          "Help your clients establish a polished online presence with Squarespace website designs tailored to their content and brand.",
-          "We design service pages, portfolios, online stores, and landing pages with clear navigation and responsive layouts.",
-          "Our team supports your agency from initial design direction through development-ready page designs."
+          "Support clients who need professional Squarespace websites with clean layouts, strong branding, and easy content management.",
+          "Our design team helps agencies create structured pages, polished visuals, responsive layouts, and user-friendly experiences that match each client’s goals.",
+          "Whether you need additional production support or complete website design assistance, we help your agency deliver high-quality Squarespace projects efficiently."
         ],
         "closingLink": "Expand Your Squarespace Design Services",
         "id": "squarespace"
@@ -914,9 +914,9 @@
       {
         "label": "Wix Web Design",
         "paragraphs": [
-          "Give your clients professional Wix website designs that make their services easy to explore on every screen.",
-          "We support agencies with business websites, landing pages, booking experiences, and ecommerce layouts designed around client goals.",
-          "From new websites to redesigns, our team provides dependable Wix design support within your existing workflow."
+          "Provide clients with custom Wix experiences that go beyond standard templates and generic layouts.",
+          "We help agencies create branded website designs, responsive page structures, clear navigation, and engaging user experiences based on each client’s requirements.",
+          "Our outsourced Wix design support allows your agency to accept more projects while keeping creative quality consistent across every client engagement."
         ],
         "closingLink": "Expand Your Wix Design Services",
         "id": "wix"
@@ -924,9 +924,9 @@
       {
         "label": "SaaS Website Design",
         "paragraphs": [
-          "Make complex products easier to understand with SaaS website designs that communicate value and guide visitors toward the next step.",
-          "We design product pages, feature sections, pricing pages, and conversion-focused landing pages for software businesses.",
-          "Our team helps your agency deliver clear, consistent, responsive SaaS websites ready for development."
+          "Support SaaS clients with website designs that clearly communicate products, features, solutions, and conversion paths.",
+          "We assist agencies with marketing websites, feature pages, pricing sections, integration pages, comparison layouts, and product-focused experiences.",
+          "Our team understands the importance of clear messaging and structured design when presenting complex software solutions to potential users."
         ],
         "closingLink": "Expand Your SaaS Website Design Services",
         "id": "saas"
@@ -934,9 +934,9 @@
       {
         "label": "UI/UX Design Support",
         "paragraphs": [
-          "Help your clients create intuitive digital experiences with UI/UX design support focused on their users and business goals.",
-          "We support agencies with user flows, wireframes, interactive prototypes, interface designs, and reusable design systems.",
-          "Whether you need support for a single feature or an entire product, our designers collaborate within your agency workflow."
+          "Strengthen your agency’s creative output with dedicated UI/UX support for websites, digital products, and complex user experiences.",
+          "From user flows and wireframes to prototypes, interface systems, and design components, we help agencies deliver thoughtful digital experiences without building an internal UX department.",
+          "Our team works alongside your process to provide reliable design support whenever your project pipeline requires additional expertise."
         ],
         "closingLink": "Expand Your UI/UX Design Services",
         "id": "uiux"

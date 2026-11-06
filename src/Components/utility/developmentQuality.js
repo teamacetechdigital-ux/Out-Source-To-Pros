@@ -26,7 +26,7 @@ function DevelopmentQuality({ content }) {
           >
             {content.title}
             <br />
-            <span className="md:whitespace-nowrap">{content.subtitle}</span>
+            <span className="2xl:whitespace-nowrap">{content.subtitle}</span>
             <br />
             <span className="bg-[linear-gradient(to_right,transparent,#abc5fc)] pr-1">
               {content.highlight}

@@ -1,4 +1,5 @@
 import { withBreaks } from "../../utils/text";
+import "./controlMap.css";
 
 const headingHighlightStyle = {
   background: "linear-gradient(to right, #1b50e80f, #a1d1ffba)",
@@ -60,6 +61,21 @@ function ControlMap({ content }) {
       placedNodes.some((node) => node.id === from) &&
       placedNodes.some((node) => node.id === to),
   );
+  const route = [];
+  const visited = new Set();
+  const traceConnections = (id) => {
+    visited.add(id);
+    route.push(centre(id));
+    lines.forEach(([from, to]) => {
+      const next = from === id ? to : to === id ? from : null;
+      if (next && !visited.has(next)) {
+        traceConnections(next);
+        route.push(centre(id));
+      }
+    });
+  };
+  if (lines.length) traceConnections(lines[0][0]);
+  const currentPath = route.map(({ x, y }, index) => `${index === 0 ? "M" : "L"} ${x} ${y}`).join(" ");
 
   return (
     <section className="relative py-16 sm:py-20 lg:py-24">
@@ -98,13 +114,14 @@ function ControlMap({ content }) {
                 />
               );
             })}
+            <path className="control-map__signal" d={currentPath} pathLength="100" />
           </svg>
           {placedNodes.map((node) => (
             <NodeCard
               key={node.id}
               node={node}
-              className="absolute"
               style={{
+                position: "absolute",
                 left: `${nodeLayout[node.id].left}%`,
                 top: `${nodeLayout[node.id].top}%`,
                 width: `${NODE_WIDTH}%`,

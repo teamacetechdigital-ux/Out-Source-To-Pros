@@ -1,0 +1,19 @@
+.control-map__signal {
+  fill: none;
+  stroke: #1b50e8;
+  stroke-width: 0.2;
+  stroke-linecap: round;
+  stroke-dasharray: 2.5 97.5;
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .control-map__signal {
+    opacity: 1;
+    animation: control-map-current 8s linear infinite;
+  }
+}
+
+@keyframes control-map-current {
+  to { stroke-dashoffset: -100; }
+}

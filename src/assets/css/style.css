@@ -117,7 +117,7 @@
 }
 
 .prnt-text-box {
-  box-shadow: -6px 30px 40px 2px #ccc;
+  box-shadow: -6px 30px 40px 2px rgb(161 209 255 / 55%);
   border-radius: 1.8rem;
   padding: 5rem 0rem;
 }

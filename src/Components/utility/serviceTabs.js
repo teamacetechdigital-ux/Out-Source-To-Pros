@@ -1,5 +1,36 @@
 import { useState } from "react";
 import { withBreaks } from "../../utils/text";
+import seoTab1 from "../../assets/imgs/seo/seo-tab1.svg";
+import seoTab2 from "../../assets/imgs/seo/seo-tab2.svg";
+import seoTab3 from "../../assets/imgs/seo/seo-tab3.svg";
+import seoTab4 from "../../assets/imgs/seo/seo-tab4.svg";
+import seoTab5 from "../../assets/imgs/seo/seo-tab5.svg";
+import seoTab6 from "../../assets/imgs/seo/seo-tab6.svg";
+import webdevtab1 from "../../assets/imgs/webdevelopment/webdevtab1.svg";
+import webdevtab2 from "../../assets/imgs/webdevelopment/webdevtab2.svg";
+import webdevtab3 from "../../assets/imgs/webdevelopment/webdevtab3.svg";
+import webdevtab4 from "../../assets/imgs/webdevelopment/webdevtab4.svg";
+import webdevtab5 from "../../assets/imgs/webdevelopment/webdevtab5.svg";
+import webdevtab6 from "../../assets/imgs/webdevelopment/webdevtab6.svg";
+import webdevtab7 from "../../assets/imgs/webdevelopment/webdevtab7.svg";
+import wordpressIcon from "../../assets/imgs/webdesign/webdesign1.svg";
+
+const serviceIcons = {
+  "seo-tab1": seoTab1,
+  "seo-tab2": seoTab2,
+  "seo-tab3": seoTab3,
+  "seo-tab4": seoTab4,
+  "seo-tab5": seoTab5,
+  "seo-tab6": seoTab6,
+  webdevtab1,
+  webdevtab2,
+  webdevtab3,
+  webdevtab4,
+  webdevtab5,
+  webdevtab6,
+  webdevtab7,
+  wordpress: wordpressIcon,
+};
 
 // Same dark blue background as the scale delivery section, fading in from white at the top.
 const headingHighlightStyle = {
@@ -139,7 +170,9 @@ function ServiceTabs({ content }) {
             <div className="grid rounded-[20px] px-6 py-8 text-white" style={blueCardStyle}>
               {tabs.map((tab, index) => (
                 <div key={tab.title} className={fadeClass(index)} aria-hidden={active !== index}>
-                  <SeoIcon />
+                  {serviceIcons[tab.icon] ? (
+                    <img src={serviceIcons[tab.icon]} alt="" aria-hidden="true" width="48" height="48" className="h-12 w-12 object-contain" />
+                  ) : <SeoIcon />}
                   <p className="satoshi-md pt-8 text-[15px] 2xl:text-[19px] leading-[1.5]">{tab.intro}</p>
                   <p className="satoshi-md pt-4 text-[15px] 2xl:text-[19px] leading-[1.5]">{tab.text}</p>
                 </div>

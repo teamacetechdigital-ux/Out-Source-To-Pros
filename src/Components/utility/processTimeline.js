@@ -1,4 +1,10 @@
+import { useLayoutEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { withBreaks } from "../../utils/text";
+import "./processTimeline.css";
+
+gsap.registerPlugin(ScrollTrigger);
 
 const headingHighlightStyle = {
   background: "linear-gradient(to right, #1b50e80f, #a1d1ffba)",
@@ -18,6 +24,36 @@ const cardStyle = {
 };
 
 function ProcessTimeline({ content }) {
+  const listRef = useRef(null);
+
+  useLayoutEffect(() => {
+    const media = gsap.matchMedia();
+    media.add(
+      {
+        all: "all",
+        reducedMotion: "(prefers-reduced-motion: reduce)",
+      },
+      ({ conditions }) => {
+        const steps = listRef.current.querySelectorAll(".process-timeline__step");
+        steps.forEach((step) => {
+          gsap.to(step, {
+            "--process-color": "#1b50e8",
+            duration: conditions.reducedMotion ? 0 : 0.2,
+            ease: "none",
+            scrollTrigger: {
+              trigger: step,
+              start: "center 70%",
+              toggleActions: "play none none reverse",
+            },
+          });
+        });
+      },
+      listRef,
+    );
+
+    return () => media.revert();
+  }, [content.steps]);
+
   return (
     <section className="relative py-16 sm:py-20 lg:py-24">
       <div className="custom-container px-5 sm:px-8 lg:px-12">
@@ -26,11 +62,11 @@ function ProcessTimeline({ content }) {
           <span style={headingHighlightStyle}>{content.highlight}</span>
         </h2>
 
-        <ol className="mt-10 flex flex-col gap-5 sm:mt-14 sm:gap-6 mx-auto w-full max-w-6xl">
+        <ol ref={listRef} className="mt-10 flex flex-col gap-5 sm:mt-14 sm:gap-6 mx-auto w-full max-w-6xl">
           {content.steps.map((step, index) => (
             <li
               key={step.title}
-              className="grid grid-cols-1 items-center sm:grid-cols-[110px_minmax(0,1fr)] lg:grid-cols-[150px_110px_minmax(0,1fr)] xl:grid-cols-[170px_120px_minmax(0,1fr)]"
+              className="process-timeline__step grid grid-cols-1 items-center sm:grid-cols-[110px_minmax(0,1fr)] lg:grid-cols-[150px_110px_minmax(0,1fr)] xl:grid-cols-[170px_120px_minmax(0,1fr)]"
             >
               <span
                 className="montserrat-rg block text-[56px] font-extrabold leading-none tracking-tight sm:text-[80px] lg:text-[110px] xl:text-[120px]"
@@ -40,13 +76,12 @@ function ProcessTimeline({ content }) {
                 {String(index + 1).padStart(2, "0")}
               </span>
 
-              <span className="hidden items-center lg:flex" aria-hidden="true">
-                <span className="h-3.5 w-3.5 shrink-0 rounded-[9999px] bg-[#1B50E8]" />
-                <span className="h-px w-14 bg-[#E2E2E2]" />
+              <span className="process-timeline__connector hidden lg:block" aria-hidden="true">
+                <span className="process-timeline__dot" />
               </span>
 
               <div
-                className="-mt-3 min-w-0 rounded-2xl px-5 py-6 sm:mt-0 sm:px-8 sm:py-8 lg:px-[60px]"
+                className="process-timeline__card -mt-3 min-w-0 rounded-2xl px-5 py-6 sm:mt-0 sm:px-8 sm:py-8 lg:px-[60px]"
                 style={cardStyle}
               >
                 <h3 className="montserrat-rg text-[24px] font-bold uppercase leading-tight text-black sm:text-[24px] lg:text-[26px]">

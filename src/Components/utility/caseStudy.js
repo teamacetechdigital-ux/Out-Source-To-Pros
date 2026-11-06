@@ -20,6 +20,14 @@ const vsStyle = {
   boxShadow: "0px 10px 30px rgba(0, 117, 255, 0.35)",
 };
 
+const vsConnectorMask = {
+  mask: "linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0) border-box",
+  maskComposite: "exclude",
+};
+
+const vsConnectorTop = "linear-gradient(to bottom, #A1D1FF00, #A1D1FF)";
+const vsConnectorBottom = "linear-gradient(to bottom, #A1D1FF, #A1D1FF00)";
+
 function CaseImage({ image, alt }) {
   const src = images[image];
 
@@ -55,15 +63,21 @@ function VsConnector({ label }) {
     <>
       {/* Phones: short vertical line through the VS circle */}
       <div className="flex flex-col items-center py-2 sm:hidden" aria-hidden="true">
-        <span className="h-8 w-2 rounded-b-[9999px] bg-[#A1D1FF]" />
+        <span className="h-8 w-2 rounded-b-[9999px]" style={{ background: vsConnectorTop }} />
         <VsCircle label={label} />
-        <span className="h-8 w-2 rounded-t-[9999px] bg-[#A1D1FF]" />
+        <span className="h-8 w-2 rounded-t-[9999px]" style={{ background: vsConnectorBottom }} />
       </div>
 
       {/* Tablet and up: line from the before image's bottom right to the after block's top left */}
       <div className="relative hidden h-[200px] sm:block lg:h-[260px]" aria-hidden="true">
-        <span className="absolute left-1/2 right-[25%] top-0 h-[calc(50%+4px)] rounded-br-[48px] border-b-8 border-r-8 border-[#A1D1FF]" />
-        <span className="absolute bottom-0 left-[25%] right-1/2 top-[calc(50%-4px)] rounded-tl-[48px] border-l-8 border-t-8 border-[#A1D1FF]" />
+        <span
+          className="absolute left-1/2 right-[25%] top-0 h-[calc(50%+4px)] rounded-br-[48px] border-b-8 border-r-8 border-transparent"
+          style={{ ...vsConnectorMask, background: `${vsConnectorTop} border-box` }}
+        />
+        <span
+          className="absolute bottom-0 left-[25%] right-1/2 top-[calc(50%-4px)] rounded-tl-[48px] border-l-8 border-t-8 border-transparent"
+          style={{ ...vsConnectorMask, background: `${vsConnectorBottom} border-box` }}
+        />
         <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
           <VsCircle label={label} />
         </div>

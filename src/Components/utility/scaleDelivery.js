@@ -291,6 +291,7 @@ function ScaleDelivery({ content }) {
               key={slide.label}
               type="button"
               role="tab"
+              aria-label={slide.label}
               aria-selected={active === index}
               onClick={() => setActive(index)}
               className={`w-full min-w-0 cursor-pointer text-left lg:basis-0 lg:transition-[flex-grow] lg:duration-700 ${
@@ -303,18 +304,16 @@ function ScaleDelivery({ content }) {
                   className="absolute inset-y-0 left-0 w-0 bg-[#1B50E8]"
                 />
               </span>
-              <span
-                className={`hidden pt-4 transition-opacity duration-500 lg:block lg:whitespace-nowrap ${
-                  active === index ? "opacity-100" : "opacity-0"
-                }`}
-              >
-                <span className="satoshi-reg block text-sm text-white sm:text-xl">
-                  {slide.label}
+              {active === index && (
+                <span className="hidden pt-4 lg:block">
+                  <span className="satoshi-reg block text-sm text-white sm:text-xl">
+                    {slide.label}
+                  </span>
+                  <span className="montserrat-rg block min-h-[2.5em] pt-1 text-sm font-bold leading-tight text-[#3086FF] sm:text-lg lg:text-[24px]">
+                    {slide.tagline}
+                  </span>
                 </span>
-                <span className="montserrat-rg block pt-1 text-sm font-bold leading-tight text-[#3086FF] sm:text-lg lg:text-[24px]">
-                  {slide.tagline}
-                </span>
-              </span>
+              )}
             </button>
           ))}
         </div>

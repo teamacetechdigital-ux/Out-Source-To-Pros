@@ -4,6 +4,11 @@ function Tabs({ content }) {
   const services = content.items;
   const [activeIndex, setActiveIndex] = useState(0);
   const activeService = services[activeIndex];
+  const midpoint = Math.ceil(activeService.includes.length / 2);
+  const serviceColumns = [
+    activeService.includes.slice(0, midpoint),
+    activeService.includes.slice(midpoint),
+  ];
 
   return (
     <section id="services" className="outsource-tabs">
@@ -76,26 +81,18 @@ function Tabs({ content }) {
                   {activeService.description}
                 </p>
 
-                <div className="grid-gaping grid gap-6 sm:grid-cols-2">
-                  <div>
-                    <h4 className="montserrat-rg text-base lg:text-[15px] 2xl:text-[19px] font-bold text-[#0A1653]">
-                      {content.includesHeading}
-                    </h4>
-                    <ul className="satoshi-reg mt-3 list-disc space-y-2 pl-4 text-[15px]">
-                      {activeService.includes.map((item) => (
-                        <li key={item}>{item}</li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div>
-                    <h4 className="montserrat-rg text-base lg:text-[15px] 2xl:text-[19px] font-bold text-[#0A1653]">
-                      {content.problemsHeading}
-                    </h4>
-                    <ul className="satoshi-reg mt-3 list-disc space-y-2 pl-4 text-[15px] 2xl:text-[19px] text-gray-800">
-                      {activeService.problems.map((item) => (
-                        <li key={item}>{item}</li>
-                      ))}
-                    </ul>
+                <div className="grid-gaping">
+                  <h4 className="montserrat-rg text-base lg:text-[15px] 2xl:text-[19px] font-bold text-[#0A1653]">
+                    {content.includesHeading}
+                  </h4>
+                  <div className="mt-3 grid gap-2 sm:grid-cols-2 sm:gap-6">
+                    {serviceColumns.map((items, index) => (
+                      <ul key={index} className="satoshi-reg list-disc space-y-2 pl-4 text-[15px]">
+                        {items.map((item) => (
+                          <li key={item}>{item}</li>
+                        ))}
+                      </ul>
+                    ))}
                   </div>
                 </div>
 

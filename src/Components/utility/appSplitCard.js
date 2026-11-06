@@ -20,9 +20,9 @@ function AppSplitCard({ content, variant = "outline", listColumns = 1 }) {
   return (
     <section aria-labelledby={`${id}-heading`} className="relative pb-12 md:pb-[7vw]">
       <div className="mx-auto grid w-[calc(100%-2.5rem)] max-w-[1320px] grid-cols-1 items-center gap-8 rounded-[clamp(16px,1.7vw,24px)] bg-white px-6 py-8 text-black shadow-[0_4px_20px_rgba(27,80,232,0.09)] sm:px-8 md:w-[79.2%] md:grid-cols-[1.05fr_1fr] md:gap-[3vw] md:px-[5.8%] md:py-[6%]">
-        <div className="relative min-w-0 md:pr-[4vw] md:pt-[1.5vw]">
+        <div className="relative min-w-0 md:pt-[1.5vw] lg:pr-[4vw]">
           {variant === "blue" && <div aria-hidden="true" className={`${cornerClass} -top-[1.5vw] h-[80%] w-[80%]`} />}
-          <h2 id={`${id}-heading`} className="montserrat-rg relative text-[28px] font-bold leading-[1.15] md:text-[clamp(1.875rem,3.23vw,3.75rem)]">
+          <h2 id={`${id}-heading`} className="montserrat-rg relative text-[28px] font-bold leading-[1.15] md:text-[clamp(1.875rem,3.23vw,2.5rem)]">
             {content.title}<br />
             <span className="bg-[linear-gradient(to_right,transparent,#abc5fc)] pr-1">{content.highlight}</span>
           </h2>
@@ -51,7 +51,7 @@ function AppSplitCard({ content, variant = "outline", listColumns = 1 }) {
             <div aria-hidden="true" className={`${cornerClass} top-0 -z-10 h-full w-full`} />
           )}
           <h3 className={`montserrat-rg text-xl font-bold leading-[1.3] md:text-[clamp(1.375rem,1.6vw,1.9375rem)] ${style.title}`}>{list.title}</h3>
-          <ul className={`satoshi-md mt-4 gap-x-6 text-[15px] leading-[1.35] md:mt-[5%] md:text-[clamp(0.9375rem,0.94vw,1.125rem)] ${listColumns > 1 ? "sm:columns-2" : ""}`}>
+          <ul className={`satoshi-md mt-4 gap-x-6 text-[15px] leading-[1.35] md:mt-[5%] md:text-[clamp(0.9375rem,0.94vw,1.125rem)] ${listColumns > 1 ? "sm:max-md:columns-2 lg:columns-2" : ""}`}>
             {list.items.map((item) => (
               <li key={item} className="flex break-inside-avoid items-start gap-2.5 pb-1.5">
                 <span aria-hidden="true" className={`mt-[0.5em] size-1.5 shrink-0 rounded-[9999px] ${style.dot}`} />

@@ -1,5 +1,26 @@
 import { useId, useState } from "react";
 import { withBreaks } from "../../utils/text";
+import brandTab1 from "../../assets/imgs/branding/brandtstartabs1.svg";
+import brandTab2 from "../../assets/imgs/branding/brandtstartabs2.svg";
+import brandTab3 from "../../assets/imgs/branding/brandtstartabs3.svg";
+import brandTab4 from "../../assets/imgs/branding/brandtstartabs4.svg";
+import brandTab5 from "../../assets/imgs/branding/brandtstartabs5.svg";
+import brandTab6 from "../../assets/imgs/branding/brandtstartabs6.svg";
+import brandTab7 from "../../assets/imgs/branding/brandtstartabs7.svg";
+import brandTab8 from "../../assets/imgs/branding/brandtstartabs8.svg";
+import brandTab9 from "../../assets/imgs/branding/brandtstartabs9.svg";
+
+const brandTabIcons = [
+  brandTab1,
+  brandTab2,
+  brandTab3,
+  brandTab4,
+  brandTab5,
+  brandTab6,
+  brandTab7,
+  brandTab8,
+  brandTab9,
+];
 
 // Same dark blue background as the web development service tabs, fading in from white at the top.
 const headingHighlightStyle = {
@@ -19,25 +40,6 @@ const barStyle = {
 const blueCardStyle = {
   background: "linear-gradient(135deg, #0846A0 0%, #0075FF 100%)",
 };
-
-function StrategyIcon() {
-  return (
-    <svg
-      className="h-9 w-9 text-white"
-      viewBox="0 0 32 32"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-    >
-      <path d="M12 20a7 7 0 1 1 8 0v2h-8z" />
-      <path d="M13 25h6M14 28h4M16 3V1M6 7 4.5 5.5M26 7l1.5-1.5M3 13H1M31 13h-2" />
-      <path d="m13.5 14 2.5 2.5 2.5-2.5" />
-    </svg>
-  );
-}
 
 function BrandServiceTabs({ content }) {
   const { tabs } = content;
@@ -127,7 +129,14 @@ function BrandServiceTabs({ content }) {
           >
             {tabs.map((tab, index) => (
               <div key={tab.title} className={fadeClass(index)} aria-hidden={active !== index}>
-                <StrategyIcon />
+                <img
+                  src={brandTabIcons[index]}
+                  alt=""
+                  aria-hidden="true"
+                  width="48"
+                  height="48"
+                  className="h-12 w-12 object-contain"
+                />
                 <p className="satoshi-md pt-8 text-[15px] 2xl:text-[19px] leading-[1.5]">{withBreaks(tab.intro)}</p>
                 <p className="satoshi-md pt-4 text-[15px] 2xl:text-[19px] leading-[1.5]">{tab.text}</p>
                 <ul className="satoshi-md mt-4 space-y-1.5 text-sm">

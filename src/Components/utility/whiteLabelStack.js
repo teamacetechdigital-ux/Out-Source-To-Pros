@@ -117,7 +117,7 @@ function WhiteLabelStack({ content }) {
           <div className="grid grid-cols-1 items-start gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,420px)] lg:gap-10 xl:gap-16 [&>*]:min-w-0">
             <div>
               <h2 className="montserrat-rg text-[30px] font-bold leading-[1.2] text-black sm:text-[36px] lg:text-[40px] xl:text-[44px]">
-                {withBreaks(content.title)}{" "}
+                {withBreaks(content.title)}{" "}<br/>
                 <span style={headingHighlightStyle}>{content.highlight}</span>
                 {content.titleEnd && <> {withBreaks(content.titleEnd)}</>}
               </h2>

@@ -1,0 +1,18 @@
+.design-that-guides-signal {
+  display: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .design-that-guides-signal {
+    display: inline;
+    stroke: #1b50e8;
+    stroke-width: 1.75;
+    stroke-linecap: round;
+    stroke-dasharray: 2.5 97.5;
+    animation: design-that-guides-current 9s linear infinite;
+  }
+}
+
+@keyframes design-that-guides-current {
+  to { stroke-dashoffset: -100; }
+}

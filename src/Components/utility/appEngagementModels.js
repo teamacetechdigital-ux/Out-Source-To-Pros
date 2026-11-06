@@ -11,9 +11,9 @@ function AppEngagementModels({ content }) {
           {content.title}<br />
           <span className="bg-[linear-gradient(to_right,transparent,#abc5fc)] pr-1">{content.highlight}</span>
         </h2>
-        <ul className="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-2 md:mt-[2.3%] md:grid-cols-5 md:gap-[0.6vw]">
+        <ul className="mt-7 grid grid-cols-1 gap-3 sm:grid-cols-2 md:mt-[2.3%] lg:grid-cols-5 lg:gap-[0.6vw]">
           {content.models.map((model, index) => (
-            <li key={model.title} className={`min-w-0 rounded-[clamp(10px,1vw,16px)] bg-[linear-gradient(180deg,#c9e4ff,#fff)] px-5 py-5 text-center md:min-h-[clamp(110px,11.5vw,220px)] md:px-[5%] md:py-[8%] ${index === content.models.length - 1 ? "sm:max-md:col-span-2" : ""}`}>
+            <li key={model.title} className={`min-w-0 rounded-[clamp(10px,1vw,16px)] bg-[linear-gradient(180deg,#c9e4ff,#fff)] px-5 py-5 text-center md:min-h-[clamp(110px,11.5vw,220px)] md:px-[5%] md:py-[8%] ${index === content.models.length - 1 ? "sm:max-lg:col-span-2" : ""}`}>
               <h3 className="montserrat-rg text-base font-bold leading-[1.2] text-black md:text-[clamp(1rem,1.15vw,1.375rem)]">{model.title}</h3>
               <p className="satoshi-md mt-2 text-[15px] leading-[1.35] text-black md:mt-[6%] md:text-[clamp(0.875rem,0.9vw,1.0625rem)]">{model.text}</p>
             </li>

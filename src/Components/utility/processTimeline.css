@@ -1,0 +1,25 @@
+.process-timeline__step {
+  --process-color: #e2e2e2;
+}
+
+.process-timeline__connector {
+  position: relative;
+  width: 100%;
+  height: 1px;
+  background: var(--process-color);
+}
+
+.process-timeline__dot {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--process-color);
+  transform: translateY(-50%);
+}
+
+.process-timeline__card {
+  border: 1px solid var(--process-color);
+}

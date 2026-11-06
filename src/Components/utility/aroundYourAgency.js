@@ -2,9 +2,9 @@ import { useId } from "react";
 import { Link } from "react-router-dom";
 
 const buttonClass =
-  "montserrat-bd inline-flex max-w-full items-center justify-center rounded-sm bg-[#1B50E8] px-5 py-3 text-center text-xs uppercase leading-[1.3] text-white transition-colors hover:bg-[#1242c8] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#85baff] md:px-[1.6vw] md:py-[1.1vw] md:text-[clamp(1.0625rem,1.25vw,1.5rem)]";
+  "montserrat-bd inline-flex max-w-full items-center justify-center rounded-sm bg-[#1B50E8] px-5 py-3 text-center text-xs uppercase leading-[1.3] text-white transition-colors hover:bg-[#1242c8] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-[#85baff] md:px-[1.6vw] md:py-[1.1vw] md:text-[clamp(1.0625rem,1.25vw,1.4rem)]";
 const headingClass =
-  "montserrat-rg text-[28px] font-bold leading-[1.15] md:text-[clamp(1.875rem,3.1vw,3.75rem)]";
+  "montserrat-rg text-[28px] font-bold leading-[1.15] md:text-[clamp(1.875rem,2.8vw,3.75rem)]";
 
 function AroundYourAgency({ content }) {
   const id = useId();
@@ -16,7 +16,6 @@ function AroundYourAgency({ content }) {
       aria-labelledby={`${id}-heading`}
       className="around-your-agency relative isolate pb-10 pt-12 md:pb-[4.4vw] md:pt-[7.3vw]"
     >
-
       <div className="mx-auto w-[calc(100%-2.5rem)] max-w-[1320px] md:w-[79.2%]">
         <div className="text-center text-white">
           <h2 id={`${id}-heading`} className={headingClass}>
@@ -41,9 +40,9 @@ function AroundYourAgency({ content }) {
 
         <div
           aria-labelledby={`${id}-white-label-heading`}
-          className="mt-10 grid grid-cols-1 items-center gap-8 rounded-[clamp(16px,1.7vw,24px)] bg-white px-6 py-8 text-black shadow-[0_4px_20px_rgba(27,80,232,0.08)] sm:px-8 md:mt-[6.8vw] md:grid-cols-2 md:gap-[5.5vw] md:px-[5.4vw] md:py-[3.5vw]"
+          className="mt-10 grid grid-cols-1 items-center gap-8 rounded-[clamp(16px,1.7vw,24px)] bg-white px-6 py-8 text-black shadow-[0_4px_20px_rgba(27,80,232,0.08)] sm:px-8 md:mt-[6.8vw] md:px-[5.4vw] md:py-[3.5vw] lg:grid-cols-2 lg:gap-[5.5vw]"
         >
-          <div className="min-w-0 md:max-w-[29.5vw]">
+          <div className="min-w-0 lg:max-w-[29.5vw]">
             <h2 id={`${id}-white-label-heading`} className={headingClass}>
               {whiteLabel.title}
               <br />
@@ -65,11 +64,11 @@ function AroundYourAgency({ content }) {
             </Link>
           </div>
 
-          <ul className="mx-auto grid w-full max-w-[420px] grid-cols-2 items-end gap-2 sm:gap-3 md:w-[27vw] md:translate-x-[1vw] md:-translate-y-[1.8vw] md:gap-[1vw]">
+          <ul className="mx-auto grid w-full max-w-[420px] grid-cols-1 items-end gap-2 min-[360px]:grid-cols-2 sm:gap-3 lg:w-[27vw] lg:translate-x-[1vw] lg:-translate-y-[1.8vw] lg:gap-[1vw]">
             {whiteLabel.cards.map((card, index) => (
               <li
                 key={card.title}
-                className={`min-w-0 rounded-[clamp(10px,1.3vw,18px)] p-4 md:min-h-[8.8vw] md:p-[1.3vw] ${index === 0 || index === 3 ? "bg-[linear-gradient(110deg,#0075ff,#0047c8)] text-white" : "bg-[linear-gradient(180deg,#a5d1ff,#fff)] text-black"} ${index > 1 ? "self-start" : ""} ${index === 0 ? "md:-ml-[3.6vw] md:min-h-[11.5vw] md:w-[calc(100%+3.6vw)] md:p-[1.6vw]" : ""}`}
+                className={`min-w-0 rounded-[clamp(10px,1.3vw,18px)] p-4 lg:min-h-[8.8vw] lg:p-[1.3vw] ${index === 0 || index === 3 ? "bg-[linear-gradient(110deg,#0075ff,#0047c8)] text-white" : "bg-[linear-gradient(180deg,#a5d1ff,#fff)] text-black"} ${index > 1 ? "self-start" : ""} ${index === 0 ? "lg:-ml-[3.6vw] lg:min-h-[11.5vw] lg:w-[calc(100%+3.6vw)] lg:p-[1.6vw]" : ""}`}
               >
                 <h3
                   className={`satoshi-bd text-sm leading-[1.25] ${index === 0 ? "md:text-[clamp(1.0625rem,1.25vw,1.5rem)]" : "md:text-[clamp(1rem,1.04vw,1.25rem)]"}`}

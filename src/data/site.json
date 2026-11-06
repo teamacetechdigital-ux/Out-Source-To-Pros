@@ -35,9 +35,20 @@
     "contact": {
       "title": "Contact",
       "items": [
-        { "icon": "phone", "text": "(720) 338-4491", "href": "tel:+17203384491" },
-        { "icon": "location", "text": "6501 E. Belleview Ave, Suite 110\nGreenwood Village, CO 80111" },
-        { "icon": "email", "text": "info@outsourcetopros.com", "href": "mailto:info@outsourcetopros.com" }
+        {
+          "icon": "phone",
+          "text": "(720) 338-4491",
+          "href": "tel:+17203384491"
+        },
+        {
+          "icon": "location",
+          "text": "6501 E. Belleview Ave, Suite 110\nGreenwood Village, CO 80111"
+        },
+        {
+          "icon": "email",
+          "text": "info@outsourcetopros.com",
+          "href": "mailto:info@outsourcetopros.com"
+        }
       ]
     },
     "socials": [
